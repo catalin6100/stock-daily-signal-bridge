@@ -1,7 +1,7 @@
 {
-  "generated_at_utc": "2026-09-27T12:10:10.511124+00:00",
-  "generated_at_europe_bucharest": "2026-09-27T15:10:10.511124+03:00",
-  "pipeline_version": "1.1.6",
+  "generated_at_utc": "2026-09-27T12:43:56.839564+00:00",
+  "generated_at_europe_bucharest": "2026-09-27T15:43:56.839564+03:00",
+  "pipeline_version": "1.1.7",
   "engine": "S&P500 JOAT + SNIPER DAILY SIGNAL RADAR — CRYPTO FLOW PARITY",
   "timeframe": "1D_CLOSED_BARS_ONLY",
   "signal_lookback_sessions": 3,
@@ -287,11 +287,11 @@
     "yahoo_batch_count": 10,
     "batch_size": 55,
     "stooq_workers": 6,
-    "price_download_seconds": 89.09,
+    "price_download_seconds": 84.47,
     "freshness_grace_minutes": 30,
     "intraday_patch_interval": "30m",
     "intraday_patch_batch_size": 120,
-    "total_runtime_seconds": 103.27
+    "total_runtime_seconds": 98.84
   },
   "data_quality": {
     "price_requested": 504,
