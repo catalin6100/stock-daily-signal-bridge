@@ -1,25 +1,25 @@
 {
   "schema_version": "LATEST_SCAN_V1",
-  "generated_at_utc": "2026-09-27T16:45:51.578183+00:00",
-  "generated_at_europe_bucharest": "2026-09-27T19:45:51.578183+03:00",
+  "generated_at_utc": "2026-09-27T16:56:44.840237+00:00",
+  "generated_at_europe_bucharest": "2026-09-27T19:56:44.840237+03:00",
   "pipeline_version": "0.10.4",
   "report_mode": "FULL_HOURLY",
   "reference_timezone": "Europe/Bucharest",
   "current_hour_cycle": {
     "expected_latest_1h_start_utc": "2026-09-27T15:00:00+00:00",
     "expected_latest_1h_close_utc": "2026-09-27T16:00:00+00:00",
-    "analysis_ready_assets": 120,
-    "current_cycle_coverage_count": 120,
+    "analysis_ready_assets": 121,
+    "current_cycle_coverage_count": 121,
     "missing_current_1h_assets": [],
     "complete": true
   },
   "universe": {
     "source": "CoinGecko Top-200",
     "top200_raw": 200,
-    "eligible": 124,
-    "analysis_ready": 120,
+    "eligible": 125,
+    "analysis_ready": 121,
     "selected_exchange_counts": {
-      "BITGET": 21,
+      "BITGET": 22,
       "OKX": 99
     }
   },
@@ -1919,7 +1919,7 @@
     "timeframe": "1D_CLOSED_BARS_ONLY",
     "universe": "COINGECKO_TOP_200_NONSTABLE_VUMANCHU_DISCOVERY",
     "discovery_universe_version": "VMC_TOP200_NONSTABLE_V2",
-    "source_stack_version": "VMC_SOURCE_STACK_V3",
+    "source_stack_version": "VMC_SOURCE_STACK_V4_SIMPLE",
     "universe_fingerprint": "7f345df4711bd390a1273f63b06ad348a7c25b667c684840a718e442e9d16ade",
     "cache_reused": false,
     "cache_policy": "REUSE_COMPLETE_SAME_UTC_DAILY_SESSION_UNIVERSE_AND_SOURCE_STACK",
@@ -2027,15 +2027,15 @@
     "stablecoin_taxonomy_source": "COINGECKO_CATEGORY",
     "stablecoin_taxonomy_errors": [],
     "provider_counts": {
-      "BITGET_PERP": 3,
-      "BITGET_PERP_REUSED": 21,
+      "BITGET_PERP": 2,
+      "BITGET_PERP_REUSED": 22,
       "OKX_PERP_REUSED": 99,
       "OKX_SPOT": 4
     },
     "provider_health": {
       "BITGET_PERP": {
-        "attempts": 6,
-        "pass": 3,
+        "attempts": 5,
+        "pass": 2,
         "insufficient_history": 3,
         "fail": 0,
         "error_classes": {},
@@ -2051,24 +2051,21 @@
         },
         "error_samples": [
           "STALE_DAILY_DATA:2026-09-25/2026-09-26"
-        ],
-        "stale_day_recovery_attempts": 5,
-        "stale_day_recovery_fail": 5
+        ]
       },
-      "CRYPTOCOMPARE_CCCAGG": {
-        "attempts": 40,
+      "COINGECKO_OHLC_30M_AGGREGATED": {
+        "attempts": 5,
         "pass": 0,
         "insufficient_history": 0,
-        "fail": 40,
+        "fail": 5,
         "error_classes": {
-          "AUTH": 40
+          "OTHER": 5
         },
         "error_samples": [
-          "CRYPTOCOMPARE_PROVIDER_DISABLED:CRYPTOCOMPARE_API_KEY_MISSING"
-        ],
-        "auth_configured": false,
-        "circuit_breaker_disabled_reason": "CRYPTOCOMPARE_API_KEY_MISSING",
-        "provider_status": "AUTH_FAILURE"
+          "Request failed: https://api.coingecko.com/api/v3/coins/htx-dao/ohlc: 400 Client Error: Bad Request for url: https://api.coingecko.com/api/v3/coins/htx-dao/ohlc?vs_currency=usd&days=2&precision=full",
+          "Request failed: https://api.coingecko.com/api/v3/coins/xdce-crowd-sale/ohlc: 400 Client Error: Bad Request for url: https://api.coingecko.com/api/v3/coins/xdce-crowd-sale/ohlc?vs_currency=usd&days=2&precision=full",
+          "Request failed: https://api.coingecko.com/api/v3/coins/bittorrent/ohlc: 400 Client Error: Bad Request for url: https://api.coingecko.com/api/v3/coins/bittorrent/ohlc?vs_currency=usd&days=2&precision=full"
+        ]
       },
       "OKX_PERP": {
         "attempts": 2,
@@ -2087,7 +2084,7 @@
         "error_samples": []
       }
     },
-    "data_source_policy": "REUSE_EXECUTION_PERP_IF_VALID_ELSE_OKX_PERP->BITGET_PERP->OKX_SPOT->BITGET_SPOT(+STRICT_1H_UTC_STALE_DAY_RECOVERY)->CRYPTOCOMPARE_CCCAGG_AUTH; EVERY SOURCE REQUIRES PRICE IDENTITY VALIDATION WHERE APPLICABLE",
+    "data_source_policy": "REUSE_EXECUTION_PERP_IF_VALID_ELSE_OKX_PERP->BITGET_PERP->OKX_SPOT->BITGET_SPOT(+STRICT_1H_UTC_STALE_DAY_RECOVERY; COINGECKO_30M_ONLY_FOR_SINGLE_STALE_DAY_RECOVERY); NO EXTRA API KEY; EVERY SOURCE REQUIRES PRICE IDENTITY VALIDATION WHERE APPLICABLE",
     "source_parity_validation": "PENDING_TRADINGVIEW_CROSSCHECK",
     "no_lookahead": true,
     "plot_offset_note": "TradingView plots the dot on pivot_bar with offset=-2; alert is emitted only on detection_bar after two later bars have closed.",
@@ -2103,7 +2100,7 @@
     "validation_samples_note": "Audit-only field: up to 10 latest-per-ticker historical RAW Gold events. Never use this capped field for rolling-month report completeness.",
     "validation_samples": [
       {
-        "rank": 175,
+        "rank": 176,
         "coin_id": "kaia",
         "name": "Kaia",
         "ticker": "KAIA",
@@ -2533,16 +2530,16 @@
         "gold_count_loaded_history": 1
       }
     ],
-    "scan_generated_at_utc": "2026-09-27T16:45:51.578183+00:00"
+    "scan_generated_at_utc": "2026-09-27T16:56:44.840237+00:00"
   },
   "trend_engine_summary": {
     "status": "IMPLEMENTED_PROVISIONAL",
     "method_version": "TE_V1_PROVISIONAL",
-    "analysis_ready_assets": 120,
-    "computed_assets": 120,
+    "analysis_ready_assets": 121,
+    "computed_assets": 121,
     "failed_assets": 0,
     "qualifying_buy_count": 6,
-    "qualifying_sell_count": 11,
+    "qualifying_sell_count": 12,
     "watch_long_count": 14,
     "watch_short_count": 5,
     "no_trade_count": 84,
@@ -2605,7 +2602,7 @@
         "sniper_confirmation": "NEUTRAL"
       },
       {
-        "rank": 119,
+        "rank": 120,
         "id": "pendle",
         "name": "Pendle",
         "ticker": "PENDLE",
@@ -2776,7 +2773,7 @@
         "sniper_confirmation": "NEUTRAL"
       },
       {
-        "rank": 193,
+        "rank": 194,
         "id": "meteora",
         "name": "Meteora",
         "ticker": "MET",
@@ -3177,6 +3174,63 @@
         "sniper_confirmation": "NEUTRAL"
       },
       {
+        "rank": 40,
+        "id": "memecore",
+        "name": "MemeCore",
+        "ticker": "M",
+        "selected_exchange": "BITGET",
+        "selected_instrument": "MUSDT",
+        "signal": "SELL",
+        "score": 77.0,
+        "timeframe_states": {
+          "15m": {
+            "state": "BEARISH",
+            "sign": -1,
+            "pct_move": -0.31425174112451604,
+            "normalized_move": -0.575129533678766
+          },
+          "1h": {
+            "state": "BEARISH",
+            "sign": -1,
+            "pct_move": -2.718334297281655,
+            "normalized_move": -1.192028985507244
+          },
+          "4h": {
+            "state": "BEARISH",
+            "sign": -1,
+            "pct_move": -4.563508146226802,
+            "normalized_move": -1.779768177028452
+          },
+          "1d": {
+            "state": "NEUTRAL",
+            "sign": 0,
+            "pct_move": -0.38205169891073476,
+            "normalized_move": -0.07275541795665515
+          }
+        },
+        "execution": {
+          "entry_zone_low": 1.2019973392592305,
+          "entry_zone_high": 1.2089584929966963,
+          "stop_loss": 1.2241961543473157,
+          "tp1": 1.1774005587989351,
+          "tp2": 1.1586823205795826,
+          "rr_tp1": 1.5,
+          "rr_tp2": 2.5,
+          "action": "SELL ON BOUNCE",
+          "extension_atr": 1.9167573642889446
+        },
+        "joat": {
+          "display": "✅ CONFIRM",
+          "state": "CONFIRM",
+          "trend": "BEARISH",
+          "strength_pct": 80.0,
+          "strength_status": "STRONG",
+          "mtf_alignment_pct": -100.0
+        },
+        "sniper_signal": "WAIT",
+        "sniper_confirmation": "NEUTRAL"
+      },
+      {
         "rank": 58,
         "id": "world-liberty-financial",
         "name": "World Liberty Financial",
@@ -3403,63 +3457,6 @@
         },
         "sniper_signal": "WAIT",
         "sniper_confirmation": "NEUTRAL"
-      },
-      {
-        "rank": 140,
-        "id": "sun-token",
-        "name": "Sun Token",
-        "ticker": "SUN",
-        "selected_exchange": "BITGET",
-        "selected_instrument": "SUNUSDT",
-        "signal": "SELL",
-        "score": 75.0,
-        "timeframe_states": {
-          "15m": {
-            "state": "BULLISH",
-            "sign": 1,
-            "pct_move": 0.02954209748893266,
-            "normalized_move": 0.31250000000007677
-          },
-          "1h": {
-            "state": "BEARISH",
-            "sign": -1,
-            "pct_move": -1.162111656155107,
-            "normalized_move": -1.7981927710843544
-          },
-          "4h": {
-            "state": "BEARISH",
-            "sign": -1,
-            "pct_move": -0.901692136541965,
-            "normalized_move": -0.9428571428571629
-          },
-          "1d": {
-            "state": "NEUTRAL",
-            "sign": 0,
-            "pct_move": 0.41644671241714004,
-            "normalized_move": 0.2526690391459009
-          }
-        },
-        "execution": {
-          "entry_zone_low": 0.017031324450557606,
-          "entry_zone_high": 0.01706280300618335,
-          "stop_loss": 0.017130830024766848,
-          "tp1": 0.01692141428377592,
-          "tp2": 0.016837647987379547,
-          "rr_tp1": 1.5,
-          "rr_tp2": 2.5,
-          "action": "SELL ON BOUNCE",
-          "extension_atr": 1.838839408988734
-        },
-        "joat": {
-          "display": "✅ CONFIRM",
-          "state": "CONFIRM",
-          "trend": "BEARISH",
-          "strength_pct": 100.0,
-          "strength_status": "STRONG",
-          "mtf_alignment_pct": -100.0
-        },
-        "sniper_signal": "WAIT",
-        "sniper_confirmation": "NEUTRAL"
       }
     ],
     "near_trigger_long": [
@@ -3558,7 +3555,7 @@
         "sniper_confirmation": null
       },
       {
-        "rank": 125,
+        "rank": 126,
         "id": "grass",
         "name": "Grass",
         "ticker": "GRASS",
@@ -3950,19 +3947,19 @@
       "contract_multiplier": 1,
       "fallback_used": false,
       "market": {
-        "price_usd": 84442,
-        "volume_24h_usd": 21976643724,
+        "price_usd": 84420,
+        "volume_24h_usd": 22010754019,
         "change_1h_pct": -0.121,
-        "change_24h_pct": 0.32172,
+        "change_24h_pct": 0.36172,
         "change_7d_pct": 4.7025
       },
       "timeframes": {
         "5m": {
           "status": "PASS",
           "bars": 180,
-          "first_closed_bar_utc": "2026-09-27T01:45:00+00:00",
-          "last_closed_bar_utc": "2026-09-27T16:40:00+00:00",
-          "last_close": 84354.8,
+          "first_closed_bar_utc": "2026-09-27T01:55:00+00:00",
+          "last_closed_bar_utc": "2026-09-27T16:50:00+00:00",
+          "last_close": 84370.3,
           "gaps": 0
         },
         "15m": {
@@ -4167,9 +4164,9 @@
       },
       "score_inputs": {
         "technical_engine_score": 66.0,
-        "volume_24h_usd": 21976643724,
+        "volume_24h_usd": 22010754019,
         "change_1h_pct": -0.121,
-        "change_24h_pct": 0.32172,
+        "change_24h_pct": 0.36172,
         "change_7d_pct": 4.7025,
         "derivatives_oi_funding": null,
         "catalyst_news_risk": null,
@@ -4193,19 +4190,19 @@
       "contract_multiplier": 1,
       "fallback_used": false,
       "market": {
-        "price_usd": 2686.14,
-        "volume_24h_usd": 8197122415,
+        "price_usd": 2686.52,
+        "volume_24h_usd": 8219134658,
         "change_1h_pct": 0.1103,
-        "change_24h_pct": -0.25528,
+        "change_24h_pct": -0.15709,
         "change_7d_pct": 4.0995
       },
       "timeframes": {
         "5m": {
           "status": "PASS",
           "bars": 180,
-          "first_closed_bar_utc": "2026-09-27T01:45:00+00:00",
-          "last_closed_bar_utc": "2026-09-27T16:40:00+00:00",
-          "last_close": 2684.53,
+          "first_closed_bar_utc": "2026-09-27T01:55:00+00:00",
+          "last_closed_bar_utc": "2026-09-27T16:50:00+00:00",
+          "last_close": 2685.36,
           "gaps": 0
         },
         "15m": {
@@ -4410,9 +4407,9 @@
       },
       "score_inputs": {
         "technical_engine_score": 66.0,
-        "volume_24h_usd": 8197122415,
+        "volume_24h_usd": 8219134658,
         "change_1h_pct": 0.1103,
-        "change_24h_pct": -0.25528,
+        "change_24h_pct": -0.15709,
         "change_7d_pct": 4.0995,
         "derivatives_oi_funding": null,
         "catalyst_news_risk": null,
@@ -4436,19 +4433,19 @@
       "contract_multiplier": 1,
       "fallback_used": false,
       "market": {
-        "price_usd": 775.07,
-        "volume_24h_usd": 736339058,
+        "price_usd": 775.27,
+        "volume_24h_usd": 736742611,
         "change_1h_pct": -0.2829,
-        "change_24h_pct": 0.13353,
+        "change_24h_pct": 0.18202,
         "change_7d_pct": 2.8669
       },
       "timeframes": {
         "5m": {
           "status": "PASS",
           "bars": 180,
-          "first_closed_bar_utc": "2026-09-27T01:45:00+00:00",
-          "last_closed_bar_utc": "2026-09-27T16:40:00+00:00",
-          "last_close": 774.5,
+          "first_closed_bar_utc": "2026-09-27T01:55:00+00:00",
+          "last_closed_bar_utc": "2026-09-27T16:50:00+00:00",
+          "last_close": 775.0,
           "gaps": 0
         },
         "15m": {
@@ -4653,9 +4650,9 @@
       },
       "score_inputs": {
         "technical_engine_score": 64.5,
-        "volume_24h_usd": 736339058,
+        "volume_24h_usd": 736742611,
         "change_1h_pct": -0.2829,
-        "change_24h_pct": 0.13353,
+        "change_24h_pct": 0.18202,
         "change_7d_pct": 2.8669,
         "derivatives_oi_funding": null,
         "catalyst_news_risk": null,
@@ -4680,18 +4677,18 @@
       "fallback_used": false,
       "market": {
         "price_usd": 1.52,
-        "volume_24h_usd": 2622048355,
+        "volume_24h_usd": 2578432605,
         "change_1h_pct": -0.0423,
-        "change_24h_pct": -1.96477,
+        "change_24h_pct": -1.82334,
         "change_7d_pct": 9.9741
       },
       "timeframes": {
         "5m": {
           "status": "PASS",
           "bars": 180,
-          "first_closed_bar_utc": "2026-09-27T01:45:00+00:00",
-          "last_closed_bar_utc": "2026-09-27T16:40:00+00:00",
-          "last_close": 1.5156,
+          "first_closed_bar_utc": "2026-09-27T01:55:00+00:00",
+          "last_closed_bar_utc": "2026-09-27T16:50:00+00:00",
+          "last_close": 1.5159,
           "gaps": 0
         },
         "15m": {
@@ -4896,9 +4893,9 @@
       },
       "score_inputs": {
         "technical_engine_score": 66.5,
-        "volume_24h_usd": 2622048355,
+        "volume_24h_usd": 2578432605,
         "change_1h_pct": -0.0423,
-        "change_24h_pct": -1.96477,
+        "change_24h_pct": -1.82334,
         "change_7d_pct": 9.9741,
         "derivatives_oi_funding": null,
         "catalyst_news_risk": null,
@@ -4922,19 +4919,19 @@
       "contract_multiplier": 1,
       "fallback_used": false,
       "market": {
-        "price_usd": 121.85,
-        "volume_24h_usd": 3696317159,
+        "price_usd": 121.8,
+        "volume_24h_usd": 3700571932,
         "change_1h_pct": 0.0754,
-        "change_24h_pct": 0.24341,
+        "change_24h_pct": 0.21108,
         "change_7d_pct": 12.6533
       },
       "timeframes": {
         "5m": {
           "status": "PASS",
           "bars": 180,
-          "first_closed_bar_utc": "2026-09-27T01:45:00+00:00",
-          "last_closed_bar_utc": "2026-09-27T16:40:00+00:00",
-          "last_close": 121.76,
+          "first_closed_bar_utc": "2026-09-27T01:55:00+00:00",
+          "last_closed_bar_utc": "2026-09-27T16:50:00+00:00",
+          "last_close": 121.68,
           "gaps": 0
         },
         "15m": {
@@ -5139,9 +5136,9 @@
       },
       "score_inputs": {
         "technical_engine_score": 54.5,
-        "volume_24h_usd": 3696317159,
+        "volume_24h_usd": 3700571932,
         "change_1h_pct": 0.0754,
-        "change_24h_pct": 0.24341,
+        "change_24h_pct": 0.21108,
         "change_7d_pct": 12.6533,
         "derivatives_oi_funding": null,
         "catalyst_news_risk": null,
@@ -5165,19 +5162,19 @@
       "contract_multiplier": 1,
       "fallback_used": false,
       "market": {
-        "price_usd": 0.333656,
-        "volume_24h_usd": 343143211,
+        "price_usd": 0.333582,
+        "volume_24h_usd": 341679336,
         "change_1h_pct": 0.0144,
-        "change_24h_pct": -0.82573,
+        "change_24h_pct": -0.83861,
         "change_7d_pct": -3.1572
       },
       "timeframes": {
         "5m": {
           "status": "PASS",
           "bars": 180,
-          "first_closed_bar_utc": "2026-09-27T01:45:00+00:00",
-          "last_closed_bar_utc": "2026-09-27T16:40:00+00:00",
-          "last_close": 0.3334,
+          "first_closed_bar_utc": "2026-09-27T01:55:00+00:00",
+          "last_closed_bar_utc": "2026-09-27T16:50:00+00:00",
+          "last_close": 0.33328,
           "gaps": 0
         },
         "15m": {
@@ -5382,9 +5379,9 @@
       },
       "score_inputs": {
         "technical_engine_score": 54.0,
-        "volume_24h_usd": 343143211,
+        "volume_24h_usd": 341679336,
         "change_1h_pct": 0.0144,
-        "change_24h_pct": -0.82573,
+        "change_24h_pct": -0.83861,
         "change_7d_pct": -3.1572,
         "derivatives_oi_funding": null,
         "catalyst_news_risk": null,
@@ -5408,19 +5405,19 @@
       "contract_multiplier": 1,
       "fallback_used": false,
       "market": {
-        "price_usd": 1579.96,
-        "volume_24h_usd": 1499035226,
+        "price_usd": 1582.42,
+        "volume_24h_usd": 1498046684,
         "change_1h_pct": -1.4105,
-        "change_24h_pct": 1.13336,
+        "change_24h_pct": 0.9532,
         "change_7d_pct": 10.2752
       },
       "timeframes": {
         "5m": {
           "status": "PASS",
           "bars": 180,
-          "first_closed_bar_utc": "2026-09-27T01:45:00+00:00",
-          "last_closed_bar_utc": "2026-09-27T16:40:00+00:00",
-          "last_close": 1578.99,
+          "first_closed_bar_utc": "2026-09-27T01:55:00+00:00",
+          "last_closed_bar_utc": "2026-09-27T16:50:00+00:00",
+          "last_close": 1580.3,
           "gaps": 0
         },
         "15m": {
@@ -5625,9 +5622,9 @@
       },
       "score_inputs": {
         "technical_engine_score": 54.5,
-        "volume_24h_usd": 1499035226,
+        "volume_24h_usd": 1498046684,
         "change_1h_pct": -1.4105,
-        "change_24h_pct": 1.13336,
+        "change_24h_pct": 0.9532,
         "change_7d_pct": 10.2752,
         "derivatives_oi_funding": null,
         "catalyst_news_risk": null,
@@ -5651,19 +5648,19 @@
       "contract_multiplier": 1,
       "fallback_used": false,
       "market": {
-        "price_usd": 91.17,
-        "volume_24h_usd": 675495628,
+        "price_usd": 91.13,
+        "volume_24h_usd": 678112971,
         "change_1h_pct": 0.0671,
-        "change_24h_pct": -1.54287,
+        "change_24h_pct": -1.53214,
         "change_7d_pct": 0.4567
       },
       "timeframes": {
         "5m": {
           "status": "PASS",
           "bars": 180,
-          "first_closed_bar_utc": "2026-09-27T01:45:00+00:00",
-          "last_closed_bar_utc": "2026-09-27T16:40:00+00:00",
-          "last_close": 91.09,
+          "first_closed_bar_utc": "2026-09-27T01:55:00+00:00",
+          "last_closed_bar_utc": "2026-09-27T16:50:00+00:00",
+          "last_close": 91.096,
           "gaps": 0
         },
         "15m": {
@@ -5889,9 +5886,9 @@
       },
       "score_inputs": {
         "technical_engine_score": 89.0,
-        "volume_24h_usd": 675495628,
+        "volume_24h_usd": 678112971,
         "change_1h_pct": 0.0671,
-        "change_24h_pct": -1.54287,
+        "change_24h_pct": -1.53214,
         "change_7d_pct": 0.4567,
         "derivatives_oi_funding": null,
         "catalyst_news_risk": null,
@@ -5915,19 +5912,19 @@
       "contract_multiplier": 1,
       "fallback_used": false,
       "market": {
-        "price_usd": 0.09683,
-        "volume_24h_usd": 766078298,
+        "price_usd": 0.096706,
+        "volume_24h_usd": 762636104,
         "change_1h_pct": 0.2295,
-        "change_24h_pct": -1.53657,
+        "change_24h_pct": -1.64692,
         "change_7d_pct": 13.9202
       },
       "timeframes": {
         "5m": {
           "status": "PASS",
           "bars": 180,
-          "first_closed_bar_utc": "2026-09-27T01:45:00+00:00",
-          "last_closed_bar_utc": "2026-09-27T16:40:00+00:00",
-          "last_close": 0.09672,
+          "first_closed_bar_utc": "2026-09-27T01:55:00+00:00",
+          "last_closed_bar_utc": "2026-09-27T16:50:00+00:00",
+          "last_close": 0.09662,
           "gaps": 0
         },
         "15m": {
@@ -6132,9 +6129,9 @@
       },
       "score_inputs": {
         "technical_engine_score": 60.0,
-        "volume_24h_usd": 766078298,
+        "volume_24h_usd": 762636104,
         "change_1h_pct": 0.2295,
-        "change_24h_pct": -1.53657,
+        "change_24h_pct": -1.64692,
         "change_7d_pct": 13.9202,
         "derivatives_oi_funding": null,
         "catalyst_news_risk": null,
@@ -6158,19 +6155,19 @@
       "contract_multiplier": 1,
       "fallback_used": false,
       "market": {
-        "price_usd": 14.11,
-        "volume_24h_usd": 429017713,
+        "price_usd": 14.1,
+        "volume_24h_usd": 429283107,
         "change_1h_pct": 0.5923,
-        "change_24h_pct": -1.43941,
+        "change_24h_pct": -1.53537,
         "change_7d_pct": 16.2162
       },
       "timeframes": {
         "5m": {
           "status": "PASS",
           "bars": 180,
-          "first_closed_bar_utc": "2026-09-27T01:45:00+00:00",
-          "last_closed_bar_utc": "2026-09-27T16:40:00+00:00",
-          "last_close": 14.096,
+          "first_closed_bar_utc": "2026-09-27T01:55:00+00:00",
+          "last_closed_bar_utc": "2026-09-27T16:50:00+00:00",
+          "last_close": 14.089,
           "gaps": 0
         },
         "15m": {
@@ -6375,9 +6372,9 @@
       },
       "score_inputs": {
         "technical_engine_score": 56.5,
-        "volume_24h_usd": 429017713,
+        "volume_24h_usd": 429283107,
         "change_1h_pct": 0.5923,
-        "change_24h_pct": -1.43941,
+        "change_24h_pct": -1.53537,
         "change_7d_pct": 16.2162,
         "derivatives_oi_funding": null,
         "catalyst_news_risk": null,
@@ -6401,19 +6398,19 @@
       "contract_multiplier": 1,
       "fallback_used": false,
       "market": {
-        "price_usd": 547.55,
-        "volume_24h_usd": 104257286,
+        "price_usd": 544.09,
+        "volume_24h_usd": 103652550,
         "change_1h_pct": -0.6768,
-        "change_24h_pct": -1.33948,
+        "change_24h_pct": -2.03192,
         "change_7d_pct": 0.2566
       },
       "timeframes": {
         "5m": {
           "status": "PASS",
           "bars": 180,
-          "first_closed_bar_utc": "2026-09-27T01:45:00+00:00",
-          "last_closed_bar_utc": "2026-09-27T16:40:00+00:00",
-          "last_close": 545.9,
+          "first_closed_bar_utc": "2026-09-27T01:55:00+00:00",
+          "last_closed_bar_utc": "2026-09-27T16:50:00+00:00",
+          "last_close": 544.13,
           "gaps": 0
         },
         "15m": {
@@ -6618,9 +6615,9 @@
       },
       "score_inputs": {
         "technical_engine_score": 72.0,
-        "volume_24h_usd": 104257286,
+        "volume_24h_usd": 103652550,
         "change_1h_pct": -0.6768,
-        "change_24h_pct": -1.33948,
+        "change_24h_pct": -2.03192,
         "change_7d_pct": 0.2566,
         "derivatives_oi_funding": null,
         "catalyst_news_risk": null,
@@ -6644,19 +6641,19 @@
       "contract_multiplier": 1,
       "fallback_used": false,
       "market": {
-        "price_usd": 0.254328,
-        "volume_24h_usd": 418158555,
+        "price_usd": 0.253908,
+        "volume_24h_usd": 418764134,
         "change_1h_pct": 0.2883,
-        "change_24h_pct": -1.67389,
+        "change_24h_pct": -1.67179,
         "change_7d_pct": 14.9149
       },
       "timeframes": {
         "5m": {
           "status": "PASS",
           "bars": 180,
-          "first_closed_bar_utc": "2026-09-27T01:45:00+00:00",
-          "last_closed_bar_utc": "2026-09-27T16:40:00+00:00",
-          "last_close": 0.2537,
+          "first_closed_bar_utc": "2026-09-27T01:55:00+00:00",
+          "last_closed_bar_utc": "2026-09-27T16:50:00+00:00",
+          "last_close": 0.2534,
           "gaps": 0
         },
         "15m": {
@@ -6861,9 +6858,9 @@
       },
       "score_inputs": {
         "technical_engine_score": 62.5,
-        "volume_24h_usd": 418158555,
+        "volume_24h_usd": 418764134,
         "change_1h_pct": 0.2883,
-        "change_24h_pct": -1.67389,
+        "change_24h_pct": -1.67179,
         "change_7d_pct": 14.9149,
         "derivatives_oi_funding": null,
         "catalyst_news_risk": null,
@@ -6887,19 +6884,19 @@
       "contract_multiplier": 1,
       "fallback_used": false,
       "market": {
-        "price_usd": 0.215563,
-        "volume_24h_usd": 183774110,
+        "price_usd": 0.215571,
+        "volume_24h_usd": 185298982,
         "change_1h_pct": 0.2429,
-        "change_24h_pct": -2.11317,
+        "change_24h_pct": -1.92035,
         "change_7d_pct": 12.1511
       },
       "timeframes": {
         "5m": {
           "status": "PASS",
           "bars": 180,
-          "first_closed_bar_utc": "2026-09-27T01:45:00+00:00",
-          "last_closed_bar_utc": "2026-09-27T16:40:00+00:00",
-          "last_close": 0.21493,
+          "first_closed_bar_utc": "2026-09-27T01:55:00+00:00",
+          "last_closed_bar_utc": "2026-09-27T16:50:00+00:00",
+          "last_close": 0.21517,
           "gaps": 0
         },
         "15m": {
@@ -7104,9 +7101,9 @@
       },
       "score_inputs": {
         "technical_engine_score": 61.5,
-        "volume_24h_usd": 183774110,
+        "volume_24h_usd": 185298982,
         "change_1h_pct": 0.2429,
-        "change_24h_pct": -2.11317,
+        "change_24h_pct": -1.92035,
         "change_7d_pct": 12.1511,
         "derivatives_oi_funding": null,
         "catalyst_news_risk": null,
@@ -7130,19 +7127,19 @@
       "contract_multiplier": 1,
       "fallback_used": false,
       "market": {
-        "price_usd": 5.19,
-        "volume_24h_usd": 1246686841,
+        "price_usd": 5.15,
+        "volume_24h_usd": 1228203683,
         "change_1h_pct": -0.6899,
-        "change_24h_pct": 7.67752,
+        "change_24h_pct": 7.13058,
         "change_7d_pct": 41.226
       },
       "timeframes": {
         "5m": {
           "status": "PASS",
           "bars": 180,
-          "first_closed_bar_utc": "2026-09-27T01:45:00+00:00",
-          "last_closed_bar_utc": "2026-09-27T16:40:00+00:00",
-          "last_close": 5.171,
+          "first_closed_bar_utc": "2026-09-27T01:55:00+00:00",
+          "last_closed_bar_utc": "2026-09-27T16:50:00+00:00",
+          "last_close": 5.155,
           "gaps": 0
         },
         "15m": {
@@ -7347,9 +7344,9 @@
       },
       "score_inputs": {
         "technical_engine_score": 63.5,
-        "volume_24h_usd": 1246686841,
+        "volume_24h_usd": 1228203683,
         "change_1h_pct": -0.6899,
-        "change_24h_pct": 7.67752,
+        "change_24h_pct": 7.13058,
         "change_7d_pct": 41.226,
         "derivatives_oi_funding": null,
         "catalyst_news_risk": null,
@@ -7373,19 +7370,19 @@
       "contract_multiplier": 1,
       "fallback_used": false,
       "market": {
-        "price_usd": 333.99,
-        "volume_24h_usd": 267026660,
+        "price_usd": 334.37,
+        "volume_24h_usd": 273129620,
         "change_1h_pct": -0.4318,
-        "change_24h_pct": -0.95126,
+        "change_24h_pct": -0.83947,
         "change_7d_pct": 34.9648
       },
       "timeframes": {
         "5m": {
           "status": "PASS",
           "bars": 180,
-          "first_closed_bar_utc": "2026-09-27T01:45:00+00:00",
-          "last_closed_bar_utc": "2026-09-27T16:40:00+00:00",
-          "last_close": 333.8,
+          "first_closed_bar_utc": "2026-09-27T01:55:00+00:00",
+          "last_closed_bar_utc": "2026-09-27T16:50:00+00:00",
+          "last_close": 333.6,
           "gaps": 0
         },
         "15m": {
@@ -7660,9 +7657,9 @@
       },
       "score_inputs": {
         "technical_engine_score": 64.0,
-        "volume_24h_usd": 267026660,
+        "volume_24h_usd": 273129620,
         "change_1h_pct": -0.4318,
-        "change_24h_pct": -0.95126,
+        "change_24h_pct": -0.83947,
         "change_7d_pct": 34.9648,
         "derivatives_oi_funding": null,
         "catalyst_news_risk": null,
@@ -7686,19 +7683,19 @@
       "contract_multiplier": 1,
       "fallback_used": false,
       "market": {
-        "price_usd": 9.65,
-        "volume_24h_usd": 705536001,
+        "price_usd": 9.67,
+        "volume_24h_usd": 707703991,
         "change_1h_pct": -0.7319,
-        "change_24h_pct": 0.17336,
+        "change_24h_pct": 0.45309,
         "change_7d_pct": 11.7339
       },
       "timeframes": {
         "5m": {
           "status": "PASS",
           "bars": 180,
-          "first_closed_bar_utc": "2026-09-27T01:45:00+00:00",
-          "last_closed_bar_utc": "2026-09-27T16:40:00+00:00",
-          "last_close": 9.639,
+          "first_closed_bar_utc": "2026-09-27T01:55:00+00:00",
+          "last_closed_bar_utc": "2026-09-27T16:50:00+00:00",
+          "last_close": 9.66,
           "gaps": 0
         },
         "15m": {
@@ -7903,9 +7900,9 @@
       },
       "score_inputs": {
         "technical_engine_score": 51.5,
-        "volume_24h_usd": 705536001,
+        "volume_24h_usd": 707703991,
         "change_1h_pct": -0.7319,
-        "change_24h_pct": 0.17336,
+        "change_24h_pct": 0.45309,
         "change_7d_pct": 11.7339,
         "derivatives_oi_funding": null,
         "catalyst_news_risk": null,
@@ -7929,19 +7926,19 @@
       "contract_multiplier": 1,
       "fallback_used": false,
       "market": {
-        "price_usd": 71.22,
-        "volume_24h_usd": 380122891,
+        "price_usd": 71.15,
+        "volume_24h_usd": 370134895,
         "change_1h_pct": 0.7484,
-        "change_24h_pct": -2.37832,
+        "change_24h_pct": -2.23519,
         "change_7d_pct": 24.8956
       },
       "timeframes": {
         "5m": {
           "status": "PASS",
           "bars": 180,
-          "first_closed_bar_utc": "2026-09-27T01:45:00+00:00",
-          "last_closed_bar_utc": "2026-09-27T16:40:00+00:00",
-          "last_close": 71.04,
+          "first_closed_bar_utc": "2026-09-27T01:55:00+00:00",
+          "last_closed_bar_utc": "2026-09-27T16:50:00+00:00",
+          "last_close": 71.19,
           "gaps": 0
         },
         "15m": {
@@ -8146,9 +8143,9 @@
       },
       "score_inputs": {
         "technical_engine_score": 54.5,
-        "volume_24h_usd": 380122891,
+        "volume_24h_usd": 370134895,
         "change_1h_pct": 0.7484,
-        "change_24h_pct": -2.37832,
+        "change_24h_pct": -2.23519,
         "change_7d_pct": 24.8956,
         "derivatives_oi_funding": null,
         "catalyst_news_risk": null,
@@ -8172,19 +8169,19 @@
       "contract_multiplier": 1,
       "fallback_used": false,
       "market": {
-        "price_usd": 0.13346,
-        "volume_24h_usd": 22587384,
+        "price_usd": 0.1338,
+        "volume_24h_usd": 24164846,
         "change_1h_pct": 0.9479,
-        "change_24h_pct": -4.46132,
+        "change_24h_pct": -3.98955,
         "change_7d_pct": 26.6393
       },
       "timeframes": {
         "5m": {
           "status": "PASS",
           "bars": 180,
-          "first_closed_bar_utc": "2026-09-27T01:45:00+00:00",
-          "last_closed_bar_utc": "2026-09-27T16:40:00+00:00",
-          "last_close": 0.1336,
+          "first_closed_bar_utc": "2026-09-27T01:55:00+00:00",
+          "last_closed_bar_utc": "2026-09-27T16:50:00+00:00",
+          "last_close": 0.13377,
           "gaps": 0
         },
         "15m": {
@@ -8389,9 +8386,9 @@
       },
       "score_inputs": {
         "technical_engine_score": 70.5,
-        "volume_24h_usd": 22587384,
+        "volume_24h_usd": 24164846,
         "change_1h_pct": 0.9479,
-        "change_24h_pct": -4.46132,
+        "change_24h_pct": -3.98955,
         "change_7d_pct": 26.6393,
         "derivatives_oi_funding": null,
         "catalyst_news_risk": null,
@@ -8416,18 +8413,18 @@
       "fallback_used": false,
       "market": {
         "price_usd": 1.24,
-        "volume_24h_usd": 1079147778,
+        "volume_24h_usd": 1081452463,
         "change_1h_pct": -0.4238,
-        "change_24h_pct": 5.2645,
+        "change_24h_pct": 4.92785,
         "change_7d_pct": 50.4511
       },
       "timeframes": {
         "5m": {
           "status": "PASS",
           "bars": 180,
-          "first_closed_bar_utc": "2026-09-27T01:45:00+00:00",
-          "last_closed_bar_utc": "2026-09-27T16:40:00+00:00",
-          "last_close": 1.2431,
+          "first_closed_bar_utc": "2026-09-27T01:55:00+00:00",
+          "last_closed_bar_utc": "2026-09-27T16:50:00+00:00",
+          "last_close": 1.2389,
           "gaps": 0
         },
         "15m": {
@@ -8632,9 +8629,9 @@
       },
       "score_inputs": {
         "technical_engine_score": 73.0,
-        "volume_24h_usd": 1079147778,
+        "volume_24h_usd": 1081452463,
         "change_1h_pct": -0.4238,
-        "change_24h_pct": 5.2645,
+        "change_24h_pct": 4.92785,
         "change_7d_pct": 50.4511,
         "derivatives_oi_funding": null,
         "catalyst_news_risk": null,
@@ -8658,19 +8655,19 @@
       "contract_multiplier": 1,
       "fallback_used": false,
       "market": {
-        "price_usd": 10.93,
-        "volume_24h_usd": 552028563,
+        "price_usd": 10.94,
+        "volume_24h_usd": 546542646,
         "change_1h_pct": 0.8456,
-        "change_24h_pct": -0.89768,
+        "change_24h_pct": -0.61927,
         "change_7d_pct": 1.8061
       },
       "timeframes": {
         "5m": {
           "status": "PASS",
           "bars": 180,
-          "first_closed_bar_utc": "2026-09-27T01:45:00+00:00",
-          "last_closed_bar_utc": "2026-09-27T16:40:00+00:00",
-          "last_close": 10.904,
+          "first_closed_bar_utc": "2026-09-27T01:55:00+00:00",
+          "last_closed_bar_utc": "2026-09-27T16:50:00+00:00",
+          "last_close": 10.92,
           "gaps": 0
         },
         "15m": {
@@ -8896,9 +8893,9 @@
       },
       "score_inputs": {
         "technical_engine_score": 79.0,
-        "volume_24h_usd": 552028563,
+        "volume_24h_usd": 546542646,
         "change_1h_pct": 0.8456,
-        "change_24h_pct": -0.89768,
+        "change_24h_pct": -0.61927,
         "change_7d_pct": 1.8061,
         "derivatives_oi_funding": null,
         "catalyst_news_risk": null,
@@ -8922,19 +8919,19 @@
       "contract_multiplier": 1,
       "fallback_used": true,
       "market": {
-        "price_usd": 1.69,
-        "volume_24h_usd": 184057700,
+        "price_usd": 1.72,
+        "volume_24h_usd": 187361413,
         "change_1h_pct": 4.1809,
-        "change_24h_pct": 12.52772,
+        "change_24h_pct": 12.83995,
         "change_7d_pct": 20.5182
       },
       "timeframes": {
         "5m": {
           "status": "PASS",
           "bars": 180,
-          "first_closed_bar_utc": "2026-09-27T01:45:00+00:00",
-          "last_closed_bar_utc": "2026-09-27T16:40:00+00:00",
-          "last_close": 1.6937,
+          "first_closed_bar_utc": "2026-09-27T01:55:00+00:00",
+          "last_closed_bar_utc": "2026-09-27T16:50:00+00:00",
+          "last_close": 1.7048,
           "gaps": 0
         },
         "15m": {
@@ -9160,9 +9157,9 @@
       },
       "score_inputs": {
         "technical_engine_score": 87.0,
-        "volume_24h_usd": 184057700,
+        "volume_24h_usd": 187361413,
         "change_1h_pct": 4.1809,
-        "change_24h_pct": 12.52772,
+        "change_24h_pct": 12.83995,
         "change_7d_pct": 20.5182,
         "derivatives_oi_funding": null,
         "catalyst_news_risk": null,
@@ -9186,19 +9183,19 @@
       "contract_multiplier": 1,
       "fallback_used": false,
       "market": {
-        "price_usd": 0.093478,
-        "volume_24h_usd": 93109449,
+        "price_usd": 0.093428,
+        "volume_24h_usd": 93371396,
         "change_1h_pct": -0.0924,
-        "change_24h_pct": -1.7467,
+        "change_24h_pct": -1.85137,
         "change_7d_pct": 6.6858
       },
       "timeframes": {
         "5m": {
           "status": "PASS",
           "bars": 180,
-          "first_closed_bar_utc": "2026-09-27T01:45:00+00:00",
-          "last_closed_bar_utc": "2026-09-27T16:40:00+00:00",
-          "last_close": 0.09328,
+          "first_closed_bar_utc": "2026-09-27T01:55:00+00:00",
+          "last_closed_bar_utc": "2026-09-27T16:50:00+00:00",
+          "last_close": 0.09333,
           "gaps": 0
         },
         "15m": {
@@ -9403,9 +9400,9 @@
       },
       "score_inputs": {
         "technical_engine_score": 49.5,
-        "volume_24h_usd": 93109449,
+        "volume_24h_usd": 93371396,
         "change_1h_pct": -0.0924,
-        "change_24h_pct": -1.7467,
+        "change_24h_pct": -1.85137,
         "change_7d_pct": 6.6858,
         "derivatives_oi_funding": null,
         "catalyst_news_risk": null,
@@ -9429,19 +9426,19 @@
       "contract_multiplier": 1,
       "fallback_used": false,
       "market": {
-        "price_usd": 323.97,
-        "volume_24h_usd": 288551232,
+        "price_usd": 323.49,
+        "volume_24h_usd": 288158038,
         "change_1h_pct": -0.6824,
-        "change_24h_pct": -3.09486,
+        "change_24h_pct": -3.1391,
         "change_7d_pct": 27.8924
       },
       "timeframes": {
         "5m": {
           "status": "PASS",
           "bars": 180,
-          "first_closed_bar_utc": "2026-09-27T01:45:00+00:00",
-          "last_closed_bar_utc": "2026-09-27T16:40:00+00:00",
-          "last_close": 323.3,
+          "first_closed_bar_utc": "2026-09-27T01:55:00+00:00",
+          "last_closed_bar_utc": "2026-09-27T16:50:00+00:00",
+          "last_close": 323.0,
           "gaps": 0
         },
         "15m": {
@@ -9646,9 +9643,9 @@
       },
       "score_inputs": {
         "technical_engine_score": 54.0,
-        "volume_24h_usd": 288551232,
+        "volume_24h_usd": 288158038,
         "change_1h_pct": -0.6824,
-        "change_24h_pct": -3.09486,
+        "change_24h_pct": -3.1391,
         "change_7d_pct": 27.8924,
         "derivatives_oi_funding": null,
         "catalyst_news_risk": null,
@@ -9673,18 +9670,18 @@
       "fallback_used": false,
       "market": {
         "price_usd": 5.9e-06,
-        "volume_24h_usd": 86741419,
+        "volume_24h_usd": 86504791,
         "change_1h_pct": 0.2484,
-        "change_24h_pct": -2.32078,
+        "change_24h_pct": -2.55097,
         "change_7d_pct": 10.468
       },
       "timeframes": {
         "5m": {
           "status": "PASS",
           "bars": 180,
-          "first_closed_bar_utc": "2026-09-27T01:45:00+00:00",
-          "last_closed_bar_utc": "2026-09-27T16:40:00+00:00",
-          "last_close": 5.893e-06,
+          "first_closed_bar_utc": "2026-09-27T01:55:00+00:00",
+          "last_closed_bar_utc": "2026-09-27T16:50:00+00:00",
+          "last_close": 5.891e-06,
           "gaps": 0
         },
         "15m": {
@@ -9959,9 +9956,9 @@
       },
       "score_inputs": {
         "technical_engine_score": 53.5,
-        "volume_24h_usd": 86741419,
+        "volume_24h_usd": 86504791,
         "change_1h_pct": 0.2484,
-        "change_24h_pct": -2.32078,
+        "change_24h_pct": -2.55097,
         "change_7d_pct": 10.468,
         "derivatives_oi_funding": null,
         "catalyst_news_risk": null,
@@ -9985,19 +9982,19 @@
       "contract_multiplier": 1,
       "fallback_used": false,
       "market": {
-        "price_usd": 0.067177,
-        "volume_24h_usd": 12935258,
+        "price_usd": 0.067265,
+        "volume_24h_usd": 14421884,
         "change_1h_pct": -0.1761,
-        "change_24h_pct": 1.51671,
+        "change_24h_pct": 1.97947,
         "change_7d_pct": 14.7781
       },
       "timeframes": {
         "5m": {
           "status": "PASS",
           "bars": 180,
-          "first_closed_bar_utc": "2026-09-27T01:45:00+00:00",
-          "last_closed_bar_utc": "2026-09-27T16:40:00+00:00",
-          "last_close": 0.06716,
+          "first_closed_bar_utc": "2026-09-27T01:55:00+00:00",
+          "last_closed_bar_utc": "2026-09-27T16:50:00+00:00",
+          "last_close": 0.06714,
           "gaps": 0
         },
         "15m": {
@@ -10202,9 +10199,9 @@
       },
       "score_inputs": {
         "technical_engine_score": 55.0,
-        "volume_24h_usd": 12935258,
+        "volume_24h_usd": 14421884,
         "change_1h_pct": -0.1761,
-        "change_24h_pct": 1.51671,
+        "change_24h_pct": 1.97947,
         "change_7d_pct": 14.7781,
         "derivatives_oi_funding": null,
         "catalyst_news_risk": null,
@@ -10228,19 +10225,19 @@
       "contract_multiplier": 1,
       "fallback_used": false,
       "market": {
-        "price_usd": 0.274223,
-        "volume_24h_usd": 416902046,
+        "price_usd": 0.273727,
+        "volume_24h_usd": 397324408,
         "change_1h_pct": 1.8982,
-        "change_24h_pct": 0.29984,
+        "change_24h_pct": 0.47543,
         "change_7d_pct": 37.6533
       },
       "timeframes": {
         "5m": {
           "status": "PASS",
           "bars": 180,
-          "first_closed_bar_utc": "2026-09-27T01:45:00+00:00",
-          "last_closed_bar_utc": "2026-09-27T16:40:00+00:00",
-          "last_close": 0.27379,
+          "first_closed_bar_utc": "2026-09-27T01:55:00+00:00",
+          "last_closed_bar_utc": "2026-09-27T16:50:00+00:00",
+          "last_close": 0.27444,
           "gaps": 0
         },
         "15m": {
@@ -10445,9 +10442,9 @@
       },
       "score_inputs": {
         "technical_engine_score": 76.0,
-        "volume_24h_usd": 416902046,
+        "volume_24h_usd": 397324408,
         "change_1h_pct": 1.8982,
-        "change_24h_pct": 0.29984,
+        "change_24h_pct": 0.47543,
         "change_7d_pct": 37.6533,
         "derivatives_oi_funding": null,
         "catalyst_news_risk": null,
@@ -10463,6 +10460,270 @@
     },
     {
       "rank": 40,
+      "id": "memecore",
+      "name": "MemeCore",
+      "ticker": "M",
+      "exchange": "BITGET",
+      "instrument": "MUSDT",
+      "contract_multiplier": 1,
+      "fallback_used": false,
+      "market": {
+        "price_usd": 1.17,
+        "volume_24h_usd": 1025487,
+        "change_1h_pct": -2.1265,
+        "change_24h_pct": -3.60033,
+        "change_7d_pct": -23.8909
+      },
+      "timeframes": {
+        "5m": {
+          "status": "PASS",
+          "bars": 180,
+          "first_closed_bar_utc": "2026-09-27T01:55:00+00:00",
+          "last_closed_bar_utc": "2026-09-27T16:50:00+00:00",
+          "last_close": 1.172,
+          "gaps": 0
+        },
+        "15m": {
+          "status": "PASS",
+          "bars": 450,
+          "first_closed_bar_utc": "2026-09-23T00:15:00+00:00",
+          "last_closed_bar_utc": "2026-09-27T16:30:00+00:00",
+          "last_close": 1.1737,
+          "gaps": 0
+        },
+        "1h": {
+          "status": "PASS",
+          "bars": 500,
+          "first_closed_bar_utc": "2026-09-06T20:00:00+00:00",
+          "last_closed_bar_utc": "2026-09-27T15:00:00+00:00",
+          "last_close": 1.1774,
+          "gaps": 0
+        },
+        "4h": {
+          "status": "PASS",
+          "bars": 220,
+          "first_closed_bar_utc": "2026-08-22T00:00:00+00:00",
+          "last_closed_bar_utc": "2026-09-27T12:00:00+00:00",
+          "last_close": 1.1774,
+          "gaps": 0
+        },
+        "1d": {
+          "status": "PASS",
+          "bars": 220,
+          "first_closed_bar_utc": "2026-02-19T00:00:00+00:00",
+          "last_closed_bar_utc": "2026-09-26T00:00:00+00:00",
+          "last_close": 1.2255,
+          "gaps": 0
+        }
+      },
+      "timeframe_states": {
+        "1d": "NEUTRAL",
+        "4h": "BEARISH",
+        "1h": "BEARISH",
+        "15m": "BEARISH"
+      },
+      "sniper": {
+        "status": "PASS",
+        "signal": "WAIT",
+        "bias": "STRONG BEAR",
+        "bull_pct": 0.0,
+        "bear_pct": 85.71428571428571,
+        "current_closed_1h_bar_utc": "2026-09-27T15:00:00+00:00",
+        "trade_setup": {
+          "side": "SELL",
+          "entry": 1.2037,
+          "stop_loss": 1.219697815060238,
+          "signal_age_1h_bars": 4
+        },
+        "source_parity_validation": "PENDING_TRADINGVIEW_CROSSCHECK"
+      },
+      "joat": {
+        "status": "PASS",
+        "current_closed_1h_bar_utc": "2026-09-27T15:00:00+00:00",
+        "trend": {
+          "value": "BEARISH",
+          "ribbon_trend": -1,
+          "price_trend": -1,
+          "alignment": "ALIGNED"
+        },
+        "dashboard": {
+          "strength": {
+            "value_pct": 80.0,
+            "status": "STRONG"
+          },
+          "width": {
+            "value_pct": 2.176018515808752,
+            "status": "EXPANDING"
+          },
+          "compression": {
+            "value": "NO",
+            "status": "NORMAL"
+          },
+          "acceleration": {
+            "value": "NONE",
+            "trend_acceleration": 198.98174590529604
+          },
+          "twist": {
+            "count_loaded_history": 2,
+            "value": "NONE",
+            "current_ribbon_cross_count": 0
+          },
+          "volatility": {
+            "value_pct": 38.0,
+            "status": "MEDIUM"
+          },
+          "momentum": {
+            "rsi14": 31.579276617524954,
+            "status": "NEUTRAL"
+          },
+          "volume_ratio": {
+            "value_x": 4.719350835322196,
+            "status": "SURGE"
+          },
+          "expansion": {
+            "value_pct": 40.84901174832992,
+            "status": "RAPID"
+          },
+          "adaptive": {
+            "value_x": 1.5214024112749167,
+            "status": "HIGH"
+          },
+          "mtf": {
+            "value": "ALIGNED",
+            "alignment": -1.0,
+            "alignment_pct": -100.0
+          }
+        },
+        "mtf": {
+          "chart_ribbon_trend_1h": -1,
+          "htf1_15m_ribbon_trend": -1,
+          "htf2_1h_ribbon_trend": -1,
+          "htf3_4h_ribbon_trend": -1,
+          "source_bar_open_utc": {
+            "htf1": "2026-09-27T15:45:00+00:00",
+            "htf2": "2026-09-27T15:00:00+00:00",
+            "htf3": "2026-09-27T12:00:00+00:00"
+          },
+          "alignment": -1.0,
+          "aligned": true
+        },
+        "signals": {
+          "bull_cross": false,
+          "bear_cross": false,
+          "vol_confirmed_bull": false,
+          "vol_confirmed_bear": false,
+          "twist_detected": false,
+          "compression_breakout": false,
+          "is_accelerating": false,
+          "mtf_aligned": true,
+          "is_compressed": false,
+          "momentum_extreme_bull": false,
+          "momentum_extreme_bear": false,
+          "volatility_surge": false,
+          "strong_zone_entry": false
+        },
+        "recent_strong_trigger": {
+          "status": "NONE",
+          "side": null,
+          "trigger_time_utc": null,
+          "age_1h_bars": null,
+          "freshness": null,
+          "display": "⚪ NO RECENT JOAT STRONG TRIGGER",
+          "window_max_age_1h_bars": 4,
+          "strength_pct": null,
+          "strength_status": null,
+          "volume_ratio": null,
+          "mtf_alignment_pct": null,
+          "mtf_aligned": null,
+          "trend": null
+        },
+        "source_parity_validation": "PENDING_TRADINGVIEW_CROSSCHECK"
+      },
+      "trend_4h": {
+        "state": "BEARISH",
+        "strength": "WEAK",
+        "adx14": 12.525564891037867,
+        "ema9": 1.211722387104194,
+        "ema21": 1.229151450196681,
+        "close": 1.1774
+      },
+      "vumanchu_gold_1d": {
+        "status": "PASS",
+        "engine_version": "VMC_CIPHER_B_GOLD_RAW_V1",
+        "timeframe": "1D",
+        "closed_bars_only": true,
+        "plot_offset_bars": -2,
+        "source_parity_validation": "PENDING_TRADINGVIEW_CROSSCHECK",
+        "settings": {
+          "wt_channel_len": 9,
+          "wt_average_len": 12,
+          "wt_ma_len": 3,
+          "wt_div_os_level": -65.0,
+          "wt_os_level3": -75.0,
+          "rsi_len": 14,
+          "rsi_div_os_level": 30.0,
+          "wt_regular_divergence_enabled": true,
+          "rsi_regular_divergence_enabled": false
+        },
+        "loaded_bars": 220,
+        "gold_count_loaded_history": 0,
+        "gold_on_latest_closed_bar": false,
+        "latest_event": null,
+        "new_detection": null,
+        "events": [],
+        "latest_closed_bar": "2026-09-26T00:00:00+00:00"
+      },
+      "technical_engine": {
+        "status": "PASS",
+        "signal": "SELL",
+        "signal_score": 77.0,
+        "buy_score": 14.0,
+        "sell_score": 77.0,
+        "execution": {
+          "entry_zone_low": 1.2019973392592305,
+          "entry_zone_high": 1.2089584929966963,
+          "stop_loss": 1.2241961543473157,
+          "tp1": 1.1774005587989351,
+          "tp2": 1.1586823205795826,
+          "rr_tp1": 1.5,
+          "rr_tp2": 2.5,
+          "action": "SELL ON BOUNCE",
+          "extension_atr": 1.9167573642889446
+        },
+        "joat_confirmation": {
+          "side": "SELL",
+          "state": "CONFIRM",
+          "display": "✅ CONFIRM",
+          "joat_trend": "BEARISH",
+          "trend_alignment": "ALIGNED",
+          "mtf_state": "ALIGNED",
+          "mtf_alignment_pct": -100.0,
+          "strength_pct": 80.0,
+          "strength_status": "STRONG",
+          "reason": "JOAT bearish, local trend aligned, MTF -100% supports SELL"
+        },
+        "sniper_confirmation": "NEUTRAL"
+      },
+      "score_inputs": {
+        "technical_engine_score": 77.0,
+        "volume_24h_usd": 1025487,
+        "change_1h_pct": -2.1265,
+        "change_24h_pct": -3.60033,
+        "change_7d_pct": -23.8909,
+        "derivatives_oi_funding": null,
+        "catalyst_news_risk": null,
+        "note": "Final 0-100 opportunity score is completed by ChatGPT using artifact technicals plus current derivatives/intelligence evidence."
+      },
+      "data_quality": {
+        "same_exchange_all_timeframes": true,
+        "required_timeframes_pass": true,
+        "current_cycle_1h_covered": true,
+        "latest_1h_start_utc": "2026-09-27T15:00:00+00:00",
+        "latest_1h_close_utc": "2026-09-27T16:00:00+00:00"
+      }
+    },
+    {
+      "rank": 42,
       "id": "quant-network",
       "name": "Quant",
       "ticker": "QNT",
@@ -10471,19 +10732,19 @@
       "contract_multiplier": 1,
       "fallback_used": false,
       "market": {
-        "price_usd": 185.14,
-        "volume_24h_usd": 691849679,
+        "price_usd": 182.36,
+        "volume_24h_usd": 675043194,
         "change_1h_pct": 6.5964,
-        "change_24h_pct": 52.40436,
+        "change_24h_pct": 50.73666,
         "change_7d_pct": 181.3264
       },
       "timeframes": {
         "5m": {
           "status": "PASS",
           "bars": 180,
-          "first_closed_bar_utc": "2026-09-27T01:45:00+00:00",
-          "last_closed_bar_utc": "2026-09-27T16:40:00+00:00",
-          "last_close": 184.95,
+          "first_closed_bar_utc": "2026-09-27T01:55:00+00:00",
+          "last_closed_bar_utc": "2026-09-27T16:50:00+00:00",
+          "last_close": 180.97,
           "gaps": 0
         },
         "15m": {
@@ -10688,9 +10949,9 @@
       },
       "score_inputs": {
         "technical_engine_score": 82.0,
-        "volume_24h_usd": 691849679,
+        "volume_24h_usd": 675043194,
         "change_1h_pct": 6.5964,
-        "change_24h_pct": 52.40436,
+        "change_24h_pct": 50.73666,
         "change_7d_pct": 181.3264,
         "derivatives_oi_funding": null,
         "catalyst_news_risk": null,
@@ -10714,19 +10975,19 @@
       "contract_multiplier": 1,
       "fallback_used": false,
       "market": {
-        "price_usd": 0.546774,
-        "volume_24h_usd": 251412859,
+        "price_usd": 0.543999,
+        "volume_24h_usd": 248802314,
         "change_1h_pct": 0.7094,
-        "change_24h_pct": 0.52267,
+        "change_24h_pct": -0.1963,
         "change_7d_pct": 32.876
       },
       "timeframes": {
         "5m": {
           "status": "PASS",
           "bars": 180,
-          "first_closed_bar_utc": "2026-09-27T01:45:00+00:00",
-          "last_closed_bar_utc": "2026-09-27T16:40:00+00:00",
-          "last_close": 0.5444,
+          "first_closed_bar_utc": "2026-09-27T01:55:00+00:00",
+          "last_closed_bar_utc": "2026-09-27T16:50:00+00:00",
+          "last_close": 0.5423,
           "gaps": 0
         },
         "15m": {
@@ -10931,9 +11192,9 @@
       },
       "score_inputs": {
         "technical_engine_score": 82.5,
-        "volume_24h_usd": 251412859,
+        "volume_24h_usd": 248802314,
         "change_1h_pct": 0.7094,
-        "change_24h_pct": 0.52267,
+        "change_24h_pct": -0.1963,
         "change_7d_pct": 32.876,
         "derivatives_oi_funding": null,
         "catalyst_news_risk": null,
@@ -10957,19 +11218,19 @@
       "contract_multiplier": 1,
       "fallback_used": false,
       "market": {
-        "price_usd": 121.13,
-        "volume_24h_usd": 18916973,
+        "price_usd": 121.1,
+        "volume_24h_usd": 18948481,
         "change_1h_pct": 0.0936,
-        "change_24h_pct": -0.21365,
+        "change_24h_pct": -0.38385,
         "change_7d_pct": 4.4527
       },
       "timeframes": {
         "5m": {
           "status": "PASS",
           "bars": 180,
-          "first_closed_bar_utc": "2026-09-27T01:45:00+00:00",
-          "last_closed_bar_utc": "2026-09-27T16:40:00+00:00",
-          "last_close": 121.07,
+          "first_closed_bar_utc": "2026-09-27T01:55:00+00:00",
+          "last_closed_bar_utc": "2026-09-27T16:50:00+00:00",
+          "last_close": 121.09,
           "gaps": 0
         },
         "15m": {
@@ -11174,9 +11435,9 @@
       },
       "score_inputs": {
         "technical_engine_score": 56.0,
-        "volume_24h_usd": 18916973,
+        "volume_24h_usd": 18948481,
         "change_1h_pct": 0.0936,
-        "change_24h_pct": -0.21365,
+        "change_24h_pct": -0.38385,
         "change_7d_pct": 4.4527,
         "derivatives_oi_funding": null,
         "catalyst_news_risk": null,
@@ -11200,19 +11461,19 @@
       "contract_multiplier": 1,
       "fallback_used": false,
       "market": {
-        "price_usd": 154.22,
-        "volume_24h_usd": 270611268,
+        "price_usd": 154.32,
+        "volume_24h_usd": 269684169,
         "change_1h_pct": 0.2466,
-        "change_24h_pct": -0.7137,
+        "change_24h_pct": -0.63191,
         "change_7d_pct": 14.2964
       },
       "timeframes": {
         "5m": {
           "status": "PASS",
           "bars": 180,
-          "first_closed_bar_utc": "2026-09-27T01:45:00+00:00",
-          "last_closed_bar_utc": "2026-09-27T16:40:00+00:00",
-          "last_close": 154.03,
+          "first_closed_bar_utc": "2026-09-27T01:55:00+00:00",
+          "last_closed_bar_utc": "2026-09-27T16:50:00+00:00",
+          "last_close": 154.04,
           "gaps": 0
         },
         "15m": {
@@ -11417,9 +11678,9 @@
       },
       "score_inputs": {
         "technical_engine_score": 69.0,
-        "volume_24h_usd": 270611268,
+        "volume_24h_usd": 269684169,
         "change_1h_pct": 0.2466,
-        "change_24h_pct": -0.7137,
+        "change_24h_pct": -0.63191,
         "change_7d_pct": 14.2964,
         "derivatives_oi_funding": null,
         "catalyst_news_risk": null,
@@ -11434,7 +11695,7 @@
       }
     },
     {
-      "rank": 48,
+      "rank": 49,
       "id": "pump-fun",
       "name": "Pump.fun",
       "ticker": "PUMP",
@@ -11443,19 +11704,19 @@
       "contract_multiplier": 1,
       "fallback_used": false,
       "market": {
-        "price_usd": 0.00493468,
-        "volume_24h_usd": 213940483,
+        "price_usd": 0.00489326,
+        "volume_24h_usd": 213451267,
         "change_1h_pct": 2.2172,
-        "change_24h_pct": 11.05007,
+        "change_24h_pct": 9.94105,
         "change_7d_pct": 20.7486
       },
       "timeframes": {
         "5m": {
           "status": "PASS",
           "bars": 180,
-          "first_closed_bar_utc": "2026-09-27T01:45:00+00:00",
-          "last_closed_bar_utc": "2026-09-27T16:40:00+00:00",
-          "last_close": 0.004917,
+          "first_closed_bar_utc": "2026-09-27T01:55:00+00:00",
+          "last_closed_bar_utc": "2026-09-27T16:50:00+00:00",
+          "last_close": 0.004885,
           "gaps": 0
         },
         "15m": {
@@ -11660,9 +11921,9 @@
       },
       "score_inputs": {
         "technical_engine_score": 74.0,
-        "volume_24h_usd": 213940483,
+        "volume_24h_usd": 213451267,
         "change_1h_pct": 2.2172,
-        "change_24h_pct": 11.05007,
+        "change_24h_pct": 9.94105,
         "change_7d_pct": 20.7486,
         "derivatives_oi_funding": null,
         "catalyst_news_risk": null,
@@ -11687,18 +11948,18 @@
       "fallback_used": false,
       "market": {
         "price_usd": 1.24,
-        "volume_24h_usd": 216500258,
+        "volume_24h_usd": 213766524,
         "change_1h_pct": 0.0129,
-        "change_24h_pct": -3.70153,
+        "change_24h_pct": -5.00107,
         "change_7d_pct": 12.3285
       },
       "timeframes": {
         "5m": {
           "status": "PASS",
           "bars": 180,
-          "first_closed_bar_utc": "2026-09-27T01:45:00+00:00",
-          "last_closed_bar_utc": "2026-09-27T16:40:00+00:00",
-          "last_close": 1.235,
+          "first_closed_bar_utc": "2026-09-27T01:55:00+00:00",
+          "last_closed_bar_utc": "2026-09-27T16:50:00+00:00",
+          "last_close": 1.2358,
           "gaps": 0
         },
         "15m": {
@@ -11973,9 +12234,9 @@
       },
       "score_inputs": {
         "technical_engine_score": 57.0,
-        "volume_24h_usd": 216500258,
+        "volume_24h_usd": 213766524,
         "change_1h_pct": 0.0129,
-        "change_24h_pct": -3.70153,
+        "change_24h_pct": -5.00107,
         "change_7d_pct": 12.3285,
         "derivatives_oi_funding": null,
         "catalyst_news_risk": null,
@@ -11999,19 +12260,19 @@
       "contract_multiplier": 1,
       "fallback_used": false,
       "market": {
-        "price_usd": 0.563223,
-        "volume_24h_usd": 679610551,
+        "price_usd": 0.564121,
+        "volume_24h_usd": 666676770,
         "change_1h_pct": -2.6635,
-        "change_24h_pct": 5.29835,
+        "change_24h_pct": 5.83499,
         "change_7d_pct": 31.4213
       },
       "timeframes": {
         "5m": {
           "status": "PASS",
           "bars": 180,
-          "first_closed_bar_utc": "2026-09-27T01:45:00+00:00",
-          "last_closed_bar_utc": "2026-09-27T16:40:00+00:00",
-          "last_close": 0.5637,
+          "first_closed_bar_utc": "2026-09-27T01:55:00+00:00",
+          "last_closed_bar_utc": "2026-09-27T16:50:00+00:00",
+          "last_close": 0.5622,
           "gaps": 0
         },
         "15m": {
@@ -12216,9 +12477,9 @@
       },
       "score_inputs": {
         "technical_engine_score": 71.0,
-        "volume_24h_usd": 679610551,
+        "volume_24h_usd": 666676770,
         "change_1h_pct": -2.6635,
-        "change_24h_pct": 5.29835,
+        "change_24h_pct": 5.83499,
         "change_7d_pct": 31.4213,
         "derivatives_oi_funding": null,
         "catalyst_news_risk": null,
@@ -12242,19 +12503,19 @@
       "contract_multiplier": 1,
       "fallback_used": false,
       "market": {
-        "price_usd": 0.726604,
-        "volume_24h_usd": 105524133,
+        "price_usd": 0.727059,
+        "volume_24h_usd": 105160095,
         "change_1h_pct": 0.1966,
-        "change_24h_pct": -2.25558,
+        "change_24h_pct": -1.88689,
         "change_7d_pct": -0.2741
       },
       "timeframes": {
         "5m": {
           "status": "PASS",
           "bars": 180,
-          "first_closed_bar_utc": "2026-09-27T01:45:00+00:00",
-          "last_closed_bar_utc": "2026-09-27T16:40:00+00:00",
-          "last_close": 0.7257,
+          "first_closed_bar_utc": "2026-09-27T01:55:00+00:00",
+          "last_closed_bar_utc": "2026-09-27T16:50:00+00:00",
+          "last_close": 0.7265,
           "gaps": 0
         },
         "15m": {
@@ -12459,9 +12720,9 @@
       },
       "score_inputs": {
         "technical_engine_score": 64.0,
-        "volume_24h_usd": 105524133,
+        "volume_24h_usd": 105160095,
         "change_1h_pct": 0.1966,
-        "change_24h_pct": -2.25558,
+        "change_24h_pct": -1.88689,
         "change_7d_pct": -0.2741,
         "derivatives_oi_funding": null,
         "catalyst_news_risk": null,
@@ -12486,18 +12747,18 @@
       "fallback_used": false,
       "market": {
         "price_usd": 2.68,
-        "volume_24h_usd": 23676942,
+        "volume_24h_usd": 25661552,
         "change_1h_pct": -0.4012,
-        "change_24h_pct": -2.96349,
+        "change_24h_pct": -2.73424,
         "change_7d_pct": 7.0936
       },
       "timeframes": {
         "5m": {
           "status": "PASS",
           "bars": 180,
-          "first_closed_bar_utc": "2026-09-27T01:45:00+00:00",
-          "last_closed_bar_utc": "2026-09-27T16:40:00+00:00",
-          "last_close": 2.6789,
+          "first_closed_bar_utc": "2026-09-27T01:55:00+00:00",
+          "last_closed_bar_utc": "2026-09-27T16:50:00+00:00",
+          "last_close": 2.6821,
           "gaps": 0
         },
         "15m": {
@@ -12702,9 +12963,9 @@
       },
       "score_inputs": {
         "technical_engine_score": 60.0,
-        "volume_24h_usd": 23676942,
+        "volume_24h_usd": 25661552,
         "change_1h_pct": -0.4012,
-        "change_24h_pct": -2.96349,
+        "change_24h_pct": -2.73424,
         "change_7d_pct": 7.0936,
         "derivatives_oi_funding": null,
         "catalyst_news_risk": null,
@@ -12728,18 +12989,18 @@
       "contract_multiplier": 1,
       "fallback_used": false,
       "market": {
-        "price_usd": 4275.64,
-        "volume_24h_usd": 47134315,
+        "price_usd": 4275.63,
+        "volume_24h_usd": 46759451,
         "change_1h_pct": -0.0113,
-        "change_24h_pct": -0.05404,
+        "change_24h_pct": -0.03894,
         "change_7d_pct": -1.9119
       },
       "timeframes": {
         "5m": {
           "status": "PASS",
           "bars": 180,
-          "first_closed_bar_utc": "2026-09-27T01:45:00+00:00",
-          "last_closed_bar_utc": "2026-09-27T16:40:00+00:00",
+          "first_closed_bar_utc": "2026-09-27T01:55:00+00:00",
+          "last_closed_bar_utc": "2026-09-27T16:50:00+00:00",
           "last_close": 4276.45,
           "gaps": 0
         },
@@ -12966,9 +13227,9 @@
       },
       "score_inputs": {
         "technical_engine_score": 80.0,
-        "volume_24h_usd": 47134315,
+        "volume_24h_usd": 46759451,
         "change_1h_pct": -0.0113,
-        "change_24h_pct": -0.05404,
+        "change_24h_pct": -0.03894,
         "change_7d_pct": -1.9119,
         "derivatives_oi_funding": null,
         "catalyst_news_risk": null,
@@ -12992,19 +13253,19 @@
       "contract_multiplier": 1,
       "fallback_used": false,
       "market": {
-        "price_usd": 4.36e-06,
-        "volume_24h_usd": 221417622,
+        "price_usd": 4.37e-06,
+        "volume_24h_usd": 223014870,
         "change_1h_pct": 0.3052,
-        "change_24h_pct": -1.70769,
+        "change_24h_pct": -1.51578,
         "change_7d_pct": 12.2938
       },
       "timeframes": {
         "5m": {
           "status": "PASS",
           "bars": 180,
-          "first_closed_bar_utc": "2026-09-27T01:45:00+00:00",
-          "last_closed_bar_utc": "2026-09-27T16:40:00+00:00",
-          "last_close": 4.359e-06,
+          "first_closed_bar_utc": "2026-09-27T01:55:00+00:00",
+          "last_closed_bar_utc": "2026-09-27T16:50:00+00:00",
+          "last_close": 4.358e-06,
           "gaps": 0
         },
         "15m": {
@@ -13279,9 +13540,9 @@
       },
       "score_inputs": {
         "technical_engine_score": 64.0,
-        "volume_24h_usd": 221417622,
+        "volume_24h_usd": 223014870,
         "change_1h_pct": 0.3052,
-        "change_24h_pct": -1.70769,
+        "change_24h_pct": -1.51578,
         "change_7d_pct": 12.2938,
         "derivatives_oi_funding": null,
         "catalyst_news_risk": null,
@@ -13305,19 +13566,19 @@
       "contract_multiplier": 1,
       "fallback_used": false,
       "market": {
-        "price_usd": 0.057649,
-        "volume_24h_usd": 28517094,
+        "price_usd": 0.057624,
+        "volume_24h_usd": 28494447,
         "change_1h_pct": 0.0019,
-        "change_24h_pct": -3.18799,
+        "change_24h_pct": -2.89702,
         "change_7d_pct": -1.0456
       },
       "timeframes": {
         "5m": {
           "status": "PASS",
           "bars": 180,
-          "first_closed_bar_utc": "2026-09-27T01:45:00+00:00",
-          "last_closed_bar_utc": "2026-09-27T16:40:00+00:00",
-          "last_close": 0.05753,
+          "first_closed_bar_utc": "2026-09-27T01:55:00+00:00",
+          "last_closed_bar_utc": "2026-09-27T16:50:00+00:00",
+          "last_close": 0.05756,
           "gaps": 0
         },
         "15m": {
@@ -13648,9 +13909,9 @@
       },
       "score_inputs": {
         "technical_engine_score": 77.0,
-        "volume_24h_usd": 28517094,
+        "volume_24h_usd": 28494447,
         "change_1h_pct": 0.0019,
-        "change_24h_pct": -3.18799,
+        "change_24h_pct": -2.89702,
         "change_7d_pct": -1.0456,
         "derivatives_oi_funding": null,
         "catalyst_news_risk": null,
@@ -13675,18 +13936,18 @@
       "fallback_used": false,
       "market": {
         "price_usd": 3.18,
-        "volume_24h_usd": 65853574,
+        "volume_24h_usd": 66270517,
         "change_1h_pct": -0.2926,
-        "change_24h_pct": -4.33148,
+        "change_24h_pct": -4.76507,
         "change_7d_pct": 14.855
       },
       "timeframes": {
         "5m": {
           "status": "PASS",
           "bars": 180,
-          "first_closed_bar_utc": "2026-09-27T01:45:00+00:00",
-          "last_closed_bar_utc": "2026-09-27T16:40:00+00:00",
-          "last_close": 3.176,
+          "first_closed_bar_utc": "2026-09-27T01:55:00+00:00",
+          "last_closed_bar_utc": "2026-09-27T16:50:00+00:00",
+          "last_close": 3.173,
           "gaps": 0
         },
         "15m": {
@@ -13891,9 +14152,9 @@
       },
       "score_inputs": {
         "technical_engine_score": 55.0,
-        "volume_24h_usd": 65853574,
+        "volume_24h_usd": 66270517,
         "change_1h_pct": -0.2926,
-        "change_24h_pct": -4.33148,
+        "change_24h_pct": -4.76507,
         "change_7d_pct": 14.855,
         "derivatives_oi_funding": null,
         "catalyst_news_risk": null,
@@ -13917,19 +14178,19 @@
       "contract_multiplier": 1,
       "fallback_used": false,
       "market": {
-        "price_usd": 0.075288,
-        "volume_24h_usd": 16508322,
+        "price_usd": 0.075343,
+        "volume_24h_usd": 16327161,
         "change_1h_pct": -0.3009,
-        "change_24h_pct": -3.50627,
+        "change_24h_pct": -3.48184,
         "change_7d_pct": 9.1881
       },
       "timeframes": {
         "5m": {
           "status": "PASS",
           "bars": 180,
-          "first_closed_bar_utc": "2026-09-27T01:45:00+00:00",
-          "last_closed_bar_utc": "2026-09-27T16:40:00+00:00",
-          "last_close": 0.07532,
+          "first_closed_bar_utc": "2026-09-27T01:55:00+00:00",
+          "last_closed_bar_utc": "2026-09-27T16:50:00+00:00",
+          "last_close": 0.07531,
           "gaps": 0
         },
         "15m": {
@@ -14134,9 +14395,9 @@
       },
       "score_inputs": {
         "technical_engine_score": 67.0,
-        "volume_24h_usd": 16508322,
+        "volume_24h_usd": 16327161,
         "change_1h_pct": -0.3009,
-        "change_24h_pct": -3.50627,
+        "change_24h_pct": -3.48184,
         "change_7d_pct": 9.1881,
         "derivatives_oi_funding": null,
         "catalyst_news_risk": null,
@@ -14161,18 +14422,18 @@
       "fallback_used": false,
       "market": {
         "price_usd": 9.48,
-        "volume_24h_usd": 64860773,
+        "volume_24h_usd": 65136516,
         "change_1h_pct": 0.4285,
-        "change_24h_pct": -1.04629,
+        "change_24h_pct": -1.02765,
         "change_7d_pct": 13.9542
       },
       "timeframes": {
         "5m": {
           "status": "PASS",
           "bars": 180,
-          "first_closed_bar_utc": "2026-09-27T01:45:00+00:00",
-          "last_closed_bar_utc": "2026-09-27T16:40:00+00:00",
-          "last_close": 9.459,
+          "first_closed_bar_utc": "2026-09-27T01:55:00+00:00",
+          "last_closed_bar_utc": "2026-09-27T16:50:00+00:00",
+          "last_close": 9.469,
           "gaps": 0
         },
         "15m": {
@@ -14447,9 +14708,9 @@
       },
       "score_inputs": {
         "technical_engine_score": 50.0,
-        "volume_24h_usd": 64860773,
+        "volume_24h_usd": 65136516,
         "change_1h_pct": 0.4285,
-        "change_24h_pct": -1.04629,
+        "change_24h_pct": -1.02765,
         "change_7d_pct": 13.9542,
         "derivatives_oi_funding": null,
         "catalyst_news_risk": null,
@@ -14473,19 +14734,19 @@
       "contract_multiplier": 1,
       "fallback_used": false,
       "market": {
-        "price_usd": 0.220275,
-        "volume_24h_usd": 310010607,
+        "price_usd": 0.220642,
+        "volume_24h_usd": 326398879,
         "change_1h_pct": -0.0091,
-        "change_24h_pct": -3.01465,
+        "change_24h_pct": -2.74426,
         "change_7d_pct": 10.9425
       },
       "timeframes": {
         "5m": {
           "status": "PASS",
           "bars": 180,
-          "first_closed_bar_utc": "2026-09-27T01:45:00+00:00",
-          "last_closed_bar_utc": "2026-09-27T16:40:00+00:00",
-          "last_close": 0.21978,
+          "first_closed_bar_utc": "2026-09-27T01:55:00+00:00",
+          "last_closed_bar_utc": "2026-09-27T16:50:00+00:00",
+          "last_close": 0.2201,
           "gaps": 0
         },
         "15m": {
@@ -14760,9 +15021,9 @@
       },
       "score_inputs": {
         "technical_engine_score": 62.0,
-        "volume_24h_usd": 310010607,
+        "volume_24h_usd": 326398879,
         "change_1h_pct": -0.0091,
-        "change_24h_pct": -3.01465,
+        "change_24h_pct": -2.74426,
         "change_7d_pct": 10.9425,
         "derivatives_oi_funding": null,
         "catalyst_news_risk": null,
@@ -14786,19 +15047,19 @@
       "contract_multiplier": 1,
       "fallback_used": true,
       "market": {
-        "price_usd": 29.88,
-        "volume_24h_usd": 45751129,
+        "price_usd": 29.81,
+        "volume_24h_usd": 37532661,
         "change_1h_pct": -0.5746,
-        "change_24h_pct": -0.08062,
+        "change_24h_pct": 0.08762,
         "change_7d_pct": 3.5742
       },
       "timeframes": {
         "5m": {
           "status": "PASS",
           "bars": 180,
-          "first_closed_bar_utc": "2026-09-27T01:45:00+00:00",
-          "last_closed_bar_utc": "2026-09-27T16:40:00+00:00",
-          "last_close": 29.821,
+          "first_closed_bar_utc": "2026-09-27T01:55:00+00:00",
+          "last_closed_bar_utc": "2026-09-27T16:50:00+00:00",
+          "last_close": 29.738,
           "gaps": 0
         },
         "15m": {
@@ -15003,9 +15264,9 @@
       },
       "score_inputs": {
         "technical_engine_score": 58.0,
-        "volume_24h_usd": 45751129,
+        "volume_24h_usd": 37532661,
         "change_1h_pct": -0.5746,
-        "change_24h_pct": -0.08062,
+        "change_24h_pct": 0.08762,
         "change_7d_pct": 3.5742,
         "derivatives_oi_funding": null,
         "catalyst_news_risk": null,
@@ -15029,19 +15290,19 @@
       "contract_multiplier": 1,
       "fallback_used": false,
       "market": {
-        "price_usd": 2.04,
-        "volume_24h_usd": 17599099,
+        "price_usd": 2.05,
+        "volume_24h_usd": 17732863,
         "change_1h_pct": -0.461,
-        "change_24h_pct": 1.44041,
+        "change_24h_pct": 1.66448,
         "change_7d_pct": 1.8587
       },
       "timeframes": {
         "5m": {
           "status": "PASS",
           "bars": 180,
-          "first_closed_bar_utc": "2026-09-27T01:45:00+00:00",
-          "last_closed_bar_utc": "2026-09-27T16:40:00+00:00",
-          "last_close": 2.0425,
+          "first_closed_bar_utc": "2026-09-27T01:55:00+00:00",
+          "last_closed_bar_utc": "2026-09-27T16:50:00+00:00",
+          "last_close": 2.0464,
           "gaps": 0
         },
         "15m": {
@@ -15316,9 +15577,9 @@
       },
       "score_inputs": {
         "technical_engine_score": 59.0,
-        "volume_24h_usd": 17599099,
+        "volume_24h_usd": 17732863,
         "change_1h_pct": -0.461,
-        "change_24h_pct": 1.44041,
+        "change_24h_pct": 1.66448,
         "change_7d_pct": 1.8587,
         "derivatives_oi_funding": null,
         "catalyst_news_risk": null,
@@ -15342,19 +15603,19 @@
       "contract_multiplier": 1,
       "fallback_used": false,
       "market": {
-        "price_usd": 0.04770897,
-        "volume_24h_usd": 39503829,
+        "price_usd": 0.0477477,
+        "volume_24h_usd": 39292118,
         "change_1h_pct": 0.6932,
-        "change_24h_pct": -2.11928,
+        "change_24h_pct": -1.48168,
         "change_7d_pct": 22.7971
       },
       "timeframes": {
         "5m": {
           "status": "PASS",
           "bars": 180,
-          "first_closed_bar_utc": "2026-09-27T01:45:00+00:00",
-          "last_closed_bar_utc": "2026-09-27T16:40:00+00:00",
-          "last_close": 0.04765,
+          "first_closed_bar_utc": "2026-09-27T01:55:00+00:00",
+          "last_closed_bar_utc": "2026-09-27T16:50:00+00:00",
+          "last_close": 0.04777,
           "gaps": 0
         },
         "15m": {
@@ -15559,9 +15820,9 @@
       },
       "score_inputs": {
         "technical_engine_score": 49.0,
-        "volume_24h_usd": 39503829,
+        "volume_24h_usd": 39292118,
         "change_1h_pct": 0.6932,
-        "change_24h_pct": -2.11928,
+        "change_24h_pct": -1.48168,
         "change_7d_pct": 22.7971,
         "derivatives_oi_funding": null,
         "catalyst_news_risk": null,
@@ -15585,19 +15846,19 @@
       "contract_multiplier": 1,
       "fallback_used": false,
       "market": {
-        "price_usd": 0.120414,
-        "volume_24h_usd": 92349038,
+        "price_usd": 0.120515,
+        "volume_24h_usd": 92251554,
         "change_1h_pct": 0.5848,
-        "change_24h_pct": 1.66292,
+        "change_24h_pct": 1.86269,
         "change_7d_pct": 16.3173
       },
       "timeframes": {
         "5m": {
           "status": "PASS",
           "bars": 180,
-          "first_closed_bar_utc": "2026-09-27T01:45:00+00:00",
-          "last_closed_bar_utc": "2026-09-27T16:40:00+00:00",
-          "last_close": 0.12039,
+          "first_closed_bar_utc": "2026-09-27T01:55:00+00:00",
+          "last_closed_bar_utc": "2026-09-27T16:50:00+00:00",
+          "last_close": 0.12038,
           "gaps": 0
         },
         "15m": {
@@ -15802,9 +16063,9 @@
       },
       "score_inputs": {
         "technical_engine_score": 68.0,
-        "volume_24h_usd": 92349038,
+        "volume_24h_usd": 92251554,
         "change_1h_pct": 0.5848,
-        "change_24h_pct": 1.66292,
+        "change_24h_pct": 1.86269,
         "change_7d_pct": 16.3173,
         "derivatives_oi_funding": null,
         "catalyst_news_risk": null,
@@ -15829,18 +16090,18 @@
       "fallback_used": false,
       "market": {
         "price_usd": 4.65,
-        "volume_24h_usd": 63558312,
+        "volume_24h_usd": 63947650,
         "change_1h_pct": -0.018,
-        "change_24h_pct": -3.5501,
+        "change_24h_pct": -2.68028,
         "change_7d_pct": -0.2744
       },
       "timeframes": {
         "5m": {
           "status": "PASS",
           "bars": 180,
-          "first_closed_bar_utc": "2026-09-27T01:45:00+00:00",
-          "last_closed_bar_utc": "2026-09-27T16:40:00+00:00",
-          "last_close": 4.6409,
+          "first_closed_bar_utc": "2026-09-27T01:55:00+00:00",
+          "last_closed_bar_utc": "2026-09-27T16:50:00+00:00",
+          "last_close": 4.654,
           "gaps": 0
         },
         "15m": {
@@ -16066,9 +16327,9 @@
       },
       "score_inputs": {
         "technical_engine_score": 86.5,
-        "volume_24h_usd": 63558312,
+        "volume_24h_usd": 63947650,
         "change_1h_pct": -0.018,
-        "change_24h_pct": -3.5501,
+        "change_24h_pct": -2.68028,
         "change_7d_pct": -0.2744,
         "derivatives_oi_funding": null,
         "catalyst_news_risk": null,
@@ -16092,19 +16353,19 @@
       "contract_multiplier": 1,
       "fallback_used": false,
       "market": {
-        "price_usd": 0.337896,
-        "volume_24h_usd": 73176420,
+        "price_usd": 0.337516,
+        "volume_24h_usd": 73236916,
         "change_1h_pct": 0.0882,
-        "change_24h_pct": -2.55308,
+        "change_24h_pct": -2.53009,
         "change_7d_pct": 25.3716
       },
       "timeframes": {
         "5m": {
           "status": "PASS",
           "bars": 180,
-          "first_closed_bar_utc": "2026-09-27T01:45:00+00:00",
-          "last_closed_bar_utc": "2026-09-27T16:40:00+00:00",
-          "last_close": 0.3374,
+          "first_closed_bar_utc": "2026-09-27T01:55:00+00:00",
+          "last_closed_bar_utc": "2026-09-27T16:50:00+00:00",
+          "last_close": 0.337,
           "gaps": 0
         },
         "15m": {
@@ -16309,9 +16570,9 @@
       },
       "score_inputs": {
         "technical_engine_score": 67.0,
-        "volume_24h_usd": 73176420,
+        "volume_24h_usd": 73236916,
         "change_1h_pct": 0.0882,
-        "change_24h_pct": -2.55308,
+        "change_24h_pct": -2.53009,
         "change_7d_pct": 25.3716,
         "derivatives_oi_funding": null,
         "catalyst_news_risk": null,
@@ -16335,19 +16596,19 @@
       "contract_multiplier": 1,
       "fallback_used": false,
       "market": {
-        "price_usd": 0.117012,
-        "volume_24h_usd": 51518979,
+        "price_usd": 0.117214,
+        "volume_24h_usd": 51530050,
         "change_1h_pct": -0.2802,
-        "change_24h_pct": -2.94798,
+        "change_24h_pct": -2.69739,
         "change_7d_pct": 6.6049
       },
       "timeframes": {
         "5m": {
           "status": "PASS",
           "bars": 180,
-          "first_closed_bar_utc": "2026-09-27T01:45:00+00:00",
-          "last_closed_bar_utc": "2026-09-27T16:40:00+00:00",
-          "last_close": 0.1168,
+          "first_closed_bar_utc": "2026-09-27T01:55:00+00:00",
+          "last_closed_bar_utc": "2026-09-27T16:50:00+00:00",
+          "last_close": 0.11699,
           "gaps": 0
         },
         "15m": {
@@ -16552,9 +16813,9 @@
       },
       "score_inputs": {
         "technical_engine_score": 47.0,
-        "volume_24h_usd": 51518979,
+        "volume_24h_usd": 51530050,
         "change_1h_pct": -0.2802,
-        "change_24h_pct": -2.94798,
+        "change_24h_pct": -2.69739,
         "change_7d_pct": 6.6049,
         "derivatives_oi_funding": null,
         "catalyst_news_risk": null,
@@ -16579,18 +16840,18 @@
       "fallback_used": false,
       "market": {
         "price_usd": 2.01,
-        "volume_24h_usd": 87095775,
+        "volume_24h_usd": 87007238,
         "change_1h_pct": -0.6031,
-        "change_24h_pct": -1.36794,
+        "change_24h_pct": -2.02347,
         "change_7d_pct": 31.039
       },
       "timeframes": {
         "5m": {
           "status": "PASS",
           "bars": 180,
-          "first_closed_bar_utc": "2026-09-27T01:45:00+00:00",
-          "last_closed_bar_utc": "2026-09-27T16:40:00+00:00",
-          "last_close": 2.01,
+          "first_closed_bar_utc": "2026-09-27T01:55:00+00:00",
+          "last_closed_bar_utc": "2026-09-27T16:50:00+00:00",
+          "last_close": 2.005,
           "gaps": 0
         },
         "15m": {
@@ -16795,9 +17056,9 @@
       },
       "score_inputs": {
         "technical_engine_score": 59.5,
-        "volume_24h_usd": 87095775,
+        "volume_24h_usd": 87007238,
         "change_1h_pct": -0.6031,
-        "change_24h_pct": -1.36794,
+        "change_24h_pct": -2.02347,
         "change_7d_pct": 31.039,
         "derivatives_oi_funding": null,
         "catalyst_news_risk": null,
@@ -16821,19 +17082,19 @@
       "contract_multiplier": 1,
       "fallback_used": false,
       "market": {
-        "price_usd": 0.125025,
-        "volume_24h_usd": 26755417,
+        "price_usd": 0.125131,
+        "volume_24h_usd": 24451164,
         "change_1h_pct": 0.0054,
-        "change_24h_pct": 1.92078,
+        "change_24h_pct": 1.97089,
         "change_7d_pct": 8.8663
       },
       "timeframes": {
         "5m": {
           "status": "PASS",
           "bars": 180,
-          "first_closed_bar_utc": "2026-09-27T01:45:00+00:00",
-          "last_closed_bar_utc": "2026-09-27T16:40:00+00:00",
-          "last_close": 0.12524,
+          "first_closed_bar_utc": "2026-09-27T01:55:00+00:00",
+          "last_closed_bar_utc": "2026-09-27T16:50:00+00:00",
+          "last_close": 0.1252,
           "gaps": 0
         },
         "15m": {
@@ -17038,9 +17299,9 @@
       },
       "score_inputs": {
         "technical_engine_score": 79.5,
-        "volume_24h_usd": 26755417,
+        "volume_24h_usd": 24451164,
         "change_1h_pct": 0.0054,
-        "change_24h_pct": 1.92078,
+        "change_24h_pct": 1.97089,
         "change_7d_pct": 8.8663,
         "derivatives_oi_funding": null,
         "catalyst_news_risk": null,
@@ -17064,19 +17325,19 @@
       "contract_multiplier": 1,
       "fallback_used": false,
       "market": {
-        "price_usd": 0.090249,
-        "volume_24h_usd": 5707608,
+        "price_usd": 0.090303,
+        "volume_24h_usd": 5687793,
         "change_1h_pct": -0.2039,
-        "change_24h_pct": -1.99718,
+        "change_24h_pct": -1.86235,
         "change_7d_pct": 6.6079
       },
       "timeframes": {
         "5m": {
           "status": "PASS",
           "bars": 180,
-          "first_closed_bar_utc": "2026-09-27T01:45:00+00:00",
-          "last_closed_bar_utc": "2026-09-27T16:40:00+00:00",
-          "last_close": 0.0905,
+          "first_closed_bar_utc": "2026-09-27T01:55:00+00:00",
+          "last_closed_bar_utc": "2026-09-27T16:50:00+00:00",
+          "last_close": 0.09058,
           "gaps": 0
         },
         "15m": {
@@ -17302,9 +17563,9 @@
       },
       "score_inputs": {
         "technical_engine_score": 77.0,
-        "volume_24h_usd": 5707608,
+        "volume_24h_usd": 5687793,
         "change_1h_pct": -0.2039,
-        "change_24h_pct": -1.99718,
+        "change_24h_pct": -1.86235,
         "change_7d_pct": 6.6079,
         "derivatives_oi_funding": null,
         "catalyst_news_risk": null,
@@ -17328,19 +17589,19 @@
       "contract_multiplier": 1,
       "fallback_used": false,
       "market": {
-        "price_usd": 1.88,
-        "volume_24h_usd": 63592143,
+        "price_usd": 1.87,
+        "volume_24h_usd": 76702843,
         "change_1h_pct": 0.2424,
-        "change_24h_pct": -0.24395,
+        "change_24h_pct": -0.47377,
         "change_7d_pct": 9.7959
       },
       "timeframes": {
         "5m": {
           "status": "PASS",
           "bars": 180,
-          "first_closed_bar_utc": "2026-09-27T01:45:00+00:00",
-          "last_closed_bar_utc": "2026-09-27T16:40:00+00:00",
-          "last_close": 1.871,
+          "first_closed_bar_utc": "2026-09-27T01:55:00+00:00",
+          "last_closed_bar_utc": "2026-09-27T16:50:00+00:00",
+          "last_close": 1.866,
           "gaps": 0
         },
         "15m": {
@@ -17545,9 +17806,9 @@
       },
       "score_inputs": {
         "technical_engine_score": 61.0,
-        "volume_24h_usd": 63592143,
+        "volume_24h_usd": 76702843,
         "change_1h_pct": 0.2424,
-        "change_24h_pct": -0.24395,
+        "change_24h_pct": -0.47377,
         "change_7d_pct": 9.7959,
         "derivatives_oi_funding": null,
         "catalyst_news_risk": null,
@@ -17572,18 +17833,18 @@
       "fallback_used": false,
       "market": {
         "price_usd": 1.15,
-        "volume_24h_usd": 195995822,
+        "volume_24h_usd": 192376961,
         "change_1h_pct": 0.252,
-        "change_24h_pct": -5.84074,
+        "change_24h_pct": -6.03001,
         "change_7d_pct": 24.3785
       },
       "timeframes": {
         "5m": {
           "status": "PASS",
           "bars": 180,
-          "first_closed_bar_utc": "2026-09-27T01:45:00+00:00",
-          "last_closed_bar_utc": "2026-09-27T16:40:00+00:00",
-          "last_close": 1.148,
+          "first_closed_bar_utc": "2026-09-27T01:55:00+00:00",
+          "last_closed_bar_utc": "2026-09-27T16:50:00+00:00",
+          "last_close": 1.1464,
           "gaps": 0
         },
         "15m": {
@@ -17788,9 +18049,9 @@
       },
       "score_inputs": {
         "technical_engine_score": 79.0,
-        "volume_24h_usd": 195995822,
+        "volume_24h_usd": 192376961,
         "change_1h_pct": 0.252,
-        "change_24h_pct": -5.84074,
+        "change_24h_pct": -6.03001,
         "change_7d_pct": 24.3785,
         "derivatives_oi_funding": null,
         "catalyst_news_risk": null,
@@ -17814,19 +18075,19 @@
       "contract_multiplier": 1,
       "fallback_used": false,
       "market": {
-        "price_usd": 2.79,
-        "volume_24h_usd": 86037397,
+        "price_usd": 2.78,
+        "volume_24h_usd": 87497175,
         "change_1h_pct": -0.3401,
-        "change_24h_pct": 0.65266,
+        "change_24h_pct": 0.42485,
         "change_7d_pct": 12.4581
       },
       "timeframes": {
         "5m": {
           "status": "PASS",
           "bars": 180,
-          "first_closed_bar_utc": "2026-09-27T01:45:00+00:00",
-          "last_closed_bar_utc": "2026-09-27T16:40:00+00:00",
-          "last_close": 2.7786,
+          "first_closed_bar_utc": "2026-09-27T01:55:00+00:00",
+          "last_closed_bar_utc": "2026-09-27T16:50:00+00:00",
+          "last_close": 2.777,
           "gaps": 0
         },
         "15m": {
@@ -18031,9 +18292,9 @@
       },
       "score_inputs": {
         "technical_engine_score": 66.0,
-        "volume_24h_usd": 86037397,
+        "volume_24h_usd": 87497175,
         "change_1h_pct": -0.3401,
-        "change_24h_pct": 0.65266,
+        "change_24h_pct": 0.42485,
         "change_7d_pct": 12.4581,
         "derivatives_oi_funding": null,
         "catalyst_news_risk": null,
@@ -18058,18 +18319,18 @@
       "fallback_used": false,
       "market": {
         "price_usd": 68.12,
-        "volume_24h_usd": 226672901,
+        "volume_24h_usd": 227713692,
         "change_1h_pct": -0.0239,
-        "change_24h_pct": -5.84326,
+        "change_24h_pct": -6.11774,
         "change_7d_pct": 23.258
       },
       "timeframes": {
         "5m": {
           "status": "PASS",
           "bars": 180,
-          "first_closed_bar_utc": "2026-09-27T01:45:00+00:00",
-          "last_closed_bar_utc": "2026-09-27T16:40:00+00:00",
-          "last_close": 68.01,
+          "first_closed_bar_utc": "2026-09-27T01:55:00+00:00",
+          "last_closed_bar_utc": "2026-09-27T16:50:00+00:00",
+          "last_close": 68.06,
           "gaps": 0
         },
         "15m": {
@@ -18295,9 +18556,9 @@
       },
       "score_inputs": {
         "technical_engine_score": 75.0,
-        "volume_24h_usd": 226672901,
+        "volume_24h_usd": 227713692,
         "change_1h_pct": -0.0239,
-        "change_24h_pct": -5.84326,
+        "change_24h_pct": -6.11774,
         "change_7d_pct": 23.258,
         "derivatives_oi_funding": null,
         "catalyst_news_risk": null,
@@ -18321,19 +18582,19 @@
       "contract_multiplier": 1,
       "fallback_used": false,
       "market": {
-        "price_usd": 0.832438,
-        "volume_24h_usd": 58673801,
+        "price_usd": 0.828337,
+        "volume_24h_usd": 57975636,
         "change_1h_pct": -0.383,
-        "change_24h_pct": -5.62852,
+        "change_24h_pct": -5.6279,
         "change_7d_pct": 26.7734
       },
       "timeframes": {
         "5m": {
           "status": "PASS",
           "bars": 180,
-          "first_closed_bar_utc": "2026-09-27T01:45:00+00:00",
-          "last_closed_bar_utc": "2026-09-27T16:40:00+00:00",
-          "last_close": 0.8318,
+          "first_closed_bar_utc": "2026-09-27T01:55:00+00:00",
+          "last_closed_bar_utc": "2026-09-27T16:50:00+00:00",
+          "last_close": 0.8294,
           "gaps": 0
         },
         "15m": {
@@ -18538,9 +18799,9 @@
       },
       "score_inputs": {
         "technical_engine_score": 65.0,
-        "volume_24h_usd": 58673801,
+        "volume_24h_usd": 57975636,
         "change_1h_pct": -0.383,
-        "change_24h_pct": -5.62852,
+        "change_24h_pct": -5.6279,
         "change_7d_pct": 26.7734,
         "derivatives_oi_funding": null,
         "catalyst_news_risk": null,
@@ -18564,19 +18825,19 @@
       "contract_multiplier": 1,
       "fallback_used": false,
       "market": {
-        "price_usd": 0.00924761,
-        "volume_24h_usd": 12385924,
+        "price_usd": 0.00925203,
+        "volume_24h_usd": 12535885,
         "change_1h_pct": -0.1296,
-        "change_24h_pct": -3.7785,
+        "change_24h_pct": -3.68335,
         "change_7d_pct": 13.5047
       },
       "timeframes": {
         "5m": {
           "status": "PASS",
           "bars": 180,
-          "first_closed_bar_utc": "2026-09-27T01:45:00+00:00",
-          "last_closed_bar_utc": "2026-09-27T16:40:00+00:00",
-          "last_close": 0.009241,
+          "first_closed_bar_utc": "2026-09-27T01:55:00+00:00",
+          "last_closed_bar_utc": "2026-09-27T16:50:00+00:00",
+          "last_close": 0.009245,
           "gaps": 0
         },
         "15m": {
@@ -18851,9 +19112,9 @@
       },
       "score_inputs": {
         "technical_engine_score": 55.0,
-        "volume_24h_usd": 12385924,
+        "volume_24h_usd": 12535885,
         "change_1h_pct": -0.1296,
-        "change_24h_pct": -3.7785,
+        "change_24h_pct": -3.68335,
         "change_7d_pct": 13.5047,
         "derivatives_oi_funding": null,
         "catalyst_news_risk": null,
@@ -18878,18 +19139,18 @@
       "fallback_used": false,
       "market": {
         "price_usd": 7.75,
-        "volume_24h_usd": 73874625,
+        "volume_24h_usd": 73324549,
         "change_1h_pct": -0.2348,
-        "change_24h_pct": -0.69817,
+        "change_24h_pct": -0.19295,
         "change_7d_pct": -0.3053
       },
       "timeframes": {
         "5m": {
           "status": "PASS",
           "bars": 180,
-          "first_closed_bar_utc": "2026-09-27T01:45:00+00:00",
-          "last_closed_bar_utc": "2026-09-27T16:40:00+00:00",
-          "last_close": 7.761,
+          "first_closed_bar_utc": "2026-09-27T01:55:00+00:00",
+          "last_closed_bar_utc": "2026-09-27T16:50:00+00:00",
+          "last_close": 7.751,
           "gaps": 0
         },
         "15m": {
@@ -19094,9 +19355,9 @@
       },
       "score_inputs": {
         "technical_engine_score": 51.5,
-        "volume_24h_usd": 73874625,
+        "volume_24h_usd": 73324549,
         "change_1h_pct": -0.2348,
-        "change_24h_pct": -0.69817,
+        "change_24h_pct": -0.19295,
         "change_7d_pct": -0.3053,
         "derivatives_oi_funding": null,
         "catalyst_news_risk": null,
@@ -19120,18 +19381,18 @@
       "contract_multiplier": 1,
       "fallback_used": false,
       "market": {
-        "price_usd": 0.841933,
-        "volume_24h_usd": 67090234,
+        "price_usd": 0.840834,
+        "volume_24h_usd": 66661570,
         "change_1h_pct": 0.1594,
-        "change_24h_pct": -3.80958,
+        "change_24h_pct": -3.95036,
         "change_7d_pct": 17.7475
       },
       "timeframes": {
         "5m": {
           "status": "PASS",
           "bars": 180,
-          "first_closed_bar_utc": "2026-09-27T01:45:00+00:00",
-          "last_closed_bar_utc": "2026-09-27T16:40:00+00:00",
+          "first_closed_bar_utc": "2026-09-27T01:55:00+00:00",
+          "last_closed_bar_utc": "2026-09-27T16:50:00+00:00",
           "last_close": 0.8398,
           "gaps": 0
         },
@@ -19337,9 +19598,9 @@
       },
       "score_inputs": {
         "technical_engine_score": 57.0,
-        "volume_24h_usd": 67090234,
+        "volume_24h_usd": 66661570,
         "change_1h_pct": 0.1594,
-        "change_24h_pct": -3.80958,
+        "change_24h_pct": -3.95036,
         "change_7d_pct": 17.7475,
         "derivatives_oi_funding": null,
         "catalyst_news_risk": null,
@@ -19363,19 +19624,19 @@
       "contract_multiplier": 1,
       "fallback_used": false,
       "market": {
-        "price_usd": 0.02734066,
-        "volume_24h_usd": 9205318,
+        "price_usd": 0.02732325,
+        "volume_24h_usd": 8879012,
         "change_1h_pct": -0.6072,
-        "change_24h_pct": 3.15211,
+        "change_24h_pct": 2.82932,
         "change_7d_pct": 11.4122
       },
       "timeframes": {
         "5m": {
           "status": "PASS",
           "bars": 180,
-          "first_closed_bar_utc": "2026-09-27T01:45:00+00:00",
-          "last_closed_bar_utc": "2026-09-27T16:40:00+00:00",
-          "last_close": 0.02739,
+          "first_closed_bar_utc": "2026-09-27T01:55:00+00:00",
+          "last_closed_bar_utc": "2026-09-27T16:50:00+00:00",
+          "last_close": 0.02741,
           "gaps": 0
         },
         "15m": {
@@ -19580,9 +19841,9 @@
       },
       "score_inputs": {
         "technical_engine_score": 54.0,
-        "volume_24h_usd": 9205318,
+        "volume_24h_usd": 8879012,
         "change_1h_pct": -0.6072,
-        "change_24h_pct": 3.15211,
+        "change_24h_pct": 2.82932,
         "change_7d_pct": 11.4122,
         "derivatives_oi_funding": null,
         "catalyst_news_risk": null,
@@ -19606,19 +19867,19 @@
       "contract_multiplier": 1,
       "fallback_used": false,
       "market": {
-        "price_usd": 0.699574,
-        "volume_24h_usd": 54585714,
+        "price_usd": 0.699347,
+        "volume_24h_usd": 55552701,
         "change_1h_pct": -2.6199,
-        "change_24h_pct": -8.08111,
+        "change_24h_pct": -7.44735,
         "change_7d_pct": 1.7907
       },
       "timeframes": {
         "5m": {
           "status": "PASS",
           "bars": 180,
-          "first_closed_bar_utc": "2026-09-27T01:45:00+00:00",
-          "last_closed_bar_utc": "2026-09-27T16:40:00+00:00",
-          "last_close": 0.6994,
+          "first_closed_bar_utc": "2026-09-27T01:55:00+00:00",
+          "last_closed_bar_utc": "2026-09-27T16:50:00+00:00",
+          "last_close": 0.6988,
           "gaps": 0
         },
         "15m": {
@@ -19823,9 +20084,9 @@
       },
       "score_inputs": {
         "technical_engine_score": 61.5,
-        "volume_24h_usd": 54585714,
+        "volume_24h_usd": 55552701,
         "change_1h_pct": -2.6199,
-        "change_24h_pct": -8.08111,
+        "change_24h_pct": -7.44735,
         "change_7d_pct": 1.7907,
         "derivatives_oi_funding": null,
         "catalyst_news_risk": null,
@@ -19849,19 +20110,19 @@
       "contract_multiplier": 1,
       "fallback_used": false,
       "market": {
-        "price_usd": 0.084612,
-        "volume_24h_usd": 81553243,
+        "price_usd": 0.084352,
+        "volume_24h_usd": 80447014,
         "change_1h_pct": -0.6325,
-        "change_24h_pct": 9.12128,
+        "change_24h_pct": 8.51138,
         "change_7d_pct": 40.952
       },
       "timeframes": {
         "5m": {
           "status": "PASS",
           "bars": 180,
-          "first_closed_bar_utc": "2026-09-27T01:45:00+00:00",
-          "last_closed_bar_utc": "2026-09-27T16:40:00+00:00",
-          "last_close": 0.08446,
+          "first_closed_bar_utc": "2026-09-27T01:55:00+00:00",
+          "last_closed_bar_utc": "2026-09-27T16:50:00+00:00",
+          "last_close": 0.08425,
           "gaps": 0
         },
         "15m": {
@@ -20066,9 +20327,9 @@
       },
       "score_inputs": {
         "technical_engine_score": 59.0,
-        "volume_24h_usd": 81553243,
+        "volume_24h_usd": 80447014,
         "change_1h_pct": -0.6325,
-        "change_24h_pct": 9.12128,
+        "change_24h_pct": 8.51138,
         "change_7d_pct": 40.952,
         "derivatives_oi_funding": null,
         "catalyst_news_risk": null,
@@ -20092,19 +20353,19 @@
       "contract_multiplier": 1,
       "fallback_used": false,
       "market": {
-        "price_usd": 0.339496,
-        "volume_24h_usd": 29854525,
+        "price_usd": 0.338845,
+        "volume_24h_usd": 31932786,
         "change_1h_pct": -0.73,
-        "change_24h_pct": -2.11083,
+        "change_24h_pct": -2.38126,
         "change_7d_pct": 10.3096
       },
       "timeframes": {
         "5m": {
           "status": "PASS",
           "bars": 180,
-          "first_closed_bar_utc": "2026-09-27T01:45:00+00:00",
-          "last_closed_bar_utc": "2026-09-27T16:40:00+00:00",
-          "last_close": 0.3382,
+          "first_closed_bar_utc": "2026-09-27T01:55:00+00:00",
+          "last_closed_bar_utc": "2026-09-27T16:50:00+00:00",
+          "last_close": 0.3381,
           "gaps": 0
         },
         "15m": {
@@ -20309,9 +20570,9 @@
       },
       "score_inputs": {
         "technical_engine_score": 65.0,
-        "volume_24h_usd": 29854525,
+        "volume_24h_usd": 31932786,
         "change_1h_pct": -0.73,
-        "change_24h_pct": -2.11083,
+        "change_24h_pct": -2.38126,
         "change_7d_pct": 10.3096,
         "derivatives_oi_funding": null,
         "catalyst_news_risk": null,
@@ -20335,19 +20596,19 @@
       "contract_multiplier": 1,
       "fallback_used": false,
       "market": {
-        "price_usd": 0.00993675,
-        "volume_24h_usd": 220969365,
+        "price_usd": 0.00999116,
+        "volume_24h_usd": 228356229,
         "change_1h_pct": -0.192,
-        "change_24h_pct": -2.47876,
+        "change_24h_pct": -1.65421,
         "change_7d_pct": 32.9464
       },
       "timeframes": {
         "5m": {
           "status": "PASS",
           "bars": 180,
-          "first_closed_bar_utc": "2026-09-27T01:45:00+00:00",
-          "last_closed_bar_utc": "2026-09-27T16:40:00+00:00",
-          "last_close": 0.009929,
+          "first_closed_bar_utc": "2026-09-27T01:55:00+00:00",
+          "last_closed_bar_utc": "2026-09-27T16:50:00+00:00",
+          "last_close": 0.009986,
           "gaps": 0
         },
         "15m": {
@@ -20552,9 +20813,9 @@
       },
       "score_inputs": {
         "technical_engine_score": 54.0,
-        "volume_24h_usd": 220969365,
+        "volume_24h_usd": 228356229,
         "change_1h_pct": -0.192,
-        "change_24h_pct": -2.47876,
+        "change_24h_pct": -1.65421,
         "change_7d_pct": 32.9464,
         "derivatives_oi_funding": null,
         "catalyst_news_risk": null,
@@ -20578,19 +20839,19 @@
       "contract_multiplier": 1,
       "fallback_used": false,
       "market": {
-        "price_usd": 2.13,
-        "volume_24h_usd": 210488270,
+        "price_usd": 2.12,
+        "volume_24h_usd": 210189871,
         "change_1h_pct": -0.1701,
-        "change_24h_pct": -2.09317,
+        "change_24h_pct": -1.89238,
         "change_7d_pct": 5.4367
       },
       "timeframes": {
         "5m": {
           "status": "PASS",
           "bars": 180,
-          "first_closed_bar_utc": "2026-09-27T01:45:00+00:00",
-          "last_closed_bar_utc": "2026-09-27T16:40:00+00:00",
-          "last_close": 2.123,
+          "first_closed_bar_utc": "2026-09-27T01:55:00+00:00",
+          "last_closed_bar_utc": "2026-09-27T16:50:00+00:00",
+          "last_close": 2.121,
           "gaps": 0
         },
         "15m": {
@@ -20795,9 +21056,9 @@
       },
       "score_inputs": {
         "technical_engine_score": 64.5,
-        "volume_24h_usd": 210488270,
+        "volume_24h_usd": 210189871,
         "change_1h_pct": -0.1701,
-        "change_24h_pct": -2.09317,
+        "change_24h_pct": -1.89238,
         "change_7d_pct": 5.4367,
         "derivatives_oi_funding": null,
         "catalyst_news_risk": null,
@@ -20822,18 +21083,18 @@
       "fallback_used": false,
       "market": {
         "price_usd": 2.17,
-        "volume_24h_usd": 81611153,
+        "volume_24h_usd": 86080866,
         "change_1h_pct": 0.2287,
-        "change_24h_pct": 6.62859,
+        "change_24h_pct": 6.77054,
         "change_7d_pct": 35.0612
       },
       "timeframes": {
         "5m": {
           "status": "PASS",
           "bars": 180,
-          "first_closed_bar_utc": "2026-09-27T01:45:00+00:00",
-          "last_closed_bar_utc": "2026-09-27T16:40:00+00:00",
-          "last_close": 2.17,
+          "first_closed_bar_utc": "2026-09-27T01:55:00+00:00",
+          "last_closed_bar_utc": "2026-09-27T16:50:00+00:00",
+          "last_close": 2.1692,
           "gaps": 0
         },
         "15m": {
@@ -21038,9 +21299,9 @@
       },
       "score_inputs": {
         "technical_engine_score": 62.0,
-        "volume_24h_usd": 81611153,
+        "volume_24h_usd": 86080866,
         "change_1h_pct": 0.2287,
-        "change_24h_pct": 6.62859,
+        "change_24h_pct": 6.77054,
         "change_7d_pct": 35.0612,
         "derivatives_oi_funding": null,
         "catalyst_news_risk": null,
@@ -21065,18 +21326,18 @@
       "fallback_used": false,
       "market": {
         "price_usd": 1.64,
-        "volume_24h_usd": 68480170,
+        "volume_24h_usd": 64132831,
         "change_1h_pct": 0.5211,
-        "change_24h_pct": 0.4498,
+        "change_24h_pct": -0.17523,
         "change_7d_pct": 51.9636
       },
       "timeframes": {
         "5m": {
           "status": "PASS",
           "bars": 180,
-          "first_closed_bar_utc": "2026-09-27T01:45:00+00:00",
-          "last_closed_bar_utc": "2026-09-27T16:40:00+00:00",
-          "last_close": 1.6367,
+          "first_closed_bar_utc": "2026-09-27T01:55:00+00:00",
+          "last_closed_bar_utc": "2026-09-27T16:50:00+00:00",
+          "last_close": 1.6329,
           "gaps": 0
         },
         "15m": {
@@ -21281,9 +21542,9 @@
       },
       "score_inputs": {
         "technical_engine_score": 58.5,
-        "volume_24h_usd": 68480170,
+        "volume_24h_usd": 64132831,
         "change_1h_pct": 0.5211,
-        "change_24h_pct": 0.4498,
+        "change_24h_pct": -0.17523,
         "change_7d_pct": 51.9636,
         "derivatives_oi_funding": null,
         "catalyst_news_risk": null,
@@ -21307,19 +21568,19 @@
       "contract_multiplier": 1,
       "fallback_used": true,
       "market": {
-        "price_usd": 0.242713,
-        "volume_24h_usd": 101413895,
+        "price_usd": 0.241992,
+        "volume_24h_usd": 97043607,
         "change_1h_pct": -0.1276,
-        "change_24h_pct": -6.23084,
+        "change_24h_pct": -6.53416,
         "change_7d_pct": 41.6394
       },
       "timeframes": {
         "5m": {
           "status": "PASS",
           "bars": 180,
-          "first_closed_bar_utc": "2026-09-27T01:45:00+00:00",
-          "last_closed_bar_utc": "2026-09-27T16:40:00+00:00",
-          "last_close": 0.2421,
+          "first_closed_bar_utc": "2026-09-27T01:55:00+00:00",
+          "last_closed_bar_utc": "2026-09-27T16:50:00+00:00",
+          "last_close": 0.2423,
           "gaps": 0
         },
         "15m": {
@@ -21524,9 +21785,9 @@
       },
       "score_inputs": {
         "technical_engine_score": 59.0,
-        "volume_24h_usd": 101413895,
+        "volume_24h_usd": 97043607,
         "change_1h_pct": -0.1276,
-        "change_24h_pct": -6.23084,
+        "change_24h_pct": -6.53416,
         "change_7d_pct": 41.6394,
         "derivatives_oi_funding": null,
         "catalyst_news_risk": null,
@@ -21550,19 +21811,19 @@
       "contract_multiplier": 1,
       "fallback_used": false,
       "market": {
-        "price_usd": 0.347488,
-        "volume_24h_usd": 52199127,
+        "price_usd": 0.347788,
+        "volume_24h_usd": 52292043,
         "change_1h_pct": 0.3826,
-        "change_24h_pct": -2.59465,
+        "change_24h_pct": -2.5292,
         "change_7d_pct": 4.3917
       },
       "timeframes": {
         "5m": {
           "status": "PASS",
           "bars": 180,
-          "first_closed_bar_utc": "2026-09-27T01:45:00+00:00",
-          "last_closed_bar_utc": "2026-09-27T16:40:00+00:00",
-          "last_close": 0.3474,
+          "first_closed_bar_utc": "2026-09-27T01:55:00+00:00",
+          "last_closed_bar_utc": "2026-09-27T16:50:00+00:00",
+          "last_close": 0.3471,
           "gaps": 0
         },
         "15m": {
@@ -21767,9 +22028,9 @@
       },
       "score_inputs": {
         "technical_engine_score": 57.0,
-        "volume_24h_usd": 52199127,
+        "volume_24h_usd": 52292043,
         "change_1h_pct": 0.3826,
-        "change_24h_pct": -2.59465,
+        "change_24h_pct": -2.5292,
         "change_7d_pct": 4.3917,
         "derivatives_oi_funding": null,
         "catalyst_news_risk": null,
@@ -21793,19 +22054,19 @@
       "contract_multiplier": 1,
       "fallback_used": false,
       "market": {
-        "price_usd": 0.806382,
-        "volume_24h_usd": 79966579,
+        "price_usd": 0.804943,
+        "volume_24h_usd": 80131006,
         "change_1h_pct": -0.2371,
-        "change_24h_pct": -0.36132,
+        "change_24h_pct": -0.29638,
         "change_7d_pct": 24.8787
       },
       "timeframes": {
         "5m": {
           "status": "PASS",
           "bars": 180,
-          "first_closed_bar_utc": "2026-09-27T01:45:00+00:00",
-          "last_closed_bar_utc": "2026-09-27T16:40:00+00:00",
-          "last_close": 0.8039,
+          "first_closed_bar_utc": "2026-09-27T01:55:00+00:00",
+          "last_closed_bar_utc": "2026-09-27T16:50:00+00:00",
+          "last_close": 0.8034,
           "gaps": 0
         },
         "15m": {
@@ -22010,9 +22271,9 @@
       },
       "score_inputs": {
         "technical_engine_score": 63.0,
-        "volume_24h_usd": 79966579,
+        "volume_24h_usd": 80131006,
         "change_1h_pct": -0.2371,
-        "change_24h_pct": -0.36132,
+        "change_24h_pct": -0.29638,
         "change_7d_pct": 24.8787,
         "derivatives_oi_funding": null,
         "catalyst_news_risk": null,
@@ -22036,19 +22297,19 @@
       "contract_multiplier": 1,
       "fallback_used": false,
       "market": {
-        "price_usd": 0.073824,
-        "volume_24h_usd": 102112411,
+        "price_usd": 0.073607,
+        "volume_24h_usd": 102525455,
         "change_1h_pct": -0.4635,
-        "change_24h_pct": -1.1712,
+        "change_24h_pct": -0.98499,
         "change_7d_pct": 54.2377
       },
       "timeframes": {
         "5m": {
           "status": "PASS",
           "bars": 180,
-          "first_closed_bar_utc": "2026-09-27T01:45:00+00:00",
-          "last_closed_bar_utc": "2026-09-27T16:40:00+00:00",
-          "last_close": 0.07352,
+          "first_closed_bar_utc": "2026-09-27T01:55:00+00:00",
+          "last_closed_bar_utc": "2026-09-27T16:50:00+00:00",
+          "last_close": 0.07349,
           "gaps": 0
         },
         "15m": {
@@ -22253,9 +22514,9 @@
       },
       "score_inputs": {
         "technical_engine_score": 55.0,
-        "volume_24h_usd": 102112411,
+        "volume_24h_usd": 102525455,
         "change_1h_pct": -0.4635,
-        "change_24h_pct": -1.1712,
+        "change_24h_pct": -0.98499,
         "change_7d_pct": 54.2377,
         "derivatives_oi_funding": null,
         "catalyst_news_risk": null,
@@ -22279,19 +22540,19 @@
       "contract_multiplier": 1,
       "fallback_used": false,
       "market": {
-        "price_usd": 0.493744,
-        "volume_24h_usd": 46926527,
+        "price_usd": 0.493131,
+        "volume_24h_usd": 46133154,
         "change_1h_pct": 0.0411,
-        "change_24h_pct": -3.7271,
+        "change_24h_pct": -3.70378,
         "change_7d_pct": 20.8978
       },
       "timeframes": {
         "5m": {
           "status": "PASS",
           "bars": 180,
-          "first_closed_bar_utc": "2026-09-27T01:45:00+00:00",
-          "last_closed_bar_utc": "2026-09-27T16:40:00+00:00",
-          "last_close": 0.4933,
+          "first_closed_bar_utc": "2026-09-27T01:55:00+00:00",
+          "last_closed_bar_utc": "2026-09-27T16:50:00+00:00",
+          "last_close": 0.4926,
           "gaps": 0
         },
         "15m": {
@@ -22496,9 +22757,9 @@
       },
       "score_inputs": {
         "technical_engine_score": 57.0,
-        "volume_24h_usd": 46926527,
+        "volume_24h_usd": 46133154,
         "change_1h_pct": 0.0411,
-        "change_24h_pct": -3.7271,
+        "change_24h_pct": -3.70378,
         "change_7d_pct": 20.8978,
         "derivatives_oi_funding": null,
         "catalyst_news_risk": null,
@@ -22522,19 +22783,19 @@
       "contract_multiplier": 1,
       "fallback_used": false,
       "market": {
-        "price_usd": 0.105831,
-        "volume_24h_usd": 128727440,
+        "price_usd": 0.105882,
+        "volume_24h_usd": 127322904,
         "change_1h_pct": -1.1113,
-        "change_24h_pct": -9.11929,
+        "change_24h_pct": -9.05039,
         "change_7d_pct": 21.1653
       },
       "timeframes": {
         "5m": {
           "status": "PASS",
           "bars": 180,
-          "first_closed_bar_utc": "2026-09-27T01:45:00+00:00",
-          "last_closed_bar_utc": "2026-09-27T16:40:00+00:00",
-          "last_close": 0.10574,
+          "first_closed_bar_utc": "2026-09-27T01:55:00+00:00",
+          "last_closed_bar_utc": "2026-09-27T16:50:00+00:00",
+          "last_close": 0.10587,
           "gaps": 0
         },
         "15m": {
@@ -22739,9 +23000,9 @@
       },
       "score_inputs": {
         "technical_engine_score": 64.0,
-        "volume_24h_usd": 128727440,
+        "volume_24h_usd": 127322904,
         "change_1h_pct": -1.1113,
-        "change_24h_pct": -9.11929,
+        "change_24h_pct": -9.05039,
         "change_7d_pct": 21.1653,
         "derivatives_oi_funding": null,
         "catalyst_news_risk": null,
@@ -22756,7 +23017,7 @@
       }
     },
     {
-      "rank": 119,
+      "rank": 120,
       "id": "pendle",
       "name": "Pendle",
       "ticker": "PENDLE",
@@ -22765,19 +23026,19 @@
       "contract_multiplier": 1,
       "fallback_used": false,
       "market": {
-        "price_usd": 2.65,
-        "volume_24h_usd": 63365138,
+        "price_usd": 2.64,
+        "volume_24h_usd": 63600860,
         "change_1h_pct": 0.6077,
-        "change_24h_pct": 1.30064,
+        "change_24h_pct": 1.70183,
         "change_7d_pct": 3.5779
       },
       "timeframes": {
         "5m": {
           "status": "PASS",
           "bars": 180,
-          "first_closed_bar_utc": "2026-09-27T01:45:00+00:00",
-          "last_closed_bar_utc": "2026-09-27T16:40:00+00:00",
-          "last_close": 2.646,
+          "first_closed_bar_utc": "2026-09-27T01:55:00+00:00",
+          "last_closed_bar_utc": "2026-09-27T16:50:00+00:00",
+          "last_close": 2.641,
           "gaps": 0
         },
         "15m": {
@@ -23003,9 +23264,9 @@
       },
       "score_inputs": {
         "technical_engine_score": 94.0,
-        "volume_24h_usd": 63365138,
+        "volume_24h_usd": 63600860,
         "change_1h_pct": 0.6077,
-        "change_24h_pct": 1.30064,
+        "change_24h_pct": 1.70183,
         "change_7d_pct": 3.5779,
         "derivatives_oi_funding": null,
         "catalyst_news_risk": null,
@@ -23029,19 +23290,19 @@
       "contract_multiplier": 1,
       "fallback_used": false,
       "market": {
-        "price_usd": 0.02687993,
-        "volume_24h_usd": 9396053,
+        "price_usd": 0.02672592,
+        "volume_24h_usd": 9353024,
         "change_1h_pct": -1.6616,
-        "change_24h_pct": 2.15119,
+        "change_24h_pct": 2.05027,
         "change_7d_pct": 13.9587
       },
       "timeframes": {
         "5m": {
           "status": "PASS",
           "bars": 180,
-          "first_closed_bar_utc": "2026-09-27T01:45:00+00:00",
-          "last_closed_bar_utc": "2026-09-27T16:40:00+00:00",
-          "last_close": 0.02682,
+          "first_closed_bar_utc": "2026-09-27T01:55:00+00:00",
+          "last_closed_bar_utc": "2026-09-27T16:50:00+00:00",
+          "last_close": 0.0267,
           "gaps": 0
         },
         "15m": {
@@ -23246,9 +23507,9 @@
       },
       "score_inputs": {
         "technical_engine_score": 90.0,
-        "volume_24h_usd": 9396053,
+        "volume_24h_usd": 9353024,
         "change_1h_pct": -1.6616,
-        "change_24h_pct": 2.15119,
+        "change_24h_pct": 2.05027,
         "change_7d_pct": 13.9587,
         "derivatives_oi_funding": null,
         "catalyst_news_risk": null,
@@ -23272,19 +23533,19 @@
       "contract_multiplier": 1,
       "fallback_used": false,
       "market": {
-        "price_usd": 21.73,
-        "volume_24h_usd": 7442715,
+        "price_usd": 21.7,
+        "volume_24h_usd": 6708744,
         "change_1h_pct": 0.4892,
-        "change_24h_pct": -0.01274,
+        "change_24h_pct": -0.10873,
         "change_7d_pct": 30.0597
       },
       "timeframes": {
         "5m": {
           "status": "PASS",
           "bars": 180,
-          "first_closed_bar_utc": "2026-09-27T01:45:00+00:00",
-          "last_closed_bar_utc": "2026-09-27T16:40:00+00:00",
-          "last_close": 21.78,
+          "first_closed_bar_utc": "2026-09-27T01:55:00+00:00",
+          "last_closed_bar_utc": "2026-09-27T16:50:00+00:00",
+          "last_close": 21.77,
           "gaps": 0
         },
         "15m": {
@@ -23489,9 +23750,9 @@
       },
       "score_inputs": {
         "technical_engine_score": 65.0,
-        "volume_24h_usd": 7442715,
+        "volume_24h_usd": 6708744,
         "change_1h_pct": 0.4892,
-        "change_24h_pct": -0.01274,
+        "change_24h_pct": -0.10873,
         "change_7d_pct": 30.0597,
         "derivatives_oi_funding": null,
         "catalyst_news_risk": null,
@@ -23516,18 +23777,18 @@
       "fallback_used": false,
       "market": {
         "price_usd": 1.56,
-        "volume_24h_usd": 5792385,
+        "volume_24h_usd": 6158711,
         "change_1h_pct": 0.176,
-        "change_24h_pct": 1.59318,
+        "change_24h_pct": 1.35516,
         "change_7d_pct": -4.4056
       },
       "timeframes": {
         "5m": {
           "status": "PASS",
           "bars": 180,
-          "first_closed_bar_utc": "2026-09-27T01:45:00+00:00",
-          "last_closed_bar_utc": "2026-09-27T16:40:00+00:00",
-          "last_close": 1.563,
+          "first_closed_bar_utc": "2026-09-27T01:55:00+00:00",
+          "last_closed_bar_utc": "2026-09-27T16:50:00+00:00",
+          "last_close": 1.5592,
           "gaps": 0
         },
         "15m": {
@@ -23732,9 +23993,9 @@
       },
       "score_inputs": {
         "technical_engine_score": 64.0,
-        "volume_24h_usd": 5792385,
+        "volume_24h_usd": 6158711,
         "change_1h_pct": 0.176,
-        "change_24h_pct": 1.59318,
+        "change_24h_pct": 1.35516,
         "change_7d_pct": -4.4056,
         "derivatives_oi_funding": null,
         "catalyst_news_risk": null,
@@ -23749,7 +24010,7 @@
       }
     },
     {
-      "rank": 125,
+      "rank": 126,
       "id": "grass",
       "name": "Grass",
       "ticker": "GRASS",
@@ -23758,19 +24019,19 @@
       "contract_multiplier": 1,
       "fallback_used": false,
       "market": {
-        "price_usd": 0.629771,
-        "volume_24h_usd": 78296569,
+        "price_usd": 0.621613,
+        "volume_24h_usd": 81446939,
         "change_1h_pct": 0.6535,
-        "change_24h_pct": 16.84239,
+        "change_24h_pct": 16.23646,
         "change_7d_pct": 73.5206
       },
       "timeframes": {
         "5m": {
           "status": "PASS",
           "bars": 180,
-          "first_closed_bar_utc": "2026-09-27T01:45:00+00:00",
-          "last_closed_bar_utc": "2026-09-27T16:40:00+00:00",
-          "last_close": 0.6302,
+          "first_closed_bar_utc": "2026-09-27T01:55:00+00:00",
+          "last_closed_bar_utc": "2026-09-27T16:50:00+00:00",
+          "last_close": 0.6245,
           "gaps": 0
         },
         "15m": {
@@ -23975,9 +24236,9 @@
       },
       "score_inputs": {
         "technical_engine_score": 85.0,
-        "volume_24h_usd": 78296569,
+        "volume_24h_usd": 81446939,
         "change_1h_pct": 0.6535,
-        "change_24h_pct": 16.84239,
+        "change_24h_pct": 16.23646,
         "change_7d_pct": 73.5206,
         "derivatives_oi_funding": null,
         "catalyst_news_risk": null,
@@ -24001,19 +24262,19 @@
       "contract_multiplier": 1,
       "fallback_used": false,
       "market": {
-        "price_usd": 0.130391,
-        "volume_24h_usd": 5289261,
+        "price_usd": 0.130375,
+        "volume_24h_usd": 5080671,
         "change_1h_pct": 0.2215,
-        "change_24h_pct": -2.00672,
+        "change_24h_pct": -1.41428,
         "change_7d_pct": -2.4242
       },
       "timeframes": {
         "5m": {
           "status": "PASS",
           "bars": 180,
-          "first_closed_bar_utc": "2026-09-27T01:45:00+00:00",
-          "last_closed_bar_utc": "2026-09-27T16:40:00+00:00",
-          "last_close": 0.13016,
+          "first_closed_bar_utc": "2026-09-27T01:55:00+00:00",
+          "last_closed_bar_utc": "2026-09-27T16:50:00+00:00",
+          "last_close": 0.13066,
           "gaps": 0
         },
         "15m": {
@@ -24239,9 +24500,9 @@
       },
       "score_inputs": {
         "technical_engine_score": 77.5,
-        "volume_24h_usd": 5289261,
+        "volume_24h_usd": 5080671,
         "change_1h_pct": 0.2215,
-        "change_24h_pct": -2.00672,
+        "change_24h_pct": -1.41428,
         "change_7d_pct": -2.4242,
         "derivatives_oi_funding": null,
         "catalyst_news_risk": null,
@@ -24265,19 +24526,19 @@
       "contract_multiplier": 1,
       "fallback_used": false,
       "market": {
-        "price_usd": 0.439605,
-        "volume_24h_usd": 8546372,
+        "price_usd": 0.439675,
+        "volume_24h_usd": 8455570,
         "change_1h_pct": -0.8199,
-        "change_24h_pct": -5.29522,
+        "change_24h_pct": -5.34668,
         "change_7d_pct": -3.5603
       },
       "timeframes": {
         "5m": {
           "status": "PASS",
           "bars": 180,
-          "first_closed_bar_utc": "2026-09-27T01:45:00+00:00",
-          "last_closed_bar_utc": "2026-09-27T16:40:00+00:00",
-          "last_close": 0.4397,
+          "first_closed_bar_utc": "2026-09-27T01:55:00+00:00",
+          "last_closed_bar_utc": "2026-09-27T16:50:00+00:00",
+          "last_close": 0.4393,
           "gaps": 0
         },
         "15m": {
@@ -24482,9 +24743,9 @@
       },
       "score_inputs": {
         "technical_engine_score": 67.0,
-        "volume_24h_usd": 8546372,
+        "volume_24h_usd": 8455570,
         "change_1h_pct": -0.8199,
-        "change_24h_pct": -5.29522,
+        "change_24h_pct": -5.34668,
         "change_7d_pct": -3.5603,
         "derivatives_oi_funding": null,
         "catalyst_news_risk": null,
@@ -24508,19 +24769,19 @@
       "contract_multiplier": 1,
       "fallback_used": false,
       "market": {
-        "price_usd": 0.486149,
-        "volume_24h_usd": 57866081,
+        "price_usd": 0.484709,
+        "volume_24h_usd": 56737303,
         "change_1h_pct": 1.3122,
-        "change_24h_pct": -2.83023,
+        "change_24h_pct": -2.90589,
         "change_7d_pct": 22.3545
       },
       "timeframes": {
         "5m": {
           "status": "PASS",
           "bars": 180,
-          "first_closed_bar_utc": "2026-09-27T01:45:00+00:00",
-          "last_closed_bar_utc": "2026-09-27T16:40:00+00:00",
-          "last_close": 0.4853,
+          "first_closed_bar_utc": "2026-09-27T01:55:00+00:00",
+          "last_closed_bar_utc": "2026-09-27T16:50:00+00:00",
+          "last_close": 0.4839,
           "gaps": 0
         },
         "15m": {
@@ -24725,9 +24986,9 @@
       },
       "score_inputs": {
         "technical_engine_score": 58.0,
-        "volume_24h_usd": 57866081,
+        "volume_24h_usd": 56737303,
         "change_1h_pct": 1.3122,
-        "change_24h_pct": -2.83023,
+        "change_24h_pct": -2.90589,
         "change_7d_pct": 22.3545,
         "derivatives_oi_funding": null,
         "catalyst_news_risk": null,
@@ -24751,19 +25012,19 @@
       "contract_multiplier": 1,
       "fallback_used": false,
       "market": {
-        "price_usd": 0.149227,
-        "volume_24h_usd": 11749601,
+        "price_usd": 0.148946,
+        "volume_24h_usd": 11801530,
         "change_1h_pct": -0.4709,
-        "change_24h_pct": 2.43182,
+        "change_24h_pct": 2.30695,
         "change_7d_pct": 14.0658
       },
       "timeframes": {
         "5m": {
           "status": "PASS",
           "bars": 180,
-          "first_closed_bar_utc": "2026-09-27T01:45:00+00:00",
-          "last_closed_bar_utc": "2026-09-27T16:40:00+00:00",
-          "last_close": 0.14942,
+          "first_closed_bar_utc": "2026-09-27T01:55:00+00:00",
+          "last_closed_bar_utc": "2026-09-27T16:50:00+00:00",
+          "last_close": 0.14925,
           "gaps": 0
         },
         "15m": {
@@ -24968,9 +25229,9 @@
       },
       "score_inputs": {
         "technical_engine_score": 62.0,
-        "volume_24h_usd": 11749601,
+        "volume_24h_usd": 11801530,
         "change_1h_pct": -0.4709,
-        "change_24h_pct": 2.43182,
+        "change_24h_pct": 2.30695,
         "change_7d_pct": 14.0658,
         "derivatives_oi_funding": null,
         "catalyst_news_risk": null,
@@ -24994,19 +25255,19 @@
       "contract_multiplier": 1,
       "fallback_used": false,
       "market": {
-        "price_usd": 0.150197,
-        "volume_24h_usd": 31831940,
+        "price_usd": 0.149618,
+        "volume_24h_usd": 31718714,
         "change_1h_pct": -0.1213,
-        "change_24h_pct": 6.02047,
+        "change_24h_pct": 4.65934,
         "change_7d_pct": 31.3064
       },
       "timeframes": {
         "5m": {
           "status": "PASS",
           "bars": 180,
-          "first_closed_bar_utc": "2026-09-27T01:45:00+00:00",
-          "last_closed_bar_utc": "2026-09-27T16:40:00+00:00",
-          "last_close": 0.15015,
+          "first_closed_bar_utc": "2026-09-27T01:55:00+00:00",
+          "last_closed_bar_utc": "2026-09-27T16:50:00+00:00",
+          "last_close": 0.14976,
           "gaps": 0
         },
         "15m": {
@@ -25281,9 +25542,9 @@
       },
       "score_inputs": {
         "technical_engine_score": 59.0,
-        "volume_24h_usd": 31831940,
+        "volume_24h_usd": 31718714,
         "change_1h_pct": -0.1213,
-        "change_24h_pct": 6.02047,
+        "change_24h_pct": 4.65934,
         "change_7d_pct": 31.3064,
         "derivatives_oi_funding": null,
         "catalyst_news_risk": null,
@@ -25307,19 +25568,19 @@
       "contract_multiplier": 1,
       "fallback_used": false,
       "market": {
-        "price_usd": 0.323952,
-        "volume_24h_usd": 5513521,
+        "price_usd": 0.323962,
+        "volume_24h_usd": 5075339,
         "change_1h_pct": 0.4608,
-        "change_24h_pct": -2.95255,
+        "change_24h_pct": -2.76452,
         "change_7d_pct": -4.3871
       },
       "timeframes": {
         "5m": {
           "status": "PASS",
           "bars": 180,
-          "first_closed_bar_utc": "2026-09-27T01:45:00+00:00",
-          "last_closed_bar_utc": "2026-09-27T16:40:00+00:00",
-          "last_close": 0.3233,
+          "first_closed_bar_utc": "2026-09-27T01:55:00+00:00",
+          "last_closed_bar_utc": "2026-09-27T16:50:00+00:00",
+          "last_close": 0.3235,
           "gaps": 0
         },
         "15m": {
@@ -25594,9 +25855,9 @@
       },
       "score_inputs": {
         "technical_engine_score": 71.5,
-        "volume_24h_usd": 5513521,
+        "volume_24h_usd": 5075339,
         "change_1h_pct": 0.4608,
-        "change_24h_pct": -2.95255,
+        "change_24h_pct": -2.76452,
         "change_7d_pct": -4.3871,
         "derivatives_oi_funding": null,
         "catalyst_news_risk": null,
@@ -25620,19 +25881,19 @@
       "contract_multiplier": 1,
       "fallback_used": false,
       "market": {
-        "price_usd": 0.144163,
-        "volume_24h_usd": 52477878,
+        "price_usd": 0.143957,
+        "volume_24h_usd": 51901395,
         "change_1h_pct": 0.333,
-        "change_24h_pct": -2.71565,
+        "change_24h_pct": -2.17452,
         "change_7d_pct": 18.1477
       },
       "timeframes": {
         "5m": {
           "status": "PASS",
           "bars": 180,
-          "first_closed_bar_utc": "2026-09-27T01:45:00+00:00",
-          "last_closed_bar_utc": "2026-09-27T16:40:00+00:00",
-          "last_close": 0.14395,
+          "first_closed_bar_utc": "2026-09-27T01:55:00+00:00",
+          "last_closed_bar_utc": "2026-09-27T16:50:00+00:00",
+          "last_close": 0.1437,
           "gaps": 0
         },
         "15m": {
@@ -25837,9 +26098,9 @@
       },
       "score_inputs": {
         "technical_engine_score": 51.5,
-        "volume_24h_usd": 52477878,
+        "volume_24h_usd": 51901395,
         "change_1h_pct": 0.333,
-        "change_24h_pct": -2.71565,
+        "change_24h_pct": -2.17452,
         "change_7d_pct": 18.1477,
         "derivatives_oi_funding": null,
         "catalyst_news_risk": null,
@@ -25863,18 +26124,18 @@
       "contract_multiplier": 1,
       "fallback_used": false,
       "market": {
-        "price_usd": 0.01697498,
-        "volume_24h_usd": 26710639,
+        "price_usd": 0.01696979,
+        "volume_24h_usd": 26642645,
         "change_1h_pct": -0.2273,
-        "change_24h_pct": -1.47791,
+        "change_24h_pct": -1.56919,
         "change_7d_pct": -1.4755
       },
       "timeframes": {
         "5m": {
           "status": "PASS",
           "bars": 180,
-          "first_closed_bar_utc": "2026-09-27T01:45:00+00:00",
-          "last_closed_bar_utc": "2026-09-27T16:40:00+00:00",
+          "first_closed_bar_utc": "2026-09-27T01:55:00+00:00",
+          "last_closed_bar_utc": "2026-09-27T16:50:00+00:00",
           "last_close": 0.01693,
           "gaps": 0
         },
@@ -26101,9 +26362,9 @@
       },
       "score_inputs": {
         "technical_engine_score": 75.0,
-        "volume_24h_usd": 26710639,
+        "volume_24h_usd": 26642645,
         "change_1h_pct": -0.2273,
-        "change_24h_pct": -1.47791,
+        "change_24h_pct": -1.56919,
         "change_7d_pct": -1.4755,
         "derivatives_oi_funding": null,
         "catalyst_news_risk": null,
@@ -26127,19 +26388,19 @@
       "contract_multiplier": 1,
       "fallback_used": false,
       "market": {
-        "price_usd": 3.7e-06,
-        "volume_24h_usd": 47372419,
+        "price_usd": 3.69e-06,
+        "volume_24h_usd": 47389183,
         "change_1h_pct": 0.8144,
-        "change_24h_pct": -1.17716,
+        "change_24h_pct": -1.36038,
         "change_7d_pct": 27.8561
       },
       "timeframes": {
         "5m": {
           "status": "PASS",
           "bars": 180,
-          "first_closed_bar_utc": "2026-09-27T01:45:00+00:00",
-          "last_closed_bar_utc": "2026-09-27T16:40:00+00:00",
-          "last_close": 3.691e-06,
+          "first_closed_bar_utc": "2026-09-27T01:55:00+00:00",
+          "last_closed_bar_utc": "2026-09-27T16:50:00+00:00",
+          "last_close": 3.683e-06,
           "gaps": 0
         },
         "15m": {
@@ -26414,9 +26675,9 @@
       },
       "score_inputs": {
         "technical_engine_score": 81.5,
-        "volume_24h_usd": 47372419,
+        "volume_24h_usd": 47389183,
         "change_1h_pct": 0.8144,
-        "change_24h_pct": -1.17716,
+        "change_24h_pct": -1.36038,
         "change_7d_pct": 27.8561,
         "derivatives_oi_funding": null,
         "catalyst_news_risk": null,
@@ -26440,19 +26701,19 @@
       "contract_multiplier": 1,
       "fallback_used": false,
       "market": {
-        "price_usd": 4.89,
-        "volume_24h_usd": 18757302,
+        "price_usd": 4.9,
+        "volume_24h_usd": 21207127,
         "change_1h_pct": 0.11,
-        "change_24h_pct": 1.76082,
+        "change_24h_pct": 2.57119,
         "change_7d_pct": 15.3477
       },
       "timeframes": {
         "5m": {
           "status": "PASS",
           "bars": 180,
-          "first_closed_bar_utc": "2026-09-27T01:45:00+00:00",
-          "last_closed_bar_utc": "2026-09-27T16:40:00+00:00",
-          "last_close": 4.873,
+          "first_closed_bar_utc": "2026-09-27T01:55:00+00:00",
+          "last_closed_bar_utc": "2026-09-27T16:50:00+00:00",
+          "last_close": 4.899,
           "gaps": 0
         },
         "15m": {
@@ -26657,9 +26918,9 @@
       },
       "score_inputs": {
         "technical_engine_score": 84.5,
-        "volume_24h_usd": 18757302,
+        "volume_24h_usd": 21207127,
         "change_1h_pct": 0.11,
-        "change_24h_pct": 1.76082,
+        "change_24h_pct": 2.57119,
         "change_7d_pct": 15.3477,
         "derivatives_oi_funding": null,
         "catalyst_news_risk": null,
@@ -26674,7 +26935,7 @@
       }
     },
     {
-      "rank": 147,
+      "rank": 148,
       "id": "jito-governance-token",
       "name": "Jito",
       "ticker": "JTO",
@@ -26683,19 +26944,19 @@
       "contract_multiplier": 1,
       "fallback_used": false,
       "market": {
-        "price_usd": 0.60377,
-        "volume_24h_usd": 52071891,
+        "price_usd": 0.599929,
+        "volume_24h_usd": 50714425,
         "change_1h_pct": -0.5907,
-        "change_24h_pct": -1.68727,
+        "change_24h_pct": -2.3597,
         "change_7d_pct": 24.3793
       },
       "timeframes": {
         "5m": {
           "status": "PASS",
           "bars": 180,
-          "first_closed_bar_utc": "2026-09-27T01:45:00+00:00",
-          "last_closed_bar_utc": "2026-09-27T16:40:00+00:00",
-          "last_close": 0.602,
+          "first_closed_bar_utc": "2026-09-27T01:55:00+00:00",
+          "last_closed_bar_utc": "2026-09-27T16:50:00+00:00",
+          "last_close": 0.5993,
           "gaps": 0
         },
         "15m": {
@@ -26900,9 +27161,9 @@
       },
       "score_inputs": {
         "technical_engine_score": 64.5,
-        "volume_24h_usd": 52071891,
+        "volume_24h_usd": 50714425,
         "change_1h_pct": -0.5907,
-        "change_24h_pct": -1.68727,
+        "change_24h_pct": -2.3597,
         "change_7d_pct": 24.3793,
         "derivatives_oi_funding": null,
         "catalyst_news_risk": null,
@@ -26926,19 +27187,19 @@
       "contract_multiplier": 1,
       "fallback_used": false,
       "market": {
-        "price_usd": 0.02851096,
-        "volume_24h_usd": 12860111,
+        "price_usd": 0.02841533,
+        "volume_24h_usd": 13718773,
         "change_1h_pct": -0.4599,
-        "change_24h_pct": 1.38714,
+        "change_24h_pct": 1.29771,
         "change_7d_pct": 37.1255
       },
       "timeframes": {
         "5m": {
           "status": "PASS",
           "bars": 180,
-          "first_closed_bar_utc": "2026-09-27T01:45:00+00:00",
-          "last_closed_bar_utc": "2026-09-27T16:40:00+00:00",
-          "last_close": 0.02837,
+          "first_closed_bar_utc": "2026-09-27T01:55:00+00:00",
+          "last_closed_bar_utc": "2026-09-27T16:50:00+00:00",
+          "last_close": 0.02833,
           "gaps": 0
         },
         "15m": {
@@ -27234,9 +27495,9 @@
       },
       "score_inputs": {
         "technical_engine_score": 100.0,
-        "volume_24h_usd": 12860111,
+        "volume_24h_usd": 13718773,
         "change_1h_pct": -0.4599,
-        "change_24h_pct": 1.38714,
+        "change_24h_pct": 1.29771,
         "change_7d_pct": 37.1255,
         "derivatives_oi_funding": null,
         "catalyst_news_risk": null,
@@ -27260,19 +27521,19 @@
       "contract_multiplier": 1,
       "fallback_used": false,
       "market": {
-        "price_usd": 0.02630733,
-        "volume_24h_usd": 152788420,
+        "price_usd": 0.02625059,
+        "volume_24h_usd": 151511648,
         "change_1h_pct": -0.7636,
-        "change_24h_pct": -2.48652,
+        "change_24h_pct": -2.36395,
         "change_7d_pct": 11.9575
       },
       "timeframes": {
         "5m": {
           "status": "PASS",
           "bars": 180,
-          "first_closed_bar_utc": "2026-09-27T01:45:00+00:00",
-          "last_closed_bar_utc": "2026-09-27T16:40:00+00:00",
-          "last_close": 0.02622,
+          "first_closed_bar_utc": "2026-09-27T01:55:00+00:00",
+          "last_closed_bar_utc": "2026-09-27T16:50:00+00:00",
+          "last_close": 0.0262,
           "gaps": 0
         },
         "15m": {
@@ -27477,9 +27738,9 @@
       },
       "score_inputs": {
         "technical_engine_score": 59.0,
-        "volume_24h_usd": 152788420,
+        "volume_24h_usd": 151511648,
         "change_1h_pct": -0.7636,
-        "change_24h_pct": -2.48652,
+        "change_24h_pct": -2.36395,
         "change_7d_pct": 11.9575,
         "derivatives_oi_funding": null,
         "catalyst_news_risk": null,
@@ -27503,19 +27764,19 @@
       "contract_multiplier": 1,
       "fallback_used": false,
       "market": {
-        "price_usd": 5.6e-05,
-        "volume_24h_usd": 12242272,
+        "price_usd": 5.587e-05,
+        "volume_24h_usd": 9615326,
         "change_1h_pct": 0.3108,
-        "change_24h_pct": -0.5628,
+        "change_24h_pct": -0.7029,
         "change_7d_pct": 9.4491
       },
       "timeframes": {
         "5m": {
           "status": "PASS",
           "bars": 180,
-          "first_closed_bar_utc": "2026-09-27T01:45:00+00:00",
-          "last_closed_bar_utc": "2026-09-27T16:40:00+00:00",
-          "last_close": 5.603e-05,
+          "first_closed_bar_utc": "2026-09-27T01:55:00+00:00",
+          "last_closed_bar_utc": "2026-09-27T16:50:00+00:00",
+          "last_close": 5.587e-05,
           "gaps": 0
         },
         "15m": {
@@ -27720,9 +27981,9 @@
       },
       "score_inputs": {
         "technical_engine_score": 51.5,
-        "volume_24h_usd": 12242272,
+        "volume_24h_usd": 9615326,
         "change_1h_pct": 0.3108,
-        "change_24h_pct": -0.5628,
+        "change_24h_pct": -0.7029,
         "change_7d_pct": 9.4491,
         "derivatives_oi_funding": null,
         "catalyst_news_risk": null,
@@ -27746,19 +28007,19 @@
       "contract_multiplier": 1,
       "fallback_used": false,
       "market": {
-        "price_usd": 0.04046519,
-        "volume_24h_usd": 24086170,
+        "price_usd": 0.04043699,
+        "volume_24h_usd": 24250971,
         "change_1h_pct": -0.2268,
-        "change_24h_pct": -4.97955,
+        "change_24h_pct": -4.20213,
         "change_7d_pct": -13.2967
       },
       "timeframes": {
         "5m": {
           "status": "PASS",
           "bars": 180,
-          "first_closed_bar_utc": "2026-09-27T01:45:00+00:00",
-          "last_closed_bar_utc": "2026-09-27T16:40:00+00:00",
-          "last_close": 0.04036,
+          "first_closed_bar_utc": "2026-09-27T01:55:00+00:00",
+          "last_closed_bar_utc": "2026-09-27T16:50:00+00:00",
+          "last_close": 0.04037,
           "gaps": 0
         },
         "15m": {
@@ -27963,9 +28224,9 @@
       },
       "score_inputs": {
         "technical_engine_score": 59.0,
-        "volume_24h_usd": 24086170,
+        "volume_24h_usd": 24250971,
         "change_1h_pct": -0.2268,
-        "change_24h_pct": -4.97955,
+        "change_24h_pct": -4.20213,
         "change_7d_pct": -13.2967,
         "derivatives_oi_funding": null,
         "catalyst_news_risk": null,
@@ -27989,19 +28250,19 @@
       "contract_multiplier": 1,
       "fallback_used": false,
       "market": {
-        "price_usd": 6.99,
-        "volume_24h_usd": 14137273,
+        "price_usd": 6.98,
+        "volume_24h_usd": 14320466,
         "change_1h_pct": -0.0917,
-        "change_24h_pct": -2.7028,
+        "change_24h_pct": -2.53022,
         "change_7d_pct": 12.0101
       },
       "timeframes": {
         "5m": {
           "status": "PASS",
           "bars": 180,
-          "first_closed_bar_utc": "2026-09-27T01:45:00+00:00",
-          "last_closed_bar_utc": "2026-09-27T16:40:00+00:00",
-          "last_close": 6.96,
+          "first_closed_bar_utc": "2026-09-27T01:55:00+00:00",
+          "last_closed_bar_utc": "2026-09-27T16:50:00+00:00",
+          "last_close": 6.967,
           "gaps": 0
         },
         "15m": {
@@ -28276,9 +28537,9 @@
       },
       "score_inputs": {
         "technical_engine_score": 64.0,
-        "volume_24h_usd": 14137273,
+        "volume_24h_usd": 14320466,
         "change_1h_pct": -0.0917,
-        "change_24h_pct": -2.7028,
+        "change_24h_pct": -2.53022,
         "change_7d_pct": 12.0101,
         "derivatives_oi_funding": null,
         "catalyst_news_risk": null,
@@ -28302,19 +28563,19 @@
       "contract_multiplier": 1,
       "fallback_used": false,
       "market": {
-        "price_usd": 0.056138,
-        "volume_24h_usd": 6124883,
+        "price_usd": 0.05607,
+        "volume_24h_usd": 4800224,
         "change_1h_pct": 0.0629,
-        "change_24h_pct": -2.11918,
+        "change_24h_pct": -1.96999,
         "change_7d_pct": 12.4964
       },
       "timeframes": {
         "5m": {
           "status": "PASS",
           "bars": 180,
-          "first_closed_bar_utc": "2026-09-27T01:45:00+00:00",
-          "last_closed_bar_utc": "2026-09-27T16:40:00+00:00",
-          "last_close": 0.05601,
+          "first_closed_bar_utc": "2026-09-27T01:55:00+00:00",
+          "last_closed_bar_utc": "2026-09-27T16:50:00+00:00",
+          "last_close": 0.05603,
           "gaps": 0
         },
         "15m": {
@@ -28519,9 +28780,9 @@
       },
       "score_inputs": {
         "technical_engine_score": 51.0,
-        "volume_24h_usd": 6124883,
+        "volume_24h_usd": 4800224,
         "change_1h_pct": 0.0629,
-        "change_24h_pct": -2.11918,
+        "change_24h_pct": -1.96999,
         "change_7d_pct": 12.4964,
         "derivatives_oi_funding": null,
         "catalyst_news_risk": null,
@@ -28545,19 +28806,19 @@
       "contract_multiplier": 1,
       "fallback_used": false,
       "market": {
-        "price_usd": 0.282673,
-        "volume_24h_usd": 20266222,
+        "price_usd": 0.283041,
+        "volume_24h_usd": 20593387,
         "change_1h_pct": -0.7195,
-        "change_24h_pct": -2.71594,
+        "change_24h_pct": -1.95456,
         "change_7d_pct": 11.9511
       },
       "timeframes": {
         "5m": {
           "status": "PASS",
           "bars": 180,
-          "first_closed_bar_utc": "2026-09-27T01:45:00+00:00",
-          "last_closed_bar_utc": "2026-09-27T16:40:00+00:00",
-          "last_close": 0.28219,
+          "first_closed_bar_utc": "2026-09-27T01:55:00+00:00",
+          "last_closed_bar_utc": "2026-09-27T16:50:00+00:00",
+          "last_close": 0.28288,
           "gaps": 0
         },
         "15m": {
@@ -28762,9 +29023,9 @@
       },
       "score_inputs": {
         "technical_engine_score": 58.0,
-        "volume_24h_usd": 20266222,
+        "volume_24h_usd": 20593387,
         "change_1h_pct": -0.7195,
-        "change_24h_pct": -2.71594,
+        "change_24h_pct": -1.95456,
         "change_7d_pct": 11.9511,
         "derivatives_oi_funding": null,
         "catalyst_news_risk": null,
@@ -28788,19 +29049,19 @@
       "contract_multiplier": 1,
       "fallback_used": false,
       "market": {
-        "price_usd": 2.848e-05,
-        "volume_24h_usd": 21762171,
+        "price_usd": 2.847e-05,
+        "volume_24h_usd": 21540661,
         "change_1h_pct": -0.1142,
-        "change_24h_pct": -3.34752,
+        "change_24h_pct": -3.40185,
         "change_7d_pct": 13.4254
       },
       "timeframes": {
         "5m": {
           "status": "PASS",
           "bars": 180,
-          "first_closed_bar_utc": "2026-09-27T01:45:00+00:00",
-          "last_closed_bar_utc": "2026-09-27T16:40:00+00:00",
-          "last_close": 2.846e-05,
+          "first_closed_bar_utc": "2026-09-27T01:55:00+00:00",
+          "last_closed_bar_utc": "2026-09-27T16:50:00+00:00",
+          "last_close": 2.845e-05,
           "gaps": 0
         },
         "15m": {
@@ -29005,9 +29266,9 @@
       },
       "score_inputs": {
         "technical_engine_score": 57.5,
-        "volume_24h_usd": 21762171,
+        "volume_24h_usd": 21540661,
         "change_1h_pct": -0.1142,
-        "change_24h_pct": -3.34752,
+        "change_24h_pct": -3.40185,
         "change_7d_pct": 13.4254,
         "derivatives_oi_funding": null,
         "catalyst_news_risk": null,
@@ -29031,19 +29292,19 @@
       "contract_multiplier": 1,
       "fallback_used": false,
       "market": {
-        "price_usd": 0.913331,
-        "volume_24h_usd": 8359514,
+        "price_usd": 0.908558,
+        "volume_24h_usd": 8146528,
         "change_1h_pct": 0.8336,
-        "change_24h_pct": -8.08735,
+        "change_24h_pct": -6.96228,
         "change_7d_pct": -22.6682
       },
       "timeframes": {
         "5m": {
           "status": "PASS",
           "bars": 180,
-          "first_closed_bar_utc": "2026-09-27T01:45:00+00:00",
-          "last_closed_bar_utc": "2026-09-27T16:40:00+00:00",
-          "last_close": 0.91321,
+          "first_closed_bar_utc": "2026-09-27T01:55:00+00:00",
+          "last_closed_bar_utc": "2026-09-27T16:50:00+00:00",
+          "last_close": 0.907,
           "gaps": 0
         },
         "15m": {
@@ -29248,9 +29509,9 @@
       },
       "score_inputs": {
         "technical_engine_score": 71.0,
-        "volume_24h_usd": 8359514,
+        "volume_24h_usd": 8146528,
         "change_1h_pct": 0.8336,
-        "change_24h_pct": -8.08735,
+        "change_24h_pct": -6.96228,
         "change_7d_pct": -22.6682,
         "derivatives_oi_funding": null,
         "catalyst_news_risk": null,
@@ -29274,19 +29535,19 @@
       "contract_multiplier": 1,
       "fallback_used": false,
       "market": {
-        "price_usd": 0.00519735,
-        "volume_24h_usd": 42843388,
+        "price_usd": 0.00515112,
+        "volume_24h_usd": 42575458,
         "change_1h_pct": -2.7923,
-        "change_24h_pct": 7.74497,
+        "change_24h_pct": 7.33888,
         "change_7d_pct": 28.1068
       },
       "timeframes": {
         "5m": {
           "status": "PASS",
           "bars": 180,
-          "first_closed_bar_utc": "2026-09-27T01:45:00+00:00",
-          "last_closed_bar_utc": "2026-09-27T16:40:00+00:00",
-          "last_close": 0.005144,
+          "first_closed_bar_utc": "2026-09-27T01:55:00+00:00",
+          "last_closed_bar_utc": "2026-09-27T16:50:00+00:00",
+          "last_close": 0.005138,
           "gaps": 0
         },
         "15m": {
@@ -29491,9 +29752,9 @@
       },
       "score_inputs": {
         "technical_engine_score": 90.0,
-        "volume_24h_usd": 42843388,
+        "volume_24h_usd": 42575458,
         "change_1h_pct": -2.7923,
-        "change_24h_pct": 7.74497,
+        "change_24h_pct": 7.33888,
         "change_7d_pct": 28.1068,
         "derivatives_oi_funding": null,
         "catalyst_news_risk": null,
@@ -29517,19 +29778,19 @@
       "contract_multiplier": 1,
       "fallback_used": false,
       "market": {
-        "price_usd": 0.04506435,
-        "volume_24h_usd": 27208838,
+        "price_usd": 0.04494896,
+        "volume_24h_usd": 23380275,
         "change_1h_pct": 1.3144,
-        "change_24h_pct": -8.2182,
+        "change_24h_pct": -8.55318,
         "change_7d_pct": 63.4159
       },
       "timeframes": {
         "5m": {
           "status": "PASS",
           "bars": 180,
-          "first_closed_bar_utc": "2026-09-27T01:45:00+00:00",
-          "last_closed_bar_utc": "2026-09-27T16:40:00+00:00",
-          "last_close": 0.04491,
+          "first_closed_bar_utc": "2026-09-27T01:55:00+00:00",
+          "last_closed_bar_utc": "2026-09-27T16:50:00+00:00",
+          "last_close": 0.0449,
           "gaps": 0
         },
         "15m": {
@@ -29755,9 +30016,9 @@
       },
       "score_inputs": {
         "technical_engine_score": 76.0,
-        "volume_24h_usd": 27208838,
+        "volume_24h_usd": 23380275,
         "change_1h_pct": 1.3144,
-        "change_24h_pct": -8.2182,
+        "change_24h_pct": -8.55318,
         "change_7d_pct": 63.4159,
         "derivatives_oi_funding": null,
         "catalyst_news_risk": null,
@@ -29781,19 +30042,19 @@
       "contract_multiplier": 1,
       "fallback_used": false,
       "market": {
-        "price_usd": 0.216377,
-        "volume_24h_usd": 9481709,
+        "price_usd": 0.216546,
+        "volume_24h_usd": 9388901,
         "change_1h_pct": -0.6414,
-        "change_24h_pct": -5.18145,
+        "change_24h_pct": -4.98794,
         "change_7d_pct": -0.3018
       },
       "timeframes": {
         "5m": {
           "status": "PASS",
           "bars": 180,
-          "first_closed_bar_utc": "2026-09-27T01:45:00+00:00",
-          "last_closed_bar_utc": "2026-09-27T16:40:00+00:00",
-          "last_close": 0.2163,
+          "first_closed_bar_utc": "2026-09-27T01:55:00+00:00",
+          "last_closed_bar_utc": "2026-09-27T16:50:00+00:00",
+          "last_close": 0.2166,
           "gaps": 0
         },
         "15m": {
@@ -29998,9 +30259,9 @@
       },
       "score_inputs": {
         "technical_engine_score": 59.0,
-        "volume_24h_usd": 9481709,
+        "volume_24h_usd": 9388901,
         "change_1h_pct": -0.6414,
-        "change_24h_pct": -5.18145,
+        "change_24h_pct": -4.98794,
         "change_7d_pct": -0.3018,
         "derivatives_oi_funding": null,
         "catalyst_news_risk": null,
@@ -30024,19 +30285,19 @@
       "contract_multiplier": 1,
       "fallback_used": false,
       "market": {
-        "price_usd": 0.271456,
-        "volume_24h_usd": 38005447,
+        "price_usd": 0.271378,
+        "volume_24h_usd": 36003934,
         "change_1h_pct": -1.4512,
-        "change_24h_pct": -3.66039,
+        "change_24h_pct": -3.29619,
         "change_7d_pct": 20.7215
       },
       "timeframes": {
         "5m": {
           "status": "PASS",
           "bars": 180,
-          "first_closed_bar_utc": "2026-09-27T01:45:00+00:00",
-          "last_closed_bar_utc": "2026-09-27T16:40:00+00:00",
-          "last_close": 0.2707,
+          "first_closed_bar_utc": "2026-09-27T01:55:00+00:00",
+          "last_closed_bar_utc": "2026-09-27T16:50:00+00:00",
+          "last_close": 0.2706,
           "gaps": 0
         },
         "15m": {
@@ -30241,9 +30502,9 @@
       },
       "score_inputs": {
         "technical_engine_score": 59.5,
-        "volume_24h_usd": 38005447,
+        "volume_24h_usd": 36003934,
         "change_1h_pct": -1.4512,
-        "change_24h_pct": -3.66039,
+        "change_24h_pct": -3.29619,
         "change_7d_pct": 20.7215,
         "derivatives_oi_funding": null,
         "catalyst_news_risk": null,
@@ -30267,19 +30528,19 @@
       "contract_multiplier": 1,
       "fallback_used": false,
       "market": {
-        "price_usd": 0.75192,
-        "volume_24h_usd": 302234007,
+        "price_usd": 0.752787,
+        "volume_24h_usd": 300080867,
         "change_1h_pct": -0.3904,
-        "change_24h_pct": -0.80525,
+        "change_24h_pct": 0.25627,
         "change_7d_pct": 37.2683
       },
       "timeframes": {
         "5m": {
           "status": "PASS",
           "bars": 180,
-          "first_closed_bar_utc": "2026-09-27T01:45:00+00:00",
-          "last_closed_bar_utc": "2026-09-27T16:40:00+00:00",
-          "last_close": 0.7524,
+          "first_closed_bar_utc": "2026-09-27T01:55:00+00:00",
+          "last_closed_bar_utc": "2026-09-27T16:50:00+00:00",
+          "last_close": 0.7534,
           "gaps": 0
         },
         "15m": {
@@ -30484,9 +30745,9 @@
       },
       "score_inputs": {
         "technical_engine_score": 63.0,
-        "volume_24h_usd": 302234007,
+        "volume_24h_usd": 300080867,
         "change_1h_pct": -0.3904,
-        "change_24h_pct": -0.80525,
+        "change_24h_pct": 0.25627,
         "change_7d_pct": 37.2683,
         "derivatives_oi_funding": null,
         "catalyst_news_risk": null,
@@ -30501,7 +30762,7 @@
       }
     },
     {
-      "rank": 168,
+      "rank": 169,
       "id": "dogwifcoin",
       "name": "dogwifhat",
       "ticker": "WIF",
@@ -30510,19 +30771,19 @@
       "contract_multiplier": 1,
       "fallback_used": false,
       "market": {
-        "price_usd": 0.246102,
-        "volume_24h_usd": 58145378,
+        "price_usd": 0.245173,
+        "volume_24h_usd": 58090099,
         "change_1h_pct": 0.8649,
-        "change_24h_pct": -2.17708,
+        "change_24h_pct": -2.55096,
         "change_7d_pct": 26.4376
       },
       "timeframes": {
         "5m": {
           "status": "PASS",
           "bars": 180,
-          "first_closed_bar_utc": "2026-09-27T01:45:00+00:00",
-          "last_closed_bar_utc": "2026-09-27T16:40:00+00:00",
-          "last_close": 0.2456,
+          "first_closed_bar_utc": "2026-09-27T01:55:00+00:00",
+          "last_closed_bar_utc": "2026-09-27T16:50:00+00:00",
+          "last_close": 0.2449,
           "gaps": 0
         },
         "15m": {
@@ -30727,9 +30988,9 @@
       },
       "score_inputs": {
         "technical_engine_score": 81.5,
-        "volume_24h_usd": 58145378,
+        "volume_24h_usd": 58090099,
         "change_1h_pct": 0.8649,
-        "change_24h_pct": -2.17708,
+        "change_24h_pct": -2.55096,
         "change_7d_pct": 26.4376,
         "derivatives_oi_funding": null,
         "catalyst_news_risk": null,
@@ -30753,19 +31014,19 @@
       "contract_multiplier": 1,
       "fallback_used": false,
       "market": {
-        "price_usd": 24.01,
-        "volume_24h_usd": 23303061,
+        "price_usd": 24.05,
+        "volume_24h_usd": 24497053,
         "change_1h_pct": 0.0333,
-        "change_24h_pct": -2.94348,
+        "change_24h_pct": -2.40862,
         "change_7d_pct": 16.2052
       },
       "timeframes": {
         "5m": {
           "status": "PASS",
           "bars": 180,
-          "first_closed_bar_utc": "2026-09-27T01:45:00+00:00",
-          "last_closed_bar_utc": "2026-09-27T16:40:00+00:00",
-          "last_close": 23.97,
+          "first_closed_bar_utc": "2026-09-27T01:55:00+00:00",
+          "last_closed_bar_utc": "2026-09-27T16:50:00+00:00",
+          "last_close": 24.01,
           "gaps": 0
         },
         "15m": {
@@ -30970,9 +31231,9 @@
       },
       "score_inputs": {
         "technical_engine_score": 65.0,
-        "volume_24h_usd": 23303061,
+        "volume_24h_usd": 24497053,
         "change_1h_pct": 0.0333,
-        "change_24h_pct": -2.94348,
+        "change_24h_pct": -2.40862,
         "change_7d_pct": 16.2052,
         "derivatives_oi_funding": null,
         "catalyst_news_risk": null,
@@ -30996,19 +31257,19 @@
       "contract_multiplier": 1,
       "fallback_used": false,
       "market": {
-        "price_usd": 0.0501,
-        "volume_24h_usd": 6828051,
+        "price_usd": 0.04992999,
+        "volume_24h_usd": 6923725,
         "change_1h_pct": -0.1931,
-        "change_24h_pct": -4.77702,
+        "change_24h_pct": -5.05022,
         "change_7d_pct": 7.0563
       },
       "timeframes": {
         "5m": {
           "status": "PASS",
           "bars": 180,
-          "first_closed_bar_utc": "2026-09-27T01:45:00+00:00",
-          "last_closed_bar_utc": "2026-09-27T16:40:00+00:00",
-          "last_close": 0.04993,
+          "first_closed_bar_utc": "2026-09-27T01:55:00+00:00",
+          "last_closed_bar_utc": "2026-09-27T16:50:00+00:00",
+          "last_close": 0.04988,
           "gaps": 0
         },
         "15m": {
@@ -31213,9 +31474,9 @@
       },
       "score_inputs": {
         "technical_engine_score": 59.5,
-        "volume_24h_usd": 6828051,
+        "volume_24h_usd": 6923725,
         "change_1h_pct": -0.1931,
-        "change_24h_pct": -4.77702,
+        "change_24h_pct": -5.05022,
         "change_7d_pct": 7.0563,
         "derivatives_oi_funding": null,
         "catalyst_news_risk": null,
@@ -31239,19 +31500,19 @@
       "contract_multiplier": 1,
       "fallback_used": false,
       "market": {
-        "price_usd": 0.232189,
-        "volume_24h_usd": 5691839,
+        "price_usd": 0.231829,
+        "volume_24h_usd": 5943772,
         "change_1h_pct": -0.3444,
-        "change_24h_pct": -1.88393,
+        "change_24h_pct": -2.13588,
         "change_7d_pct": 10.4715
       },
       "timeframes": {
         "5m": {
           "status": "PASS",
           "bars": 180,
-          "first_closed_bar_utc": "2026-09-27T01:45:00+00:00",
-          "last_closed_bar_utc": "2026-09-27T16:40:00+00:00",
-          "last_close": 0.2319,
+          "first_closed_bar_utc": "2026-09-27T01:55:00+00:00",
+          "last_closed_bar_utc": "2026-09-27T16:50:00+00:00",
+          "last_close": 0.2315,
           "gaps": 0
         },
         "15m": {
@@ -31526,9 +31787,9 @@
       },
       "score_inputs": {
         "technical_engine_score": 53.5,
-        "volume_24h_usd": 5691839,
+        "volume_24h_usd": 5943772,
         "change_1h_pct": -0.3444,
-        "change_24h_pct": -1.88393,
+        "change_24h_pct": -2.13588,
         "change_7d_pct": 10.4715,
         "derivatives_oi_funding": null,
         "catalyst_news_risk": null,
@@ -31544,6 +31805,249 @@
     },
     {
       "rank": 175,
+      "id": "doublezero",
+      "name": "DoubleZero",
+      "ticker": "2Z",
+      "exchange": "OKX",
+      "instrument": "2Z-USDT-SWAP",
+      "contract_multiplier": 1,
+      "fallback_used": false,
+      "market": {
+        "price_usd": 0.06647,
+        "volume_24h_usd": 28951579,
+        "change_1h_pct": 0.0708,
+        "change_24h_pct": -3.64571,
+        "change_7d_pct": 36.6883
+      },
+      "timeframes": {
+        "5m": {
+          "status": "PASS",
+          "bars": 180,
+          "first_closed_bar_utc": "2026-09-27T01:55:00+00:00",
+          "last_closed_bar_utc": "2026-09-27T16:50:00+00:00",
+          "last_close": 0.06606,
+          "gaps": 0
+        },
+        "15m": {
+          "status": "PASS",
+          "bars": 450,
+          "first_closed_bar_utc": "2026-09-23T00:15:00+00:00",
+          "last_closed_bar_utc": "2026-09-27T16:30:00+00:00",
+          "last_close": 0.0661,
+          "gaps": 0
+        },
+        "1h": {
+          "status": "PASS",
+          "bars": 500,
+          "first_closed_bar_utc": "2026-09-06T20:00:00+00:00",
+          "last_closed_bar_utc": "2026-09-27T15:00:00+00:00",
+          "last_close": 0.06621,
+          "gaps": 0
+        },
+        "4h": {
+          "status": "PASS",
+          "bars": 220,
+          "first_closed_bar_utc": "2026-08-22T00:00:00+00:00",
+          "last_closed_bar_utc": "2026-09-27T12:00:00+00:00",
+          "last_close": 0.06621,
+          "gaps": 0
+        },
+        "1d": {
+          "status": "PASS",
+          "bars": 220,
+          "first_closed_bar_utc": "2026-02-19T00:00:00+00:00",
+          "last_closed_bar_utc": "2026-09-26T00:00:00+00:00",
+          "last_close": 0.07156,
+          "gaps": 0
+        }
+      },
+      "timeframe_states": {
+        "1d": "BULLISH",
+        "4h": "BEARISH",
+        "1h": "BEARISH",
+        "15m": "NEUTRAL"
+      },
+      "sniper": {
+        "status": "PASS",
+        "signal": "WAIT",
+        "bias": "STRONG BEAR",
+        "bull_pct": 0.0,
+        "bear_pct": 71.42857142857143,
+        "current_closed_1h_bar_utc": "2026-09-27T15:00:00+00:00",
+        "trade_setup": {
+          "side": "SELL",
+          "entry": 0.06681,
+          "stop_loss": 0.06977923348421991,
+          "signal_age_1h_bars": 3
+        },
+        "source_parity_validation": "PENDING_TRADINGVIEW_CROSSCHECK"
+      },
+      "joat": {
+        "status": "PASS",
+        "current_closed_1h_bar_utc": "2026-09-27T15:00:00+00:00",
+        "trend": {
+          "value": "BULLISH",
+          "ribbon_trend": 1,
+          "price_trend": -1,
+          "alignment": "DIVERGED"
+        },
+        "dashboard": {
+          "strength": {
+            "value_pct": 0.0,
+            "status": "WEAK"
+          },
+          "width": {
+            "value_pct": 2.2281775547289633,
+            "status": "CONTRACTING"
+          },
+          "compression": {
+            "value": "YES",
+            "status": "COILING"
+          },
+          "acceleration": {
+            "value": "ACTIVE",
+            "trend_acceleration": -233.01214385033006
+          },
+          "twist": {
+            "count_loaded_history": 5,
+            "value": "NONE",
+            "current_ribbon_cross_count": 0
+          },
+          "volatility": {
+            "value_pct": 67.0,
+            "status": "MEDIUM"
+          },
+          "momentum": {
+            "rsi14": 42.89452527195057,
+            "status": "NEUTRAL"
+          },
+          "volume_ratio": {
+            "value_x": 0.29028691334261497,
+            "status": "LOW"
+          },
+          "expansion": {
+            "value_pct": -17.659612474138807,
+            "status": "RAPID"
+          },
+          "adaptive": {
+            "value_x": 1.010447220207703,
+            "status": "NORMAL"
+          },
+          "mtf": {
+            "value": "MIXED",
+            "alignment": 0.5,
+            "alignment_pct": 50.0
+          }
+        },
+        "mtf": {
+          "chart_ribbon_trend_1h": 1,
+          "htf1_15m_ribbon_trend": -1,
+          "htf2_1h_ribbon_trend": 1,
+          "htf3_4h_ribbon_trend": 1,
+          "source_bar_open_utc": {
+            "htf1": "2026-09-27T15:45:00+00:00",
+            "htf2": "2026-09-27T15:00:00+00:00",
+            "htf3": "2026-09-27T12:00:00+00:00"
+          },
+          "alignment": 0.5,
+          "aligned": false
+        },
+        "signals": {
+          "bull_cross": false,
+          "bear_cross": false,
+          "vol_confirmed_bull": false,
+          "vol_confirmed_bear": false,
+          "twist_detected": false,
+          "compression_breakout": false,
+          "is_accelerating": true,
+          "mtf_aligned": false,
+          "is_compressed": true,
+          "momentum_extreme_bull": false,
+          "momentum_extreme_bear": false,
+          "volatility_surge": false,
+          "strong_zone_entry": false
+        },
+        "recent_strong_trigger": {
+          "status": "NONE",
+          "side": null,
+          "trigger_time_utc": null,
+          "age_1h_bars": null,
+          "freshness": null,
+          "display": "⚪ NO RECENT JOAT STRONG TRIGGER",
+          "window_max_age_1h_bars": 4,
+          "strength_pct": null,
+          "strength_status": null,
+          "volume_ratio": null,
+          "mtf_alignment_pct": null,
+          "mtf_aligned": null,
+          "trend": null
+        },
+        "source_parity_validation": "PENDING_TRADINGVIEW_CROSSCHECK"
+      },
+      "trend_4h": {
+        "state": "BULLISH",
+        "strength": "STRONG",
+        "adx14": 49.182456587554846,
+        "ema9": 0.06708705006162619,
+        "ema21": 0.063156112903595,
+        "close": 0.06621
+      },
+      "vumanchu_gold_1d": {
+        "status": "PASS",
+        "engine_version": "VMC_CIPHER_B_GOLD_RAW_V1",
+        "timeframe": "1D",
+        "closed_bars_only": true,
+        "plot_offset_bars": -2,
+        "source_parity_validation": "PENDING_TRADINGVIEW_CROSSCHECK",
+        "settings": {
+          "wt_channel_len": 9,
+          "wt_average_len": 12,
+          "wt_ma_len": 3,
+          "wt_div_os_level": -65.0,
+          "wt_os_level3": -75.0,
+          "rsi_len": 14,
+          "rsi_div_os_level": 30.0,
+          "wt_regular_divergence_enabled": true,
+          "rsi_regular_divergence_enabled": false
+        },
+        "loaded_bars": 220,
+        "gold_count_loaded_history": 0,
+        "gold_on_latest_closed_bar": false,
+        "latest_event": null,
+        "new_detection": null,
+        "events": [],
+        "latest_closed_bar": "2026-09-26T00:00:00+00:00"
+      },
+      "technical_engine": {
+        "status": "PASS",
+        "signal": "NO_TRADE",
+        "signal_score": 67.5,
+        "buy_score": 22.5,
+        "sell_score": 67.5,
+        "execution": null,
+        "joat_confirmation": null,
+        "sniper_confirmation": null
+      },
+      "score_inputs": {
+        "technical_engine_score": 67.5,
+        "volume_24h_usd": 28951579,
+        "change_1h_pct": 0.0708,
+        "change_24h_pct": -3.64571,
+        "change_7d_pct": 36.6883,
+        "derivatives_oi_funding": null,
+        "catalyst_news_risk": null,
+        "note": "Final 0-100 opportunity score is completed by ChatGPT using artifact technicals plus current derivatives/intelligence evidence."
+      },
+      "data_quality": {
+        "same_exchange_all_timeframes": true,
+        "required_timeframes_pass": true,
+        "current_cycle_1h_covered": true,
+        "latest_1h_start_utc": "2026-09-27T15:00:00+00:00",
+        "latest_1h_close_utc": "2026-09-27T16:00:00+00:00"
+      }
+    },
+    {
+      "rank": 176,
       "id": "kaia",
       "name": "Kaia",
       "ticker": "KAIA",
@@ -31552,19 +32056,19 @@
       "contract_multiplier": 1,
       "fallback_used": false,
       "market": {
-        "price_usd": 0.03580876,
-        "volume_24h_usd": 7796937,
+        "price_usd": 0.03563864,
+        "volume_24h_usd": 7729134,
         "change_1h_pct": -0.1228,
-        "change_24h_pct": 2.37068,
+        "change_24h_pct": 1.95392,
         "change_7d_pct": 21.8817
       },
       "timeframes": {
         "5m": {
           "status": "PASS",
           "bars": 180,
-          "first_closed_bar_utc": "2026-09-27T01:45:00+00:00",
-          "last_closed_bar_utc": "2026-09-27T16:40:00+00:00",
-          "last_close": 0.03567,
+          "first_closed_bar_utc": "2026-09-27T01:55:00+00:00",
+          "last_closed_bar_utc": "2026-09-27T16:50:00+00:00",
+          "last_close": 0.0355,
           "gaps": 0
         },
         "15m": {
@@ -31839,9 +32343,9 @@
       },
       "score_inputs": {
         "technical_engine_score": 65.0,
-        "volume_24h_usd": 7796937,
+        "volume_24h_usd": 7729134,
         "change_1h_pct": -0.1228,
-        "change_24h_pct": 2.37068,
+        "change_24h_pct": 1.95392,
         "change_7d_pct": 21.8817,
         "derivatives_oi_funding": null,
         "catalyst_news_risk": null,
@@ -31856,250 +32360,7 @@
       }
     },
     {
-      "rank": 176,
-      "id": "doublezero",
-      "name": "DoubleZero",
-      "ticker": "2Z",
-      "exchange": "OKX",
-      "instrument": "2Z-USDT-SWAP",
-      "contract_multiplier": 1,
-      "fallback_used": false,
-      "market": {
-        "price_usd": 0.066324,
-        "volume_24h_usd": 17010967,
-        "change_1h_pct": 0.0708,
-        "change_24h_pct": -4.34027,
-        "change_7d_pct": 36.6883
-      },
-      "timeframes": {
-        "5m": {
-          "status": "PASS",
-          "bars": 180,
-          "first_closed_bar_utc": "2026-09-27T01:45:00+00:00",
-          "last_closed_bar_utc": "2026-09-27T16:40:00+00:00",
-          "last_close": 0.0661,
-          "gaps": 0
-        },
-        "15m": {
-          "status": "PASS",
-          "bars": 450,
-          "first_closed_bar_utc": "2026-09-23T00:15:00+00:00",
-          "last_closed_bar_utc": "2026-09-27T16:30:00+00:00",
-          "last_close": 0.0661,
-          "gaps": 0
-        },
-        "1h": {
-          "status": "PASS",
-          "bars": 500,
-          "first_closed_bar_utc": "2026-09-06T20:00:00+00:00",
-          "last_closed_bar_utc": "2026-09-27T15:00:00+00:00",
-          "last_close": 0.06621,
-          "gaps": 0
-        },
-        "4h": {
-          "status": "PASS",
-          "bars": 220,
-          "first_closed_bar_utc": "2026-08-22T00:00:00+00:00",
-          "last_closed_bar_utc": "2026-09-27T12:00:00+00:00",
-          "last_close": 0.06621,
-          "gaps": 0
-        },
-        "1d": {
-          "status": "PASS",
-          "bars": 220,
-          "first_closed_bar_utc": "2026-02-19T00:00:00+00:00",
-          "last_closed_bar_utc": "2026-09-26T00:00:00+00:00",
-          "last_close": 0.07156,
-          "gaps": 0
-        }
-      },
-      "timeframe_states": {
-        "1d": "BULLISH",
-        "4h": "BEARISH",
-        "1h": "BEARISH",
-        "15m": "NEUTRAL"
-      },
-      "sniper": {
-        "status": "PASS",
-        "signal": "WAIT",
-        "bias": "STRONG BEAR",
-        "bull_pct": 0.0,
-        "bear_pct": 71.42857142857143,
-        "current_closed_1h_bar_utc": "2026-09-27T15:00:00+00:00",
-        "trade_setup": {
-          "side": "SELL",
-          "entry": 0.06681,
-          "stop_loss": 0.06977923348421991,
-          "signal_age_1h_bars": 3
-        },
-        "source_parity_validation": "PENDING_TRADINGVIEW_CROSSCHECK"
-      },
-      "joat": {
-        "status": "PASS",
-        "current_closed_1h_bar_utc": "2026-09-27T15:00:00+00:00",
-        "trend": {
-          "value": "BULLISH",
-          "ribbon_trend": 1,
-          "price_trend": -1,
-          "alignment": "DIVERGED"
-        },
-        "dashboard": {
-          "strength": {
-            "value_pct": 0.0,
-            "status": "WEAK"
-          },
-          "width": {
-            "value_pct": 2.2281775547289633,
-            "status": "CONTRACTING"
-          },
-          "compression": {
-            "value": "YES",
-            "status": "COILING"
-          },
-          "acceleration": {
-            "value": "ACTIVE",
-            "trend_acceleration": -233.01214385033006
-          },
-          "twist": {
-            "count_loaded_history": 5,
-            "value": "NONE",
-            "current_ribbon_cross_count": 0
-          },
-          "volatility": {
-            "value_pct": 67.0,
-            "status": "MEDIUM"
-          },
-          "momentum": {
-            "rsi14": 42.89452527195057,
-            "status": "NEUTRAL"
-          },
-          "volume_ratio": {
-            "value_x": 0.29028691334261497,
-            "status": "LOW"
-          },
-          "expansion": {
-            "value_pct": -17.659612474138807,
-            "status": "RAPID"
-          },
-          "adaptive": {
-            "value_x": 1.010447220207703,
-            "status": "NORMAL"
-          },
-          "mtf": {
-            "value": "MIXED",
-            "alignment": 0.5,
-            "alignment_pct": 50.0
-          }
-        },
-        "mtf": {
-          "chart_ribbon_trend_1h": 1,
-          "htf1_15m_ribbon_trend": -1,
-          "htf2_1h_ribbon_trend": 1,
-          "htf3_4h_ribbon_trend": 1,
-          "source_bar_open_utc": {
-            "htf1": "2026-09-27T15:45:00+00:00",
-            "htf2": "2026-09-27T15:00:00+00:00",
-            "htf3": "2026-09-27T12:00:00+00:00"
-          },
-          "alignment": 0.5,
-          "aligned": false
-        },
-        "signals": {
-          "bull_cross": false,
-          "bear_cross": false,
-          "vol_confirmed_bull": false,
-          "vol_confirmed_bear": false,
-          "twist_detected": false,
-          "compression_breakout": false,
-          "is_accelerating": true,
-          "mtf_aligned": false,
-          "is_compressed": true,
-          "momentum_extreme_bull": false,
-          "momentum_extreme_bear": false,
-          "volatility_surge": false,
-          "strong_zone_entry": false
-        },
-        "recent_strong_trigger": {
-          "status": "NONE",
-          "side": null,
-          "trigger_time_utc": null,
-          "age_1h_bars": null,
-          "freshness": null,
-          "display": "⚪ NO RECENT JOAT STRONG TRIGGER",
-          "window_max_age_1h_bars": 4,
-          "strength_pct": null,
-          "strength_status": null,
-          "volume_ratio": null,
-          "mtf_alignment_pct": null,
-          "mtf_aligned": null,
-          "trend": null
-        },
-        "source_parity_validation": "PENDING_TRADINGVIEW_CROSSCHECK"
-      },
-      "trend_4h": {
-        "state": "BULLISH",
-        "strength": "STRONG",
-        "adx14": 49.182456587554846,
-        "ema9": 0.06708705006162619,
-        "ema21": 0.063156112903595,
-        "close": 0.06621
-      },
-      "vumanchu_gold_1d": {
-        "status": "PASS",
-        "engine_version": "VMC_CIPHER_B_GOLD_RAW_V1",
-        "timeframe": "1D",
-        "closed_bars_only": true,
-        "plot_offset_bars": -2,
-        "source_parity_validation": "PENDING_TRADINGVIEW_CROSSCHECK",
-        "settings": {
-          "wt_channel_len": 9,
-          "wt_average_len": 12,
-          "wt_ma_len": 3,
-          "wt_div_os_level": -65.0,
-          "wt_os_level3": -75.0,
-          "rsi_len": 14,
-          "rsi_div_os_level": 30.0,
-          "wt_regular_divergence_enabled": true,
-          "rsi_regular_divergence_enabled": false
-        },
-        "loaded_bars": 220,
-        "gold_count_loaded_history": 0,
-        "gold_on_latest_closed_bar": false,
-        "latest_event": null,
-        "new_detection": null,
-        "events": [],
-        "latest_closed_bar": "2026-09-26T00:00:00+00:00"
-      },
-      "technical_engine": {
-        "status": "PASS",
-        "signal": "NO_TRADE",
-        "signal_score": 67.5,
-        "buy_score": 22.5,
-        "sell_score": 67.5,
-        "execution": null,
-        "joat_confirmation": null,
-        "sniper_confirmation": null
-      },
-      "score_inputs": {
-        "technical_engine_score": 67.5,
-        "volume_24h_usd": 17010967,
-        "change_1h_pct": 0.0708,
-        "change_24h_pct": -4.34027,
-        "change_7d_pct": 36.6883,
-        "derivatives_oi_funding": null,
-        "catalyst_news_risk": null,
-        "note": "Final 0-100 opportunity score is completed by ChatGPT using artifact technicals plus current derivatives/intelligence evidence."
-      },
-      "data_quality": {
-        "same_exchange_all_timeframes": true,
-        "required_timeframes_pass": true,
-        "current_cycle_1h_covered": true,
-        "latest_1h_start_utc": "2026-09-27T15:00:00+00:00",
-        "latest_1h_close_utc": "2026-09-27T16:00:00+00:00"
-      }
-    },
-    {
-      "rank": 184,
+      "rank": 185,
       "id": "edgex",
       "name": "edgeX",
       "ticker": "EDGE",
@@ -32108,19 +32369,19 @@
       "contract_multiplier": 1,
       "fallback_used": false,
       "market": {
-        "price_usd": 0.614665,
-        "volume_24h_usd": 4041366,
+        "price_usd": 0.614697,
+        "volume_24h_usd": 3972858,
         "change_1h_pct": 0.0005,
-        "change_24h_pct": -1.48745,
+        "change_24h_pct": -1.7931,
         "change_7d_pct": 10.9103
       },
       "timeframes": {
         "5m": {
           "status": "PASS",
           "bars": 180,
-          "first_closed_bar_utc": "2026-09-27T01:45:00+00:00",
-          "last_closed_bar_utc": "2026-09-27T16:40:00+00:00",
-          "last_close": 0.6164,
+          "first_closed_bar_utc": "2026-09-27T01:55:00+00:00",
+          "last_closed_bar_utc": "2026-09-27T16:50:00+00:00",
+          "last_close": 0.6166,
           "gaps": 0
         },
         "15m": {
@@ -32325,9 +32586,9 @@
       },
       "score_inputs": {
         "technical_engine_score": 62.5,
-        "volume_24h_usd": 4041366,
+        "volume_24h_usd": 3972858,
         "change_1h_pct": 0.0005,
-        "change_24h_pct": -1.48745,
+        "change_24h_pct": -1.7931,
         "change_7d_pct": 10.9103,
         "derivatives_oi_funding": null,
         "catalyst_news_risk": null,
@@ -32351,19 +32612,19 @@
       "contract_multiplier": 1,
       "fallback_used": false,
       "market": {
-        "price_usd": 0.688102,
-        "volume_24h_usd": 6127743,
+        "price_usd": 0.689646,
+        "volume_24h_usd": 6135230,
         "change_1h_pct": -0.1014,
-        "change_24h_pct": -4.76198,
+        "change_24h_pct": -4.45825,
         "change_7d_pct": 26.94
       },
       "timeframes": {
         "5m": {
           "status": "PASS",
           "bars": 180,
-          "first_closed_bar_utc": "2026-09-27T01:45:00+00:00",
-          "last_closed_bar_utc": "2026-09-27T16:40:00+00:00",
-          "last_close": 0.6892,
+          "first_closed_bar_utc": "2026-09-27T01:55:00+00:00",
+          "last_closed_bar_utc": "2026-09-27T16:50:00+00:00",
+          "last_close": 0.6901,
           "gaps": 0
         },
         "15m": {
@@ -32568,9 +32829,9 @@
       },
       "score_inputs": {
         "technical_engine_score": 72.0,
-        "volume_24h_usd": 6127743,
+        "volume_24h_usd": 6135230,
         "change_1h_pct": -0.1014,
-        "change_24h_pct": -4.76198,
+        "change_24h_pct": -4.45825,
         "change_7d_pct": 26.94,
         "derivatives_oi_funding": null,
         "catalyst_news_risk": null,
@@ -32595,18 +32856,18 @@
       "fallback_used": false,
       "market": {
         "price_usd": 1.17,
-        "volume_24h_usd": 17402362,
+        "volume_24h_usd": 19515382,
         "change_1h_pct": 0.4256,
-        "change_24h_pct": -2.55365,
+        "change_24h_pct": -2.49488,
         "change_7d_pct": 18.7751
       },
       "timeframes": {
         "5m": {
           "status": "PASS",
           "bars": 180,
-          "first_closed_bar_utc": "2026-09-27T01:45:00+00:00",
-          "last_closed_bar_utc": "2026-09-27T16:40:00+00:00",
-          "last_close": 1.1662,
+          "first_closed_bar_utc": "2026-09-27T01:55:00+00:00",
+          "last_closed_bar_utc": "2026-09-27T16:50:00+00:00",
+          "last_close": 1.1683,
           "gaps": 0
         },
         "15m": {
@@ -32811,9 +33072,9 @@
       },
       "score_inputs": {
         "technical_engine_score": 54.0,
-        "volume_24h_usd": 17402362,
+        "volume_24h_usd": 19515382,
         "change_1h_pct": 0.4256,
-        "change_24h_pct": -2.55365,
+        "change_24h_pct": -2.49488,
         "change_7d_pct": 18.7751,
         "derivatives_oi_funding": null,
         "catalyst_news_risk": null,
@@ -32837,19 +33098,19 @@
       "contract_multiplier": 1,
       "fallback_used": false,
       "market": {
-        "price_usd": 2.19,
-        "volume_24h_usd": 10822433,
+        "price_usd": 2.18,
+        "volume_24h_usd": 11163056,
         "change_1h_pct": 1.3956,
-        "change_24h_pct": 4.25724,
+        "change_24h_pct": 4.3361,
         "change_7d_pct": 13.3937
       },
       "timeframes": {
         "5m": {
           "status": "PASS",
           "bars": 180,
-          "first_closed_bar_utc": "2026-09-27T01:45:00+00:00",
-          "last_closed_bar_utc": "2026-09-27T16:40:00+00:00",
-          "last_close": 2.173,
+          "first_closed_bar_utc": "2026-09-27T01:55:00+00:00",
+          "last_closed_bar_utc": "2026-09-27T16:50:00+00:00",
+          "last_close": 2.182,
           "gaps": 0
         },
         "15m": {
@@ -33075,9 +33336,9 @@
       },
       "score_inputs": {
         "technical_engine_score": 90.5,
-        "volume_24h_usd": 10822433,
+        "volume_24h_usd": 11163056,
         "change_1h_pct": 1.3956,
-        "change_24h_pct": 4.25724,
+        "change_24h_pct": 4.3361,
         "change_7d_pct": 13.3937,
         "derivatives_oi_funding": null,
         "catalyst_news_risk": null,
@@ -33093,6 +33354,249 @@
     },
     {
       "rank": 193,
+      "id": "zama",
+      "name": "Zama",
+      "ticker": "ZAMA",
+      "exchange": "OKX",
+      "instrument": "ZAMA-USDT-SWAP",
+      "contract_multiplier": 1,
+      "fallback_used": false,
+      "market": {
+        "price_usd": 0.081573,
+        "volume_24h_usd": 24434098,
+        "change_1h_pct": -1.8703,
+        "change_24h_pct": -10.00304,
+        "change_7d_pct": -7.9696
+      },
+      "timeframes": {
+        "5m": {
+          "status": "PASS",
+          "bars": 180,
+          "first_closed_bar_utc": "2026-09-27T01:55:00+00:00",
+          "last_closed_bar_utc": "2026-09-27T16:50:00+00:00",
+          "last_close": 0.08165,
+          "gaps": 0
+        },
+        "15m": {
+          "status": "PASS",
+          "bars": 450,
+          "first_closed_bar_utc": "2026-09-23T00:15:00+00:00",
+          "last_closed_bar_utc": "2026-09-27T16:30:00+00:00",
+          "last_close": 0.08134,
+          "gaps": 0
+        },
+        "1h": {
+          "status": "PASS",
+          "bars": 500,
+          "first_closed_bar_utc": "2026-09-06T20:00:00+00:00",
+          "last_closed_bar_utc": "2026-09-27T15:00:00+00:00",
+          "last_close": 0.08082,
+          "gaps": 0
+        },
+        "4h": {
+          "status": "PASS",
+          "bars": 220,
+          "first_closed_bar_utc": "2026-08-22T00:00:00+00:00",
+          "last_closed_bar_utc": "2026-09-27T12:00:00+00:00",
+          "last_close": 0.08082,
+          "gaps": 0
+        },
+        "1d": {
+          "status": "PASS",
+          "bars": 220,
+          "first_closed_bar_utc": "2026-02-19T00:00:00+00:00",
+          "last_closed_bar_utc": "2026-09-26T00:00:00+00:00",
+          "last_close": 0.09112,
+          "gaps": 0
+        }
+      },
+      "timeframe_states": {
+        "1d": "NEUTRAL",
+        "4h": "BEARISH",
+        "1h": "BEARISH",
+        "15m": "BULLISH"
+      },
+      "sniper": {
+        "status": "PASS",
+        "signal": "WAIT",
+        "bias": "STRONG BEAR",
+        "bull_pct": 0.0,
+        "bear_pct": 85.71428571428571,
+        "current_closed_1h_bar_utc": "2026-09-27T15:00:00+00:00",
+        "trade_setup": {
+          "side": "SELL",
+          "entry": 0.08865,
+          "stop_loss": 0.09109073502302382,
+          "signal_age_1h_bars": 12
+        },
+        "source_parity_validation": "PENDING_TRADINGVIEW_CROSSCHECK"
+      },
+      "joat": {
+        "status": "PASS",
+        "current_closed_1h_bar_utc": "2026-09-27T15:00:00+00:00",
+        "trend": {
+          "value": "BEARISH",
+          "ribbon_trend": -1,
+          "price_trend": -1,
+          "alignment": "ALIGNED"
+        },
+        "dashboard": {
+          "strength": {
+            "value_pct": 100.0,
+            "status": "STRONG"
+          },
+          "width": {
+            "value_pct": 6.614624222914149,
+            "status": "EXPANDING"
+          },
+          "compression": {
+            "value": "NO",
+            "status": "NORMAL"
+          },
+          "acceleration": {
+            "value": "NONE",
+            "trend_acceleration": 114.59425927677268
+          },
+          "twist": {
+            "count_loaded_history": 2,
+            "value": "NONE",
+            "current_ribbon_cross_count": 0
+          },
+          "volatility": {
+            "value_pct": 35.0,
+            "status": "MEDIUM"
+          },
+          "momentum": {
+            "rsi14": 23.955331876695126,
+            "status": "OVERSOLD"
+          },
+          "volume_ratio": {
+            "value_x": 2.262253649458832,
+            "status": "SURGE"
+          },
+          "expansion": {
+            "value_pct": 23.783515562411804,
+            "status": "RAPID"
+          },
+          "adaptive": {
+            "value_x": 1.5368155604110163,
+            "status": "HIGH"
+          },
+          "mtf": {
+            "value": "MIXED",
+            "alignment": -0.5,
+            "alignment_pct": -50.0
+          }
+        },
+        "mtf": {
+          "chart_ribbon_trend_1h": -1,
+          "htf1_15m_ribbon_trend": -1,
+          "htf2_1h_ribbon_trend": -1,
+          "htf3_4h_ribbon_trend": 1,
+          "source_bar_open_utc": {
+            "htf1": "2026-09-27T15:45:00+00:00",
+            "htf2": "2026-09-27T15:00:00+00:00",
+            "htf3": "2026-09-27T12:00:00+00:00"
+          },
+          "alignment": -0.5,
+          "aligned": false
+        },
+        "signals": {
+          "bull_cross": false,
+          "bear_cross": false,
+          "vol_confirmed_bull": false,
+          "vol_confirmed_bear": false,
+          "twist_detected": false,
+          "compression_breakout": false,
+          "is_accelerating": false,
+          "mtf_aligned": false,
+          "is_compressed": false,
+          "momentum_extreme_bull": false,
+          "momentum_extreme_bear": false,
+          "volatility_surge": false,
+          "strong_zone_entry": false
+        },
+        "recent_strong_trigger": {
+          "status": "NONE",
+          "side": null,
+          "trigger_time_utc": null,
+          "age_1h_bars": null,
+          "freshness": null,
+          "display": "⚪ NO RECENT JOAT STRONG TRIGGER",
+          "window_max_age_1h_bars": 4,
+          "strength_pct": null,
+          "strength_status": null,
+          "volume_ratio": null,
+          "mtf_alignment_pct": null,
+          "mtf_aligned": null,
+          "trend": null
+        },
+        "source_parity_validation": "PENDING_TRADINGVIEW_CROSSCHECK"
+      },
+      "trend_4h": {
+        "state": "BEARISH",
+        "strength": "MODERATE",
+        "adx14": 24.852517115263325,
+        "ema9": 0.08760904574272327,
+        "ema21": 0.0891151002422889,
+        "close": 0.08082
+      },
+      "vumanchu_gold_1d": {
+        "status": "PASS",
+        "engine_version": "VMC_CIPHER_B_GOLD_RAW_V1",
+        "timeframe": "1D",
+        "closed_bars_only": true,
+        "plot_offset_bars": -2,
+        "source_parity_validation": "PENDING_TRADINGVIEW_CROSSCHECK",
+        "settings": {
+          "wt_channel_len": 9,
+          "wt_average_len": 12,
+          "wt_ma_len": 3,
+          "wt_div_os_level": -65.0,
+          "wt_os_level3": -75.0,
+          "rsi_len": 14,
+          "rsi_div_os_level": 30.0,
+          "wt_regular_divergence_enabled": true,
+          "rsi_regular_divergence_enabled": false
+        },
+        "loaded_bars": 220,
+        "gold_count_loaded_history": 0,
+        "gold_on_latest_closed_bar": false,
+        "latest_event": null,
+        "new_detection": null,
+        "events": [],
+        "latest_closed_bar": "2026-09-26T00:00:00+00:00"
+      },
+      "technical_engine": {
+        "status": "PASS",
+        "signal": "NO_TRADE",
+        "signal_score": 60.0,
+        "buy_score": 19.0,
+        "sell_score": 60.0,
+        "execution": null,
+        "joat_confirmation": null,
+        "sniper_confirmation": null
+      },
+      "score_inputs": {
+        "technical_engine_score": 60.0,
+        "volume_24h_usd": 24434098,
+        "change_1h_pct": -1.8703,
+        "change_24h_pct": -10.00304,
+        "change_7d_pct": -7.9696,
+        "derivatives_oi_funding": null,
+        "catalyst_news_risk": null,
+        "note": "Final 0-100 opportunity score is completed by ChatGPT using artifact technicals plus current derivatives/intelligence evidence."
+      },
+      "data_quality": {
+        "same_exchange_all_timeframes": true,
+        "required_timeframes_pass": true,
+        "current_cycle_1h_covered": true,
+        "latest_1h_start_utc": "2026-09-27T15:00:00+00:00",
+        "latest_1h_close_utc": "2026-09-27T16:00:00+00:00"
+      }
+    },
+    {
+      "rank": 194,
       "id": "meteora",
       "name": "Meteora",
       "ticker": "MET",
@@ -33101,19 +33605,19 @@
       "contract_multiplier": 1,
       "fallback_used": false,
       "market": {
-        "price_usd": 0.363583,
-        "volume_24h_usd": 15909979,
+        "price_usd": 0.36022,
+        "volume_24h_usd": 16006462,
         "change_1h_pct": 0.298,
-        "change_24h_pct": 1.14124,
+        "change_24h_pct": 0.30682,
         "change_7d_pct": 45.9441
       },
       "timeframes": {
         "5m": {
           "status": "PASS",
           "bars": 180,
-          "first_closed_bar_utc": "2026-09-27T01:45:00+00:00",
-          "last_closed_bar_utc": "2026-09-27T16:40:00+00:00",
-          "last_close": 0.363,
+          "first_closed_bar_utc": "2026-09-27T01:55:00+00:00",
+          "last_closed_bar_utc": "2026-09-27T16:50:00+00:00",
+          "last_close": 0.3549,
           "gaps": 0
         },
         "15m": {
@@ -33339,253 +33843,10 @@
       },
       "score_inputs": {
         "technical_engine_score": 82.0,
-        "volume_24h_usd": 15909979,
+        "volume_24h_usd": 16006462,
         "change_1h_pct": 0.298,
-        "change_24h_pct": 1.14124,
+        "change_24h_pct": 0.30682,
         "change_7d_pct": 45.9441,
-        "derivatives_oi_funding": null,
-        "catalyst_news_risk": null,
-        "note": "Final 0-100 opportunity score is completed by ChatGPT using artifact technicals plus current derivatives/intelligence evidence."
-      },
-      "data_quality": {
-        "same_exchange_all_timeframes": true,
-        "required_timeframes_pass": true,
-        "current_cycle_1h_covered": true,
-        "latest_1h_start_utc": "2026-09-27T15:00:00+00:00",
-        "latest_1h_close_utc": "2026-09-27T16:00:00+00:00"
-      }
-    },
-    {
-      "rank": 194,
-      "id": "zama",
-      "name": "Zama",
-      "ticker": "ZAMA",
-      "exchange": "OKX",
-      "instrument": "ZAMA-USDT-SWAP",
-      "contract_multiplier": 1,
-      "fallback_used": false,
-      "market": {
-        "price_usd": 0.081557,
-        "volume_24h_usd": 24367315,
-        "change_1h_pct": -1.8703,
-        "change_24h_pct": -10.21821,
-        "change_7d_pct": -7.9696
-      },
-      "timeframes": {
-        "5m": {
-          "status": "PASS",
-          "bars": 180,
-          "first_closed_bar_utc": "2026-09-27T01:45:00+00:00",
-          "last_closed_bar_utc": "2026-09-27T16:40:00+00:00",
-          "last_close": 0.08134,
-          "gaps": 0
-        },
-        "15m": {
-          "status": "PASS",
-          "bars": 450,
-          "first_closed_bar_utc": "2026-09-23T00:15:00+00:00",
-          "last_closed_bar_utc": "2026-09-27T16:30:00+00:00",
-          "last_close": 0.08134,
-          "gaps": 0
-        },
-        "1h": {
-          "status": "PASS",
-          "bars": 500,
-          "first_closed_bar_utc": "2026-09-06T20:00:00+00:00",
-          "last_closed_bar_utc": "2026-09-27T15:00:00+00:00",
-          "last_close": 0.08082,
-          "gaps": 0
-        },
-        "4h": {
-          "status": "PASS",
-          "bars": 220,
-          "first_closed_bar_utc": "2026-08-22T00:00:00+00:00",
-          "last_closed_bar_utc": "2026-09-27T12:00:00+00:00",
-          "last_close": 0.08082,
-          "gaps": 0
-        },
-        "1d": {
-          "status": "PASS",
-          "bars": 220,
-          "first_closed_bar_utc": "2026-02-19T00:00:00+00:00",
-          "last_closed_bar_utc": "2026-09-26T00:00:00+00:00",
-          "last_close": 0.09112,
-          "gaps": 0
-        }
-      },
-      "timeframe_states": {
-        "1d": "NEUTRAL",
-        "4h": "BEARISH",
-        "1h": "BEARISH",
-        "15m": "BULLISH"
-      },
-      "sniper": {
-        "status": "PASS",
-        "signal": "WAIT",
-        "bias": "STRONG BEAR",
-        "bull_pct": 0.0,
-        "bear_pct": 85.71428571428571,
-        "current_closed_1h_bar_utc": "2026-09-27T15:00:00+00:00",
-        "trade_setup": {
-          "side": "SELL",
-          "entry": 0.08865,
-          "stop_loss": 0.09109073502302382,
-          "signal_age_1h_bars": 12
-        },
-        "source_parity_validation": "PENDING_TRADINGVIEW_CROSSCHECK"
-      },
-      "joat": {
-        "status": "PASS",
-        "current_closed_1h_bar_utc": "2026-09-27T15:00:00+00:00",
-        "trend": {
-          "value": "BEARISH",
-          "ribbon_trend": -1,
-          "price_trend": -1,
-          "alignment": "ALIGNED"
-        },
-        "dashboard": {
-          "strength": {
-            "value_pct": 100.0,
-            "status": "STRONG"
-          },
-          "width": {
-            "value_pct": 6.614624222914149,
-            "status": "EXPANDING"
-          },
-          "compression": {
-            "value": "NO",
-            "status": "NORMAL"
-          },
-          "acceleration": {
-            "value": "NONE",
-            "trend_acceleration": 114.59425927677268
-          },
-          "twist": {
-            "count_loaded_history": 2,
-            "value": "NONE",
-            "current_ribbon_cross_count": 0
-          },
-          "volatility": {
-            "value_pct": 35.0,
-            "status": "MEDIUM"
-          },
-          "momentum": {
-            "rsi14": 23.955331876695126,
-            "status": "OVERSOLD"
-          },
-          "volume_ratio": {
-            "value_x": 2.262253649458832,
-            "status": "SURGE"
-          },
-          "expansion": {
-            "value_pct": 23.783515562411804,
-            "status": "RAPID"
-          },
-          "adaptive": {
-            "value_x": 1.5368155604110163,
-            "status": "HIGH"
-          },
-          "mtf": {
-            "value": "MIXED",
-            "alignment": -0.5,
-            "alignment_pct": -50.0
-          }
-        },
-        "mtf": {
-          "chart_ribbon_trend_1h": -1,
-          "htf1_15m_ribbon_trend": -1,
-          "htf2_1h_ribbon_trend": -1,
-          "htf3_4h_ribbon_trend": 1,
-          "source_bar_open_utc": {
-            "htf1": "2026-09-27T15:45:00+00:00",
-            "htf2": "2026-09-27T15:00:00+00:00",
-            "htf3": "2026-09-27T12:00:00+00:00"
-          },
-          "alignment": -0.5,
-          "aligned": false
-        },
-        "signals": {
-          "bull_cross": false,
-          "bear_cross": false,
-          "vol_confirmed_bull": false,
-          "vol_confirmed_bear": false,
-          "twist_detected": false,
-          "compression_breakout": false,
-          "is_accelerating": false,
-          "mtf_aligned": false,
-          "is_compressed": false,
-          "momentum_extreme_bull": false,
-          "momentum_extreme_bear": false,
-          "volatility_surge": false,
-          "strong_zone_entry": false
-        },
-        "recent_strong_trigger": {
-          "status": "NONE",
-          "side": null,
-          "trigger_time_utc": null,
-          "age_1h_bars": null,
-          "freshness": null,
-          "display": "⚪ NO RECENT JOAT STRONG TRIGGER",
-          "window_max_age_1h_bars": 4,
-          "strength_pct": null,
-          "strength_status": null,
-          "volume_ratio": null,
-          "mtf_alignment_pct": null,
-          "mtf_aligned": null,
-          "trend": null
-        },
-        "source_parity_validation": "PENDING_TRADINGVIEW_CROSSCHECK"
-      },
-      "trend_4h": {
-        "state": "BEARISH",
-        "strength": "MODERATE",
-        "adx14": 24.852517115263325,
-        "ema9": 0.08760904574272327,
-        "ema21": 0.0891151002422889,
-        "close": 0.08082
-      },
-      "vumanchu_gold_1d": {
-        "status": "PASS",
-        "engine_version": "VMC_CIPHER_B_GOLD_RAW_V1",
-        "timeframe": "1D",
-        "closed_bars_only": true,
-        "plot_offset_bars": -2,
-        "source_parity_validation": "PENDING_TRADINGVIEW_CROSSCHECK",
-        "settings": {
-          "wt_channel_len": 9,
-          "wt_average_len": 12,
-          "wt_ma_len": 3,
-          "wt_div_os_level": -65.0,
-          "wt_os_level3": -75.0,
-          "rsi_len": 14,
-          "rsi_div_os_level": 30.0,
-          "wt_regular_divergence_enabled": true,
-          "rsi_regular_divergence_enabled": false
-        },
-        "loaded_bars": 220,
-        "gold_count_loaded_history": 0,
-        "gold_on_latest_closed_bar": false,
-        "latest_event": null,
-        "new_detection": null,
-        "events": [],
-        "latest_closed_bar": "2026-09-26T00:00:00+00:00"
-      },
-      "technical_engine": {
-        "status": "PASS",
-        "signal": "NO_TRADE",
-        "signal_score": 60.0,
-        "buy_score": 19.0,
-        "sell_score": 60.0,
-        "execution": null,
-        "joat_confirmation": null,
-        "sniper_confirmation": null
-      },
-      "score_inputs": {
-        "technical_engine_score": 60.0,
-        "volume_24h_usd": 24367315,
-        "change_1h_pct": -1.8703,
-        "change_24h_pct": -10.21821,
-        "change_7d_pct": -7.9696,
         "derivatives_oi_funding": null,
         "catalyst_news_risk": null,
         "note": "Final 0-100 opportunity score is completed by ChatGPT using artifact technicals plus current derivatives/intelligence evidence."
@@ -33608,19 +33869,19 @@
       "contract_multiplier": 1,
       "fallback_used": false,
       "market": {
-        "price_usd": 0.193681,
-        "volume_24h_usd": 35613774,
+        "price_usd": 0.193481,
+        "volume_24h_usd": 35776224,
         "change_1h_pct": 0.6373,
-        "change_24h_pct": -2.1716,
+        "change_24h_pct": -2.10804,
         "change_7d_pct": 21.0051
       },
       "timeframes": {
         "5m": {
           "status": "PASS",
           "bars": 180,
-          "first_closed_bar_utc": "2026-09-27T01:45:00+00:00",
-          "last_closed_bar_utc": "2026-09-27T16:40:00+00:00",
-          "last_close": 0.1937,
+          "first_closed_bar_utc": "2026-09-27T01:55:00+00:00",
+          "last_closed_bar_utc": "2026-09-27T16:50:00+00:00",
+          "last_close": 0.1935,
           "gaps": 0
         },
         "15m": {
@@ -33825,9 +34086,9 @@
       },
       "score_inputs": {
         "technical_engine_score": 68.0,
-        "volume_24h_usd": 35613774,
+        "volume_24h_usd": 35776224,
         "change_1h_pct": 0.6373,
-        "change_24h_pct": -2.1716,
+        "change_24h_pct": -2.10804,
         "change_7d_pct": 21.0051,
         "derivatives_oi_funding": null,
         "catalyst_news_risk": null,
@@ -33851,19 +34112,19 @@
       "contract_multiplier": 1,
       "fallback_used": false,
       "market": {
-        "price_usd": 0.187156,
-        "volume_24h_usd": 3504210,
+        "price_usd": 0.187372,
+        "volume_24h_usd": 3432888,
         "change_1h_pct": -0.0069,
-        "change_24h_pct": 0.51075,
+        "change_24h_pct": 1.01077,
         "change_7d_pct": -7.2249
       },
       "timeframes": {
         "5m": {
           "status": "PASS",
           "bars": 180,
-          "first_closed_bar_utc": "2026-09-27T01:45:00+00:00",
-          "last_closed_bar_utc": "2026-09-27T16:40:00+00:00",
-          "last_close": 0.1878,
+          "first_closed_bar_utc": "2026-09-27T01:55:00+00:00",
+          "last_closed_bar_utc": "2026-09-27T16:50:00+00:00",
+          "last_close": 0.1874,
           "gaps": 0
         },
         "15m": {
@@ -34089,9 +34350,9 @@
       },
       "score_inputs": {
         "technical_engine_score": 95.0,
-        "volume_24h_usd": 3504210,
+        "volume_24h_usd": 3432888,
         "change_1h_pct": -0.0069,
-        "change_24h_pct": 0.51075,
+        "change_24h_pct": 1.01077,
         "change_7d_pct": -7.2249,
         "derivatives_oi_funding": null,
         "catalyst_news_risk": null,
@@ -34116,18 +34377,18 @@
       "fallback_used": false,
       "market": {
         "price_usd": 2.65,
-        "volume_24h_usd": 4059682,
+        "volume_24h_usd": 4053228,
         "change_1h_pct": -0.4198,
-        "change_24h_pct": -2.04332,
+        "change_24h_pct": -2.10672,
         "change_7d_pct": 12.6239
       },
       "timeframes": {
         "5m": {
           "status": "PASS",
           "bars": 180,
-          "first_closed_bar_utc": "2026-09-27T01:45:00+00:00",
-          "last_closed_bar_utc": "2026-09-27T16:40:00+00:00",
-          "last_close": 2.643,
+          "first_closed_bar_utc": "2026-09-27T01:55:00+00:00",
+          "last_closed_bar_utc": "2026-09-27T16:50:00+00:00",
+          "last_close": 2.642,
           "gaps": 0
         },
         "15m": {
@@ -34402,9 +34663,9 @@
       },
       "score_inputs": {
         "technical_engine_score": 61.5,
-        "volume_24h_usd": 4059682,
+        "volume_24h_usd": 4053228,
         "change_1h_pct": -0.4198,
-        "change_24h_pct": -2.04332,
+        "change_24h_pct": -2.10672,
         "change_7d_pct": 12.6239,
         "derivatives_oi_funding": null,
         "catalyst_news_risk": null,
@@ -34428,19 +34689,19 @@
       "contract_multiplier": 1,
       "fallback_used": false,
       "market": {
-        "price_usd": 0.142524,
-        "volume_24h_usd": 8255843,
+        "price_usd": 0.142667,
+        "volume_24h_usd": 8457581,
         "change_1h_pct": -0.1105,
-        "change_24h_pct": -2.37238,
+        "change_24h_pct": -1.57505,
         "change_7d_pct": 36.5872
       },
       "timeframes": {
         "5m": {
           "status": "PASS",
           "bars": 180,
-          "first_closed_bar_utc": "2026-09-27T01:45:00+00:00",
-          "last_closed_bar_utc": "2026-09-27T16:40:00+00:00",
-          "last_close": 0.14229,
+          "first_closed_bar_utc": "2026-09-27T01:55:00+00:00",
+          "last_closed_bar_utc": "2026-09-27T16:50:00+00:00",
+          "last_close": 0.14247,
           "gaps": 0
         },
         "15m": {
@@ -34666,9 +34927,9 @@
       },
       "score_inputs": {
         "technical_engine_score": 75.0,
-        "volume_24h_usd": 8255843,
+        "volume_24h_usd": 8457581,
         "change_1h_pct": -0.1105,
-        "change_24h_pct": -2.37238,
+        "change_24h_pct": -1.57505,
         "change_7d_pct": 36.5872,
         "derivatives_oi_funding": null,
         "catalyst_news_risk": null,
