@@ -1,7 +1,7 @@
 {
-  "generated_at_utc": "2026-09-27T13:29:05.369117+00:00",
-  "generated_at_europe_bucharest": "2026-09-27T16:29:05.369117+03:00",
-  "pipeline_version": "1.1.8",
+  "generated_at_utc": "2026-09-27T15:25:12.613165+00:00",
+  "generated_at_europe_bucharest": "2026-09-27T18:25:12.613165+03:00",
+  "pipeline_version": "1.1.9",
   "engine": "S&P500 JOAT + SNIPER DAILY SIGNAL RADAR — CRYPTO FLOW PARITY",
   "timeframe": "1D_CLOSED_BARS_ONLY",
   "signal_lookback_sessions": 3,
@@ -21,6 +21,14 @@
     "source_parity_validation": "PENDING_TRADINGVIEW_CROSSCHECK",
     "no_lookahead": true,
     "plot_offset_note": "TradingView plots the dot on pivot_bar with offset=-2; alert is emitted only on detection_bar after two later bars have closed.",
+    "follow_up_timeframe": "1D_CLOSED_BARS_ONLY",
+    "follow_up_uses_4h_or_intraday": false,
+    "lifecycle_contract": {
+      "confirmation_level": "DETECTION_BAR_HIGH",
+      "confirmation": "SUBSEQUENT_CLOSED_1D_CLOSE_STRICTLY_ABOVE_DETECTION_BAR_HIGH",
+      "invalidation": "CLOSED_1D_CLOSE_STRICTLY_BELOW_PIVOT_LOW",
+      "reclaim": "LATER_CLOSED_1D_CLOSE_AT_OR_ABOVE_PIVOT_LOW_AFTER_INVALIDATION"
+    },
     "new_detection_count": 0,
     "new_detections": [],
     "rolling_1_calendar_month_window_start": "2026-08-25",
@@ -38,6 +46,7 @@
         "plot_offset_bars": -2,
         "pivot_low": 31.870001,
         "detection_close": 32.290001,
+        "detection_bar_high": 32.950001,
         "wt2_pivot": -65.182,
         "wt2_detection": -62.919,
         "wt_low_prev": -90.4317,
@@ -46,10 +55,114 @@
         "rsi_regular_bull_divergence": false,
         "rsi_divergence_enabled_in_raw_default": false,
         "trigger_component": "WT_REGULAR_BULL_DIV",
+        "parity_diagnostic": {
+          "data_policy": "UNADJUSTED_OHLC_AUTO_ADJUST_FALSE",
+          "current_pivot": {
+            "pivot_bar": "2026-09-21",
+            "pivot_low": 31.870001,
+            "wt2_pivot": -65.182032
+          },
+          "detection": {
+            "detection_bar": "2026-09-23",
+            "detection_high": 32.950001,
+            "detection_close": 32.290001,
+            "wt2_detection": -62.919001
+          },
+          "reference_wt_bottom": {
+            "pivot_bar": "2026-04-28",
+            "detection_bar": "2026-04-30",
+            "price_low": 35.259998,
+            "wt2": -90.431689,
+            "rsi_at_pivot": 18.595378
+          },
+          "pine_gate_tests": {
+            "wt_regular_bull_divergence": true,
+            "pivot_low_lt_reference_low": true,
+            "wt2_pivot_gt_reference_wt2": true,
+            "wt_low_prev_le_minus75": true,
+            "wt2_detection_gt_minus75": true,
+            "wt_recovery_at_least_5": true,
+            "previous_bottom_rsi_lt_30": true
+          },
+          "current_fractal_window": [
+            {
+              "bar": "2026-09-17",
+              "low": 32.549999,
+              "wt2": -59.550708
+            },
+            {
+              "bar": "2026-09-18",
+              "low": 32.150002,
+              "wt2": -62.400735
+            },
+            {
+              "bar": "2026-09-21",
+              "low": 31.870001,
+              "wt2": -65.182032
+            },
+            {
+              "bar": "2026-09-22",
+              "low": 32.599998,
+              "wt2": -64.775395
+            },
+            {
+              "bar": "2026-09-23",
+              "low": 32.009998,
+              "wt2": -62.919001
+            }
+          ],
+          "reference_fractal_window": [
+            {
+              "bar": "2026-04-24",
+              "low": 36.599998,
+              "wt2": -84.867403
+            },
+            {
+              "bar": "2026-04-27",
+              "low": 35.509998,
+              "wt2": -89.131678
+            },
+            {
+              "bar": "2026-04-28",
+              "low": 35.259998,
+              "wt2": -90.431689
+            },
+            {
+              "bar": "2026-04-29",
+              "low": 34.369999,
+              "wt2": -89.782038
+            },
+            {
+              "bar": "2026-04-30",
+              "low": 34.41,
+              "wt2": -87.320741
+            }
+          ],
+          "valuewhen_semantics": "REFERENCE_IS_VALUEWHEN_SERIES_EVALUATED_TWO_BARS_EARLIER"
+        },
         "pivot_timestamp_ms": 1789963200000,
         "detection_bar_start_timestamp_ms": 1790136000000,
         "first_known_timestamp_ms": 1790222400000,
         "first_known_utc": "2026-09-24T04:00:00+00:00",
+        "detection_bar_open": 32.849998,
+        "detection_bar_low": 32.009998,
+        "detection_bar_close": 32.290001,
+        "lifecycle_1d": {
+          "status": "RECLAIMED_CONFIRMATION_PENDING",
+          "confirmation_rule": "SUBSEQUENT_CLOSED_1D_CLOSE_STRICTLY_ABOVE_DETECTION_BAR_HIGH",
+          "confirmation_level": 32.950001,
+          "invalidation_rule": "CLOSED_1D_CLOSE_STRICTLY_BELOW_PIVOT_LOW",
+          "pivot_low": 31.870001,
+          "latest_closed_bar": "2026-09-25",
+          "latest_close": 32.27,
+          "pivot_intact_now": true,
+          "ever_invalidated_after_detection": true,
+          "first_confirmation_bar": null,
+          "last_invalidation_bar": "2026-09-24",
+          "last_reclaim_bar": "2026-09-25",
+          "post_reclaim_confirmation_bar": null,
+          "uses_4h_or_intraday": false
+        },
         "gold_count_loaded_history": 1
       },
       {
@@ -61,6 +174,7 @@
         "plot_offset_bars": -2,
         "pivot_low": 171.630005,
         "detection_close": 177.309998,
+        "detection_bar_high": 178.339996,
         "wt2_pivot": -66.4452,
         "wt2_detection": -63.6398,
         "wt_low_prev": -79.2064,
@@ -69,10 +183,114 @@
         "rsi_regular_bull_divergence": false,
         "rsi_divergence_enabled_in_raw_default": false,
         "trigger_component": "WT_REGULAR_BULL_DIV",
+        "parity_diagnostic": {
+          "data_policy": "UNADJUSTED_OHLC_AUTO_ADJUST_FALSE",
+          "current_pivot": {
+            "pivot_bar": "2026-09-18",
+            "pivot_low": 171.630005,
+            "wt2_pivot": -66.44518
+          },
+          "detection": {
+            "detection_bar": "2026-09-22",
+            "detection_high": 178.339996,
+            "detection_close": 177.309998,
+            "wt2_detection": -63.639753
+          },
+          "reference_wt_bottom": {
+            "pivot_bar": "2026-09-04",
+            "detection_bar": "2026-09-09",
+            "price_low": 183.320007,
+            "wt2": -79.206367,
+            "rsi_at_pivot": 27.107783
+          },
+          "pine_gate_tests": {
+            "wt_regular_bull_divergence": true,
+            "pivot_low_lt_reference_low": true,
+            "wt2_pivot_gt_reference_wt2": true,
+            "wt_low_prev_le_minus75": true,
+            "wt2_detection_gt_minus75": true,
+            "wt_recovery_at_least_5": true,
+            "previous_bottom_rsi_lt_30": true
+          },
+          "current_fractal_window": [
+            {
+              "bar": "2026-09-16",
+              "low": 173.020004,
+              "wt2": -66.333392
+            },
+            {
+              "bar": "2026-09-17",
+              "low": 174.330002,
+              "wt2": -65.590734
+            },
+            {
+              "bar": "2026-09-18",
+              "low": 171.630005,
+              "wt2": -66.44518
+            },
+            {
+              "bar": "2026-09-21",
+              "low": 169.649994,
+              "wt2": -66.098475
+            },
+            {
+              "bar": "2026-09-22",
+              "low": 174.800003,
+              "wt2": -63.639753
+            }
+          ],
+          "reference_fractal_window": [
+            {
+              "bar": "2026-09-02",
+              "low": 183.5,
+              "wt2": -71.08814
+            },
+            {
+              "bar": "2026-09-03",
+              "low": 179.339996,
+              "wt2": -76.591569
+            },
+            {
+              "bar": "2026-09-04",
+              "low": 183.320007,
+              "wt2": -79.206367
+            },
+            {
+              "bar": "2026-09-08",
+              "low": 185.460007,
+              "wt2": -78.023639
+            },
+            {
+              "bar": "2026-09-09",
+              "low": 180.850006,
+              "wt2": -75.606986
+            }
+          ],
+          "valuewhen_semantics": "REFERENCE_IS_VALUEWHEN_SERIES_EVALUATED_TWO_BARS_EARLIER"
+        },
         "pivot_timestamp_ms": 1789704000000,
         "detection_bar_start_timestamp_ms": 1790049600000,
         "first_known_timestamp_ms": 1790136000000,
         "first_known_utc": "2026-09-23T04:00:00+00:00",
+        "detection_bar_open": 176.759995,
+        "detection_bar_low": 174.800003,
+        "detection_bar_close": 177.309998,
+        "lifecycle_1d": {
+          "status": "ENTRY_WINDOW_OPEN",
+          "confirmation_rule": "SUBSEQUENT_CLOSED_1D_CLOSE_STRICTLY_ABOVE_DETECTION_BAR_HIGH",
+          "confirmation_level": 178.339996,
+          "invalidation_rule": "CLOSED_1D_CLOSE_STRICTLY_BELOW_PIVOT_LOW",
+          "pivot_low": 171.630005,
+          "latest_closed_bar": "2026-09-25",
+          "latest_close": 173.300003,
+          "pivot_intact_now": true,
+          "ever_invalidated_after_detection": false,
+          "first_confirmation_bar": null,
+          "last_invalidation_bar": null,
+          "last_reclaim_bar": null,
+          "post_reclaim_confirmation_bar": null,
+          "uses_4h_or_intraday": false
+        },
         "gold_count_loaded_history": 1
       },
       {
@@ -84,6 +302,7 @@
         "plot_offset_bars": -2,
         "pivot_low": 43.849998,
         "detection_close": 43.91,
+        "detection_bar_high": 44.669998,
         "wt2_pivot": -68.4252,
         "wt2_detection": -63.8559,
         "wt_low_prev": -76.8391,
@@ -92,10 +311,114 @@
         "rsi_regular_bull_divergence": false,
         "rsi_divergence_enabled_in_raw_default": false,
         "trigger_component": "WT_REGULAR_BULL_DIV",
+        "parity_diagnostic": {
+          "data_policy": "UNADJUSTED_OHLC_AUTO_ADJUST_FALSE",
+          "current_pivot": {
+            "pivot_bar": "2026-09-14",
+            "pivot_low": 43.849998,
+            "wt2_pivot": -68.425236
+          },
+          "detection": {
+            "detection_bar": "2026-09-16",
+            "detection_high": 44.669998,
+            "detection_close": 43.91,
+            "wt2_detection": -63.855922
+          },
+          "reference_wt_bottom": {
+            "pivot_bar": "2026-04-06",
+            "detection_bar": "2026-04-08",
+            "price_low": 62.18,
+            "wt2": -76.839116,
+            "rsi_at_pivot": 27.554338
+          },
+          "pine_gate_tests": {
+            "wt_regular_bull_divergence": true,
+            "pivot_low_lt_reference_low": true,
+            "wt2_pivot_gt_reference_wt2": true,
+            "wt_low_prev_le_minus75": true,
+            "wt2_detection_gt_minus75": true,
+            "wt_recovery_at_least_5": true,
+            "previous_bottom_rsi_lt_30": true
+          },
+          "current_fractal_window": [
+            {
+              "bar": "2026-09-10",
+              "low": 42.779999,
+              "wt2": -56.374467
+            },
+            {
+              "bar": "2026-09-11",
+              "low": 42.799999,
+              "wt2": -64.741397
+            },
+            {
+              "bar": "2026-09-14",
+              "low": 43.849998,
+              "wt2": -68.425236
+            },
+            {
+              "bar": "2026-09-15",
+              "low": 43.68,
+              "wt2": -67.442638
+            },
+            {
+              "bar": "2026-09-16",
+              "low": 43.650002,
+              "wt2": -63.855922
+            }
+          ],
+          "reference_fractal_window": [
+            {
+              "bar": "2026-04-01",
+              "low": 61.959999,
+              "wt2": -71.467735
+            },
+            {
+              "bar": "2026-04-02",
+              "low": 61.799999,
+              "wt2": -76.515567
+            },
+            {
+              "bar": "2026-04-06",
+              "low": 62.18,
+              "wt2": -76.839116
+            },
+            {
+              "bar": "2026-04-07",
+              "low": 60.900002,
+              "wt2": -75.675894
+            },
+            {
+              "bar": "2026-04-08",
+              "low": 62.130001,
+              "wt2": -72.641639
+            }
+          ],
+          "valuewhen_semantics": "REFERENCE_IS_VALUEWHEN_SERIES_EVALUATED_TWO_BARS_EARLIER"
+        },
         "pivot_timestamp_ms": 1789358400000,
         "detection_bar_start_timestamp_ms": 1789531200000,
         "first_known_timestamp_ms": 1789617600000,
         "first_known_utc": "2026-09-17T04:00:00+00:00",
+        "detection_bar_open": 43.849998,
+        "detection_bar_low": 43.650002,
+        "detection_bar_close": 43.91,
+        "lifecycle_1d": {
+          "status": "RECLAIMED_1D_CONFIRMED_RETEST_WEAKENED",
+          "confirmation_rule": "SUBSEQUENT_CLOSED_1D_CLOSE_STRICTLY_ABOVE_DETECTION_BAR_HIGH",
+          "confirmation_level": 44.669998,
+          "invalidation_rule": "CLOSED_1D_CLOSE_STRICTLY_BELOW_PIVOT_LOW",
+          "pivot_low": 43.849998,
+          "latest_closed_bar": "2026-09-25",
+          "latest_close": 43.919998,
+          "pivot_intact_now": true,
+          "ever_invalidated_after_detection": true,
+          "first_confirmation_bar": "2026-09-22",
+          "last_invalidation_bar": "2026-09-21",
+          "last_reclaim_bar": "2026-09-22",
+          "post_reclaim_confirmation_bar": "2026-09-22",
+          "uses_4h_or_intraday": false
+        },
         "gold_count_loaded_history": 2
       },
       {
@@ -107,6 +430,7 @@
         "plot_offset_bars": -2,
         "pivot_low": 51.48,
         "detection_close": 52.98,
+        "detection_bar_high": 53.040001,
         "wt2_pivot": -76.0372,
         "wt2_detection": -68.2615,
         "wt_low_prev": -85.2307,
@@ -115,10 +439,114 @@
         "rsi_regular_bull_divergence": false,
         "rsi_divergence_enabled_in_raw_default": false,
         "trigger_component": "WT_REGULAR_BULL_DIV",
+        "parity_diagnostic": {
+          "data_policy": "UNADJUSTED_OHLC_AUTO_ADJUST_FALSE",
+          "current_pivot": {
+            "pivot_bar": "2026-09-09",
+            "pivot_low": 51.48,
+            "wt2_pivot": -76.03719
+          },
+          "detection": {
+            "detection_bar": "2026-09-11",
+            "detection_high": 53.040001,
+            "detection_close": 52.98,
+            "wt2_detection": -68.261491
+          },
+          "reference_wt_bottom": {
+            "pivot_bar": "2026-06-04",
+            "detection_bar": "2026-06-08",
+            "price_low": 56.25,
+            "wt2": -85.230673,
+            "rsi_at_pivot": 23.868744
+          },
+          "pine_gate_tests": {
+            "wt_regular_bull_divergence": true,
+            "pivot_low_lt_reference_low": true,
+            "wt2_pivot_gt_reference_wt2": true,
+            "wt_low_prev_le_minus75": true,
+            "wt2_detection_gt_minus75": true,
+            "wt_recovery_at_least_5": true,
+            "previous_bottom_rsi_lt_30": true
+          },
+          "current_fractal_window": [
+            {
+              "bar": "2026-09-04",
+              "low": 50.709999,
+              "wt2": -67.603821
+            },
+            {
+              "bar": "2026-09-08",
+              "low": 51.349998,
+              "wt2": -74.822714
+            },
+            {
+              "bar": "2026-09-09",
+              "low": 51.48,
+              "wt2": -76.03719
+            },
+            {
+              "bar": "2026-09-10",
+              "low": 51.639999,
+              "wt2": -73.072535
+            },
+            {
+              "bar": "2026-09-11",
+              "low": 52.18,
+              "wt2": -68.261491
+            }
+          ],
+          "reference_fractal_window": [
+            {
+              "bar": "2026-06-02",
+              "low": 59.57,
+              "wt2": -76.469043
+            },
+            {
+              "bar": "2026-06-03",
+              "low": 56.150002,
+              "wt2": -82.318851
+            },
+            {
+              "bar": "2026-06-04",
+              "low": 56.25,
+              "wt2": -85.230673
+            },
+            {
+              "bar": "2026-06-05",
+              "low": 56.990002,
+              "wt2": -85.216007
+            },
+            {
+              "bar": "2026-06-08",
+              "low": 56.700001,
+              "wt2": -82.75629
+            }
+          ],
+          "valuewhen_semantics": "REFERENCE_IS_VALUEWHEN_SERIES_EVALUATED_TWO_BARS_EARLIER"
+        },
         "pivot_timestamp_ms": 1788926400000,
         "detection_bar_start_timestamp_ms": 1789099200000,
         "first_known_timestamp_ms": 1789185600000,
         "first_known_utc": "2026-09-12T04:00:00+00:00",
+        "detection_bar_open": 52.740002,
+        "detection_bar_low": 52.18,
+        "detection_bar_close": 52.98,
+        "lifecycle_1d": {
+          "status": "CURRENTLY_INVALIDATED",
+          "confirmation_rule": "SUBSEQUENT_CLOSED_1D_CLOSE_STRICTLY_ABOVE_DETECTION_BAR_HIGH",
+          "confirmation_level": 53.040001,
+          "invalidation_rule": "CLOSED_1D_CLOSE_STRICTLY_BELOW_PIVOT_LOW",
+          "pivot_low": 51.48,
+          "latest_closed_bar": "2026-09-25",
+          "latest_close": 50.919998,
+          "pivot_intact_now": false,
+          "ever_invalidated_after_detection": true,
+          "first_confirmation_bar": "2026-09-14",
+          "last_invalidation_bar": "2026-09-25",
+          "last_reclaim_bar": null,
+          "post_reclaim_confirmation_bar": null,
+          "uses_4h_or_intraday": false
+        },
         "gold_count_loaded_history": 1
       },
       {
@@ -130,6 +558,7 @@
         "plot_offset_bars": -2,
         "pivot_low": 508.809998,
         "detection_close": 511.980011,
+        "detection_bar_high": 519.929993,
         "wt2_pivot": -73.8762,
         "wt2_detection": -69.8622,
         "wt_low_prev": -86.0374,
@@ -138,14 +567,119 @@
         "rsi_regular_bull_divergence": false,
         "rsi_divergence_enabled_in_raw_default": false,
         "trigger_component": "WT_REGULAR_BULL_DIV",
+        "parity_diagnostic": {
+          "data_policy": "UNADJUSTED_OHLC_AUTO_ADJUST_FALSE",
+          "current_pivot": {
+            "pivot_bar": "2026-09-03",
+            "pivot_low": 508.809998,
+            "wt2_pivot": -73.876224
+          },
+          "detection": {
+            "detection_bar": "2026-09-08",
+            "detection_high": 519.929993,
+            "detection_close": 511.980011,
+            "wt2_detection": -69.862231
+          },
+          "reference_wt_bottom": {
+            "pivot_bar": "2026-05-21",
+            "detection_bar": "2026-05-26",
+            "price_low": 531.119995,
+            "wt2": -86.037391,
+            "rsi_at_pivot": 27.851892
+          },
+          "pine_gate_tests": {
+            "wt_regular_bull_divergence": true,
+            "pivot_low_lt_reference_low": true,
+            "wt2_pivot_gt_reference_wt2": true,
+            "wt_low_prev_le_minus75": true,
+            "wt2_detection_gt_minus75": true,
+            "wt_recovery_at_least_5": true,
+            "previous_bottom_rsi_lt_30": true
+          },
+          "current_fractal_window": [
+            {
+              "bar": "2026-09-01",
+              "low": 502.559998,
+              "wt2": -61.111916
+            },
+            {
+              "bar": "2026-09-02",
+              "low": 505.290009,
+              "wt2": -69.572788
+            },
+            {
+              "bar": "2026-09-03",
+              "low": 508.809998,
+              "wt2": -73.876224
+            },
+            {
+              "bar": "2026-09-04",
+              "low": 507.25,
+              "wt2": -72.387265
+            },
+            {
+              "bar": "2026-09-08",
+              "low": 507.559998,
+              "wt2": -69.862231
+            }
+          ],
+          "reference_fractal_window": [
+            {
+              "bar": "2026-05-19",
+              "low": 525.380005,
+              "wt2": -82.569037
+            },
+            {
+              "bar": "2026-05-20",
+              "low": 527.309998,
+              "wt2": -85.153066
+            },
+            {
+              "bar": "2026-05-21",
+              "low": 531.119995,
+              "wt2": -86.037391
+            },
+            {
+              "bar": "2026-05-22",
+              "low": 528.900024,
+              "wt2": -83.725306
+            },
+            {
+              "bar": "2026-05-26",
+              "low": 537.690002,
+              "wt2": -77.473301
+            }
+          ],
+          "valuewhen_semantics": "REFERENCE_IS_VALUEWHEN_SERIES_EVALUATED_TWO_BARS_EARLIER"
+        },
         "pivot_timestamp_ms": 1788408000000,
         "detection_bar_start_timestamp_ms": 1788840000000,
         "first_known_timestamp_ms": 1788926400000,
         "first_known_utc": "2026-09-09T04:00:00+00:00",
+        "detection_bar_open": 519.929993,
+        "detection_bar_low": 507.559998,
+        "detection_bar_close": 511.980011,
+        "lifecycle_1d": {
+          "status": "CURRENTLY_INVALIDATED",
+          "confirmation_rule": "SUBSEQUENT_CLOSED_1D_CLOSE_STRICTLY_ABOVE_DETECTION_BAR_HIGH",
+          "confirmation_level": 519.929993,
+          "invalidation_rule": "CLOSED_1D_CLOSE_STRICTLY_BELOW_PIVOT_LOW",
+          "pivot_low": 508.809998,
+          "latest_closed_bar": "2026-09-25",
+          "latest_close": 484.299988,
+          "pivot_intact_now": false,
+          "ever_invalidated_after_detection": true,
+          "first_confirmation_bar": null,
+          "last_invalidation_bar": "2026-09-25",
+          "last_reclaim_bar": null,
+          "post_reclaim_confirmation_bar": null,
+          "uses_4h_or_intraday": false
+        },
         "gold_count_loaded_history": 2
       }
     ],
     "rolling_1_calendar_month_note": "EXHAUSTIVE and UNTRUNCATED across every current S&P500 constituent successfully evaluated by VuManChu. COMPLETE requires 100% current-universe VuManChu coverage with zero failures/missing assets.",
+    "parity_diagnostic_note": "Every Gold event exports exact Pine gate inputs, current/reference fractal windows, detection_bar_high, and 1D lifecycle so TradingView mismatches such as ODFL can be isolated without changing the RAW formula.",
     "validation_samples_note": "Backward-compatible audit-only field: up to 10 latest-per-ticker historical RAW Gold events. Never use this capped field for rolling-month report completeness.",
     "validation_samples": [
       {
@@ -157,6 +691,7 @@
         "plot_offset_bars": -2,
         "pivot_low": 31.870001,
         "detection_close": 32.290001,
+        "detection_bar_high": 32.950001,
         "wt2_pivot": -65.182,
         "wt2_detection": -62.919,
         "wt_low_prev": -90.4317,
@@ -165,10 +700,114 @@
         "rsi_regular_bull_divergence": false,
         "rsi_divergence_enabled_in_raw_default": false,
         "trigger_component": "WT_REGULAR_BULL_DIV",
+        "parity_diagnostic": {
+          "data_policy": "UNADJUSTED_OHLC_AUTO_ADJUST_FALSE",
+          "current_pivot": {
+            "pivot_bar": "2026-09-21",
+            "pivot_low": 31.870001,
+            "wt2_pivot": -65.182032
+          },
+          "detection": {
+            "detection_bar": "2026-09-23",
+            "detection_high": 32.950001,
+            "detection_close": 32.290001,
+            "wt2_detection": -62.919001
+          },
+          "reference_wt_bottom": {
+            "pivot_bar": "2026-04-28",
+            "detection_bar": "2026-04-30",
+            "price_low": 35.259998,
+            "wt2": -90.431689,
+            "rsi_at_pivot": 18.595378
+          },
+          "pine_gate_tests": {
+            "wt_regular_bull_divergence": true,
+            "pivot_low_lt_reference_low": true,
+            "wt2_pivot_gt_reference_wt2": true,
+            "wt_low_prev_le_minus75": true,
+            "wt2_detection_gt_minus75": true,
+            "wt_recovery_at_least_5": true,
+            "previous_bottom_rsi_lt_30": true
+          },
+          "current_fractal_window": [
+            {
+              "bar": "2026-09-17",
+              "low": 32.549999,
+              "wt2": -59.550708
+            },
+            {
+              "bar": "2026-09-18",
+              "low": 32.150002,
+              "wt2": -62.400735
+            },
+            {
+              "bar": "2026-09-21",
+              "low": 31.870001,
+              "wt2": -65.182032
+            },
+            {
+              "bar": "2026-09-22",
+              "low": 32.599998,
+              "wt2": -64.775395
+            },
+            {
+              "bar": "2026-09-23",
+              "low": 32.009998,
+              "wt2": -62.919001
+            }
+          ],
+          "reference_fractal_window": [
+            {
+              "bar": "2026-04-24",
+              "low": 36.599998,
+              "wt2": -84.867403
+            },
+            {
+              "bar": "2026-04-27",
+              "low": 35.509998,
+              "wt2": -89.131678
+            },
+            {
+              "bar": "2026-04-28",
+              "low": 35.259998,
+              "wt2": -90.431689
+            },
+            {
+              "bar": "2026-04-29",
+              "low": 34.369999,
+              "wt2": -89.782038
+            },
+            {
+              "bar": "2026-04-30",
+              "low": 34.41,
+              "wt2": -87.320741
+            }
+          ],
+          "valuewhen_semantics": "REFERENCE_IS_VALUEWHEN_SERIES_EVALUATED_TWO_BARS_EARLIER"
+        },
         "pivot_timestamp_ms": 1789963200000,
         "detection_bar_start_timestamp_ms": 1790136000000,
         "first_known_timestamp_ms": 1790222400000,
         "first_known_utc": "2026-09-24T04:00:00+00:00",
+        "detection_bar_open": 32.849998,
+        "detection_bar_low": 32.009998,
+        "detection_bar_close": 32.290001,
+        "lifecycle_1d": {
+          "status": "RECLAIMED_CONFIRMATION_PENDING",
+          "confirmation_rule": "SUBSEQUENT_CLOSED_1D_CLOSE_STRICTLY_ABOVE_DETECTION_BAR_HIGH",
+          "confirmation_level": 32.950001,
+          "invalidation_rule": "CLOSED_1D_CLOSE_STRICTLY_BELOW_PIVOT_LOW",
+          "pivot_low": 31.870001,
+          "latest_closed_bar": "2026-09-25",
+          "latest_close": 32.27,
+          "pivot_intact_now": true,
+          "ever_invalidated_after_detection": true,
+          "first_confirmation_bar": null,
+          "last_invalidation_bar": "2026-09-24",
+          "last_reclaim_bar": "2026-09-25",
+          "post_reclaim_confirmation_bar": null,
+          "uses_4h_or_intraday": false
+        },
         "gold_count_loaded_history": 1
       },
       {
@@ -180,6 +819,7 @@
         "plot_offset_bars": -2,
         "pivot_low": 171.630005,
         "detection_close": 177.309998,
+        "detection_bar_high": 178.339996,
         "wt2_pivot": -66.4452,
         "wt2_detection": -63.6398,
         "wt_low_prev": -79.2064,
@@ -188,10 +828,114 @@
         "rsi_regular_bull_divergence": false,
         "rsi_divergence_enabled_in_raw_default": false,
         "trigger_component": "WT_REGULAR_BULL_DIV",
+        "parity_diagnostic": {
+          "data_policy": "UNADJUSTED_OHLC_AUTO_ADJUST_FALSE",
+          "current_pivot": {
+            "pivot_bar": "2026-09-18",
+            "pivot_low": 171.630005,
+            "wt2_pivot": -66.44518
+          },
+          "detection": {
+            "detection_bar": "2026-09-22",
+            "detection_high": 178.339996,
+            "detection_close": 177.309998,
+            "wt2_detection": -63.639753
+          },
+          "reference_wt_bottom": {
+            "pivot_bar": "2026-09-04",
+            "detection_bar": "2026-09-09",
+            "price_low": 183.320007,
+            "wt2": -79.206367,
+            "rsi_at_pivot": 27.107783
+          },
+          "pine_gate_tests": {
+            "wt_regular_bull_divergence": true,
+            "pivot_low_lt_reference_low": true,
+            "wt2_pivot_gt_reference_wt2": true,
+            "wt_low_prev_le_minus75": true,
+            "wt2_detection_gt_minus75": true,
+            "wt_recovery_at_least_5": true,
+            "previous_bottom_rsi_lt_30": true
+          },
+          "current_fractal_window": [
+            {
+              "bar": "2026-09-16",
+              "low": 173.020004,
+              "wt2": -66.333392
+            },
+            {
+              "bar": "2026-09-17",
+              "low": 174.330002,
+              "wt2": -65.590734
+            },
+            {
+              "bar": "2026-09-18",
+              "low": 171.630005,
+              "wt2": -66.44518
+            },
+            {
+              "bar": "2026-09-21",
+              "low": 169.649994,
+              "wt2": -66.098475
+            },
+            {
+              "bar": "2026-09-22",
+              "low": 174.800003,
+              "wt2": -63.639753
+            }
+          ],
+          "reference_fractal_window": [
+            {
+              "bar": "2026-09-02",
+              "low": 183.5,
+              "wt2": -71.08814
+            },
+            {
+              "bar": "2026-09-03",
+              "low": 179.339996,
+              "wt2": -76.591569
+            },
+            {
+              "bar": "2026-09-04",
+              "low": 183.320007,
+              "wt2": -79.206367
+            },
+            {
+              "bar": "2026-09-08",
+              "low": 185.460007,
+              "wt2": -78.023639
+            },
+            {
+              "bar": "2026-09-09",
+              "low": 180.850006,
+              "wt2": -75.606986
+            }
+          ],
+          "valuewhen_semantics": "REFERENCE_IS_VALUEWHEN_SERIES_EVALUATED_TWO_BARS_EARLIER"
+        },
         "pivot_timestamp_ms": 1789704000000,
         "detection_bar_start_timestamp_ms": 1790049600000,
         "first_known_timestamp_ms": 1790136000000,
         "first_known_utc": "2026-09-23T04:00:00+00:00",
+        "detection_bar_open": 176.759995,
+        "detection_bar_low": 174.800003,
+        "detection_bar_close": 177.309998,
+        "lifecycle_1d": {
+          "status": "ENTRY_WINDOW_OPEN",
+          "confirmation_rule": "SUBSEQUENT_CLOSED_1D_CLOSE_STRICTLY_ABOVE_DETECTION_BAR_HIGH",
+          "confirmation_level": 178.339996,
+          "invalidation_rule": "CLOSED_1D_CLOSE_STRICTLY_BELOW_PIVOT_LOW",
+          "pivot_low": 171.630005,
+          "latest_closed_bar": "2026-09-25",
+          "latest_close": 173.300003,
+          "pivot_intact_now": true,
+          "ever_invalidated_after_detection": false,
+          "first_confirmation_bar": null,
+          "last_invalidation_bar": null,
+          "last_reclaim_bar": null,
+          "post_reclaim_confirmation_bar": null,
+          "uses_4h_or_intraday": false
+        },
         "gold_count_loaded_history": 1
       },
       {
@@ -203,6 +947,7 @@
         "plot_offset_bars": -2,
         "pivot_low": 43.849998,
         "detection_close": 43.91,
+        "detection_bar_high": 44.669998,
         "wt2_pivot": -68.4252,
         "wt2_detection": -63.8559,
         "wt_low_prev": -76.8391,
@@ -211,10 +956,114 @@
         "rsi_regular_bull_divergence": false,
         "rsi_divergence_enabled_in_raw_default": false,
         "trigger_component": "WT_REGULAR_BULL_DIV",
+        "parity_diagnostic": {
+          "data_policy": "UNADJUSTED_OHLC_AUTO_ADJUST_FALSE",
+          "current_pivot": {
+            "pivot_bar": "2026-09-14",
+            "pivot_low": 43.849998,
+            "wt2_pivot": -68.425236
+          },
+          "detection": {
+            "detection_bar": "2026-09-16",
+            "detection_high": 44.669998,
+            "detection_close": 43.91,
+            "wt2_detection": -63.855922
+          },
+          "reference_wt_bottom": {
+            "pivot_bar": "2026-04-06",
+            "detection_bar": "2026-04-08",
+            "price_low": 62.18,
+            "wt2": -76.839116,
+            "rsi_at_pivot": 27.554338
+          },
+          "pine_gate_tests": {
+            "wt_regular_bull_divergence": true,
+            "pivot_low_lt_reference_low": true,
+            "wt2_pivot_gt_reference_wt2": true,
+            "wt_low_prev_le_minus75": true,
+            "wt2_detection_gt_minus75": true,
+            "wt_recovery_at_least_5": true,
+            "previous_bottom_rsi_lt_30": true
+          },
+          "current_fractal_window": [
+            {
+              "bar": "2026-09-10",
+              "low": 42.779999,
+              "wt2": -56.374467
+            },
+            {
+              "bar": "2026-09-11",
+              "low": 42.799999,
+              "wt2": -64.741397
+            },
+            {
+              "bar": "2026-09-14",
+              "low": 43.849998,
+              "wt2": -68.425236
+            },
+            {
+              "bar": "2026-09-15",
+              "low": 43.68,
+              "wt2": -67.442638
+            },
+            {
+              "bar": "2026-09-16",
+              "low": 43.650002,
+              "wt2": -63.855922
+            }
+          ],
+          "reference_fractal_window": [
+            {
+              "bar": "2026-04-01",
+              "low": 61.959999,
+              "wt2": -71.467735
+            },
+            {
+              "bar": "2026-04-02",
+              "low": 61.799999,
+              "wt2": -76.515567
+            },
+            {
+              "bar": "2026-04-06",
+              "low": 62.18,
+              "wt2": -76.839116
+            },
+            {
+              "bar": "2026-04-07",
+              "low": 60.900002,
+              "wt2": -75.675894
+            },
+            {
+              "bar": "2026-04-08",
+              "low": 62.130001,
+              "wt2": -72.641639
+            }
+          ],
+          "valuewhen_semantics": "REFERENCE_IS_VALUEWHEN_SERIES_EVALUATED_TWO_BARS_EARLIER"
+        },
         "pivot_timestamp_ms": 1789358400000,
         "detection_bar_start_timestamp_ms": 1789531200000,
         "first_known_timestamp_ms": 1789617600000,
         "first_known_utc": "2026-09-17T04:00:00+00:00",
+        "detection_bar_open": 43.849998,
+        "detection_bar_low": 43.650002,
+        "detection_bar_close": 43.91,
+        "lifecycle_1d": {
+          "status": "RECLAIMED_1D_CONFIRMED_RETEST_WEAKENED",
+          "confirmation_rule": "SUBSEQUENT_CLOSED_1D_CLOSE_STRICTLY_ABOVE_DETECTION_BAR_HIGH",
+          "confirmation_level": 44.669998,
+          "invalidation_rule": "CLOSED_1D_CLOSE_STRICTLY_BELOW_PIVOT_LOW",
+          "pivot_low": 43.849998,
+          "latest_closed_bar": "2026-09-25",
+          "latest_close": 43.919998,
+          "pivot_intact_now": true,
+          "ever_invalidated_after_detection": true,
+          "first_confirmation_bar": "2026-09-22",
+          "last_invalidation_bar": "2026-09-21",
+          "last_reclaim_bar": "2026-09-22",
+          "post_reclaim_confirmation_bar": "2026-09-22",
+          "uses_4h_or_intraday": false
+        },
         "gold_count_loaded_history": 2
       },
       {
@@ -226,6 +1075,7 @@
         "plot_offset_bars": -2,
         "pivot_low": 51.48,
         "detection_close": 52.98,
+        "detection_bar_high": 53.040001,
         "wt2_pivot": -76.0372,
         "wt2_detection": -68.2615,
         "wt_low_prev": -85.2307,
@@ -234,10 +1084,114 @@
         "rsi_regular_bull_divergence": false,
         "rsi_divergence_enabled_in_raw_default": false,
         "trigger_component": "WT_REGULAR_BULL_DIV",
+        "parity_diagnostic": {
+          "data_policy": "UNADJUSTED_OHLC_AUTO_ADJUST_FALSE",
+          "current_pivot": {
+            "pivot_bar": "2026-09-09",
+            "pivot_low": 51.48,
+            "wt2_pivot": -76.03719
+          },
+          "detection": {
+            "detection_bar": "2026-09-11",
+            "detection_high": 53.040001,
+            "detection_close": 52.98,
+            "wt2_detection": -68.261491
+          },
+          "reference_wt_bottom": {
+            "pivot_bar": "2026-06-04",
+            "detection_bar": "2026-06-08",
+            "price_low": 56.25,
+            "wt2": -85.230673,
+            "rsi_at_pivot": 23.868744
+          },
+          "pine_gate_tests": {
+            "wt_regular_bull_divergence": true,
+            "pivot_low_lt_reference_low": true,
+            "wt2_pivot_gt_reference_wt2": true,
+            "wt_low_prev_le_minus75": true,
+            "wt2_detection_gt_minus75": true,
+            "wt_recovery_at_least_5": true,
+            "previous_bottom_rsi_lt_30": true
+          },
+          "current_fractal_window": [
+            {
+              "bar": "2026-09-04",
+              "low": 50.709999,
+              "wt2": -67.603821
+            },
+            {
+              "bar": "2026-09-08",
+              "low": 51.349998,
+              "wt2": -74.822714
+            },
+            {
+              "bar": "2026-09-09",
+              "low": 51.48,
+              "wt2": -76.03719
+            },
+            {
+              "bar": "2026-09-10",
+              "low": 51.639999,
+              "wt2": -73.072535
+            },
+            {
+              "bar": "2026-09-11",
+              "low": 52.18,
+              "wt2": -68.261491
+            }
+          ],
+          "reference_fractal_window": [
+            {
+              "bar": "2026-06-02",
+              "low": 59.57,
+              "wt2": -76.469043
+            },
+            {
+              "bar": "2026-06-03",
+              "low": 56.150002,
+              "wt2": -82.318851
+            },
+            {
+              "bar": "2026-06-04",
+              "low": 56.25,
+              "wt2": -85.230673
+            },
+            {
+              "bar": "2026-06-05",
+              "low": 56.990002,
+              "wt2": -85.216007
+            },
+            {
+              "bar": "2026-06-08",
+              "low": 56.700001,
+              "wt2": -82.75629
+            }
+          ],
+          "valuewhen_semantics": "REFERENCE_IS_VALUEWHEN_SERIES_EVALUATED_TWO_BARS_EARLIER"
+        },
         "pivot_timestamp_ms": 1788926400000,
         "detection_bar_start_timestamp_ms": 1789099200000,
         "first_known_timestamp_ms": 1789185600000,
         "first_known_utc": "2026-09-12T04:00:00+00:00",
+        "detection_bar_open": 52.740002,
+        "detection_bar_low": 52.18,
+        "detection_bar_close": 52.98,
+        "lifecycle_1d": {
+          "status": "CURRENTLY_INVALIDATED",
+          "confirmation_rule": "SUBSEQUENT_CLOSED_1D_CLOSE_STRICTLY_ABOVE_DETECTION_BAR_HIGH",
+          "confirmation_level": 53.040001,
+          "invalidation_rule": "CLOSED_1D_CLOSE_STRICTLY_BELOW_PIVOT_LOW",
+          "pivot_low": 51.48,
+          "latest_closed_bar": "2026-09-25",
+          "latest_close": 50.919998,
+          "pivot_intact_now": false,
+          "ever_invalidated_after_detection": true,
+          "first_confirmation_bar": "2026-09-14",
+          "last_invalidation_bar": "2026-09-25",
+          "last_reclaim_bar": null,
+          "post_reclaim_confirmation_bar": null,
+          "uses_4h_or_intraday": false
+        },
         "gold_count_loaded_history": 1
       },
       {
@@ -249,6 +1203,7 @@
         "plot_offset_bars": -2,
         "pivot_low": 508.809998,
         "detection_close": 511.980011,
+        "detection_bar_high": 519.929993,
         "wt2_pivot": -73.8762,
         "wt2_detection": -69.8622,
         "wt_low_prev": -86.0374,
@@ -257,10 +1212,114 @@
         "rsi_regular_bull_divergence": false,
         "rsi_divergence_enabled_in_raw_default": false,
         "trigger_component": "WT_REGULAR_BULL_DIV",
+        "parity_diagnostic": {
+          "data_policy": "UNADJUSTED_OHLC_AUTO_ADJUST_FALSE",
+          "current_pivot": {
+            "pivot_bar": "2026-09-03",
+            "pivot_low": 508.809998,
+            "wt2_pivot": -73.876224
+          },
+          "detection": {
+            "detection_bar": "2026-09-08",
+            "detection_high": 519.929993,
+            "detection_close": 511.980011,
+            "wt2_detection": -69.862231
+          },
+          "reference_wt_bottom": {
+            "pivot_bar": "2026-05-21",
+            "detection_bar": "2026-05-26",
+            "price_low": 531.119995,
+            "wt2": -86.037391,
+            "rsi_at_pivot": 27.851892
+          },
+          "pine_gate_tests": {
+            "wt_regular_bull_divergence": true,
+            "pivot_low_lt_reference_low": true,
+            "wt2_pivot_gt_reference_wt2": true,
+            "wt_low_prev_le_minus75": true,
+            "wt2_detection_gt_minus75": true,
+            "wt_recovery_at_least_5": true,
+            "previous_bottom_rsi_lt_30": true
+          },
+          "current_fractal_window": [
+            {
+              "bar": "2026-09-01",
+              "low": 502.559998,
+              "wt2": -61.111916
+            },
+            {
+              "bar": "2026-09-02",
+              "low": 505.290009,
+              "wt2": -69.572788
+            },
+            {
+              "bar": "2026-09-03",
+              "low": 508.809998,
+              "wt2": -73.876224
+            },
+            {
+              "bar": "2026-09-04",
+              "low": 507.25,
+              "wt2": -72.387265
+            },
+            {
+              "bar": "2026-09-08",
+              "low": 507.559998,
+              "wt2": -69.862231
+            }
+          ],
+          "reference_fractal_window": [
+            {
+              "bar": "2026-05-19",
+              "low": 525.380005,
+              "wt2": -82.569037
+            },
+            {
+              "bar": "2026-05-20",
+              "low": 527.309998,
+              "wt2": -85.153066
+            },
+            {
+              "bar": "2026-05-21",
+              "low": 531.119995,
+              "wt2": -86.037391
+            },
+            {
+              "bar": "2026-05-22",
+              "low": 528.900024,
+              "wt2": -83.725306
+            },
+            {
+              "bar": "2026-05-26",
+              "low": 537.690002,
+              "wt2": -77.473301
+            }
+          ],
+          "valuewhen_semantics": "REFERENCE_IS_VALUEWHEN_SERIES_EVALUATED_TWO_BARS_EARLIER"
+        },
         "pivot_timestamp_ms": 1788408000000,
         "detection_bar_start_timestamp_ms": 1788840000000,
         "first_known_timestamp_ms": 1788926400000,
         "first_known_utc": "2026-09-09T04:00:00+00:00",
+        "detection_bar_open": 519.929993,
+        "detection_bar_low": 507.559998,
+        "detection_bar_close": 511.980011,
+        "lifecycle_1d": {
+          "status": "CURRENTLY_INVALIDATED",
+          "confirmation_rule": "SUBSEQUENT_CLOSED_1D_CLOSE_STRICTLY_ABOVE_DETECTION_BAR_HIGH",
+          "confirmation_level": 519.929993,
+          "invalidation_rule": "CLOSED_1D_CLOSE_STRICTLY_BELOW_PIVOT_LOW",
+          "pivot_low": 508.809998,
+          "latest_closed_bar": "2026-09-25",
+          "latest_close": 484.299988,
+          "pivot_intact_now": false,
+          "ever_invalidated_after_detection": true,
+          "first_confirmation_bar": null,
+          "last_invalidation_bar": "2026-09-25",
+          "last_reclaim_bar": null,
+          "post_reclaim_confirmation_bar": null,
+          "uses_4h_or_intraday": false
+        },
         "gold_count_loaded_history": 2
       },
       {
@@ -272,6 +1331,7 @@
         "plot_offset_bars": -2,
         "pivot_low": 40.369999,
         "detection_close": 40.759998,
+        "detection_bar_high": 41.130001,
         "wt2_pivot": -68.1721,
         "wt2_detection": -56.9717,
         "wt_low_prev": -82.8395,
@@ -280,10 +1340,114 @@
         "rsi_regular_bull_divergence": false,
         "rsi_divergence_enabled_in_raw_default": false,
         "trigger_component": "WT_REGULAR_BULL_DIV",
+        "parity_diagnostic": {
+          "data_policy": "UNADJUSTED_OHLC_AUTO_ADJUST_FALSE",
+          "current_pivot": {
+            "pivot_bar": "2026-08-19",
+            "pivot_low": 40.369999,
+            "wt2_pivot": -68.172064
+          },
+          "detection": {
+            "detection_bar": "2026-08-21",
+            "detection_high": 41.130001,
+            "detection_close": 40.759998,
+            "wt2_detection": -56.971656
+          },
+          "reference_wt_bottom": {
+            "pivot_bar": "2026-04-07",
+            "detection_bar": "2026-04-09",
+            "price_low": 42.360001,
+            "wt2": -82.839545,
+            "rsi_at_pivot": 18.350921
+          },
+          "pine_gate_tests": {
+            "wt_regular_bull_divergence": true,
+            "pivot_low_lt_reference_low": true,
+            "wt2_pivot_gt_reference_wt2": true,
+            "wt_low_prev_le_minus75": true,
+            "wt2_detection_gt_minus75": true,
+            "wt_recovery_at_least_5": true,
+            "previous_bottom_rsi_lt_30": true
+          },
+          "current_fractal_window": [
+            {
+              "bar": "2026-08-17",
+              "low": 38.860001,
+              "wt2": -62.595374
+            },
+            {
+              "bar": "2026-08-18",
+              "low": 39.23,
+              "wt2": -67.646821
+            },
+            {
+              "bar": "2026-08-19",
+              "low": 40.369999,
+              "wt2": -68.172064
+            },
+            {
+              "bar": "2026-08-20",
+              "low": 39.810001,
+              "wt2": -64.207783
+            },
+            {
+              "bar": "2026-08-21",
+              "low": 40.240002,
+              "wt2": -56.971656
+            }
+          ],
+          "reference_fractal_window": [
+            {
+              "bar": "2026-04-02",
+              "low": 43.169998,
+              "wt2": -68.059561
+            },
+            {
+              "bar": "2026-04-06",
+              "low": 43.560001,
+              "wt2": -78.758445
+            },
+            {
+              "bar": "2026-04-07",
+              "low": 42.360001,
+              "wt2": -82.839545
+            },
+            {
+              "bar": "2026-04-08",
+              "low": 42.759998,
+              "wt2": -82.609514
+            },
+            {
+              "bar": "2026-04-09",
+              "low": 42.720001,
+              "wt2": -80.088922
+            }
+          ],
+          "valuewhen_semantics": "REFERENCE_IS_VALUEWHEN_SERIES_EVALUATED_TWO_BARS_EARLIER"
+        },
         "pivot_timestamp_ms": 1787112000000,
         "detection_bar_start_timestamp_ms": 1787284800000,
         "first_known_timestamp_ms": 1787371200000,
         "first_known_utc": "2026-08-22T04:00:00+00:00",
+        "detection_bar_open": 40.259998,
+        "detection_bar_low": 40.240002,
+        "detection_bar_close": 40.759998,
+        "lifecycle_1d": {
+          "status": "CURRENTLY_INVALIDATED",
+          "confirmation_rule": "SUBSEQUENT_CLOSED_1D_CLOSE_STRICTLY_ABOVE_DETECTION_BAR_HIGH",
+          "confirmation_level": 41.130001,
+          "invalidation_rule": "CLOSED_1D_CLOSE_STRICTLY_BELOW_PIVOT_LOW",
+          "pivot_low": 40.369999,
+          "latest_closed_bar": "2026-09-25",
+          "latest_close": 35.75,
+          "pivot_intact_now": false,
+          "ever_invalidated_after_detection": true,
+          "first_confirmation_bar": null,
+          "last_invalidation_bar": "2026-09-25",
+          "last_reclaim_bar": null,
+          "post_reclaim_confirmation_bar": null,
+          "uses_4h_or_intraday": false
+        },
         "gold_count_loaded_history": 2
       },
       {
@@ -295,6 +1459,7 @@
         "plot_offset_bars": -2,
         "pivot_low": 313.0,
         "detection_close": 307.26001,
+        "detection_bar_high": 314.75,
         "wt2_pivot": -66.7613,
         "wt2_detection": -62.0636,
         "wt_low_prev": -80.7361,
@@ -303,10 +1468,114 @@
         "rsi_regular_bull_divergence": false,
         "rsi_divergence_enabled_in_raw_default": false,
         "trigger_component": "WT_REGULAR_BULL_DIV",
+        "parity_diagnostic": {
+          "data_policy": "UNADJUSTED_OHLC_AUTO_ADJUST_FALSE",
+          "current_pivot": {
+            "pivot_bar": "2026-08-14",
+            "pivot_low": 313.0,
+            "wt2_pivot": -66.761318
+          },
+          "detection": {
+            "detection_bar": "2026-08-18",
+            "detection_high": 314.75,
+            "detection_close": 307.26001,
+            "wt2_detection": -62.063579
+          },
+          "reference_wt_bottom": {
+            "pivot_bar": "2026-02-06",
+            "detection_bar": "2026-02-10",
+            "price_low": 380.299988,
+            "wt2": -80.736128,
+            "rsi_at_pivot": 29.806743
+          },
+          "pine_gate_tests": {
+            "wt_regular_bull_divergence": true,
+            "pivot_low_lt_reference_low": true,
+            "wt2_pivot_gt_reference_wt2": true,
+            "wt_low_prev_le_minus75": true,
+            "wt2_detection_gt_minus75": true,
+            "wt_recovery_at_least_5": true,
+            "previous_bottom_rsi_lt_30": true
+          },
+          "current_fractal_window": [
+            {
+              "bar": "2026-08-12",
+              "low": 303.170013,
+              "wt2": -63.482615
+            },
+            {
+              "bar": "2026-08-13",
+              "low": 305.785004,
+              "wt2": -66.542145
+            },
+            {
+              "bar": "2026-08-14",
+              "low": 313.0,
+              "wt2": -66.761318
+            },
+            {
+              "bar": "2026-08-17",
+              "low": 307.700012,
+              "wt2": -64.699823
+            },
+            {
+              "bar": "2026-08-18",
+              "low": 307.049988,
+              "wt2": -62.063579
+            }
+          ],
+          "reference_fractal_window": [
+            {
+              "bar": "2026-02-04",
+              "low": 382.399994,
+              "wt2": -69.728278
+            },
+            {
+              "bar": "2026-02-05",
+              "low": 360.119995,
+              "wt2": -76.677603
+            },
+            {
+              "bar": "2026-02-06",
+              "low": 380.299988,
+              "wt2": -80.736128
+            },
+            {
+              "bar": "2026-02-09",
+              "low": 419.519989,
+              "wt2": -77.582124
+            },
+            {
+              "bar": "2026-02-10",
+              "low": 461.704987,
+              "wt2": -68.277842
+            }
+          ],
+          "valuewhen_semantics": "REFERENCE_IS_VALUEWHEN_SERIES_EVALUATED_TWO_BARS_EARLIER"
+        },
         "pivot_timestamp_ms": 1786680000000,
         "detection_bar_start_timestamp_ms": 1787025600000,
         "first_known_timestamp_ms": 1787112000000,
         "first_known_utc": "2026-08-19T04:00:00+00:00",
+        "detection_bar_open": 308.820007,
+        "detection_bar_low": 307.049988,
+        "detection_bar_close": 307.26001,
+        "lifecycle_1d": {
+          "status": "CURRENTLY_INVALIDATED",
+          "confirmation_rule": "SUBSEQUENT_CLOSED_1D_CLOSE_STRICTLY_ABOVE_DETECTION_BAR_HIGH",
+          "confirmation_level": 314.75,
+          "invalidation_rule": "CLOSED_1D_CLOSE_STRICTLY_BELOW_PIVOT_LOW",
+          "pivot_low": 313.0,
+          "latest_closed_bar": "2026-09-25",
+          "latest_close": 310.75,
+          "pivot_intact_now": false,
+          "ever_invalidated_after_detection": true,
+          "first_confirmation_bar": "2026-08-28",
+          "last_invalidation_bar": "2026-09-25",
+          "last_reclaim_bar": null,
+          "post_reclaim_confirmation_bar": null,
+          "uses_4h_or_intraday": false
+        },
         "gold_count_loaded_history": 1
       },
       {
@@ -318,6 +1587,7 @@
         "plot_offset_bars": -2,
         "pivot_low": 68.349998,
         "detection_close": 70.089996,
+        "detection_bar_high": 70.68,
         "wt2_pivot": -67.6874,
         "wt2_detection": -62.6244,
         "wt_low_prev": -83.0992,
@@ -326,10 +1596,114 @@
         "rsi_regular_bull_divergence": false,
         "rsi_divergence_enabled_in_raw_default": false,
         "trigger_component": "WT_REGULAR_BULL_DIV",
+        "parity_diagnostic": {
+          "data_policy": "UNADJUSTED_OHLC_AUTO_ADJUST_FALSE",
+          "current_pivot": {
+            "pivot_bar": "2026-07-22",
+            "pivot_low": 68.349998,
+            "wt2_pivot": -67.687401
+          },
+          "detection": {
+            "detection_bar": "2026-07-24",
+            "detection_high": 70.68,
+            "detection_close": 70.089996,
+            "wt2_detection": -62.624434
+          },
+          "reference_wt_bottom": {
+            "pivot_bar": "2026-06-25",
+            "detection_bar": "2026-06-29",
+            "price_low": 70.860001,
+            "wt2": -83.099209,
+            "rsi_at_pivot": 19.051321
+          },
+          "pine_gate_tests": {
+            "wt_regular_bull_divergence": true,
+            "pivot_low_lt_reference_low": true,
+            "wt2_pivot_gt_reference_wt2": true,
+            "wt_low_prev_le_minus75": true,
+            "wt2_detection_gt_minus75": true,
+            "wt_recovery_at_least_5": true,
+            "previous_bottom_rsi_lt_30": true
+          },
+          "current_fractal_window": [
+            {
+              "bar": "2026-07-20",
+              "low": 66.690002,
+              "wt2": -51.472755
+            },
+            {
+              "bar": "2026-07-21",
+              "low": 66.730003,
+              "wt2": -64.349093
+            },
+            {
+              "bar": "2026-07-22",
+              "low": 68.349998,
+              "wt2": -67.687401
+            },
+            {
+              "bar": "2026-07-23",
+              "low": 67.669998,
+              "wt2": -66.674844
+            },
+            {
+              "bar": "2026-07-24",
+              "low": 67.970001,
+              "wt2": -62.624434
+            }
+          ],
+          "reference_fractal_window": [
+            {
+              "bar": "2026-06-23",
+              "low": 72.629997,
+              "wt2": -79.041231
+            },
+            {
+              "bar": "2026-06-24",
+              "low": 71.629997,
+              "wt2": -82.402018
+            },
+            {
+              "bar": "2026-06-25",
+              "low": 70.860001,
+              "wt2": -83.099209
+            },
+            {
+              "bar": "2026-06-26",
+              "low": 71.529999,
+              "wt2": -80.508483
+            },
+            {
+              "bar": "2026-06-29",
+              "low": 73.730003,
+              "wt2": -74.608938
+            }
+          ],
+          "valuewhen_semantics": "REFERENCE_IS_VALUEWHEN_SERIES_EVALUATED_TWO_BARS_EARLIER"
+        },
         "pivot_timestamp_ms": 1784692800000,
         "detection_bar_start_timestamp_ms": 1784865600000,
         "first_known_timestamp_ms": 1784952000000,
         "first_known_utc": "2026-07-25T04:00:00+00:00",
+        "detection_bar_open": 69.290001,
+        "detection_bar_low": 67.970001,
+        "detection_bar_close": 70.089996,
+        "lifecycle_1d": {
+          "status": "1D_CONFIRMED",
+          "confirmation_rule": "SUBSEQUENT_CLOSED_1D_CLOSE_STRICTLY_ABOVE_DETECTION_BAR_HIGH",
+          "confirmation_level": 70.68,
+          "invalidation_rule": "CLOSED_1D_CLOSE_STRICTLY_BELOW_PIVOT_LOW",
+          "pivot_low": 68.349998,
+          "latest_closed_bar": "2026-09-25",
+          "latest_close": 71.150002,
+          "pivot_intact_now": true,
+          "ever_invalidated_after_detection": false,
+          "first_confirmation_bar": "2026-07-28",
+          "last_invalidation_bar": null,
+          "last_reclaim_bar": null,
+          "post_reclaim_confirmation_bar": null,
+          "uses_4h_or_intraday": false
+        },
         "gold_count_loaded_history": 1
       },
       {
@@ -341,6 +1715,7 @@
         "plot_offset_bars": -2,
         "pivot_low": 41.630001,
         "detection_close": 42.450001,
+        "detection_bar_high": 43.240002,
         "wt2_pivot": -74.2585,
         "wt2_detection": -69.3324,
         "wt_low_prev": -85.9749,
@@ -349,10 +1724,114 @@
         "rsi_regular_bull_divergence": false,
         "rsi_divergence_enabled_in_raw_default": false,
         "trigger_component": "WT_REGULAR_BULL_DIV",
+        "parity_diagnostic": {
+          "data_policy": "UNADJUSTED_OHLC_AUTO_ADJUST_FALSE",
+          "current_pivot": {
+            "pivot_bar": "2026-07-06",
+            "pivot_low": 41.630001,
+            "wt2_pivot": -74.258451
+          },
+          "detection": {
+            "detection_bar": "2026-07-08",
+            "detection_high": 43.240002,
+            "detection_close": 42.450001,
+            "wt2_detection": -69.332416
+          },
+          "reference_wt_bottom": {
+            "pivot_bar": "2026-04-15",
+            "detection_bar": "2026-04-17",
+            "price_low": 44.93,
+            "wt2": -85.974927,
+            "rsi_at_pivot": 23.186898
+          },
+          "pine_gate_tests": {
+            "wt_regular_bull_divergence": true,
+            "pivot_low_lt_reference_low": true,
+            "wt2_pivot_gt_reference_wt2": true,
+            "wt_low_prev_le_minus75": true,
+            "wt2_detection_gt_minus75": true,
+            "wt_recovery_at_least_5": true,
+            "previous_bottom_rsi_lt_30": true
+          },
+          "current_fractal_window": [
+            {
+              "bar": "2026-07-01",
+              "low": 41.490002,
+              "wt2": -59.609999
+            },
+            {
+              "bar": "2026-07-02",
+              "low": 40.759998,
+              "wt2": -70.087388
+            },
+            {
+              "bar": "2026-07-06",
+              "low": 41.630001,
+              "wt2": -74.258451
+            },
+            {
+              "bar": "2026-07-07",
+              "low": 42.419998,
+              "wt2": -73.014056
+            },
+            {
+              "bar": "2026-07-08",
+              "low": 42.25,
+              "wt2": -69.332416
+            }
+          ],
+          "reference_fractal_window": [
+            {
+              "bar": "2026-04-13",
+              "low": 45.040001,
+              "wt2": -78.800021
+            },
+            {
+              "bar": "2026-04-14",
+              "low": 44.27,
+              "wt2": -84.160237
+            },
+            {
+              "bar": "2026-04-15",
+              "low": 44.93,
+              "wt2": -85.974927
+            },
+            {
+              "bar": "2026-04-16",
+              "low": 45.040001,
+              "wt2": -82.868204
+            },
+            {
+              "bar": "2026-04-17",
+              "low": 46.080002,
+              "wt2": -75.839489
+            }
+          ],
+          "valuewhen_semantics": "REFERENCE_IS_VALUEWHEN_SERIES_EVALUATED_TWO_BARS_EARLIER"
+        },
         "pivot_timestamp_ms": 1783310400000,
         "detection_bar_start_timestamp_ms": 1783483200000,
         "first_known_timestamp_ms": 1783569600000,
         "first_known_utc": "2026-07-09T04:00:00+00:00",
+        "detection_bar_open": 42.48,
+        "detection_bar_low": 42.25,
+        "detection_bar_close": 42.450001,
+        "lifecycle_1d": {
+          "status": "1D_CONFIRMED",
+          "confirmation_rule": "SUBSEQUENT_CLOSED_1D_CLOSE_STRICTLY_ABOVE_DETECTION_BAR_HIGH",
+          "confirmation_level": 43.240002,
+          "invalidation_rule": "CLOSED_1D_CLOSE_STRICTLY_BELOW_PIVOT_LOW",
+          "pivot_low": 41.630001,
+          "latest_closed_bar": "2026-09-25",
+          "latest_close": 47.080002,
+          "pivot_intact_now": true,
+          "ever_invalidated_after_detection": false,
+          "first_confirmation_bar": "2026-07-16",
+          "last_invalidation_bar": null,
+          "last_reclaim_bar": null,
+          "post_reclaim_confirmation_bar": null,
+          "uses_4h_or_intraday": false
+        },
         "gold_count_loaded_history": 1
       },
       {
@@ -364,6 +1843,7 @@
         "plot_offset_bars": -2,
         "pivot_low": 20.25,
         "detection_close": 21.120001,
+        "detection_bar_high": 21.43,
         "wt2_pivot": -81.2887,
         "wt2_detection": -72.4284,
         "wt_low_prev": -85.1354,
@@ -372,10 +1852,114 @@
         "rsi_regular_bull_divergence": false,
         "rsi_divergence_enabled_in_raw_default": false,
         "trigger_component": "WT_REGULAR_BULL_DIV",
+        "parity_diagnostic": {
+          "data_policy": "UNADJUSTED_OHLC_AUTO_ADJUST_FALSE",
+          "current_pivot": {
+            "pivot_bar": "2026-07-06",
+            "pivot_low": 20.25,
+            "wt2_pivot": -81.288655
+          },
+          "detection": {
+            "detection_bar": "2026-07-08",
+            "detection_high": 21.43,
+            "detection_close": 21.120001,
+            "wt2_detection": -72.428361
+          },
+          "reference_wt_bottom": {
+            "pivot_bar": "2026-06-09",
+            "detection_bar": "2026-06-11",
+            "price_low": 22.32,
+            "wt2": -85.135416,
+            "rsi_at_pivot": 27.364721
+          },
+          "pine_gate_tests": {
+            "wt_regular_bull_divergence": true,
+            "pivot_low_lt_reference_low": true,
+            "wt2_pivot_gt_reference_wt2": true,
+            "wt_low_prev_le_minus75": true,
+            "wt2_detection_gt_minus75": true,
+            "wt_recovery_at_least_5": true,
+            "previous_bottom_rsi_lt_30": true
+          },
+          "current_fractal_window": [
+            {
+              "bar": "2026-07-01",
+              "low": 20.290001,
+              "wt2": -70.205667
+            },
+            {
+              "bar": "2026-07-02",
+              "low": 19.889999,
+              "wt2": -78.401933
+            },
+            {
+              "bar": "2026-07-06",
+              "low": 20.25,
+              "wt2": -81.288655
+            },
+            {
+              "bar": "2026-07-07",
+              "low": 20.860001,
+              "wt2": -78.628781
+            },
+            {
+              "bar": "2026-07-08",
+              "low": 20.809999,
+              "wt2": -72.428361
+            }
+          ],
+          "reference_fractal_window": [
+            {
+              "bar": "2026-06-05",
+              "low": 22.59,
+              "wt2": -75.215544
+            },
+            {
+              "bar": "2026-06-08",
+              "low": 22.41,
+              "wt2": -82.953107
+            },
+            {
+              "bar": "2026-06-09",
+              "low": 22.32,
+              "wt2": -85.135416
+            },
+            {
+              "bar": "2026-06-10",
+              "low": 22.75,
+              "wt2": -82.525275
+            },
+            {
+              "bar": "2026-06-11",
+              "low": 22.99,
+              "wt2": -76.577325
+            }
+          ],
+          "valuewhen_semantics": "REFERENCE_IS_VALUEWHEN_SERIES_EVALUATED_TWO_BARS_EARLIER"
+        },
         "pivot_timestamp_ms": 1783310400000,
         "detection_bar_start_timestamp_ms": 1783483200000,
         "first_known_timestamp_ms": 1783569600000,
         "first_known_utc": "2026-07-09T04:00:00+00:00",
+        "detection_bar_open": 20.969999,
+        "detection_bar_low": 20.809999,
+        "detection_bar_close": 21.120001,
+        "lifecycle_1d": {
+          "status": "1D_CONFIRMED",
+          "confirmation_rule": "SUBSEQUENT_CLOSED_1D_CLOSE_STRICTLY_ABOVE_DETECTION_BAR_HIGH",
+          "confirmation_level": 21.43,
+          "invalidation_rule": "CLOSED_1D_CLOSE_STRICTLY_BELOW_PIVOT_LOW",
+          "pivot_low": 20.25,
+          "latest_closed_bar": "2026-09-25",
+          "latest_close": 25.379999,
+          "pivot_intact_now": true,
+          "ever_invalidated_after_detection": false,
+          "first_confirmation_bar": "2026-07-13",
+          "last_invalidation_bar": null,
+          "last_reclaim_bar": null,
+          "post_reclaim_confirmation_bar": null,
+          "uses_4h_or_intraday": false
+        },
         "gold_count_loaded_history": 2
       }
     ]
@@ -415,11 +1999,11 @@
     "yahoo_batch_count": 10,
     "batch_size": 55,
     "stooq_workers": 6,
-    "price_download_seconds": 76.98,
+    "price_download_seconds": 85.61,
     "freshness_grace_minutes": 30,
     "intraday_patch_interval": "30m",
     "intraday_patch_batch_size": 120,
-    "total_runtime_seconds": 87.61
+    "total_runtime_seconds": 103.77
   },
   "data_quality": {
     "price_requested": 504,
