@@ -1,8 +1,8 @@
 {
   "schema_version": "BVB_VUMANCHU_ORANGE_V1",
   "scanner_version": "1.1.0",
-  "generated_at_utc": "2026-09-28T14:52:37.076813+00:00",
-  "generated_at_europe_bucharest": "2026-09-28T17:52:37.076813+03:00",
+  "generated_at_utc": "2026-09-28T18:12:32.805169+00:00",
+  "generated_at_europe_bucharest": "2026-09-28T21:12:32.805169+03:00",
   "scope": "BET_INDEX_PLUS_ALL_CURRENT_BET_CONSTITUENTS",
   "display_name": "VuManChu Orange Buy — BET (rolling 1 calendar month)",
   "signal_equivalence": "ORANGE_BUY_EQUALS_EXISTING_VUMANCHU_RAW_GOLD",
@@ -28,7 +28,7 @@
   "raw_engine": {
     "module": "collector.calculate_vumanchu_gold_raw",
     "engine_version": "VMC_CIPHER_B_GOLD_RAW_V3_LIFECYCLE_DIAGNOSTIC",
-    "collector_sha256": "2abd9249cb04e3f6d747b3175263d77588eca74717a6503b72fccc929416aa3a",
+    "collector_sha256": "579e035dd89d064491495cca55666a6a78e059fa5d3396046c7b535236f87ecf",
     "formula_changed": false
   },
   "composition": {
@@ -42,8 +42,8 @@
       "SNP",
       "SNG",
       "H2O",
-      "BRD",
       "EL",
+      "BRD",
       "TGN",
       "DIGI",
       "M",
@@ -66,8 +66,8 @@
       "SNP",
       "SNG",
       "H2O",
-      "BRD",
       "EL",
+      "BRD",
       "TGN",
       "DIGI",
       "M",
@@ -142,7 +142,7 @@
       "required_bars": 40,
       "raw_gold_event_count_loaded_history": 1
     },
-    "BRD": {
+    "EL": {
       "status": "COMPUTED",
       "bars": 899,
       "first_session": "2023-02-14",
@@ -151,7 +151,7 @@
       "required_bars": 40,
       "raw_gold_event_count_loaded_history": 0
     },
-    "EL": {
+    "BRD": {
       "status": "COMPUTED",
       "bars": 899,
       "first_session": "2023-02-14",
