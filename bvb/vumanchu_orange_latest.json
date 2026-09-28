@@ -1,7 +1,7 @@
 {
   "schema_version": "BVB_VUMANCHU_ORANGE_V1",
-  "generated_at_utc": "2026-09-28T12:44:14.730568+00:00",
-  "generated_at_europe_bucharest": "2026-09-28T15:44:14.730568+03:00",
+  "generated_at_utc": "2026-09-28T13:37:30.609058+00:00",
+  "generated_at_europe_bucharest": "2026-09-28T16:37:30.609058+03:00",
   "scope": "BET_INDEX_PLUS_ALL_CURRENT_BET_CONSTITUENTS",
   "display_name": "VuManChu Orange Buy — BET (rolling 1 calendar month)",
   "signal_equivalence": "ORANGE_BUY_EQUALS_EXISTING_VUMANCHU_RAW_GOLD",
@@ -76,174 +76,174 @@
     "failures": [
       {
         "asset": "BET",
-        "error": "BVB history failed for BET: 404 Client Error: Not Found for url: https://wapi.bvb.ro/api/history?symbol=BET&resolution=1D&from=1660999331&to=1790685731&ajust=0&countback=900&currencyCode=RON"
+        "error": "BVB history failed for BET: 404 Client Error: Not Found for url: https://wapi.bvb.ro/api/history?symbol=BET&resolution=1D&from=1661002527&to=1790688927&ajust=0&countback=900&currencyCode=RON"
       },
       {
         "asset": "TLV",
-        "error": "BVB history failed for TLV: 404 Client Error: Not Found for url: https://wapi.bvb.ro/api/history?symbol=TLV&resolution=1D&from=1660999337&to=1790685737&ajust=0&countback=900&currencyCode=RON"
+        "error": "BVB history failed for TLV: 404 Client Error: Not Found for url: https://wapi.bvb.ro/api/history?symbol=TLV&resolution=1D&from=1661002534&to=1790688934&ajust=0&countback=900&currencyCode=RON"
       },
       {
         "asset": "SNP",
-        "error": "BVB history failed for SNP: 404 Client Error: Not Found for url: https://wapi.bvb.ro/api/history?symbol=SNP&resolution=1D&from=1660999343&to=1790685743&ajust=0&countback=900&currencyCode=RON"
+        "error": "BVB history failed for SNP: 404 Client Error: Not Found for url: https://wapi.bvb.ro/api/history?symbol=SNP&resolution=1D&from=1661002540&to=1790688940&ajust=0&countback=900&currencyCode=RON"
       },
       {
         "asset": "SNG",
-        "error": "BVB history failed for SNG: 404 Client Error: Not Found for url: https://wapi.bvb.ro/api/history?symbol=SNG&resolution=1D&from=1660999350&to=1790685750&ajust=0&countback=900&currencyCode=RON"
+        "error": "BVB history failed for SNG: 404 Client Error: Not Found for url: https://wapi.bvb.ro/api/history?symbol=SNG&resolution=1D&from=1661002546&to=1790688946&ajust=0&countback=900&currencyCode=RON"
       },
       {
         "asset": "H2O",
-        "error": "BVB history failed for H2O: 404 Client Error: Not Found for url: https://wapi.bvb.ro/api/history?symbol=H2O&resolution=1D&from=1660999356&to=1790685756&ajust=0&countback=900&currencyCode=RON"
+        "error": "BVB history failed for H2O: 404 Client Error: Not Found for url: https://wapi.bvb.ro/api/history?symbol=H2O&resolution=1D&from=1661002552&to=1790688952&ajust=0&countback=900&currencyCode=RON"
       },
       {
         "asset": "BRD",
-        "error": "BVB history failed for BRD: 404 Client Error: Not Found for url: https://wapi.bvb.ro/api/history?symbol=BRD&resolution=1D&from=1660999363&to=1790685763&ajust=0&countback=900&currencyCode=RON"
+        "error": "BVB history failed for BRD: 404 Client Error: Not Found for url: https://wapi.bvb.ro/api/history?symbol=BRD&resolution=1D&from=1661002559&to=1790688959&ajust=0&countback=900&currencyCode=RON"
       },
       {
         "asset": "EL",
-        "error": "BVB history failed for EL: 404 Client Error: Not Found for url: https://wapi.bvb.ro/api/history?symbol=EL&resolution=1D&from=1660999369&to=1790685769&ajust=0&countback=900&currencyCode=RON"
+        "error": "BVB history failed for EL: 404 Client Error: Not Found for url: https://wapi.bvb.ro/api/history?symbol=EL&resolution=1D&from=1661002565&to=1790688965&ajust=0&countback=900&currencyCode=RON"
       },
       {
         "asset": "TGN",
-        "error": "BVB history failed for TGN: 404 Client Error: Not Found for url: https://wapi.bvb.ro/api/history?symbol=TGN&resolution=1D&from=1660999375&to=1790685775&ajust=0&countback=900&currencyCode=RON"
+        "error": "BVB history failed for TGN: 404 Client Error: Not Found for url: https://wapi.bvb.ro/api/history?symbol=TGN&resolution=1D&from=1661002572&to=1790688972&ajust=0&countback=900&currencyCode=RON"
       },
       {
         "asset": "DIGI",
-        "error": "BVB history failed for DIGI: 404 Client Error: Not Found for url: https://wapi.bvb.ro/api/history?symbol=DIGI&resolution=1D&from=1660999382&to=1790685782&ajust=0&countback=900&currencyCode=RON"
+        "error": "BVB history failed for DIGI: 404 Client Error: Not Found for url: https://wapi.bvb.ro/api/history?symbol=DIGI&resolution=1D&from=1661002578&to=1790688978&ajust=0&countback=900&currencyCode=RON"
       },
       {
         "asset": "M",
-        "error": "BVB history failed for M: 404 Client Error: Not Found for url: https://wapi.bvb.ro/api/history?symbol=M&resolution=1D&from=1660999388&to=1790685788&ajust=0&countback=900&currencyCode=RON"
+        "error": "BVB history failed for M: 404 Client Error: Not Found for url: https://wapi.bvb.ro/api/history?symbol=M&resolution=1D&from=1661002584&to=1790688984&ajust=0&countback=900&currencyCode=RON"
       },
       {
         "asset": "SNN",
-        "error": "BVB history failed for SNN: 404 Client Error: Not Found for url: https://wapi.bvb.ro/api/history?symbol=SNN&resolution=1D&from=1660999394&to=1790685794&ajust=0&countback=900&currencyCode=RON"
+        "error": "BVB history failed for SNN: 404 Client Error: Not Found for url: https://wapi.bvb.ro/api/history?symbol=SNN&resolution=1D&from=1661002590&to=1790688990&ajust=0&countback=900&currencyCode=RON"
       },
       {
         "asset": "TEL",
-        "error": "BVB history failed for TEL: 404 Client Error: Not Found for url: https://wapi.bvb.ro/api/history?symbol=TEL&resolution=1D&from=1660999400&to=1790685800&ajust=0&countback=900&currencyCode=RON"
+        "error": "BVB history failed for TEL: 404 Client Error: Not Found for url: https://wapi.bvb.ro/api/history?symbol=TEL&resolution=1D&from=1661002596&to=1790688996&ajust=0&countback=900&currencyCode=RON"
       },
       {
         "asset": "PE",
-        "error": "BVB history failed for PE: 404 Client Error: Not Found for url: https://wapi.bvb.ro/api/history?symbol=PE&resolution=1D&from=1660999406&to=1790685806&ajust=0&countback=900&currencyCode=RON"
+        "error": "BVB history failed for PE: 404 Client Error: Not Found for url: https://wapi.bvb.ro/api/history?symbol=PE&resolution=1D&from=1661002602&to=1790689002&ajust=0&countback=900&currencyCode=RON"
       },
       {
         "asset": "FP",
-        "error": "BVB history failed for FP: 404 Client Error: Not Found for url: https://wapi.bvb.ro/api/history?symbol=FP&resolution=1D&from=1660999412&to=1790685812&ajust=0&countback=900&currencyCode=RON"
+        "error": "BVB history failed for FP: 404 Client Error: Not Found for url: https://wapi.bvb.ro/api/history?symbol=FP&resolution=1D&from=1661002608&to=1790689008&ajust=0&countback=900&currencyCode=RON"
       },
       {
         "asset": "ONE",
-        "error": "BVB history failed for ONE: 404 Client Error: Not Found for url: https://wapi.bvb.ro/api/history?symbol=ONE&resolution=1D&from=1660999418&to=1790685818&ajust=0&countback=900&currencyCode=RON"
+        "error": "BVB history failed for ONE: 404 Client Error: Not Found for url: https://wapi.bvb.ro/api/history?symbol=ONE&resolution=1D&from=1661002614&to=1790689014&ajust=0&countback=900&currencyCode=RON"
       },
       {
         "asset": "AQ",
-        "error": "BVB history failed for AQ: 404 Client Error: Not Found for url: https://wapi.bvb.ro/api/history?symbol=AQ&resolution=1D&from=1660999424&to=1790685824&ajust=0&countback=900&currencyCode=RON"
+        "error": "BVB history failed for AQ: 404 Client Error: Not Found for url: https://wapi.bvb.ro/api/history?symbol=AQ&resolution=1D&from=1661002620&to=1790689020&ajust=0&countback=900&currencyCode=RON"
       },
       {
         "asset": "CFH",
-        "error": "BVB history failed for CFH: 404 Client Error: Not Found for url: https://wapi.bvb.ro/api/history?symbol=CFH&resolution=1D&from=1660999430&to=1790685830&ajust=0&countback=900&currencyCode=RON"
+        "error": "BVB history failed for CFH: 404 Client Error: Not Found for url: https://wapi.bvb.ro/api/history?symbol=CFH&resolution=1D&from=1661002626&to=1790689026&ajust=0&countback=900&currencyCode=RON"
       },
       {
         "asset": "EAI",
-        "error": "BVB history failed for EAI: 404 Client Error: Not Found for url: https://wapi.bvb.ro/api/history?symbol=EAI&resolution=1D&from=1660999436&to=1790685836&ajust=0&countback=900&currencyCode=RON"
+        "error": "BVB history failed for EAI: 404 Client Error: Not Found for url: https://wapi.bvb.ro/api/history?symbol=EAI&resolution=1D&from=1661002632&to=1790689032&ajust=0&countback=900&currencyCode=RON"
       },
       {
         "asset": "TTS",
-        "error": "BVB history failed for TTS: 404 Client Error: Not Found for url: https://wapi.bvb.ro/api/history?symbol=TTS&resolution=1D&from=1660999442&to=1790685842&ajust=0&countback=900&currencyCode=RON"
+        "error": "BVB history failed for TTS: 404 Client Error: Not Found for url: https://wapi.bvb.ro/api/history?symbol=TTS&resolution=1D&from=1661002638&to=1790689038&ajust=0&countback=900&currencyCode=RON"
       },
       {
         "asset": "ATB",
-        "error": "BVB history failed for ATB: 404 Client Error: Not Found for url: https://wapi.bvb.ro/api/history?symbol=ATB&resolution=1D&from=1660999448&to=1790685848&ajust=0&countback=900&currencyCode=RON"
+        "error": "BVB history failed for ATB: 404 Client Error: Not Found for url: https://wapi.bvb.ro/api/history?symbol=ATB&resolution=1D&from=1661002644&to=1790689044&ajust=0&countback=900&currencyCode=RON"
       },
       {
         "asset": "TRP",
-        "error": "BVB history failed for TRP: 404 Client Error: Not Found for url: https://wapi.bvb.ro/api/history?symbol=TRP&resolution=1D&from=1660999454&to=1790685854&ajust=0&countback=900&currencyCode=RON"
+        "error": "BVB history failed for TRP: 404 Client Error: Not Found for url: https://wapi.bvb.ro/api/history?symbol=TRP&resolution=1D&from=1661002650&to=1790689050&ajust=0&countback=900&currencyCode=RON"
       }
     ]
   },
   "per_asset": {
     "BET": {
       "status": "FAIL",
-      "error": "BVB history failed for BET: 404 Client Error: Not Found for url: https://wapi.bvb.ro/api/history?symbol=BET&resolution=1D&from=1660999331&to=1790685731&ajust=0&countback=900&currencyCode=RON"
+      "error": "BVB history failed for BET: 404 Client Error: Not Found for url: https://wapi.bvb.ro/api/history?symbol=BET&resolution=1D&from=1661002527&to=1790688927&ajust=0&countback=900&currencyCode=RON"
     },
     "TLV": {
       "status": "FAIL",
-      "error": "BVB history failed for TLV: 404 Client Error: Not Found for url: https://wapi.bvb.ro/api/history?symbol=TLV&resolution=1D&from=1660999337&to=1790685737&ajust=0&countback=900&currencyCode=RON"
+      "error": "BVB history failed for TLV: 404 Client Error: Not Found for url: https://wapi.bvb.ro/api/history?symbol=TLV&resolution=1D&from=1661002534&to=1790688934&ajust=0&countback=900&currencyCode=RON"
     },
     "SNP": {
       "status": "FAIL",
-      "error": "BVB history failed for SNP: 404 Client Error: Not Found for url: https://wapi.bvb.ro/api/history?symbol=SNP&resolution=1D&from=1660999343&to=1790685743&ajust=0&countback=900&currencyCode=RON"
+      "error": "BVB history failed for SNP: 404 Client Error: Not Found for url: https://wapi.bvb.ro/api/history?symbol=SNP&resolution=1D&from=1661002540&to=1790688940&ajust=0&countback=900&currencyCode=RON"
     },
     "SNG": {
       "status": "FAIL",
-      "error": "BVB history failed for SNG: 404 Client Error: Not Found for url: https://wapi.bvb.ro/api/history?symbol=SNG&resolution=1D&from=1660999350&to=1790685750&ajust=0&countback=900&currencyCode=RON"
+      "error": "BVB history failed for SNG: 404 Client Error: Not Found for url: https://wapi.bvb.ro/api/history?symbol=SNG&resolution=1D&from=1661002546&to=1790688946&ajust=0&countback=900&currencyCode=RON"
     },
     "H2O": {
       "status": "FAIL",
-      "error": "BVB history failed for H2O: 404 Client Error: Not Found for url: https://wapi.bvb.ro/api/history?symbol=H2O&resolution=1D&from=1660999356&to=1790685756&ajust=0&countback=900&currencyCode=RON"
+      "error": "BVB history failed for H2O: 404 Client Error: Not Found for url: https://wapi.bvb.ro/api/history?symbol=H2O&resolution=1D&from=1661002552&to=1790688952&ajust=0&countback=900&currencyCode=RON"
     },
     "BRD": {
       "status": "FAIL",
-      "error": "BVB history failed for BRD: 404 Client Error: Not Found for url: https://wapi.bvb.ro/api/history?symbol=BRD&resolution=1D&from=1660999363&to=1790685763&ajust=0&countback=900&currencyCode=RON"
+      "error": "BVB history failed for BRD: 404 Client Error: Not Found for url: https://wapi.bvb.ro/api/history?symbol=BRD&resolution=1D&from=1661002559&to=1790688959&ajust=0&countback=900&currencyCode=RON"
     },
     "EL": {
       "status": "FAIL",
-      "error": "BVB history failed for EL: 404 Client Error: Not Found for url: https://wapi.bvb.ro/api/history?symbol=EL&resolution=1D&from=1660999369&to=1790685769&ajust=0&countback=900&currencyCode=RON"
+      "error": "BVB history failed for EL: 404 Client Error: Not Found for url: https://wapi.bvb.ro/api/history?symbol=EL&resolution=1D&from=1661002565&to=1790688965&ajust=0&countback=900&currencyCode=RON"
     },
     "TGN": {
       "status": "FAIL",
-      "error": "BVB history failed for TGN: 404 Client Error: Not Found for url: https://wapi.bvb.ro/api/history?symbol=TGN&resolution=1D&from=1660999375&to=1790685775&ajust=0&countback=900&currencyCode=RON"
+      "error": "BVB history failed for TGN: 404 Client Error: Not Found for url: https://wapi.bvb.ro/api/history?symbol=TGN&resolution=1D&from=1661002572&to=1790688972&ajust=0&countback=900&currencyCode=RON"
     },
     "DIGI": {
       "status": "FAIL",
-      "error": "BVB history failed for DIGI: 404 Client Error: Not Found for url: https://wapi.bvb.ro/api/history?symbol=DIGI&resolution=1D&from=1660999382&to=1790685782&ajust=0&countback=900&currencyCode=RON"
+      "error": "BVB history failed for DIGI: 404 Client Error: Not Found for url: https://wapi.bvb.ro/api/history?symbol=DIGI&resolution=1D&from=1661002578&to=1790688978&ajust=0&countback=900&currencyCode=RON"
     },
     "M": {
       "status": "FAIL",
-      "error": "BVB history failed for M: 404 Client Error: Not Found for url: https://wapi.bvb.ro/api/history?symbol=M&resolution=1D&from=1660999388&to=1790685788&ajust=0&countback=900&currencyCode=RON"
+      "error": "BVB history failed for M: 404 Client Error: Not Found for url: https://wapi.bvb.ro/api/history?symbol=M&resolution=1D&from=1661002584&to=1790688984&ajust=0&countback=900&currencyCode=RON"
     },
     "SNN": {
       "status": "FAIL",
-      "error": "BVB history failed for SNN: 404 Client Error: Not Found for url: https://wapi.bvb.ro/api/history?symbol=SNN&resolution=1D&from=1660999394&to=1790685794&ajust=0&countback=900&currencyCode=RON"
+      "error": "BVB history failed for SNN: 404 Client Error: Not Found for url: https://wapi.bvb.ro/api/history?symbol=SNN&resolution=1D&from=1661002590&to=1790688990&ajust=0&countback=900&currencyCode=RON"
     },
     "TEL": {
       "status": "FAIL",
-      "error": "BVB history failed for TEL: 404 Client Error: Not Found for url: https://wapi.bvb.ro/api/history?symbol=TEL&resolution=1D&from=1660999400&to=1790685800&ajust=0&countback=900&currencyCode=RON"
+      "error": "BVB history failed for TEL: 404 Client Error: Not Found for url: https://wapi.bvb.ro/api/history?symbol=TEL&resolution=1D&from=1661002596&to=1790688996&ajust=0&countback=900&currencyCode=RON"
     },
     "PE": {
       "status": "FAIL",
-      "error": "BVB history failed for PE: 404 Client Error: Not Found for url: https://wapi.bvb.ro/api/history?symbol=PE&resolution=1D&from=1660999406&to=1790685806&ajust=0&countback=900&currencyCode=RON"
+      "error": "BVB history failed for PE: 404 Client Error: Not Found for url: https://wapi.bvb.ro/api/history?symbol=PE&resolution=1D&from=1661002602&to=1790689002&ajust=0&countback=900&currencyCode=RON"
     },
     "FP": {
       "status": "FAIL",
-      "error": "BVB history failed for FP: 404 Client Error: Not Found for url: https://wapi.bvb.ro/api/history?symbol=FP&resolution=1D&from=1660999412&to=1790685812&ajust=0&countback=900&currencyCode=RON"
+      "error": "BVB history failed for FP: 404 Client Error: Not Found for url: https://wapi.bvb.ro/api/history?symbol=FP&resolution=1D&from=1661002608&to=1790689008&ajust=0&countback=900&currencyCode=RON"
     },
     "ONE": {
       "status": "FAIL",
-      "error": "BVB history failed for ONE: 404 Client Error: Not Found for url: https://wapi.bvb.ro/api/history?symbol=ONE&resolution=1D&from=1660999418&to=1790685818&ajust=0&countback=900&currencyCode=RON"
+      "error": "BVB history failed for ONE: 404 Client Error: Not Found for url: https://wapi.bvb.ro/api/history?symbol=ONE&resolution=1D&from=1661002614&to=1790689014&ajust=0&countback=900&currencyCode=RON"
     },
     "AQ": {
       "status": "FAIL",
-      "error": "BVB history failed for AQ: 404 Client Error: Not Found for url: https://wapi.bvb.ro/api/history?symbol=AQ&resolution=1D&from=1660999424&to=1790685824&ajust=0&countback=900&currencyCode=RON"
+      "error": "BVB history failed for AQ: 404 Client Error: Not Found for url: https://wapi.bvb.ro/api/history?symbol=AQ&resolution=1D&from=1661002620&to=1790689020&ajust=0&countback=900&currencyCode=RON"
     },
     "CFH": {
       "status": "FAIL",
-      "error": "BVB history failed for CFH: 404 Client Error: Not Found for url: https://wapi.bvb.ro/api/history?symbol=CFH&resolution=1D&from=1660999430&to=1790685830&ajust=0&countback=900&currencyCode=RON"
+      "error": "BVB history failed for CFH: 404 Client Error: Not Found for url: https://wapi.bvb.ro/api/history?symbol=CFH&resolution=1D&from=1661002626&to=1790689026&ajust=0&countback=900&currencyCode=RON"
     },
     "EAI": {
       "status": "FAIL",
-      "error": "BVB history failed for EAI: 404 Client Error: Not Found for url: https://wapi.bvb.ro/api/history?symbol=EAI&resolution=1D&from=1660999436&to=1790685836&ajust=0&countback=900&currencyCode=RON"
+      "error": "BVB history failed for EAI: 404 Client Error: Not Found for url: https://wapi.bvb.ro/api/history?symbol=EAI&resolution=1D&from=1661002632&to=1790689032&ajust=0&countback=900&currencyCode=RON"
     },
     "TTS": {
       "status": "FAIL",
-      "error": "BVB history failed for TTS: 404 Client Error: Not Found for url: https://wapi.bvb.ro/api/history?symbol=TTS&resolution=1D&from=1660999442&to=1790685842&ajust=0&countback=900&currencyCode=RON"
+      "error": "BVB history failed for TTS: 404 Client Error: Not Found for url: https://wapi.bvb.ro/api/history?symbol=TTS&resolution=1D&from=1661002638&to=1790689038&ajust=0&countback=900&currencyCode=RON"
     },
     "ATB": {
       "status": "FAIL",
-      "error": "BVB history failed for ATB: 404 Client Error: Not Found for url: https://wapi.bvb.ro/api/history?symbol=ATB&resolution=1D&from=1660999448&to=1790685848&ajust=0&countback=900&currencyCode=RON"
+      "error": "BVB history failed for ATB: 404 Client Error: Not Found for url: https://wapi.bvb.ro/api/history?symbol=ATB&resolution=1D&from=1661002644&to=1790689044&ajust=0&countback=900&currencyCode=RON"
     },
     "TRP": {
       "status": "FAIL",
-      "error": "BVB history failed for TRP: 404 Client Error: Not Found for url: https://wapi.bvb.ro/api/history?symbol=TRP&resolution=1D&from=1660999454&to=1790685854&ajust=0&countback=900&currencyCode=RON"
+      "error": "BVB history failed for TRP: 404 Client Error: Not Found for url: https://wapi.bvb.ro/api/history?symbol=TRP&resolution=1D&from=1661002650&to=1790689050&ajust=0&countback=900&currencyCode=RON"
     }
   },
   "vumanchu_orange": {
