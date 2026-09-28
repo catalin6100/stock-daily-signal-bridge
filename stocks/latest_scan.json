@@ -1,11 +1,11 @@
 {
-  "generated_at_utc": "2026-09-28T16:30:35.854219+00:00",
-  "generated_at_europe_bucharest": "2026-09-28T19:30:35.854219+03:00",
-  "pipeline_version": "1.2.3",
+  "generated_at_utc": "2026-09-28T18:08:56.657113+00:00",
+  "generated_at_europe_bucharest": "2026-09-28T21:08:56.657113+03:00",
+  "pipeline_version": "1.2.4",
   "engine": "S&P500 JOAT + SNIPER DAILY SIGNAL RADAR — CRYPTO FLOW PARITY",
   "timeframe": "1D_CLOSED_BARS_ONLY",
   "report_contract": {
-    "version": "DAILY_STOCKS_REPORT_CONTRACT_2026_09_28_V1",
+    "version": "DAILY_STOCKS_REPORT_CONTRACT_2026_09_28_V2",
     "effective_date": "2026-09-28",
     "role": "REPORT_LAYER_GOVERNANCE_AND_STRUCTURAL_QA",
     "collector_formula_change": false,
@@ -97,6 +97,16 @@
       "novelty_bonus": 0,
       "incumbent_must_beat_challenger": true
     },
+    "technical_discovery_coverage": {
+      "role": "EXPLICIT_COVERAGE_ACCOUNTING_ONLY",
+      "complete_only_when_universe_ready_and_snapshot_counts_match": true,
+      "partial_must_name_unavailable_assets_and_reasons": true,
+      "predecessor_or_parent_price_history_substitution_allowed": false,
+      "minimum_history_methodology_relaxation_allowed": false,
+      "scoring_impact": "NONE",
+      "ranking_impact": "NONE",
+      "action_impact": "NONE"
+    },
     "solv_type_whipsaw_guard": {
       "role": "REPORT_INTERPRETATION_ONLY",
       "label": "TRANSITION / WHIPSAW RISK",
@@ -137,6 +147,7 @@
     "pre_render_structural_qa": [
       "FRESH_CAPITAL_HAS_FULL_INTEGRATED_EVALUATION",
       "NO_PURE_SIGNAL_AUTO_PROMOTION",
+      "TECHNICAL_DISCOVERY_COVERAGE_EXPLICIT",
       "INTEGRATED_HAS_TECHNICAL_PLUS_FUNDAMENTAL_OR_UNVERIFIED",
       "PURE_TECHNICAL_IS_REAL_TECHNICAL_TABLE",
       "NARRATIVE_COMPANIES_HAVE_FUNDAMENTAL_PLUS_TECHNICAL",
@@ -18698,6 +18709,31 @@
       }
     ]
   },
+  "technical_discovery_coverage": {
+    "status": "PARTIAL",
+    "role": "EXPLICIT_COVERAGE_ACCOUNTING_ONLY",
+    "official_sp500_assets": 503,
+    "analysis_ready_assets": 501,
+    "technical_snapshot_rows": 501,
+    "unavailable_asset_count": 2,
+    "unavailable_assets": [
+      {
+        "ticker": "FDXF",
+        "reason": "INSUFFICIENT_DAILY_HISTORY"
+      },
+      {
+        "ticker": "HONA",
+        "reason": "INSUFFICIENT_DAILY_HISTORY"
+      }
+    ],
+    "claim_exhaustive_full_sp500_technical_discovery": false,
+    "minimum_daily_bars_required": 180,
+    "predecessor_or_parent_price_history_substitution_used": false,
+    "methodology_relaxed": false,
+    "scoring_impact": "NONE",
+    "ranking_impact": "NONE",
+    "action_impact": "NONE"
+  },
   "signal_lookback_sessions": 3,
   "latest_closed_session": "2026-09-25",
   "vumanchu_gold": {
@@ -36565,11 +36601,11 @@
     "yahoo_batch_count": 10,
     "batch_size": 55,
     "stooq_workers": 6,
-    "price_download_seconds": 109.21,
+    "price_download_seconds": 89.35,
     "freshness_grace_minutes": 30,
     "intraday_patch_interval": "30m",
     "intraday_patch_batch_size": 120,
-    "total_runtime_seconds": 132.54
+    "total_runtime_seconds": 111.6
   },
   "data_quality": {
     "price_requested": 504,
