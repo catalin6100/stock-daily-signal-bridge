@@ -1,7 +1,8 @@
 {
   "schema_version": "BVB_VUMANCHU_ORANGE_V1",
-  "generated_at_utc": "2026-09-28T13:37:30.609058+00:00",
-  "generated_at_europe_bucharest": "2026-09-28T16:37:30.609058+03:00",
+  "scanner_version": "1.1.0",
+  "generated_at_utc": "2026-09-28T14:52:37.076813+00:00",
+  "generated_at_europe_bucharest": "2026-09-28T17:52:37.076813+03:00",
   "scope": "BET_INDEX_PLUS_ALL_CURRENT_BET_CONSTITUENTS",
   "display_name": "VuManChu Orange Buy — BET (rolling 1 calendar month)",
   "signal_equivalence": "ORANGE_BUY_EQUALS_EXISTING_VUMANCHU_RAW_GOLD",
@@ -10,14 +11,32 @@
   "no_lookahead": true,
   "data_policy": "BVB_OFFICIAL_WAPI_UNADJUSTED_OHLC_AJUST_0",
   "bvb_session_policy": "CURRENT_LOCAL_DATE_EXCLUDED_BECAUSE_DAILY_STOCKS_REPORT_RUNS_BEFORE_BVB_REGULAR_MARKET_IS_FULLY_CLOSED",
-  "latest_closed_bvb_session": null,
-  "rolling_1_calendar_month_start": null,
+  "history_resolution_parameter": "rs=1D",
+  "expected_closed_bvb_session": "2026-09-25",
+  "latest_closed_bvb_session": "2026-09-25",
+  "rolling_1_calendar_month_start": "2026-08-25",
   "rolling_1_calendar_month_basis": "FIRST_DETECTION_DETECTION_BAR",
+  "calendar": {
+    "source": "https://bvb.ro/TradingAndStatistics/TradingSessionSchedule",
+    "mode": "VERIFIED_OFFICIAL_SNAPSHOT",
+    "verified_as_of": "2026-09-28",
+    "supported_years": [
+      2026
+    ],
+    "note": "Refresh for new calendar years or exceptional BVB closures; never extrapolate."
+  },
+  "raw_engine": {
+    "module": "collector.calculate_vumanchu_gold_raw",
+    "engine_version": "VMC_CIPHER_B_GOLD_RAW_V3_LIFECYCLE_DIAGNOSTIC",
+    "collector_sha256": "2abd9249cb04e3f6d747b3175263d77588eca74717a6503b72fccc929416aa3a",
+    "formula_changed": false
+  },
   "composition": {
     "source": "BVB_OFFICIAL_BET_PROFILE",
     "url": "https://www.bvb.ro/FinancialInstruments/Indices/IndicesProfiles.aspx?i=BET",
     "fallback_used": false,
     "count": 20,
+    "validated": true,
     "components": [
       "TLV",
       "SNP",
@@ -67,183 +86,205 @@
     "asset_count_with_index": 21
   },
   "coverage": {
-    "status": "PARTIAL",
+    "status": "COMPLETE",
     "expected_assets": 21,
-    "computed_assets": 0,
+    "computed_assets": 21,
+    "failed_assets": 0,
     "insufficient_history_assets": 0,
-    "failed_assets": 21,
+    "stale_assets": 0,
+    "failures": [],
     "insufficient_history": [],
-    "failures": [
-      {
-        "asset": "BET",
-        "error": "BVB history failed for BET: 404 Client Error: Not Found for url: https://wapi.bvb.ro/api/history?symbol=BET&resolution=1D&from=1661002527&to=1790688927&ajust=0&countback=900&currencyCode=RON"
-      },
-      {
-        "asset": "TLV",
-        "error": "BVB history failed for TLV: 404 Client Error: Not Found for url: https://wapi.bvb.ro/api/history?symbol=TLV&resolution=1D&from=1661002534&to=1790688934&ajust=0&countback=900&currencyCode=RON"
-      },
-      {
-        "asset": "SNP",
-        "error": "BVB history failed for SNP: 404 Client Error: Not Found for url: https://wapi.bvb.ro/api/history?symbol=SNP&resolution=1D&from=1661002540&to=1790688940&ajust=0&countback=900&currencyCode=RON"
-      },
-      {
-        "asset": "SNG",
-        "error": "BVB history failed for SNG: 404 Client Error: Not Found for url: https://wapi.bvb.ro/api/history?symbol=SNG&resolution=1D&from=1661002546&to=1790688946&ajust=0&countback=900&currencyCode=RON"
-      },
-      {
-        "asset": "H2O",
-        "error": "BVB history failed for H2O: 404 Client Error: Not Found for url: https://wapi.bvb.ro/api/history?symbol=H2O&resolution=1D&from=1661002552&to=1790688952&ajust=0&countback=900&currencyCode=RON"
-      },
-      {
-        "asset": "BRD",
-        "error": "BVB history failed for BRD: 404 Client Error: Not Found for url: https://wapi.bvb.ro/api/history?symbol=BRD&resolution=1D&from=1661002559&to=1790688959&ajust=0&countback=900&currencyCode=RON"
-      },
-      {
-        "asset": "EL",
-        "error": "BVB history failed for EL: 404 Client Error: Not Found for url: https://wapi.bvb.ro/api/history?symbol=EL&resolution=1D&from=1661002565&to=1790688965&ajust=0&countback=900&currencyCode=RON"
-      },
-      {
-        "asset": "TGN",
-        "error": "BVB history failed for TGN: 404 Client Error: Not Found for url: https://wapi.bvb.ro/api/history?symbol=TGN&resolution=1D&from=1661002572&to=1790688972&ajust=0&countback=900&currencyCode=RON"
-      },
-      {
-        "asset": "DIGI",
-        "error": "BVB history failed for DIGI: 404 Client Error: Not Found for url: https://wapi.bvb.ro/api/history?symbol=DIGI&resolution=1D&from=1661002578&to=1790688978&ajust=0&countback=900&currencyCode=RON"
-      },
-      {
-        "asset": "M",
-        "error": "BVB history failed for M: 404 Client Error: Not Found for url: https://wapi.bvb.ro/api/history?symbol=M&resolution=1D&from=1661002584&to=1790688984&ajust=0&countback=900&currencyCode=RON"
-      },
-      {
-        "asset": "SNN",
-        "error": "BVB history failed for SNN: 404 Client Error: Not Found for url: https://wapi.bvb.ro/api/history?symbol=SNN&resolution=1D&from=1661002590&to=1790688990&ajust=0&countback=900&currencyCode=RON"
-      },
-      {
-        "asset": "TEL",
-        "error": "BVB history failed for TEL: 404 Client Error: Not Found for url: https://wapi.bvb.ro/api/history?symbol=TEL&resolution=1D&from=1661002596&to=1790688996&ajust=0&countback=900&currencyCode=RON"
-      },
-      {
-        "asset": "PE",
-        "error": "BVB history failed for PE: 404 Client Error: Not Found for url: https://wapi.bvb.ro/api/history?symbol=PE&resolution=1D&from=1661002602&to=1790689002&ajust=0&countback=900&currencyCode=RON"
-      },
-      {
-        "asset": "FP",
-        "error": "BVB history failed for FP: 404 Client Error: Not Found for url: https://wapi.bvb.ro/api/history?symbol=FP&resolution=1D&from=1661002608&to=1790689008&ajust=0&countback=900&currencyCode=RON"
-      },
-      {
-        "asset": "ONE",
-        "error": "BVB history failed for ONE: 404 Client Error: Not Found for url: https://wapi.bvb.ro/api/history?symbol=ONE&resolution=1D&from=1661002614&to=1790689014&ajust=0&countback=900&currencyCode=RON"
-      },
-      {
-        "asset": "AQ",
-        "error": "BVB history failed for AQ: 404 Client Error: Not Found for url: https://wapi.bvb.ro/api/history?symbol=AQ&resolution=1D&from=1661002620&to=1790689020&ajust=0&countback=900&currencyCode=RON"
-      },
-      {
-        "asset": "CFH",
-        "error": "BVB history failed for CFH: 404 Client Error: Not Found for url: https://wapi.bvb.ro/api/history?symbol=CFH&resolution=1D&from=1661002626&to=1790689026&ajust=0&countback=900&currencyCode=RON"
-      },
-      {
-        "asset": "EAI",
-        "error": "BVB history failed for EAI: 404 Client Error: Not Found for url: https://wapi.bvb.ro/api/history?symbol=EAI&resolution=1D&from=1661002632&to=1790689032&ajust=0&countback=900&currencyCode=RON"
-      },
-      {
-        "asset": "TTS",
-        "error": "BVB history failed for TTS: 404 Client Error: Not Found for url: https://wapi.bvb.ro/api/history?symbol=TTS&resolution=1D&from=1661002638&to=1790689038&ajust=0&countback=900&currencyCode=RON"
-      },
-      {
-        "asset": "ATB",
-        "error": "BVB history failed for ATB: 404 Client Error: Not Found for url: https://wapi.bvb.ro/api/history?symbol=ATB&resolution=1D&from=1661002644&to=1790689044&ajust=0&countback=900&currencyCode=RON"
-      },
-      {
-        "asset": "TRP",
-        "error": "BVB history failed for TRP: 404 Client Error: Not Found for url: https://wapi.bvb.ro/api/history?symbol=TRP&resolution=1D&from=1661002650&to=1790689050&ajust=0&countback=900&currencyCode=RON"
-      }
-    ]
+    "stale": []
   },
   "per_asset": {
     "BET": {
-      "status": "FAIL",
-      "error": "BVB history failed for BET: 404 Client Error: Not Found for url: https://wapi.bvb.ro/api/history?symbol=BET&resolution=1D&from=1661002527&to=1790688927&ajust=0&countback=900&currencyCode=RON"
+      "status": "COMPUTED",
+      "bars": 899,
+      "first_session": "2023-02-20",
+      "latest_session": "2026-09-25",
+      "freshness_match": true,
+      "required_bars": 40,
+      "raw_gold_event_count_loaded_history": 0
     },
     "TLV": {
-      "status": "FAIL",
-      "error": "BVB history failed for TLV: 404 Client Error: Not Found for url: https://wapi.bvb.ro/api/history?symbol=TLV&resolution=1D&from=1661002534&to=1790688934&ajust=0&countback=900&currencyCode=RON"
+      "status": "COMPUTED",
+      "bars": 899,
+      "first_session": "2023-02-14",
+      "latest_session": "2026-09-25",
+      "freshness_match": true,
+      "required_bars": 40,
+      "raw_gold_event_count_loaded_history": 0
     },
     "SNP": {
-      "status": "FAIL",
-      "error": "BVB history failed for SNP: 404 Client Error: Not Found for url: https://wapi.bvb.ro/api/history?symbol=SNP&resolution=1D&from=1661002540&to=1790688940&ajust=0&countback=900&currencyCode=RON"
+      "status": "COMPUTED",
+      "bars": 899,
+      "first_session": "2023-02-14",
+      "latest_session": "2026-09-25",
+      "freshness_match": true,
+      "required_bars": 40,
+      "raw_gold_event_count_loaded_history": 1
     },
     "SNG": {
-      "status": "FAIL",
-      "error": "BVB history failed for SNG: 404 Client Error: Not Found for url: https://wapi.bvb.ro/api/history?symbol=SNG&resolution=1D&from=1661002546&to=1790688946&ajust=0&countback=900&currencyCode=RON"
+      "status": "COMPUTED",
+      "bars": 899,
+      "first_session": "2023-02-14",
+      "latest_session": "2026-09-25",
+      "freshness_match": true,
+      "required_bars": 40,
+      "raw_gold_event_count_loaded_history": 1
     },
     "H2O": {
-      "status": "FAIL",
-      "error": "BVB history failed for H2O: 404 Client Error: Not Found for url: https://wapi.bvb.ro/api/history?symbol=H2O&resolution=1D&from=1661002552&to=1790688952&ajust=0&countback=900&currencyCode=RON"
+      "status": "COMPUTED",
+      "bars": 798,
+      "first_session": "2023-07-12",
+      "latest_session": "2026-09-25",
+      "freshness_match": true,
+      "required_bars": 40,
+      "raw_gold_event_count_loaded_history": 1
     },
     "BRD": {
-      "status": "FAIL",
-      "error": "BVB history failed for BRD: 404 Client Error: Not Found for url: https://wapi.bvb.ro/api/history?symbol=BRD&resolution=1D&from=1661002559&to=1790688959&ajust=0&countback=900&currencyCode=RON"
+      "status": "COMPUTED",
+      "bars": 899,
+      "first_session": "2023-02-14",
+      "latest_session": "2026-09-25",
+      "freshness_match": true,
+      "required_bars": 40,
+      "raw_gold_event_count_loaded_history": 0
     },
     "EL": {
-      "status": "FAIL",
-      "error": "BVB history failed for EL: 404 Client Error: Not Found for url: https://wapi.bvb.ro/api/history?symbol=EL&resolution=1D&from=1661002565&to=1790688965&ajust=0&countback=900&currencyCode=RON"
+      "status": "COMPUTED",
+      "bars": 899,
+      "first_session": "2023-02-14",
+      "latest_session": "2026-09-25",
+      "freshness_match": true,
+      "required_bars": 40,
+      "raw_gold_event_count_loaded_history": 0
     },
     "TGN": {
-      "status": "FAIL",
-      "error": "BVB history failed for TGN: 404 Client Error: Not Found for url: https://wapi.bvb.ro/api/history?symbol=TGN&resolution=1D&from=1661002572&to=1790688972&ajust=0&countback=900&currencyCode=RON"
+      "status": "COMPUTED",
+      "bars": 899,
+      "first_session": "2023-02-14",
+      "latest_session": "2026-09-25",
+      "freshness_match": true,
+      "required_bars": 40,
+      "raw_gold_event_count_loaded_history": 0
     },
     "DIGI": {
-      "status": "FAIL",
-      "error": "BVB history failed for DIGI: 404 Client Error: Not Found for url: https://wapi.bvb.ro/api/history?symbol=DIGI&resolution=1D&from=1661002578&to=1790688978&ajust=0&countback=900&currencyCode=RON"
+      "status": "COMPUTED",
+      "bars": 899,
+      "first_session": "2023-02-14",
+      "latest_session": "2026-09-25",
+      "freshness_match": true,
+      "required_bars": 40,
+      "raw_gold_event_count_loaded_history": 0
     },
     "M": {
-      "status": "FAIL",
-      "error": "BVB history failed for M: 404 Client Error: Not Found for url: https://wapi.bvb.ro/api/history?symbol=M&resolution=1D&from=1661002584&to=1790688984&ajust=0&countback=900&currencyCode=RON"
+      "status": "COMPUTED",
+      "bars": 899,
+      "first_session": "2023-02-14",
+      "latest_session": "2026-09-25",
+      "freshness_match": true,
+      "required_bars": 40,
+      "raw_gold_event_count_loaded_history": 2
     },
     "SNN": {
-      "status": "FAIL",
-      "error": "BVB history failed for SNN: 404 Client Error: Not Found for url: https://wapi.bvb.ro/api/history?symbol=SNN&resolution=1D&from=1661002590&to=1790688990&ajust=0&countback=900&currencyCode=RON"
+      "status": "COMPUTED",
+      "bars": 899,
+      "first_session": "2023-02-14",
+      "latest_session": "2026-09-25",
+      "freshness_match": true,
+      "required_bars": 40,
+      "raw_gold_event_count_loaded_history": 0
     },
     "TEL": {
-      "status": "FAIL",
-      "error": "BVB history failed for TEL: 404 Client Error: Not Found for url: https://wapi.bvb.ro/api/history?symbol=TEL&resolution=1D&from=1661002596&to=1790688996&ajust=0&countback=900&currencyCode=RON"
+      "status": "COMPUTED",
+      "bars": 899,
+      "first_session": "2023-02-14",
+      "latest_session": "2026-09-25",
+      "freshness_match": true,
+      "required_bars": 40,
+      "raw_gold_event_count_loaded_history": 0
     },
     "PE": {
-      "status": "FAIL",
-      "error": "BVB history failed for PE: 404 Client Error: Not Found for url: https://wapi.bvb.ro/api/history?symbol=PE&resolution=1D&from=1661002602&to=1790689002&ajust=0&countback=900&currencyCode=RON"
+      "status": "COMPUTED",
+      "bars": 580,
+      "first_session": "2024-05-28",
+      "latest_session": "2026-09-25",
+      "freshness_match": true,
+      "required_bars": 40,
+      "raw_gold_event_count_loaded_history": 0
     },
     "FP": {
-      "status": "FAIL",
-      "error": "BVB history failed for FP: 404 Client Error: Not Found for url: https://wapi.bvb.ro/api/history?symbol=FP&resolution=1D&from=1661002608&to=1790689008&ajust=0&countback=900&currencyCode=RON"
+      "status": "COMPUTED",
+      "bars": 899,
+      "first_session": "2023-02-13",
+      "latest_session": "2026-09-25",
+      "freshness_match": true,
+      "required_bars": 40,
+      "raw_gold_event_count_loaded_history": 4
     },
     "ONE": {
-      "status": "FAIL",
-      "error": "BVB history failed for ONE: 404 Client Error: Not Found for url: https://wapi.bvb.ro/api/history?symbol=ONE&resolution=1D&from=1661002614&to=1790689014&ajust=0&countback=900&currencyCode=RON"
+      "status": "COMPUTED",
+      "bars": 899,
+      "first_session": "2023-02-10",
+      "latest_session": "2026-09-25",
+      "freshness_match": true,
+      "required_bars": 40,
+      "raw_gold_event_count_loaded_history": 1
     },
     "AQ": {
-      "status": "FAIL",
-      "error": "BVB history failed for AQ: 404 Client Error: Not Found for url: https://wapi.bvb.ro/api/history?symbol=AQ&resolution=1D&from=1661002620&to=1790689020&ajust=0&countback=900&currencyCode=RON"
+      "status": "COMPUTED",
+      "bars": 899,
+      "first_session": "2023-02-14",
+      "latest_session": "2026-09-25",
+      "freshness_match": true,
+      "required_bars": 40,
+      "raw_gold_event_count_loaded_history": 0
     },
     "CFH": {
-      "status": "FAIL",
-      "error": "BVB history failed for CFH: 404 Client Error: Not Found for url: https://wapi.bvb.ro/api/history?symbol=CFH&resolution=1D&from=1661002626&to=1790689026&ajust=0&countback=900&currencyCode=RON"
+      "status": "COMPUTED",
+      "bars": 205,
+      "first_session": "2025-11-26",
+      "latest_session": "2026-09-25",
+      "freshness_match": true,
+      "required_bars": 40,
+      "raw_gold_event_count_loaded_history": 0
     },
     "EAI": {
-      "status": "FAIL",
-      "error": "BVB history failed for EAI: 404 Client Error: Not Found for url: https://wapi.bvb.ro/api/history?symbol=EAI&resolution=1D&from=1661002632&to=1790689032&ajust=0&countback=900&currencyCode=RON"
+      "status": "COMPUTED",
+      "bars": 145,
+      "first_session": "2026-03-03",
+      "latest_session": "2026-09-25",
+      "freshness_match": true,
+      "required_bars": 40,
+      "raw_gold_event_count_loaded_history": 0
     },
     "TTS": {
-      "status": "FAIL",
-      "error": "BVB history failed for TTS: 404 Client Error: Not Found for url: https://wapi.bvb.ro/api/history?symbol=TTS&resolution=1D&from=1661002638&to=1790689038&ajust=0&countback=900&currencyCode=RON"
+      "status": "COMPUTED",
+      "bars": 899,
+      "first_session": "2023-02-14",
+      "latest_session": "2026-09-25",
+      "freshness_match": true,
+      "required_bars": 40,
+      "raw_gold_event_count_loaded_history": 2
     },
     "ATB": {
-      "status": "FAIL",
-      "error": "BVB history failed for ATB: 404 Client Error: Not Found for url: https://wapi.bvb.ro/api/history?symbol=ATB&resolution=1D&from=1661002644&to=1790689044&ajust=0&countback=900&currencyCode=RON"
+      "status": "COMPUTED",
+      "bars": 899,
+      "first_session": "2023-02-14",
+      "latest_session": "2026-09-25",
+      "freshness_match": true,
+      "required_bars": 40,
+      "raw_gold_event_count_loaded_history": 2
     },
     "TRP": {
-      "status": "FAIL",
-      "error": "BVB history failed for TRP: 404 Client Error: Not Found for url: https://wapi.bvb.ro/api/history?symbol=TRP&resolution=1D&from=1661002650&to=1790689050&ajust=0&countback=900&currencyCode=RON"
+      "status": "COMPUTED",
+      "bars": 899,
+      "first_session": "2023-02-14",
+      "latest_session": "2026-09-25",
+      "freshness_match": true,
+      "required_bars": 40,
+      "raw_gold_event_count_loaded_history": 2
     }
   },
   "vumanchu_orange": {
@@ -251,9 +292,87 @@
     "cross_correlation": "NONE",
     "ranking": "NONE",
     "filters": "RAW_SIGNAL_AND_ROLLING_MONTH_ONLY",
-    "rolling_1_calendar_month_hit_count": 0,
-    "rolling_1_calendar_month_hits": [],
+    "action_impact": "NONE",
+    "calibration_impact": "NONE",
+    "signal_state": "DETERMINED",
+    "rolling_1_calendar_month_hit_count": 3,
+    "rolling_1_calendar_month_hits": [
+      {
+        "detection_id": "M|1D|2026-09-22|2026-09-24",
+        "timeframe": "1D",
+        "pivot_bar": "2026-09-22",
+        "detection_bar": "2026-09-24",
+        "plot_offset_bars": -2,
+        "pivot_low": 9.68,
+        "detection_close": 10.24,
+        "detection_bar_high": 10.32,
+        "wt2_pivot": -74.5828,
+        "wt2_detection": -69.2769,
+        "wt_low_prev": -92.7253,
+        "last_rsi_at_prev_wt_bottom": 19.1,
+        "wt_regular_bull_divergence": true,
+        "rsi_regular_bull_divergence": false,
+        "rsi_divergence_enabled_in_raw_default": false,
+        "trigger_component": "WT_REGULAR_BULL_DIV",
+        "asset": "M",
+        "vumanchu_display": "ORANGE BUY",
+        "raw_equivalence": "ORANGE_BUY_EQUALS_EXISTING_VUMANCHU_RAW_GOLD",
+        "first_known_utc": "2026-09-24T15:00:00+00:00",
+        "first_known_basis": "BVB_REGULAR_SESSION_END_18_00_LOCAL"
+      },
+      {
+        "detection_id": "TRP|1D|2026-09-17|2026-09-21",
+        "timeframe": "1D",
+        "pivot_bar": "2026-09-17",
+        "detection_bar": "2026-09-21",
+        "plot_offset_bars": -2,
+        "pivot_low": 0.3775,
+        "detection_close": 0.3845,
+        "detection_bar_high": 0.3975,
+        "wt2_pivot": -77.5486,
+        "wt2_detection": -71.7528,
+        "wt_low_prev": -94.9979,
+        "last_rsi_at_prev_wt_bottom": 29.01,
+        "wt_regular_bull_divergence": true,
+        "rsi_regular_bull_divergence": false,
+        "rsi_divergence_enabled_in_raw_default": false,
+        "trigger_component": "WT_REGULAR_BULL_DIV",
+        "asset": "TRP",
+        "vumanchu_display": "ORANGE BUY",
+        "raw_equivalence": "ORANGE_BUY_EQUALS_EXISTING_VUMANCHU_RAW_GOLD",
+        "first_known_utc": "2026-09-21T15:00:00+00:00",
+        "first_known_basis": "BVB_REGULAR_SESSION_END_18_00_LOCAL"
+      },
+      {
+        "detection_id": "H2O|1D|2026-09-17|2026-09-21",
+        "timeframe": "1D",
+        "pivot_bar": "2026-09-17",
+        "detection_bar": "2026-09-21",
+        "plot_offset_bars": -2,
+        "pivot_low": 163.8,
+        "detection_close": 177.2,
+        "detection_bar_high": 185.0,
+        "wt2_pivot": -79.2552,
+        "wt2_detection": -67.3166,
+        "wt_low_prev": -88.3385,
+        "last_rsi_at_prev_wt_bottom": 27.52,
+        "wt_regular_bull_divergence": true,
+        "rsi_regular_bull_divergence": false,
+        "rsi_divergence_enabled_in_raw_default": false,
+        "trigger_component": "WT_REGULAR_BULL_DIV",
+        "asset": "H2O",
+        "vumanchu_display": "ORANGE BUY",
+        "raw_equivalence": "ORANGE_BUY_EQUALS_EXISTING_VUMANCHU_RAW_GOLD",
+        "first_known_utc": "2026-09-21T15:00:00+00:00",
+        "first_known_basis": "BVB_REGULAR_SESSION_END_18_00_LOCAL"
+      }
+    ],
     "new_detection_count": 0,
     "new_detections": []
+  },
+  "validation": {
+    "status": "PASS",
+    "errors": [],
+    "publishable": true
   }
 }
