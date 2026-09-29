@@ -1,7 +1,7 @@
 {
   "schema_version": "CRYPTO_CALIBRATION_PUBLIC_V1",
   "source_private_schema_version": "CRYPTO_CALIBRATION_LEDGER_V1",
-  "generated_at_utc": "2026-09-29T06:15:39.167763+00:00",
+  "generated_at_utc": "2026-09-29T06:29:57.761476+00:00",
   "pipeline_version": "0.10.9",
   "role": "PUBLIC_COMPACT_CALIBRATION_LEDGER_ONLY",
   "live_scoring_impact": "NONE",
