@@ -1,12 +1,12 @@
 {
   "artifact_schema_version": "DAILY_STOCKS_REPORT_CORE_V1",
   "artifact_role": "COMPACT_REPORT_TRANSPORT_ONLY",
-  "source_latest_scan_sha256": "819c5c9b11a6389d1336c48cc459881efeb92219510d1fa9d04a5de02fb12768",
-  "source_latest_scan_size_bytes": 1546446,
+  "source_latest_scan_sha256": "f2b9f29f0f5ce1ecb1989aa5ac9e707d633f6efdf7ed8c200062d03bebf05e6b",
+  "source_latest_scan_size_bytes": 1546447,
   "full_universe_technical_snapshot_embedded": false,
   "full_universe_technical_snapshot_public_path": "stocks/full_universe_technical_snapshot.json",
-  "generated_at_utc": "2026-09-29T11:30:15.698993+00:00",
-  "generated_at_europe_bucharest": "2026-09-29T14:30:15.698993+03:00",
+  "generated_at_utc": "2026-09-29T13:34:25.797663+00:00",
+  "generated_at_europe_bucharest": "2026-09-29T16:34:25.797663+03:00",
   "pipeline_version": "1.2.5",
   "engine": "S&P500 JOAT + SNIPER DAILY SIGNAL RADAR — CRYPTO FLOW PARITY",
   "timeframe": "1D_CLOSED_BARS_ONLY",
@@ -2232,11 +2232,11 @@
     "yahoo_batch_count": 10,
     "batch_size": 55,
     "stooq_workers": 6,
-    "price_download_seconds": 80.99,
+    "price_download_seconds": 106.18,
     "freshness_grace_minutes": 30,
     "intraday_patch_interval": "30m",
     "intraday_patch_batch_size": 120,
-    "total_runtime_seconds": 102.85
+    "total_runtime_seconds": 128.34
   },
   "data_quality": {
     "price_requested": 504,
