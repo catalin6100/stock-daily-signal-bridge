@@ -1,9 +1,9 @@
 {
   "artifact_schema_version": "DAILY_STOCKS_FULL_TECHNICAL_SNAPSHOT_EXPORT_V1",
   "artifact_role": "FULL_SP500_BLIND_TECHNICAL_DISCOVERY_ONLY",
-  "source_latest_scan_sha256": "82e303f6b20139f5e4661e4421b80f0431849245323ae668669e7cfea0260472",
-  "generated_at_utc": "2026-09-29T07:19:43.998887+00:00",
-  "generated_at_europe_bucharest": "2026-09-29T10:19:43.998887+03:00",
+  "source_latest_scan_sha256": "0bdd2e4b7a2ee548b377f2268268b3c1e6eff7553b4fc28f641c70848755a3ad",
+  "generated_at_utc": "2026-09-29T08:59:57.835485+00:00",
+  "generated_at_europe_bucharest": "2026-09-29T11:59:57.835485+03:00",
   "pipeline_version": "1.2.5",
   "latest_closed_session": "2026-09-28",
   "technical_discovery_coverage": {
