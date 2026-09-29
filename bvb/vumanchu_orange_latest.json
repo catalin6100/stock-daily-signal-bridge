@@ -1,8 +1,8 @@
 {
   "schema_version": "BVB_VUMANCHU_ORANGE_V1",
   "scanner_version": "1.1.0",
-  "generated_at_utc": "2026-09-29T05:28:57.618790+00:00",
-  "generated_at_europe_bucharest": "2026-09-29T08:28:57.618790+03:00",
+  "generated_at_utc": "2026-09-29T11:30:02.018337+00:00",
+  "generated_at_europe_bucharest": "2026-09-29T14:30:02.018337+03:00",
   "scope": "BET_INDEX_PLUS_ALL_CURRENT_BET_CONSTITUENTS",
   "display_name": "VuManChu Orange Buy — BET (rolling 1 calendar month)",
   "signal_equivalence": "ORANGE_BUY_EQUALS_EXISTING_VUMANCHU_RAW_GOLD",
@@ -28,7 +28,7 @@
   "raw_engine": {
     "module": "collector.calculate_vumanchu_gold_raw",
     "engine_version": "VMC_CIPHER_B_GOLD_RAW_V3_LIFECYCLE_DIAGNOSTIC",
-    "collector_sha256": "579e035dd89d064491495cca55666a6a78e059fa5d3396046c7b535236f87ecf",
+    "collector_sha256": "b7199a2ed095d8c74659217c81492d4ef639ecec2004224038a70f5648a636d8",
     "formula_changed": false
   },
   "composition": {
@@ -99,8 +99,8 @@
   "per_asset": {
     "BET": {
       "status": "COMPUTED",
-      "bars": 900,
-      "first_session": "2023-02-20",
+      "bars": 899,
+      "first_session": "2023-02-21",
       "latest_session": "2026-09-28",
       "freshness_match": true,
       "required_bars": 40,
@@ -108,8 +108,8 @@
     },
     "TLV": {
       "status": "COMPUTED",
-      "bars": 900,
-      "first_session": "2023-02-14",
+      "bars": 899,
+      "first_session": "2023-02-15",
       "latest_session": "2026-09-28",
       "freshness_match": true,
       "required_bars": 40,
@@ -117,8 +117,8 @@
     },
     "SNP": {
       "status": "COMPUTED",
-      "bars": 900,
-      "first_session": "2023-02-14",
+      "bars": 899,
+      "first_session": "2023-02-15",
       "latest_session": "2026-09-28",
       "freshness_match": true,
       "required_bars": 40,
@@ -126,8 +126,8 @@
     },
     "SNG": {
       "status": "COMPUTED",
-      "bars": 900,
-      "first_session": "2023-02-14",
+      "bars": 899,
+      "first_session": "2023-02-15",
       "latest_session": "2026-09-28",
       "freshness_match": true,
       "required_bars": 40,
@@ -144,8 +144,8 @@
     },
     "EL": {
       "status": "COMPUTED",
-      "bars": 900,
-      "first_session": "2023-02-14",
+      "bars": 899,
+      "first_session": "2023-02-15",
       "latest_session": "2026-09-28",
       "freshness_match": true,
       "required_bars": 40,
@@ -153,8 +153,8 @@
     },
     "BRD": {
       "status": "COMPUTED",
-      "bars": 900,
-      "first_session": "2023-02-14",
+      "bars": 899,
+      "first_session": "2023-02-15",
       "latest_session": "2026-09-28",
       "freshness_match": true,
       "required_bars": 40,
@@ -162,8 +162,8 @@
     },
     "TGN": {
       "status": "COMPUTED",
-      "bars": 900,
-      "first_session": "2023-02-14",
+      "bars": 899,
+      "first_session": "2023-02-15",
       "latest_session": "2026-09-28",
       "freshness_match": true,
       "required_bars": 40,
@@ -171,8 +171,8 @@
     },
     "DIGI": {
       "status": "COMPUTED",
-      "bars": 900,
-      "first_session": "2023-02-14",
+      "bars": 899,
+      "first_session": "2023-02-15",
       "latest_session": "2026-09-28",
       "freshness_match": true,
       "required_bars": 40,
@@ -180,8 +180,8 @@
     },
     "M": {
       "status": "COMPUTED",
-      "bars": 900,
-      "first_session": "2023-02-14",
+      "bars": 899,
+      "first_session": "2023-02-15",
       "latest_session": "2026-09-28",
       "freshness_match": true,
       "required_bars": 40,
@@ -189,8 +189,8 @@
     },
     "SNN": {
       "status": "COMPUTED",
-      "bars": 900,
-      "first_session": "2023-02-14",
+      "bars": 899,
+      "first_session": "2023-02-15",
       "latest_session": "2026-09-28",
       "freshness_match": true,
       "required_bars": 40,
@@ -198,8 +198,8 @@
     },
     "TEL": {
       "status": "COMPUTED",
-      "bars": 900,
-      "first_session": "2023-02-14",
+      "bars": 899,
+      "first_session": "2023-02-15",
       "latest_session": "2026-09-28",
       "freshness_match": true,
       "required_bars": 40,
@@ -216,8 +216,8 @@
     },
     "FP": {
       "status": "COMPUTED",
-      "bars": 900,
-      "first_session": "2023-02-13",
+      "bars": 899,
+      "first_session": "2023-02-14",
       "latest_session": "2026-09-28",
       "freshness_match": true,
       "required_bars": 40,
@@ -225,8 +225,8 @@
     },
     "ONE": {
       "status": "COMPUTED",
-      "bars": 900,
-      "first_session": "2023-02-10",
+      "bars": 899,
+      "first_session": "2023-02-13",
       "latest_session": "2026-09-28",
       "freshness_match": true,
       "required_bars": 40,
@@ -234,8 +234,8 @@
     },
     "AQ": {
       "status": "COMPUTED",
-      "bars": 900,
-      "first_session": "2023-02-14",
+      "bars": 899,
+      "first_session": "2023-02-15",
       "latest_session": "2026-09-28",
       "freshness_match": true,
       "required_bars": 40,
@@ -261,8 +261,8 @@
     },
     "TTS": {
       "status": "COMPUTED",
-      "bars": 900,
-      "first_session": "2023-02-14",
+      "bars": 899,
+      "first_session": "2023-02-15",
       "latest_session": "2026-09-28",
       "freshness_match": true,
       "required_bars": 40,
@@ -270,8 +270,8 @@
     },
     "ATB": {
       "status": "COMPUTED",
-      "bars": 900,
-      "first_session": "2023-02-14",
+      "bars": 899,
+      "first_session": "2023-02-15",
       "latest_session": "2026-09-28",
       "freshness_match": true,
       "required_bars": 40,
@@ -279,8 +279,8 @@
     },
     "TRP": {
       "status": "COMPUTED",
-      "bars": 900,
-      "first_session": "2023-02-14",
+      "bars": 899,
+      "first_session": "2023-02-15",
       "latest_session": "2026-09-28",
       "freshness_match": true,
       "required_bars": 40,
