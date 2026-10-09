@@ -1,8 +1,8 @@
 {
   "schema_version": "BVB_VUMANCHU_ORANGE_V1",
   "scanner_version": "1.1.0",
-  "generated_at_utc": "2026-10-08T13:39:49.539504+00:00",
-  "generated_at_europe_bucharest": "2026-10-08T16:39:49.539504+03:00",
+  "generated_at_utc": "2026-10-09T13:39:16.664597+00:00",
+  "generated_at_europe_bucharest": "2026-10-09T16:39:16.664597+03:00",
   "scope": "BET_INDEX_PLUS_ALL_CURRENT_BET_CONSTITUENTS",
   "display_name": "VuManChu Orange Buy — BET (rolling 1 calendar month)",
   "signal_equivalence": "ORANGE_BUY_EQUALS_EXISTING_VUMANCHU_RAW_GOLD",
@@ -12,9 +12,9 @@
   "data_policy": "BVB_OFFICIAL_WAPI_UNADJUSTED_OHLC_AJUST_0",
   "bvb_session_policy": "CURRENT_LOCAL_DATE_EXCLUDED_BECAUSE_DAILY_STOCKS_REPORT_RUNS_BEFORE_BVB_REGULAR_MARKET_IS_FULLY_CLOSED",
   "history_resolution_parameter": "rs=1D",
-  "expected_closed_bvb_session": "2026-10-07",
-  "latest_closed_bvb_session": "2026-10-07",
-  "rolling_1_calendar_month_start": "2026-09-07",
+  "expected_closed_bvb_session": "2026-10-08",
+  "latest_closed_bvb_session": "2026-10-08",
+  "rolling_1_calendar_month_start": "2026-09-08",
   "rolling_1_calendar_month_basis": "FIRST_DETECTION_DETECTION_BAR",
   "calendar": {
     "source": "https://bvb.ro/TradingAndStatistics/TradingSessionSchedule",
@@ -54,8 +54,8 @@
       "ONE",
       "CFH",
       "AQ",
-      "EAI",
       "TTS",
+      "EAI",
       "ATB",
       "TRP"
     ],
@@ -78,8 +78,8 @@
       "ONE",
       "CFH",
       "AQ",
-      "EAI",
       "TTS",
+      "EAI",
       "ATB",
       "TRP"
     ],
@@ -100,8 +100,8 @@
     "BET": {
       "status": "COMPUTED",
       "bars": 899,
-      "first_session": "2023-03-02",
-      "latest_session": "2026-10-07",
+      "first_session": "2023-03-03",
+      "latest_session": "2026-10-08",
       "freshness_match": true,
       "required_bars": 40,
       "raw_gold_event_count_loaded_history": 0
@@ -109,8 +109,8 @@
     "TLV": {
       "status": "COMPUTED",
       "bars": 899,
-      "first_session": "2023-02-24",
-      "latest_session": "2026-10-07",
+      "first_session": "2023-02-27",
+      "latest_session": "2026-10-08",
       "freshness_match": true,
       "required_bars": 40,
       "raw_gold_event_count_loaded_history": 0
@@ -118,8 +118,8 @@
     "SNP": {
       "status": "COMPUTED",
       "bars": 899,
-      "first_session": "2023-02-24",
-      "latest_session": "2026-10-07",
+      "first_session": "2023-02-27",
+      "latest_session": "2026-10-08",
       "freshness_match": true,
       "required_bars": 40,
       "raw_gold_event_count_loaded_history": 1
@@ -127,17 +127,17 @@
     "SNG": {
       "status": "COMPUTED",
       "bars": 899,
-      "first_session": "2023-02-24",
-      "latest_session": "2026-10-07",
+      "first_session": "2023-02-27",
+      "latest_session": "2026-10-08",
       "freshness_match": true,
       "required_bars": 40,
       "raw_gold_event_count_loaded_history": 1
     },
     "H2O": {
       "status": "COMPUTED",
-      "bars": 806,
+      "bars": 807,
       "first_session": "2023-07-12",
-      "latest_session": "2026-10-07",
+      "latest_session": "2026-10-08",
       "freshness_match": true,
       "required_bars": 40,
       "raw_gold_event_count_loaded_history": 1
@@ -145,8 +145,8 @@
     "EL": {
       "status": "COMPUTED",
       "bars": 899,
-      "first_session": "2023-02-24",
-      "latest_session": "2026-10-07",
+      "first_session": "2023-02-27",
+      "latest_session": "2026-10-08",
       "freshness_match": true,
       "required_bars": 40,
       "raw_gold_event_count_loaded_history": 0
@@ -154,8 +154,8 @@
     "BRD": {
       "status": "COMPUTED",
       "bars": 899,
-      "first_session": "2023-02-24",
-      "latest_session": "2026-10-07",
+      "first_session": "2023-02-27",
+      "latest_session": "2026-10-08",
       "freshness_match": true,
       "required_bars": 40,
       "raw_gold_event_count_loaded_history": 1
@@ -163,8 +163,8 @@
     "TGN": {
       "status": "COMPUTED",
       "bars": 899,
-      "first_session": "2023-02-24",
-      "latest_session": "2026-10-07",
+      "first_session": "2023-02-27",
+      "latest_session": "2026-10-08",
       "freshness_match": true,
       "required_bars": 40,
       "raw_gold_event_count_loaded_history": 0
@@ -172,8 +172,8 @@
     "DIGI": {
       "status": "COMPUTED",
       "bars": 899,
-      "first_session": "2023-02-24",
-      "latest_session": "2026-10-07",
+      "first_session": "2023-02-27",
+      "latest_session": "2026-10-08",
       "freshness_match": true,
       "required_bars": 40,
       "raw_gold_event_count_loaded_history": 0
@@ -181,8 +181,8 @@
     "M": {
       "status": "COMPUTED",
       "bars": 899,
-      "first_session": "2023-02-24",
-      "latest_session": "2026-10-07",
+      "first_session": "2023-02-27",
+      "latest_session": "2026-10-08",
       "freshness_match": true,
       "required_bars": 40,
       "raw_gold_event_count_loaded_history": 2
@@ -190,8 +190,8 @@
     "SNN": {
       "status": "COMPUTED",
       "bars": 899,
-      "first_session": "2023-02-24",
-      "latest_session": "2026-10-07",
+      "first_session": "2023-02-27",
+      "latest_session": "2026-10-08",
       "freshness_match": true,
       "required_bars": 40,
       "raw_gold_event_count_loaded_history": 0
@@ -199,17 +199,17 @@
     "TEL": {
       "status": "COMPUTED",
       "bars": 899,
-      "first_session": "2023-02-24",
-      "latest_session": "2026-10-07",
+      "first_session": "2023-02-27",
+      "latest_session": "2026-10-08",
       "freshness_match": true,
       "required_bars": 40,
       "raw_gold_event_count_loaded_history": 0
     },
     "PE": {
       "status": "COMPUTED",
-      "bars": 588,
+      "bars": 589,
       "first_session": "2024-05-28",
-      "latest_session": "2026-10-07",
+      "latest_session": "2026-10-08",
       "freshness_match": true,
       "required_bars": 40,
       "raw_gold_event_count_loaded_history": 0
@@ -217,8 +217,8 @@
     "FP": {
       "status": "COMPUTED",
       "bars": 899,
-      "first_session": "2023-02-23",
-      "latest_session": "2026-10-07",
+      "first_session": "2023-02-24",
+      "latest_session": "2026-10-08",
       "freshness_match": true,
       "required_bars": 40,
       "raw_gold_event_count_loaded_history": 4
@@ -226,17 +226,17 @@
     "ONE": {
       "status": "COMPUTED",
       "bars": 899,
-      "first_session": "2023-02-22",
-      "latest_session": "2026-10-07",
+      "first_session": "2023-02-23",
+      "latest_session": "2026-10-08",
       "freshness_match": true,
       "required_bars": 40,
       "raw_gold_event_count_loaded_history": 1
     },
     "CFH": {
       "status": "COMPUTED",
-      "bars": 213,
+      "bars": 214,
       "first_session": "2025-11-26",
-      "latest_session": "2026-10-07",
+      "latest_session": "2026-10-08",
       "freshness_match": true,
       "required_bars": 40,
       "raw_gold_event_count_loaded_history": 0
@@ -244,17 +244,8 @@
     "AQ": {
       "status": "COMPUTED",
       "bars": 899,
-      "first_session": "2023-02-24",
-      "latest_session": "2026-10-07",
-      "freshness_match": true,
-      "required_bars": 40,
-      "raw_gold_event_count_loaded_history": 0
-    },
-    "EAI": {
-      "status": "COMPUTED",
-      "bars": 153,
-      "first_session": "2026-03-03",
-      "latest_session": "2026-10-07",
+      "first_session": "2023-02-27",
+      "latest_session": "2026-10-08",
       "freshness_match": true,
       "required_bars": 40,
       "raw_gold_event_count_loaded_history": 0
@@ -262,17 +253,26 @@
     "TTS": {
       "status": "COMPUTED",
       "bars": 899,
-      "first_session": "2023-02-24",
-      "latest_session": "2026-10-07",
+      "first_session": "2023-02-27",
+      "latest_session": "2026-10-08",
       "freshness_match": true,
       "required_bars": 40,
       "raw_gold_event_count_loaded_history": 2
     },
+    "EAI": {
+      "status": "COMPUTED",
+      "bars": 154,
+      "first_session": "2026-03-03",
+      "latest_session": "2026-10-08",
+      "freshness_match": true,
+      "required_bars": 40,
+      "raw_gold_event_count_loaded_history": 0
+    },
     "ATB": {
       "status": "COMPUTED",
       "bars": 899,
-      "first_session": "2023-02-24",
-      "latest_session": "2026-10-07",
+      "first_session": "2023-02-27",
+      "latest_session": "2026-10-08",
       "freshness_match": true,
       "required_bars": 40,
       "raw_gold_event_count_loaded_history": 3
@@ -280,8 +280,8 @@
     "TRP": {
       "status": "COMPUTED",
       "bars": 899,
-      "first_session": "2023-02-24",
-      "latest_session": "2026-10-07",
+      "first_session": "2023-02-27",
+      "latest_session": "2026-10-08",
       "freshness_match": true,
       "required_bars": 40,
       "raw_gold_event_count_loaded_history": 3
