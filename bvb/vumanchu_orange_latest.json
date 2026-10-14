@@ -1,8 +1,8 @@
 {
   "schema_version": "BVB_VUMANCHU_ORANGE_V1",
-  "scanner_version": "1.1.0",
-  "generated_at_utc": "2026-10-12T13:51:02.166448+00:00",
-  "generated_at_europe_bucharest": "2026-10-12T16:51:02.166448+03:00",
+  "scanner_version": "1.2.0",
+  "generated_at_utc": "2026-10-14T11:29:25.313731+00:00",
+  "generated_at_europe_bucharest": "2026-10-14T14:29:25.313731+03:00",
   "scope": "BET_INDEX_PLUS_ALL_CURRENT_BET_CONSTITUENTS",
   "display_name": "VuManChu Orange Buy — BET (rolling 1 calendar month)",
   "signal_equivalence": "ORANGE_BUY_EQUALS_EXISTING_VUMANCHU_RAW_GOLD",
@@ -12,9 +12,9 @@
   "data_policy": "BVB_OFFICIAL_WAPI_UNADJUSTED_OHLC_AJUST_0",
   "bvb_session_policy": "CURRENT_LOCAL_DATE_EXCLUDED_BECAUSE_DAILY_STOCKS_REPORT_RUNS_BEFORE_BVB_REGULAR_MARKET_IS_FULLY_CLOSED",
   "history_resolution_parameter": "rs=1D",
-  "expected_closed_bvb_session": "2026-10-09",
-  "latest_closed_bvb_session": "2026-10-09",
-  "rolling_1_calendar_month_start": "2026-09-09",
+  "expected_closed_bvb_session": "2026-10-13",
+  "latest_closed_bvb_session": "2026-10-13",
+  "rolling_1_calendar_month_start": "2026-09-13",
   "rolling_1_calendar_month_basis": "FIRST_DETECTION_DETECTION_BAR",
   "calendar": {
     "source": "https://bvb.ro/TradingAndStatistics/TradingSessionSchedule",
@@ -28,8 +28,12 @@
   "raw_engine": {
     "module": "collector.calculate_vumanchu_gold_raw",
     "engine_version": "VMC_CIPHER_B_GOLD_RAW_V3_LIFECYCLE_DIAGNOSTIC",
-    "collector_sha256": "b7199a2ed095d8c74659217c81492d4ef639ecec2004224038a70f5648a636d8",
+    "collector_sha256": "f2a35446789bc8dd7ec46326501a39f5a52a90b5a24cc25d74bce787d8813883",
     "formula_changed": false
+  },
+  "operational_health": {
+    "status": "OK",
+    "automatic_repairs": []
   },
   "composition": {
     "source": "BVB_OFFICIAL_BET_PROFILE",
@@ -37,6 +41,8 @@
     "fallback_used": false,
     "count": 20,
     "validated": true,
+    "retrieved_at_utc": "2026-10-14T11:29:26.591488+00:00",
+    "response_sha256": "57a16c1216af268059de5c46922beae0d064962edef6fb6f14b2d8b0503da0a4",
     "components": [
       "TLV",
       "SNP",
@@ -100,191 +106,401 @@
     "BET": {
       "status": "COMPUTED",
       "bars": 899,
-      "first_session": "2023-03-06",
-      "latest_session": "2026-10-09",
+      "first_session": "2023-03-08",
+      "latest_session": "2026-10-13",
       "freshness_match": true,
       "required_bars": 40,
-      "raw_gold_event_count_loaded_history": 0
+      "raw_gold_event_count_loaded_history": 0,
+      "formula_validation": {
+        "status": "PASS",
+        "version": "VMC_SOURCE_REPLAY_V1",
+        "source_sha256": "3f57b118ea978f3b95402ca4849ba2b46c72ff061a64b7cd32b7bbe5d5df67fa",
+        "checked_bars": 899,
+        "scope": "EXECUTABLE_PINE_CONDITION_REPLAY_ON_IDENTICAL_INPUTS",
+        "tradingview_status": "NOT_VERIFIED_AGAINST_TRADINGVIEW",
+        "errors": []
+      },
+      "source_parity_validation": "NOT_VERIFIED_AGAINST_TRADINGVIEW"
     },
     "TLV": {
       "status": "COMPUTED",
       "bars": 899,
-      "first_session": "2023-02-28",
-      "latest_session": "2026-10-09",
+      "first_session": "2023-03-02",
+      "latest_session": "2026-10-13",
       "freshness_match": true,
       "required_bars": 40,
-      "raw_gold_event_count_loaded_history": 0
+      "raw_gold_event_count_loaded_history": 0,
+      "formula_validation": {
+        "status": "PASS",
+        "version": "VMC_SOURCE_REPLAY_V1",
+        "source_sha256": "3f57b118ea978f3b95402ca4849ba2b46c72ff061a64b7cd32b7bbe5d5df67fa",
+        "checked_bars": 899,
+        "scope": "EXECUTABLE_PINE_CONDITION_REPLAY_ON_IDENTICAL_INPUTS",
+        "tradingview_status": "NOT_VERIFIED_AGAINST_TRADINGVIEW",
+        "errors": []
+      },
+      "source_parity_validation": "NOT_VERIFIED_AGAINST_TRADINGVIEW"
     },
     "SNP": {
       "status": "COMPUTED",
       "bars": 899,
-      "first_session": "2023-02-28",
-      "latest_session": "2026-10-09",
+      "first_session": "2023-03-02",
+      "latest_session": "2026-10-13",
       "freshness_match": true,
       "required_bars": 40,
-      "raw_gold_event_count_loaded_history": 1
+      "raw_gold_event_count_loaded_history": 1,
+      "formula_validation": {
+        "status": "PASS",
+        "version": "VMC_SOURCE_REPLAY_V1",
+        "source_sha256": "3f57b118ea978f3b95402ca4849ba2b46c72ff061a64b7cd32b7bbe5d5df67fa",
+        "checked_bars": 899,
+        "scope": "EXECUTABLE_PINE_CONDITION_REPLAY_ON_IDENTICAL_INPUTS",
+        "tradingview_status": "NOT_VERIFIED_AGAINST_TRADINGVIEW",
+        "errors": []
+      },
+      "source_parity_validation": "NOT_VERIFIED_AGAINST_TRADINGVIEW"
     },
     "SNG": {
       "status": "COMPUTED",
       "bars": 899,
-      "first_session": "2023-02-28",
-      "latest_session": "2026-10-09",
+      "first_session": "2023-03-02",
+      "latest_session": "2026-10-13",
       "freshness_match": true,
       "required_bars": 40,
-      "raw_gold_event_count_loaded_history": 1
+      "raw_gold_event_count_loaded_history": 1,
+      "formula_validation": {
+        "status": "PASS",
+        "version": "VMC_SOURCE_REPLAY_V1",
+        "source_sha256": "3f57b118ea978f3b95402ca4849ba2b46c72ff061a64b7cd32b7bbe5d5df67fa",
+        "checked_bars": 899,
+        "scope": "EXECUTABLE_PINE_CONDITION_REPLAY_ON_IDENTICAL_INPUTS",
+        "tradingview_status": "NOT_VERIFIED_AGAINST_TRADINGVIEW",
+        "errors": []
+      },
+      "source_parity_validation": "NOT_VERIFIED_AGAINST_TRADINGVIEW"
     },
     "H2O": {
       "status": "COMPUTED",
-      "bars": 808,
+      "bars": 810,
       "first_session": "2023-07-12",
-      "latest_session": "2026-10-09",
+      "latest_session": "2026-10-13",
       "freshness_match": true,
       "required_bars": 40,
-      "raw_gold_event_count_loaded_history": 1
+      "raw_gold_event_count_loaded_history": 1,
+      "formula_validation": {
+        "status": "PASS",
+        "version": "VMC_SOURCE_REPLAY_V1",
+        "source_sha256": "3f57b118ea978f3b95402ca4849ba2b46c72ff061a64b7cd32b7bbe5d5df67fa",
+        "checked_bars": 810,
+        "scope": "EXECUTABLE_PINE_CONDITION_REPLAY_ON_IDENTICAL_INPUTS",
+        "tradingview_status": "NOT_VERIFIED_AGAINST_TRADINGVIEW",
+        "errors": []
+      },
+      "source_parity_validation": "NOT_VERIFIED_AGAINST_TRADINGVIEW"
     },
     "BRD": {
       "status": "COMPUTED",
       "bars": 899,
-      "first_session": "2023-02-28",
-      "latest_session": "2026-10-09",
+      "first_session": "2023-03-02",
+      "latest_session": "2026-10-13",
       "freshness_match": true,
       "required_bars": 40,
-      "raw_gold_event_count_loaded_history": 1
+      "raw_gold_event_count_loaded_history": 1,
+      "formula_validation": {
+        "status": "PASS",
+        "version": "VMC_SOURCE_REPLAY_V1",
+        "source_sha256": "3f57b118ea978f3b95402ca4849ba2b46c72ff061a64b7cd32b7bbe5d5df67fa",
+        "checked_bars": 899,
+        "scope": "EXECUTABLE_PINE_CONDITION_REPLAY_ON_IDENTICAL_INPUTS",
+        "tradingview_status": "NOT_VERIFIED_AGAINST_TRADINGVIEW",
+        "errors": []
+      },
+      "source_parity_validation": "NOT_VERIFIED_AGAINST_TRADINGVIEW"
     },
     "EL": {
       "status": "COMPUTED",
       "bars": 899,
-      "first_session": "2023-02-28",
-      "latest_session": "2026-10-09",
+      "first_session": "2023-03-02",
+      "latest_session": "2026-10-13",
       "freshness_match": true,
       "required_bars": 40,
-      "raw_gold_event_count_loaded_history": 0
+      "raw_gold_event_count_loaded_history": 0,
+      "formula_validation": {
+        "status": "PASS",
+        "version": "VMC_SOURCE_REPLAY_V1",
+        "source_sha256": "3f57b118ea978f3b95402ca4849ba2b46c72ff061a64b7cd32b7bbe5d5df67fa",
+        "checked_bars": 899,
+        "scope": "EXECUTABLE_PINE_CONDITION_REPLAY_ON_IDENTICAL_INPUTS",
+        "tradingview_status": "NOT_VERIFIED_AGAINST_TRADINGVIEW",
+        "errors": []
+      },
+      "source_parity_validation": "NOT_VERIFIED_AGAINST_TRADINGVIEW"
     },
     "TGN": {
       "status": "COMPUTED",
       "bars": 899,
-      "first_session": "2023-02-28",
-      "latest_session": "2026-10-09",
+      "first_session": "2023-03-02",
+      "latest_session": "2026-10-13",
       "freshness_match": true,
       "required_bars": 40,
-      "raw_gold_event_count_loaded_history": 0
+      "raw_gold_event_count_loaded_history": 0,
+      "formula_validation": {
+        "status": "PASS",
+        "version": "VMC_SOURCE_REPLAY_V1",
+        "source_sha256": "3f57b118ea978f3b95402ca4849ba2b46c72ff061a64b7cd32b7bbe5d5df67fa",
+        "checked_bars": 899,
+        "scope": "EXECUTABLE_PINE_CONDITION_REPLAY_ON_IDENTICAL_INPUTS",
+        "tradingview_status": "NOT_VERIFIED_AGAINST_TRADINGVIEW",
+        "errors": []
+      },
+      "source_parity_validation": "NOT_VERIFIED_AGAINST_TRADINGVIEW"
     },
     "DIGI": {
       "status": "COMPUTED",
       "bars": 899,
-      "first_session": "2023-02-28",
-      "latest_session": "2026-10-09",
+      "first_session": "2023-03-02",
+      "latest_session": "2026-10-13",
       "freshness_match": true,
       "required_bars": 40,
-      "raw_gold_event_count_loaded_history": 0
+      "raw_gold_event_count_loaded_history": 0,
+      "formula_validation": {
+        "status": "PASS",
+        "version": "VMC_SOURCE_REPLAY_V1",
+        "source_sha256": "3f57b118ea978f3b95402ca4849ba2b46c72ff061a64b7cd32b7bbe5d5df67fa",
+        "checked_bars": 899,
+        "scope": "EXECUTABLE_PINE_CONDITION_REPLAY_ON_IDENTICAL_INPUTS",
+        "tradingview_status": "NOT_VERIFIED_AGAINST_TRADINGVIEW",
+        "errors": []
+      },
+      "source_parity_validation": "NOT_VERIFIED_AGAINST_TRADINGVIEW"
     },
     "M": {
       "status": "COMPUTED",
       "bars": 899,
-      "first_session": "2023-02-28",
-      "latest_session": "2026-10-09",
+      "first_session": "2023-03-02",
+      "latest_session": "2026-10-13",
       "freshness_match": true,
       "required_bars": 40,
-      "raw_gold_event_count_loaded_history": 2
+      "raw_gold_event_count_loaded_history": 2,
+      "formula_validation": {
+        "status": "PASS",
+        "version": "VMC_SOURCE_REPLAY_V1",
+        "source_sha256": "3f57b118ea978f3b95402ca4849ba2b46c72ff061a64b7cd32b7bbe5d5df67fa",
+        "checked_bars": 899,
+        "scope": "EXECUTABLE_PINE_CONDITION_REPLAY_ON_IDENTICAL_INPUTS",
+        "tradingview_status": "NOT_VERIFIED_AGAINST_TRADINGVIEW",
+        "errors": []
+      },
+      "source_parity_validation": "NOT_VERIFIED_AGAINST_TRADINGVIEW"
     },
     "SNN": {
       "status": "COMPUTED",
       "bars": 899,
-      "first_session": "2023-02-28",
-      "latest_session": "2026-10-09",
+      "first_session": "2023-03-02",
+      "latest_session": "2026-10-13",
       "freshness_match": true,
       "required_bars": 40,
-      "raw_gold_event_count_loaded_history": 0
+      "raw_gold_event_count_loaded_history": 0,
+      "formula_validation": {
+        "status": "PASS",
+        "version": "VMC_SOURCE_REPLAY_V1",
+        "source_sha256": "3f57b118ea978f3b95402ca4849ba2b46c72ff061a64b7cd32b7bbe5d5df67fa",
+        "checked_bars": 899,
+        "scope": "EXECUTABLE_PINE_CONDITION_REPLAY_ON_IDENTICAL_INPUTS",
+        "tradingview_status": "NOT_VERIFIED_AGAINST_TRADINGVIEW",
+        "errors": []
+      },
+      "source_parity_validation": "NOT_VERIFIED_AGAINST_TRADINGVIEW"
     },
     "TEL": {
       "status": "COMPUTED",
       "bars": 899,
-      "first_session": "2023-02-28",
-      "latest_session": "2026-10-09",
+      "first_session": "2023-03-02",
+      "latest_session": "2026-10-13",
       "freshness_match": true,
       "required_bars": 40,
-      "raw_gold_event_count_loaded_history": 0
+      "raw_gold_event_count_loaded_history": 0,
+      "formula_validation": {
+        "status": "PASS",
+        "version": "VMC_SOURCE_REPLAY_V1",
+        "source_sha256": "3f57b118ea978f3b95402ca4849ba2b46c72ff061a64b7cd32b7bbe5d5df67fa",
+        "checked_bars": 899,
+        "scope": "EXECUTABLE_PINE_CONDITION_REPLAY_ON_IDENTICAL_INPUTS",
+        "tradingview_status": "NOT_VERIFIED_AGAINST_TRADINGVIEW",
+        "errors": []
+      },
+      "source_parity_validation": "NOT_VERIFIED_AGAINST_TRADINGVIEW"
     },
     "PE": {
       "status": "COMPUTED",
-      "bars": 590,
+      "bars": 592,
       "first_session": "2024-05-28",
-      "latest_session": "2026-10-09",
+      "latest_session": "2026-10-13",
       "freshness_match": true,
       "required_bars": 40,
-      "raw_gold_event_count_loaded_history": 0
+      "raw_gold_event_count_loaded_history": 0,
+      "formula_validation": {
+        "status": "PASS",
+        "version": "VMC_SOURCE_REPLAY_V1",
+        "source_sha256": "3f57b118ea978f3b95402ca4849ba2b46c72ff061a64b7cd32b7bbe5d5df67fa",
+        "checked_bars": 592,
+        "scope": "EXECUTABLE_PINE_CONDITION_REPLAY_ON_IDENTICAL_INPUTS",
+        "tradingview_status": "NOT_VERIFIED_AGAINST_TRADINGVIEW",
+        "errors": []
+      },
+      "source_parity_validation": "NOT_VERIFIED_AGAINST_TRADINGVIEW"
     },
     "FP": {
       "status": "COMPUTED",
       "bars": 899,
-      "first_session": "2023-02-27",
-      "latest_session": "2026-10-09",
+      "first_session": "2023-03-01",
+      "latest_session": "2026-10-13",
       "freshness_match": true,
       "required_bars": 40,
-      "raw_gold_event_count_loaded_history": 4
+      "raw_gold_event_count_loaded_history": 4,
+      "formula_validation": {
+        "status": "PASS",
+        "version": "VMC_SOURCE_REPLAY_V1",
+        "source_sha256": "3f57b118ea978f3b95402ca4849ba2b46c72ff061a64b7cd32b7bbe5d5df67fa",
+        "checked_bars": 899,
+        "scope": "EXECUTABLE_PINE_CONDITION_REPLAY_ON_IDENTICAL_INPUTS",
+        "tradingview_status": "NOT_VERIFIED_AGAINST_TRADINGVIEW",
+        "errors": []
+      },
+      "source_parity_validation": "NOT_VERIFIED_AGAINST_TRADINGVIEW"
     },
     "ONE": {
       "status": "COMPUTED",
       "bars": 899,
-      "first_session": "2023-02-24",
-      "latest_session": "2026-10-09",
+      "first_session": "2023-02-28",
+      "latest_session": "2026-10-13",
       "freshness_match": true,
       "required_bars": 40,
-      "raw_gold_event_count_loaded_history": 1
+      "raw_gold_event_count_loaded_history": 1,
+      "formula_validation": {
+        "status": "PASS",
+        "version": "VMC_SOURCE_REPLAY_V1",
+        "source_sha256": "3f57b118ea978f3b95402ca4849ba2b46c72ff061a64b7cd32b7bbe5d5df67fa",
+        "checked_bars": 899,
+        "scope": "EXECUTABLE_PINE_CONDITION_REPLAY_ON_IDENTICAL_INPUTS",
+        "tradingview_status": "NOT_VERIFIED_AGAINST_TRADINGVIEW",
+        "errors": []
+      },
+      "source_parity_validation": "NOT_VERIFIED_AGAINST_TRADINGVIEW"
     },
     "CFH": {
       "status": "COMPUTED",
-      "bars": 215,
+      "bars": 217,
       "first_session": "2025-11-26",
-      "latest_session": "2026-10-09",
+      "latest_session": "2026-10-13",
       "freshness_match": true,
       "required_bars": 40,
-      "raw_gold_event_count_loaded_history": 0
+      "raw_gold_event_count_loaded_history": 0,
+      "formula_validation": {
+        "status": "PASS",
+        "version": "VMC_SOURCE_REPLAY_V1",
+        "source_sha256": "3f57b118ea978f3b95402ca4849ba2b46c72ff061a64b7cd32b7bbe5d5df67fa",
+        "checked_bars": 217,
+        "scope": "EXECUTABLE_PINE_CONDITION_REPLAY_ON_IDENTICAL_INPUTS",
+        "tradingview_status": "NOT_VERIFIED_AGAINST_TRADINGVIEW",
+        "errors": []
+      },
+      "source_parity_validation": "NOT_VERIFIED_AGAINST_TRADINGVIEW"
     },
     "AQ": {
       "status": "COMPUTED",
       "bars": 899,
-      "first_session": "2023-02-28",
-      "latest_session": "2026-10-09",
+      "first_session": "2023-03-02",
+      "latest_session": "2026-10-13",
       "freshness_match": true,
       "required_bars": 40,
-      "raw_gold_event_count_loaded_history": 0
+      "raw_gold_event_count_loaded_history": 0,
+      "formula_validation": {
+        "status": "PASS",
+        "version": "VMC_SOURCE_REPLAY_V1",
+        "source_sha256": "3f57b118ea978f3b95402ca4849ba2b46c72ff061a64b7cd32b7bbe5d5df67fa",
+        "checked_bars": 899,
+        "scope": "EXECUTABLE_PINE_CONDITION_REPLAY_ON_IDENTICAL_INPUTS",
+        "tradingview_status": "NOT_VERIFIED_AGAINST_TRADINGVIEW",
+        "errors": []
+      },
+      "source_parity_validation": "NOT_VERIFIED_AGAINST_TRADINGVIEW"
     },
     "TTS": {
       "status": "COMPUTED",
       "bars": 899,
-      "first_session": "2023-02-28",
-      "latest_session": "2026-10-09",
+      "first_session": "2023-03-02",
+      "latest_session": "2026-10-13",
       "freshness_match": true,
       "required_bars": 40,
-      "raw_gold_event_count_loaded_history": 2
+      "raw_gold_event_count_loaded_history": 2,
+      "formula_validation": {
+        "status": "PASS",
+        "version": "VMC_SOURCE_REPLAY_V1",
+        "source_sha256": "3f57b118ea978f3b95402ca4849ba2b46c72ff061a64b7cd32b7bbe5d5df67fa",
+        "checked_bars": 899,
+        "scope": "EXECUTABLE_PINE_CONDITION_REPLAY_ON_IDENTICAL_INPUTS",
+        "tradingview_status": "NOT_VERIFIED_AGAINST_TRADINGVIEW",
+        "errors": []
+      },
+      "source_parity_validation": "NOT_VERIFIED_AGAINST_TRADINGVIEW"
     },
     "EAI": {
       "status": "COMPUTED",
-      "bars": 155,
+      "bars": 157,
       "first_session": "2026-03-03",
-      "latest_session": "2026-10-09",
+      "latest_session": "2026-10-13",
       "freshness_match": true,
       "required_bars": 40,
-      "raw_gold_event_count_loaded_history": 0
+      "raw_gold_event_count_loaded_history": 0,
+      "formula_validation": {
+        "status": "PASS",
+        "version": "VMC_SOURCE_REPLAY_V1",
+        "source_sha256": "3f57b118ea978f3b95402ca4849ba2b46c72ff061a64b7cd32b7bbe5d5df67fa",
+        "checked_bars": 157,
+        "scope": "EXECUTABLE_PINE_CONDITION_REPLAY_ON_IDENTICAL_INPUTS",
+        "tradingview_status": "NOT_VERIFIED_AGAINST_TRADINGVIEW",
+        "errors": []
+      },
+      "source_parity_validation": "NOT_VERIFIED_AGAINST_TRADINGVIEW"
     },
     "ATB": {
       "status": "COMPUTED",
       "bars": 899,
-      "first_session": "2023-02-28",
-      "latest_session": "2026-10-09",
+      "first_session": "2023-03-02",
+      "latest_session": "2026-10-13",
       "freshness_match": true,
       "required_bars": 40,
-      "raw_gold_event_count_loaded_history": 3
+      "raw_gold_event_count_loaded_history": 3,
+      "formula_validation": {
+        "status": "PASS",
+        "version": "VMC_SOURCE_REPLAY_V1",
+        "source_sha256": "3f57b118ea978f3b95402ca4849ba2b46c72ff061a64b7cd32b7bbe5d5df67fa",
+        "checked_bars": 899,
+        "scope": "EXECUTABLE_PINE_CONDITION_REPLAY_ON_IDENTICAL_INPUTS",
+        "tradingview_status": "NOT_VERIFIED_AGAINST_TRADINGVIEW",
+        "errors": []
+      },
+      "source_parity_validation": "NOT_VERIFIED_AGAINST_TRADINGVIEW"
     },
     "TRP": {
       "status": "COMPUTED",
       "bars": 899,
-      "first_session": "2023-02-28",
-      "latest_session": "2026-10-09",
+      "first_session": "2023-03-02",
+      "latest_session": "2026-10-13",
       "freshness_match": true,
       "required_bars": 40,
-      "raw_gold_event_count_loaded_history": 3
+      "raw_gold_event_count_loaded_history": 3,
+      "formula_validation": {
+        "status": "PASS",
+        "version": "VMC_SOURCE_REPLAY_V1",
+        "source_sha256": "3f57b118ea978f3b95402ca4849ba2b46c72ff061a64b7cd32b7bbe5d5df67fa",
+        "checked_bars": 899,
+        "scope": "EXECUTABLE_PINE_CONDITION_REPLAY_ON_IDENTICAL_INPUTS",
+        "tradingview_status": "NOT_VERIFIED_AGAINST_TRADINGVIEW",
+        "errors": []
+      },
+      "source_parity_validation": "NOT_VERIFIED_AGAINST_TRADINGVIEW"
     }
   },
   "vumanchu_orange": {
