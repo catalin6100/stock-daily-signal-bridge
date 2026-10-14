@@ -1,8 +1,8 @@
 {
   "schema_version": "BVB_VUMANCHU_ORANGE_V1",
   "scanner_version": "1.2.0",
-  "generated_at_utc": "2026-10-14T11:29:25.313731+00:00",
-  "generated_at_europe_bucharest": "2026-10-14T14:29:25.313731+03:00",
+  "generated_at_utc": "2026-10-14T13:54:54.711771+00:00",
+  "generated_at_europe_bucharest": "2026-10-14T16:54:54.711771+03:00",
   "scope": "BET_INDEX_PLUS_ALL_CURRENT_BET_CONSTITUENTS",
   "display_name": "VuManChu Orange Buy — BET (rolling 1 calendar month)",
   "signal_equivalence": "ORANGE_BUY_EQUALS_EXISTING_VUMANCHU_RAW_GOLD",
@@ -41,8 +41,8 @@
     "fallback_used": false,
     "count": 20,
     "validated": true,
-    "retrieved_at_utc": "2026-10-14T11:29:26.591488+00:00",
-    "response_sha256": "57a16c1216af268059de5c46922beae0d064962edef6fb6f14b2d8b0503da0a4",
+    "retrieved_at_utc": "2026-10-14T13:54:56.224294+00:00",
+    "response_sha256": "afd9b57c16c637a637bae10ebb527f86b624fbb530982a65cb3c89861753613c",
     "components": [
       "TLV",
       "SNP",
