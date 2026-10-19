@@ -1,0 +1,1161 @@
+{
+  "schema_version": "BVB_ORANGE_EXTENDED_V1",
+  "generated_at_utc": "2026-10-19T14:04:29.268666+00:00",
+  "expected_closed_bvb_session": "2026-10-16",
+  "timeframe": "1D_CLOSED_BARS_ONLY",
+  "universe_source": {
+    "url": "https://www.bvb.ro/FinancialInstruments/Markets/Shares",
+    "retrieved_at": "2026-10-19T14:04:29.268666+00:00",
+    "sha256": "a24b9f8c66f58d5befc62487d5fa7b03ac308b8941261a6f9e870a2be542382b"
+  },
+  "universe": [
+    {
+      "ticker": "AAG",
+      "isin": "ROAAGEACNOR7",
+      "company": "S.C AAGES S.A.",
+      "market": "REGULATED"
+    },
+    {
+      "ticker": "ALR",
+      "isin": "ROALROACNOR0",
+      "company": "ALRO S.A.",
+      "market": "REGULATED"
+    },
+    {
+      "ticker": "ALT",
+      "isin": "ROALTCACNOR1",
+      "company": "ALTUR S.A.",
+      "market": "REGULATED"
+    },
+    {
+      "ticker": "ALU",
+      "isin": "ROALUMACNOR8",
+      "company": "ALUMIL ROM INDUSTRY S.A.",
+      "market": "REGULATED"
+    },
+    {
+      "ticker": "AQ",
+      "isin": "RO7066ZEA1R9",
+      "company": "AQUILA PART PROD COM",
+      "market": "REGULATED"
+    },
+    {
+      "ticker": "ARM",
+      "isin": "ROARMAACNOR7",
+      "company": "ARMATURA S.A.",
+      "market": "REGULATED"
+    },
+    {
+      "ticker": "AROBS",
+      "isin": "ROWMR49B0RG5",
+      "company": "AROBS TRANSILVANIA SOFTWARE",
+      "market": "REGULATED"
+    },
+    {
+      "ticker": "ARS",
+      "isin": "ROAEROACNOR5",
+      "company": "AEROSTAR S.A.",
+      "market": "REGULATED"
+    },
+    {
+      "ticker": "ARTE",
+      "isin": "ROARTEACNOR4",
+      "company": "ARTEGO SA",
+      "market": "REGULATED"
+    },
+    {
+      "ticker": "ATB",
+      "isin": "ROATBIACNOR9",
+      "company": "ANTIBIOTICE S.A.",
+      "market": "REGULATED"
+    },
+    {
+      "ticker": "BCM",
+      "isin": "ROBUCMACNOR5",
+      "company": "CASA DE BUCOVINA-CLUB DE MUNTE",
+      "market": "REGULATED"
+    },
+    {
+      "ticker": "BIO",
+      "isin": "ROBIOFACNOR9",
+      "company": "BIOFARM S.A.",
+      "market": "REGULATED"
+    },
+    {
+      "ticker": "BNET",
+      "isin": "ROBNETACNOR1",
+      "company": "BITTNET SYSTEMS SA",
+      "market": "REGULATED"
+    },
+    {
+      "ticker": "BRD",
+      "isin": "ROBRDBACNOR2",
+      "company": "BRD - GROUPE SOCIETE GENERALE S.A.",
+      "market": "REGULATED"
+    },
+    {
+      "ticker": "BRK",
+      "isin": "ROBRKOACNOR0",
+      "company": "SSIF BRK FINANCIAL GROUP SA",
+      "market": "REGULATED"
+    },
+    {
+      "ticker": "BRM",
+      "isin": "ROBEMAACNOR3",
+      "company": "BERMAS S.A.",
+      "market": "REGULATED"
+    },
+    {
+      "ticker": "BUCV",
+      "isin": "ROBUCVACNOR6",
+      "company": "BUCUR SA Bucuresti",
+      "market": "REGULATED"
+    },
+    {
+      "ticker": "BVB",
+      "isin": "ROBVBAACNOR0",
+      "company": "BURSA DE VALORI BUCURESTI SA",
+      "market": "REGULATED"
+    },
+    {
+      "ticker": "CAOR",
+      "isin": "ROCAORACNOR9",
+      "company": "SIF HOTELURI SA",
+      "market": "REGULATED"
+    },
+    {
+      "ticker": "CBC",
+      "isin": "ROCBCHACNOR3",
+      "company": "CARBOCHIM S.A.",
+      "market": "REGULATED"
+    },
+    {
+      "ticker": "CFH",
+      "isin": "ROM2TZIHW2M4",
+      "company": "CRIS-TIM FAMILY HOLDING S.A.",
+      "market": "REGULATED"
+    },
+    {
+      "ticker": "CMCM",
+      "isin": "ROCMCMACNOR0",
+      "company": "COMCM SA CONSTANTA",
+      "market": "REGULATED"
+    },
+    {
+      "ticker": "CMF",
+      "isin": "ROCMBFACNOR6",
+      "company": "COMELF S.A.",
+      "market": "REGULATED"
+    },
+    {
+      "ticker": "CMP",
+      "isin": "ROCMPSACNOR9",
+      "company": "COMPA S. A.",
+      "market": "REGULATED"
+    },
+    {
+      "ticker": "CNTE",
+      "isin": "ROCNTEACNOR9",
+      "company": "CONTED SA",
+      "market": "REGULATED"
+    },
+    {
+      "ticker": "COMI",
+      "isin": "ROCOMIACNOR3",
+      "company": "CONDMAG S.A.",
+      "market": "REGULATED"
+    },
+    {
+      "ticker": "COTE",
+      "isin": "ROCOTEACNOR7",
+      "company": "CONPET SA",
+      "market": "REGULATED"
+    },
+    {
+      "ticker": "CRC",
+      "isin": "ROCHOBACNOR8",
+      "company": "CHIMCOMPLEX BORZESTI SA ONESTI",
+      "market": "REGULATED"
+    },
+    {
+      "ticker": "DIGI",
+      "isin": "NL0012294474",
+      "company": "Digi Communications N.V.",
+      "market": "REGULATED"
+    },
+    {
+      "ticker": "EAI",
+      "isin": "RO249YW1FZP5",
+      "company": "Electro-Alfa International S.A.",
+      "market": "REGULATED"
+    },
+    {
+      "ticker": "EBS",
+      "isin": "AT0000652011",
+      "company": "Erste Group Bank AG",
+      "market": "REGULATED"
+    },
+    {
+      "ticker": "ECT",
+      "isin": "ROELBOACNOR6",
+      "company": "GRUPUL INDUSTRIAL ELECTROCONTACT S.A.",
+      "market": "REGULATED"
+    },
+    {
+      "ticker": "EFO",
+      "isin": "ROEFRIACNOR6",
+      "company": "TURISM, HOTELURI, RESTAURANTE MAREA NEAGRA S.A.",
+      "market": "REGULATED"
+    },
+    {
+      "ticker": "EL",
+      "isin": "ROELECACNOR5",
+      "company": "SOCIETATEA ENERGETICA ELECTRICA S.A.",
+      "market": "REGULATED"
+    },
+    {
+      "ticker": "ELGS",
+      "isin": "ROELGSACNOR6",
+      "company": "AETA S.A.",
+      "market": "REGULATED"
+    },
+    {
+      "ticker": "ELJ",
+      "isin": "ROELJBACNOR6",
+      "company": "ELECTROAPARATAJ S.A.",
+      "market": "REGULATED"
+    },
+    {
+      "ticker": "ELMA",
+      "isin": "ROELMAACNOR2",
+      "company": "ELECTROMAGNETICA SA",
+      "market": "REGULATED"
+    },
+    {
+      "ticker": "ENP",
+      "isin": "ROENPCACNOR7",
+      "company": "COMPANIA ENERGOPETROL S.A.",
+      "market": "REGULATED"
+    },
+    {
+      "ticker": "EVER",
+      "isin": "ROSIFBACNOR0",
+      "company": "EVERGENT INVESTMENTS S.A.",
+      "market": "REGULATED"
+    },
+    {
+      "ticker": "FP",
+      "isin": "ROFPTAACNOR5",
+      "company": "FONDUL PROPRIETATEA",
+      "market": "REGULATED"
+    },
+    {
+      "ticker": "GREEN",
+      "isin": "ROY8LUD7G9C1",
+      "company": "GREEN TECH INTERNATIONAL S.A.",
+      "market": "REGULATED"
+    },
+    {
+      "ticker": "H2O",
+      "isin": "RO4Q0Z5RO1B6",
+      "company": "SOCIETATEA DE PRODUCERE A ENERGIEI ELECTRICE IN HIDROCENTRALE HIDROELECTRICA S.A.",
+      "market": "REGULATED"
+    },
+    {
+      "ticker": "IARV",
+      "isin": "ROIARVACNOR1",
+      "company": "IAR SA Brasov",
+      "market": "REGULATED"
+    },
+    {
+      "ticker": "IMP",
+      "isin": "ROIMPCACNOR0",
+      "company": "IMPACT DEVELOPER & CONTRACTOR S.A.",
+      "market": "REGULATED"
+    },
+    {
+      "ticker": "INFINITY",
+      "isin": "ROSIFEACNOR4",
+      "company": "INFINITY CAPITAL INVESTMENTS S.A.",
+      "market": "REGULATED"
+    },
+    {
+      "ticker": "LION",
+      "isin": "ROSIFAACNOR2",
+      "company": "LION CAPITAL S.A.",
+      "market": "REGULATED"
+    },
+    {
+      "ticker": "LONG",
+      "isin": "ROSIFDACNOR6",
+      "company": "LONGSHIELD INVESTMENT GROUP S.A.",
+      "market": "REGULATED"
+    },
+    {
+      "ticker": "M",
+      "isin": "ROMEDLACNOR6",
+      "company": "Med Life S.A.",
+      "market": "REGULATED"
+    },
+    {
+      "ticker": "MCAB",
+      "isin": "ROMCABACNOR7",
+      "company": "ROMCAB SA",
+      "market": "REGULATED"
+    },
+    {
+      "ticker": "MECF",
+      "isin": "ROMECFACNOR0",
+      "company": "MECANICA CEAHLAU",
+      "market": "REGULATED"
+    },
+    {
+      "ticker": "MFC",
+      "isin": "ROMECEACNOR3",
+      "company": "MF CAPITAL SA",
+      "market": "REGULATED"
+    },
+    {
+      "ticker": "NAPO",
+      "isin": "RONAPOACNOR0",
+      "company": "SOCIETATEA DE CONSTRUCTII NAPOCA SA",
+      "market": "REGULATED"
+    },
+    {
+      "ticker": "NC",
+      "isin": "ROX9GQFJ81G8",
+      "company": "NOVERE CAPITAL",
+      "market": "REGULATED"
+    },
+    {
+      "ticker": "OIL",
+      "isin": "ROOILTACNOR9",
+      "company": "OIL TERMINAL S.A.",
+      "market": "REGULATED"
+    },
+    {
+      "ticker": "ONE",
+      "isin": "ROJ8YZPDHWW8",
+      "company": "ONE UNITED PROPERTIES",
+      "market": "REGULATED"
+    },
+    {
+      "ticker": "PBK",
+      "isin": "ROBACRACNOR6",
+      "company": "PATRIA BANK S.A.",
+      "market": "REGULATED"
+    },
+    {
+      "ticker": "PE",
+      "isin": "CY0200900914",
+      "company": "Premier Energy PLC",
+      "market": "REGULATED"
+    },
+    {
+      "ticker": "PPL",
+      "isin": "ROPRLAACNOR7",
+      "company": "PROMATERIS S.A.",
+      "market": "REGULATED"
+    },
+    {
+      "ticker": "PREB",
+      "isin": "ROPREBACNOR0",
+      "company": "PREBET SA AIUD",
+      "market": "REGULATED"
+    },
+    {
+      "ticker": "PREH",
+      "isin": "ROPREHACNOR7",
+      "company": "PREFAB SA",
+      "market": "REGULATED"
+    },
+    {
+      "ticker": "PTR",
+      "isin": "ROPESAACNOR0",
+      "company": "ROMPETROL WELL SERVICES S.A.",
+      "market": "REGULATED"
+    },
+    {
+      "ticker": "RMAH",
+      "isin": "RORMAHACNOR2",
+      "company": "FARMACEUTICA REMEDIA SA",
+      "market": "REGULATED"
+    },
+    {
+      "ticker": "ROC1",
+      "isin": "RO9FY9SRFU46",
+      "company": "ROCA INDUSTRY HOLDINGROCK1 S.A.",
+      "market": "REGULATED"
+    },
+    {
+      "ticker": "ROCE",
+      "isin": "ROROCEACNOR1",
+      "company": "ROMCARBON SA",
+      "market": "REGULATED"
+    },
+    {
+      "ticker": "RPH",
+      "isin": "ROIAFRACNOR4",
+      "company": "ROPHARMA SA",
+      "market": "REGULATED"
+    },
+    {
+      "ticker": "RRC",
+      "isin": "ROPTRMACNOR5",
+      "company": "ROMPETROL RAFINARE S.A.",
+      "market": "REGULATED"
+    },
+    {
+      "ticker": "SAFE",
+      "isin": "RO0MDTLNZV25",
+      "company": "SAFETECH INNOVATIONS S.A.",
+      "market": "REGULATED"
+    },
+    {
+      "ticker": "SFG",
+      "isin": "ROSFGPACNOR4",
+      "company": "SPHERA FRANCHISE GROUP",
+      "market": "REGULATED"
+    },
+    {
+      "ticker": "SMTL",
+      "isin": "RONLG8JKKYH3",
+      "company": "SIMTEL TEAM",
+      "market": "REGULATED"
+    },
+    {
+      "ticker": "SNG",
+      "isin": "ROSNGNACNOR3",
+      "company": "S.N.G.N. ROMGAZ S.A.",
+      "market": "REGULATED"
+    },
+    {
+      "ticker": "SNN",
+      "isin": "ROSNNEACNOR8",
+      "company": "S.N. NUCLEARELECTRICA S.A.",
+      "market": "REGULATED"
+    },
+    {
+      "ticker": "SNO",
+      "isin": "ROSAUVACNOR4",
+      "company": "SANTIERUL NAVAL ORSOVA S.A.",
+      "market": "REGULATED"
+    },
+    {
+      "ticker": "SNP",
+      "isin": "ROSNPPACNOR9",
+      "company": "OMV PETROM S.A.",
+      "market": "REGULATED"
+    },
+    {
+      "ticker": "SOCP",
+      "isin": "ROSOCPACNOR5",
+      "company": "SOCEP S.A.",
+      "market": "REGULATED"
+    },
+    {
+      "ticker": "STZ",
+      "isin": "ROSTZOACNOR8",
+      "company": "SINTEZA S.A.",
+      "market": "REGULATED"
+    },
+    {
+      "ticker": "TBK",
+      "isin": "ROTBKAACNOR5",
+      "company": "TRANSILVANIA BROKER DE ASIGURARE SA",
+      "market": "REGULATED"
+    },
+    {
+      "ticker": "TBM",
+      "isin": "ROTBMBACNOR9",
+      "company": "TURBOMECANICA S.A.",
+      "market": "REGULATED"
+    },
+    {
+      "ticker": "TEL",
+      "isin": "ROTSELACNOR9",
+      "company": "C.N.T.E.E. TRANSELECTRICA",
+      "market": "REGULATED"
+    },
+    {
+      "ticker": "TGN",
+      "isin": "ROTGNTACNOR8",
+      "company": "S.N.T.G.N. TRANSGAZ S.A.",
+      "market": "REGULATED"
+    },
+    {
+      "ticker": "TLV",
+      "isin": "ROTLVAACNOR1",
+      "company": "BANCA TRANSILVANIA S.A.",
+      "market": "REGULATED"
+    },
+    {
+      "ticker": "TRANSI",
+      "isin": "ROSIFCACNOR8",
+      "company": "TRANSILVANIA INVESTMENTS ALLIANCE S.A.",
+      "market": "REGULATED"
+    },
+    {
+      "ticker": "TRIP",
+      "isin": "ROE1N5GQPH38",
+      "company": "CHRISTIAN '76 TOUR S.A.",
+      "market": "REGULATED"
+    },
+    {
+      "ticker": "TRP",
+      "isin": "ROTRPLACNOR7",
+      "company": "TERAPLAST SA",
+      "market": "REGULATED"
+    },
+    {
+      "ticker": "TTS",
+      "isin": "ROYCRRK66RD8",
+      "company": "TTS (TRANSPORT TRADE SERVICES) S.A.",
+      "market": "REGULATED"
+    },
+    {
+      "ticker": "UAM",
+      "isin": "ROUAMTACNOR1",
+      "company": "UAMT S.A.",
+      "market": "REGULATED"
+    },
+    {
+      "ticker": "UZT",
+      "isin": "ROUZTEACNOR5",
+      "company": "UZTEL S.A.",
+      "market": "REGULATED"
+    },
+    {
+      "ticker": "VESY",
+      "isin": "ROVESYACNOR8",
+      "company": "VES SA",
+      "market": "REGULATED"
+    },
+    {
+      "ticker": "VNC",
+      "isin": "ROVRJUACNOR7",
+      "company": "VRANCART SA",
+      "market": "REGULATED"
+    },
+    {
+      "ticker": "WINE",
+      "isin": "CY0107600716",
+      "company": "PURCARI WINERIES PUBLIC COMPANY LIMITED",
+      "market": "REGULATED"
+    }
+  ],
+  "issues": [],
+  "raw_engine": {
+    "module": "collector.calculate_vumanchu_gold_raw",
+    "engine_version": "VMC_CIPHER_B_GOLD_RAW_V3_LIFECYCLE_DIAGNOSTIC",
+    "collector_sha256": "3f982b05fc6f4a511be3ac01174cdf08b8dd6441c5915f2929daaaee0161992b",
+    "formula_changed": false
+  },
+  "radar": {
+    "universe": "BVB_REGULATED_SHARES_PLUS_BET",
+    "latest_closed_session": "2026-10-16",
+    "coverage": {
+      "expected": 90,
+      "computed": 51,
+      "missing": [
+        {
+          "ticker": "ALT",
+          "reason": "ROLLING_WINDOW_MISSING_SESSIONS_OR_SUSPENSION: 2026-09-16,2026-09-22,2026-09-23,2026-09-24"
+        },
+        {
+          "ticker": "ARM",
+          "reason": "ROLLING_WINDOW_MISSING_SESSIONS_OR_SUSPENSION: 2026-09-16,2026-09-17,2026-09-18,2026-09-23,2026-09-25,2026-09-30,2026-10-02,2026-10-08,2026-10-12"
+        },
+        {
+          "ticker": "ARTE",
+          "reason": "ROLLING_WINDOW_MISSING_SESSIONS_OR_SUSPENSION: 2026-09-22,2026-09-23,2026-09-24,2026-09-30,2026-10-01,2026-10-05,2026-10-06,2026-10-13,2026-10-14,2026-10-15"
+        },
+        {
+          "ticker": "BCM",
+          "reason": "ROLLING_WINDOW_MISSING_SESSIONS_OR_SUSPENSION: 2026-09-17,2026-09-18,2026-09-22,2026-09-23,2026-09-24,2026-09-25,2026-09-30,2026-10-01,2026-10-02,2026-10-05,2026-10-07,2026-10-08,2026-10-09,2026-10-12"
+        },
+        {
+          "ticker": "BIO",
+          "reason": "STALE_OR_WRONG_SESSION: latest=2026-08-24; expected=2026-10-16"
+        },
+        {
+          "ticker": "BRM",
+          "reason": "ROLLING_WINDOW_MISSING_SESSIONS_OR_SUSPENSION: 2026-09-17,2026-09-22"
+        },
+        {
+          "ticker": "BUCV",
+          "reason": "ROLLING_WINDOW_MISSING_SESSIONS_OR_SUSPENSION: 2026-09-22,2026-09-23,2026-09-24,2026-09-25,2026-09-28,2026-09-30,2026-10-02,2026-10-08,2026-10-12"
+        },
+        {
+          "ticker": "CAOR",
+          "reason": "ROLLING_WINDOW_MISSING_SESSIONS_OR_SUSPENSION: 2026-09-16,2026-09-17,2026-09-18,2026-09-22,2026-09-23,2026-09-24,2026-09-25,2026-09-28,2026-09-29,2026-09-30,2026-10-01,2026-10-02,2026-10-05,2026-10-06,2026-10-07,2026-10-09,2026-10-12,2026-10-13,2026-10-14,2026-10-15"
+        },
+        {
+          "ticker": "CBC",
+          "reason": "STALE_OR_WRONG_SESSION: latest=2026-10-13; expected=2026-10-16"
+        },
+        {
+          "ticker": "CMCM",
+          "reason": "ROLLING_WINDOW_MISSING_SESSIONS_OR_SUSPENSION: 2026-09-16,2026-09-17,2026-09-18,2026-09-22,2026-09-24,2026-09-28,2026-09-29,2026-09-30,2026-10-02,2026-10-06"
+        },
+        {
+          "ticker": "CMF",
+          "reason": "ROLLING_WINDOW_MISSING_SESSIONS_OR_SUSPENSION: 2026-09-17,2026-09-22,2026-09-23,2026-09-24,2026-09-28,2026-10-01,2026-10-02,2026-10-05,2026-10-07,2026-10-12,2026-10-13,2026-10-14,2026-10-15"
+        },
+        {
+          "ticker": "CMP",
+          "reason": "ROLLING_WINDOW_MISSING_SESSIONS_OR_SUSPENSION: 2026-09-22"
+        },
+        {
+          "ticker": "CNTE",
+          "reason": "STALE_OR_WRONG_SESSION: latest=2026-10-13; expected=2026-10-16"
+        },
+        {
+          "ticker": "COMI",
+          "reason": "ROLLING_WINDOW_MISSING_SESSIONS_OR_SUSPENSION: 2026-09-16,2026-09-22,2026-10-02"
+        },
+        {
+          "ticker": "CRC",
+          "reason": "ROLLING_WINDOW_MISSING_SESSIONS_OR_SUSPENSION: 2026-10-05,2026-10-07,2026-10-08"
+        },
+        {
+          "ticker": "ECT",
+          "reason": "ROLLING_WINDOW_MISSING_SESSIONS_OR_SUSPENSION: 2026-09-16,2026-09-17,2026-09-18,2026-09-22,2026-09-25,2026-09-29,2026-09-30,2026-10-01,2026-10-05,2026-10-06,2026-10-08,2026-10-09,2026-10-12,2026-10-13,2026-10-14"
+        },
+        {
+          "ticker": "ELGS",
+          "reason": "ROLLING_WINDOW_MISSING_SESSIONS_OR_SUSPENSION: 2026-10-08"
+        },
+        {
+          "ticker": "ELJ",
+          "reason": "STALE_OR_WRONG_SESSION: latest=2026-10-14; expected=2026-10-16"
+        },
+        {
+          "ticker": "ELMA",
+          "reason": "ROLLING_WINDOW_MISSING_SESSIONS_OR_SUSPENSION: 2026-10-08,2026-10-12"
+        },
+        {
+          "ticker": "ENP",
+          "reason": "STALE_OR_WRONG_SESSION: latest=2026-10-15; expected=2026-10-16"
+        },
+        {
+          "ticker": "GREEN",
+          "reason": "STALE_OR_WRONG_SESSION: latest=2026-10-15; expected=2026-10-16"
+        },
+        {
+          "ticker": "MCAB",
+          "reason": "STALE_OR_WRONG_SESSION: latest=2026-05-28; expected=2026-10-16"
+        },
+        {
+          "ticker": "MECF",
+          "reason": "STALE_OR_WRONG_SESSION: latest=2026-10-14; expected=2026-10-16"
+        },
+        {
+          "ticker": "MFC",
+          "reason": "ROLLING_WINDOW_MISSING_SESSIONS_OR_SUSPENSION: 2026-09-16,2026-09-18,2026-09-21,2026-09-22,2026-09-23,2026-09-24,2026-09-25,2026-09-28,2026-09-29,2026-09-30,2026-10-01,2026-10-02,2026-10-05,2026-10-06,2026-10-07,2026-10-08,2026-10-09,2026-10-12,2026-10-13,2026-10-15"
+        },
+        {
+          "ticker": "NAPO",
+          "reason": "ROLLING_WINDOW_MISSING_SESSIONS_OR_SUSPENSION: 2026-09-16,2026-09-17,2026-09-18,2026-09-22,2026-09-23,2026-09-25,2026-09-28,2026-09-30,2026-10-01,2026-10-02,2026-10-05,2026-10-07,2026-10-08,2026-10-09,2026-10-13,2026-10-15"
+        },
+        {
+          "ticker": "NC",
+          "reason": "ROLLING_WINDOW_MISSING_SESSIONS_OR_SUSPENSION: 2026-10-09"
+        },
+        {
+          "ticker": "PPL",
+          "reason": "ROLLING_WINDOW_MISSING_SESSIONS_OR_SUSPENSION: 2026-09-16,2026-09-17,2026-09-24,2026-09-25,2026-09-29,2026-10-02,2026-10-06,2026-10-07,2026-10-14"
+        },
+        {
+          "ticker": "PREB",
+          "reason": "ROLLING_WINDOW_MISSING_SESSIONS_OR_SUSPENSION: 2026-09-23,2026-10-06"
+        },
+        {
+          "ticker": "PREH",
+          "reason": "ROLLING_WINDOW_MISSING_SESSIONS_OR_SUSPENSION: 2026-09-16,2026-09-17,2026-09-18,2026-09-23,2026-09-24,2026-09-25,2026-09-28,2026-09-30,2026-10-01,2026-10-02,2026-10-05,2026-10-06,2026-10-08,2026-10-09,2026-10-13,2026-10-15"
+        },
+        {
+          "ticker": "ROC1",
+          "reason": "ROLLING_WINDOW_MISSING_SESSIONS_OR_SUSPENSION: 2026-09-29,2026-09-30"
+        },
+        {
+          "ticker": "ROCE",
+          "reason": "ROLLING_WINDOW_MISSING_SESSIONS_OR_SUSPENSION: 2026-10-02,2026-10-14"
+        },
+        {
+          "ticker": "RPH",
+          "reason": "ROLLING_WINDOW_MISSING_SESSIONS_OR_SUSPENSION: 2026-09-17,2026-09-28"
+        },
+        {
+          "ticker": "SNO",
+          "reason": "ROLLING_WINDOW_MISSING_SESSIONS_OR_SUSPENSION: 2026-10-08"
+        },
+        {
+          "ticker": "SOCP",
+          "reason": "ROLLING_WINDOW_MISSING_SESSIONS_OR_SUSPENSION: 2026-09-18,2026-09-22,2026-10-13"
+        },
+        {
+          "ticker": "TBK",
+          "reason": "ROLLING_WINDOW_MISSING_SESSIONS_OR_SUSPENSION: 2026-09-18"
+        },
+        {
+          "ticker": "UAM",
+          "reason": "STALE_OR_WRONG_SESSION: latest=2026-10-15; expected=2026-10-16"
+        },
+        {
+          "ticker": "UZT",
+          "reason": "ROLLING_WINDOW_MISSING_SESSIONS_OR_SUSPENSION: 2026-09-16,2026-09-17,2026-09-18,2026-09-21,2026-09-22,2026-09-23,2026-09-24,2026-09-25,2026-09-28,2026-09-29,2026-09-30,2026-10-01,2026-10-02,2026-10-05,2026-10-06,2026-10-07,2026-10-08,2026-10-09,2026-10-12,2026-10-14"
+        },
+        {
+          "ticker": "VESY",
+          "reason": "STALE_OR_WRONG_SESSION: latest=2024-01-16; expected=2026-10-16"
+        },
+        {
+          "ticker": "VNC",
+          "reason": "ROLLING_WINDOW_MISSING_SESSIONS_OR_SUSPENSION: 2026-09-28"
+        }
+      ],
+      "status": "PARTIAL"
+    },
+    "top10": [
+      {
+        "detection_id": "BRD|1D|2026-10-01|2026-10-05",
+        "timeframe": "1D",
+        "pivot_bar": "2026-10-01",
+        "detection_bar": "2026-10-05",
+        "plot_offset_bars": -2,
+        "pivot_low": 28.3,
+        "detection_close": 31.75,
+        "detection_bar_high": 32.6,
+        "wt2_pivot": -66.9441,
+        "wt2_detection": -53.8338,
+        "wt_low_prev": -80.0246,
+        "last_rsi_at_prev_wt_bottom": 28.64,
+        "wt_regular_bull_divergence": true,
+        "rsi_regular_bull_divergence": false,
+        "rsi_divergence_enabled_in_raw_default": false,
+        "trigger_component": "WT_REGULAR_BULL_DIV",
+        "asset": "BRD",
+        "vumanchu_display": "ORANGE BUY",
+        "raw_equivalence": "ORANGE_BUY_EQUALS_EXISTING_VUMANCHU_RAW_GOLD",
+        "first_known_utc": "2026-10-05T15:00:00+00:00",
+        "first_known_basis": "BVB_REGULAR_SESSION_END_18_00_LOCAL",
+        "ticker": "BRD",
+        "signal_status": "ORANGE/GOLD HIT"
+      },
+      {
+        "detection_id": "ALR|1D|2026-10-01|2026-10-05",
+        "timeframe": "1D",
+        "pivot_bar": "2026-10-01",
+        "detection_bar": "2026-10-05",
+        "plot_offset_bars": -2,
+        "pivot_low": 1.34,
+        "detection_close": 1.385,
+        "detection_bar_high": 1.385,
+        "wt2_pivot": -70.4704,
+        "wt2_detection": -53.654,
+        "wt_low_prev": -77.1137,
+        "last_rsi_at_prev_wt_bottom": 22.1,
+        "wt_regular_bull_divergence": true,
+        "rsi_regular_bull_divergence": false,
+        "rsi_divergence_enabled_in_raw_default": false,
+        "trigger_component": "WT_REGULAR_BULL_DIV",
+        "asset": "ALR",
+        "vumanchu_display": "ORANGE BUY",
+        "raw_equivalence": "ORANGE_BUY_EQUALS_EXISTING_VUMANCHU_RAW_GOLD",
+        "first_known_utc": "2026-10-05T15:00:00+00:00",
+        "first_known_basis": "BVB_REGULAR_SESSION_END_18_00_LOCAL",
+        "ticker": "ALR",
+        "signal_status": "ORANGE/GOLD HIT"
+      },
+      {
+        "detection_id": "TRP|1D|2026-09-29|2026-10-01",
+        "timeframe": "1D",
+        "pivot_bar": "2026-09-29",
+        "detection_bar": "2026-10-01",
+        "plot_offset_bars": -2,
+        "pivot_low": 0.3505,
+        "detection_close": 0.374,
+        "detection_bar_high": 0.39,
+        "wt2_pivot": -76.6665,
+        "wt2_detection": -66.2653,
+        "wt_low_prev": -77.5486,
+        "last_rsi_at_prev_wt_bottom": 16.16,
+        "wt_regular_bull_divergence": true,
+        "rsi_regular_bull_divergence": true,
+        "rsi_divergence_enabled_in_raw_default": false,
+        "trigger_component": "WT_REGULAR_BULL_DIV",
+        "asset": "TRP",
+        "vumanchu_display": "ORANGE BUY",
+        "raw_equivalence": "ORANGE_BUY_EQUALS_EXISTING_VUMANCHU_RAW_GOLD",
+        "first_known_utc": "2026-10-01T15:00:00+00:00",
+        "first_known_basis": "BVB_REGULAR_SESSION_END_18_00_LOCAL",
+        "ticker": "TRP",
+        "signal_status": "ORANGE/GOLD HIT"
+      },
+      {
+        "detection_id": "IARV|1D|2026-09-29|2026-10-01",
+        "timeframe": "1D",
+        "pivot_bar": "2026-09-29",
+        "detection_bar": "2026-10-01",
+        "plot_offset_bars": -2,
+        "pivot_low": 27.4,
+        "detection_close": 29.9,
+        "detection_bar_high": 30.2,
+        "wt2_pivot": -73.3739,
+        "wt2_detection": -68.9945,
+        "wt_low_prev": -81.421,
+        "last_rsi_at_prev_wt_bottom": 27.79,
+        "wt_regular_bull_divergence": true,
+        "rsi_regular_bull_divergence": false,
+        "rsi_divergence_enabled_in_raw_default": false,
+        "trigger_component": "WT_REGULAR_BULL_DIV",
+        "asset": "IARV",
+        "vumanchu_display": "ORANGE BUY",
+        "raw_equivalence": "ORANGE_BUY_EQUALS_EXISTING_VUMANCHU_RAW_GOLD",
+        "first_known_utc": "2026-10-01T15:00:00+00:00",
+        "first_known_basis": "BVB_REGULAR_SESSION_END_18_00_LOCAL",
+        "ticker": "IARV",
+        "signal_status": "ORANGE/GOLD HIT"
+      },
+      {
+        "detection_id": "ATB|1D|2026-09-25|2026-09-29",
+        "timeframe": "1D",
+        "pivot_bar": "2026-09-25",
+        "detection_bar": "2026-09-29",
+        "plot_offset_bars": -2,
+        "pivot_low": 1.834,
+        "detection_close": 1.86,
+        "detection_bar_high": 1.86,
+        "wt2_pivot": -67.8467,
+        "wt2_detection": -64.3122,
+        "wt_low_prev": -101.1708,
+        "last_rsi_at_prev_wt_bottom": 20.44,
+        "wt_regular_bull_divergence": true,
+        "rsi_regular_bull_divergence": false,
+        "rsi_divergence_enabled_in_raw_default": false,
+        "trigger_component": "WT_REGULAR_BULL_DIV",
+        "asset": "ATB",
+        "vumanchu_display": "ORANGE BUY",
+        "raw_equivalence": "ORANGE_BUY_EQUALS_EXISTING_VUMANCHU_RAW_GOLD",
+        "first_known_utc": "2026-09-29T15:00:00+00:00",
+        "first_known_basis": "BVB_REGULAR_SESSION_END_18_00_LOCAL",
+        "ticker": "ATB",
+        "signal_status": "ORANGE/GOLD HIT"
+      },
+      {
+        "detection_id": "SFG|1D|2026-09-23|2026-09-25",
+        "timeframe": "1D",
+        "pivot_bar": "2026-09-23",
+        "detection_bar": "2026-09-25",
+        "plot_offset_bars": -2,
+        "pivot_low": 30.4,
+        "detection_close": 31.0,
+        "detection_bar_high": 31.0,
+        "wt2_pivot": -71.5729,
+        "wt2_detection": -69.0055,
+        "wt_low_prev": -81.7518,
+        "last_rsi_at_prev_wt_bottom": 29.5,
+        "wt_regular_bull_divergence": true,
+        "rsi_regular_bull_divergence": false,
+        "rsi_divergence_enabled_in_raw_default": false,
+        "trigger_component": "WT_REGULAR_BULL_DIV",
+        "asset": "SFG",
+        "vumanchu_display": "ORANGE BUY",
+        "raw_equivalence": "ORANGE_BUY_EQUALS_EXISTING_VUMANCHU_RAW_GOLD",
+        "first_known_utc": "2026-09-25T15:00:00+00:00",
+        "first_known_basis": "BVB_REGULAR_SESSION_END_18_00_LOCAL",
+        "ticker": "SFG",
+        "signal_status": "ORANGE/GOLD HIT"
+      },
+      {
+        "detection_id": "M|1D|2026-09-22|2026-09-24",
+        "timeframe": "1D",
+        "pivot_bar": "2026-09-22",
+        "detection_bar": "2026-09-24",
+        "plot_offset_bars": -2,
+        "pivot_low": 9.68,
+        "detection_close": 10.24,
+        "detection_bar_high": 10.32,
+        "wt2_pivot": -74.5828,
+        "wt2_detection": -69.2769,
+        "wt_low_prev": -92.7253,
+        "last_rsi_at_prev_wt_bottom": 19.1,
+        "wt_regular_bull_divergence": true,
+        "rsi_regular_bull_divergence": false,
+        "rsi_divergence_enabled_in_raw_default": false,
+        "trigger_component": "WT_REGULAR_BULL_DIV",
+        "asset": "M",
+        "vumanchu_display": "ORANGE BUY",
+        "raw_equivalence": "ORANGE_BUY_EQUALS_EXISTING_VUMANCHU_RAW_GOLD",
+        "first_known_utc": "2026-09-24T15:00:00+00:00",
+        "first_known_basis": "BVB_REGULAR_SESSION_END_18_00_LOCAL",
+        "ticker": "M",
+        "signal_status": "ORANGE/GOLD HIT"
+      },
+      {
+        "detection_id": "H2O|1D|2026-09-17|2026-09-21",
+        "timeframe": "1D",
+        "pivot_bar": "2026-09-17",
+        "detection_bar": "2026-09-21",
+        "plot_offset_bars": -2,
+        "pivot_low": 163.8,
+        "detection_close": 177.2,
+        "detection_bar_high": 185.0,
+        "wt2_pivot": -79.2552,
+        "wt2_detection": -67.3166,
+        "wt_low_prev": -88.3385,
+        "last_rsi_at_prev_wt_bottom": 27.52,
+        "wt_regular_bull_divergence": true,
+        "rsi_regular_bull_divergence": false,
+        "rsi_divergence_enabled_in_raw_default": false,
+        "trigger_component": "WT_REGULAR_BULL_DIV",
+        "asset": "H2O",
+        "vumanchu_display": "ORANGE BUY",
+        "raw_equivalence": "ORANGE_BUY_EQUALS_EXISTING_VUMANCHU_RAW_GOLD",
+        "first_known_utc": "2026-09-21T15:00:00+00:00",
+        "first_known_basis": "BVB_REGULAR_SESSION_END_18_00_LOCAL",
+        "ticker": "H2O",
+        "signal_status": "ORANGE/GOLD HIT"
+      }
+    ],
+    "displayed_assets": 8,
+    "distinct_hit_assets": 8,
+    "event_count": 9,
+    "full_events": [
+      {
+        "detection_id": "BRD|1D|2026-10-01|2026-10-05",
+        "timeframe": "1D",
+        "pivot_bar": "2026-10-01",
+        "detection_bar": "2026-10-05",
+        "plot_offset_bars": -2,
+        "pivot_low": 28.3,
+        "detection_close": 31.75,
+        "detection_bar_high": 32.6,
+        "wt2_pivot": -66.9441,
+        "wt2_detection": -53.8338,
+        "wt_low_prev": -80.0246,
+        "last_rsi_at_prev_wt_bottom": 28.64,
+        "wt_regular_bull_divergence": true,
+        "rsi_regular_bull_divergence": false,
+        "rsi_divergence_enabled_in_raw_default": false,
+        "trigger_component": "WT_REGULAR_BULL_DIV",
+        "asset": "BRD",
+        "vumanchu_display": "ORANGE BUY",
+        "raw_equivalence": "ORANGE_BUY_EQUALS_EXISTING_VUMANCHU_RAW_GOLD",
+        "first_known_utc": "2026-10-05T15:00:00+00:00",
+        "first_known_basis": "BVB_REGULAR_SESSION_END_18_00_LOCAL",
+        "ticker": "BRD",
+        "signal_status": "ORANGE/GOLD HIT"
+      },
+      {
+        "detection_id": "ALR|1D|2026-10-01|2026-10-05",
+        "timeframe": "1D",
+        "pivot_bar": "2026-10-01",
+        "detection_bar": "2026-10-05",
+        "plot_offset_bars": -2,
+        "pivot_low": 1.34,
+        "detection_close": 1.385,
+        "detection_bar_high": 1.385,
+        "wt2_pivot": -70.4704,
+        "wt2_detection": -53.654,
+        "wt_low_prev": -77.1137,
+        "last_rsi_at_prev_wt_bottom": 22.1,
+        "wt_regular_bull_divergence": true,
+        "rsi_regular_bull_divergence": false,
+        "rsi_divergence_enabled_in_raw_default": false,
+        "trigger_component": "WT_REGULAR_BULL_DIV",
+        "asset": "ALR",
+        "vumanchu_display": "ORANGE BUY",
+        "raw_equivalence": "ORANGE_BUY_EQUALS_EXISTING_VUMANCHU_RAW_GOLD",
+        "first_known_utc": "2026-10-05T15:00:00+00:00",
+        "first_known_basis": "BVB_REGULAR_SESSION_END_18_00_LOCAL",
+        "ticker": "ALR",
+        "signal_status": "ORANGE/GOLD HIT"
+      },
+      {
+        "detection_id": "TRP|1D|2026-09-29|2026-10-01",
+        "timeframe": "1D",
+        "pivot_bar": "2026-09-29",
+        "detection_bar": "2026-10-01",
+        "plot_offset_bars": -2,
+        "pivot_low": 0.3505,
+        "detection_close": 0.374,
+        "detection_bar_high": 0.39,
+        "wt2_pivot": -76.6665,
+        "wt2_detection": -66.2653,
+        "wt_low_prev": -77.5486,
+        "last_rsi_at_prev_wt_bottom": 16.16,
+        "wt_regular_bull_divergence": true,
+        "rsi_regular_bull_divergence": true,
+        "rsi_divergence_enabled_in_raw_default": false,
+        "trigger_component": "WT_REGULAR_BULL_DIV",
+        "asset": "TRP",
+        "vumanchu_display": "ORANGE BUY",
+        "raw_equivalence": "ORANGE_BUY_EQUALS_EXISTING_VUMANCHU_RAW_GOLD",
+        "first_known_utc": "2026-10-01T15:00:00+00:00",
+        "first_known_basis": "BVB_REGULAR_SESSION_END_18_00_LOCAL",
+        "ticker": "TRP",
+        "signal_status": "ORANGE/GOLD HIT"
+      },
+      {
+        "detection_id": "IARV|1D|2026-09-29|2026-10-01",
+        "timeframe": "1D",
+        "pivot_bar": "2026-09-29",
+        "detection_bar": "2026-10-01",
+        "plot_offset_bars": -2,
+        "pivot_low": 27.4,
+        "detection_close": 29.9,
+        "detection_bar_high": 30.2,
+        "wt2_pivot": -73.3739,
+        "wt2_detection": -68.9945,
+        "wt_low_prev": -81.421,
+        "last_rsi_at_prev_wt_bottom": 27.79,
+        "wt_regular_bull_divergence": true,
+        "rsi_regular_bull_divergence": false,
+        "rsi_divergence_enabled_in_raw_default": false,
+        "trigger_component": "WT_REGULAR_BULL_DIV",
+        "asset": "IARV",
+        "vumanchu_display": "ORANGE BUY",
+        "raw_equivalence": "ORANGE_BUY_EQUALS_EXISTING_VUMANCHU_RAW_GOLD",
+        "first_known_utc": "2026-10-01T15:00:00+00:00",
+        "first_known_basis": "BVB_REGULAR_SESSION_END_18_00_LOCAL",
+        "ticker": "IARV",
+        "signal_status": "ORANGE/GOLD HIT"
+      },
+      {
+        "detection_id": "ATB|1D|2026-09-25|2026-09-29",
+        "timeframe": "1D",
+        "pivot_bar": "2026-09-25",
+        "detection_bar": "2026-09-29",
+        "plot_offset_bars": -2,
+        "pivot_low": 1.834,
+        "detection_close": 1.86,
+        "detection_bar_high": 1.86,
+        "wt2_pivot": -67.8467,
+        "wt2_detection": -64.3122,
+        "wt_low_prev": -101.1708,
+        "last_rsi_at_prev_wt_bottom": 20.44,
+        "wt_regular_bull_divergence": true,
+        "rsi_regular_bull_divergence": false,
+        "rsi_divergence_enabled_in_raw_default": false,
+        "trigger_component": "WT_REGULAR_BULL_DIV",
+        "asset": "ATB",
+        "vumanchu_display": "ORANGE BUY",
+        "raw_equivalence": "ORANGE_BUY_EQUALS_EXISTING_VUMANCHU_RAW_GOLD",
+        "first_known_utc": "2026-09-29T15:00:00+00:00",
+        "first_known_basis": "BVB_REGULAR_SESSION_END_18_00_LOCAL",
+        "ticker": "ATB",
+        "signal_status": "ORANGE/GOLD HIT"
+      },
+      {
+        "detection_id": "SFG|1D|2026-09-23|2026-09-25",
+        "timeframe": "1D",
+        "pivot_bar": "2026-09-23",
+        "detection_bar": "2026-09-25",
+        "plot_offset_bars": -2,
+        "pivot_low": 30.4,
+        "detection_close": 31.0,
+        "detection_bar_high": 31.0,
+        "wt2_pivot": -71.5729,
+        "wt2_detection": -69.0055,
+        "wt_low_prev": -81.7518,
+        "last_rsi_at_prev_wt_bottom": 29.5,
+        "wt_regular_bull_divergence": true,
+        "rsi_regular_bull_divergence": false,
+        "rsi_divergence_enabled_in_raw_default": false,
+        "trigger_component": "WT_REGULAR_BULL_DIV",
+        "asset": "SFG",
+        "vumanchu_display": "ORANGE BUY",
+        "raw_equivalence": "ORANGE_BUY_EQUALS_EXISTING_VUMANCHU_RAW_GOLD",
+        "first_known_utc": "2026-09-25T15:00:00+00:00",
+        "first_known_basis": "BVB_REGULAR_SESSION_END_18_00_LOCAL",
+        "ticker": "SFG",
+        "signal_status": "ORANGE/GOLD HIT"
+      },
+      {
+        "detection_id": "M|1D|2026-09-22|2026-09-24",
+        "timeframe": "1D",
+        "pivot_bar": "2026-09-22",
+        "detection_bar": "2026-09-24",
+        "plot_offset_bars": -2,
+        "pivot_low": 9.68,
+        "detection_close": 10.24,
+        "detection_bar_high": 10.32,
+        "wt2_pivot": -74.5828,
+        "wt2_detection": -69.2769,
+        "wt_low_prev": -92.7253,
+        "last_rsi_at_prev_wt_bottom": 19.1,
+        "wt_regular_bull_divergence": true,
+        "rsi_regular_bull_divergence": false,
+        "rsi_divergence_enabled_in_raw_default": false,
+        "trigger_component": "WT_REGULAR_BULL_DIV",
+        "asset": "M",
+        "vumanchu_display": "ORANGE BUY",
+        "raw_equivalence": "ORANGE_BUY_EQUALS_EXISTING_VUMANCHU_RAW_GOLD",
+        "first_known_utc": "2026-09-24T15:00:00+00:00",
+        "first_known_basis": "BVB_REGULAR_SESSION_END_18_00_LOCAL",
+        "ticker": "M",
+        "signal_status": "ORANGE/GOLD HIT"
+      },
+      {
+        "detection_id": "TRP|1D|2026-09-17|2026-09-21",
+        "timeframe": "1D",
+        "pivot_bar": "2026-09-17",
+        "detection_bar": "2026-09-21",
+        "plot_offset_bars": -2,
+        "pivot_low": 0.3775,
+        "detection_close": 0.3845,
+        "detection_bar_high": 0.3975,
+        "wt2_pivot": -77.5486,
+        "wt2_detection": -71.7528,
+        "wt_low_prev": -94.9979,
+        "last_rsi_at_prev_wt_bottom": 29.01,
+        "wt_regular_bull_divergence": true,
+        "rsi_regular_bull_divergence": false,
+        "rsi_divergence_enabled_in_raw_default": false,
+        "trigger_component": "WT_REGULAR_BULL_DIV",
+        "asset": "TRP",
+        "vumanchu_display": "ORANGE BUY",
+        "raw_equivalence": "ORANGE_BUY_EQUALS_EXISTING_VUMANCHU_RAW_GOLD",
+        "first_known_utc": "2026-09-21T15:00:00+00:00",
+        "first_known_basis": "BVB_REGULAR_SESSION_END_18_00_LOCAL",
+        "ticker": "TRP",
+        "signal_status": "ORANGE/GOLD HIT"
+      },
+      {
+        "detection_id": "H2O|1D|2026-09-17|2026-09-21",
+        "timeframe": "1D",
+        "pivot_bar": "2026-09-17",
+        "detection_bar": "2026-09-21",
+        "plot_offset_bars": -2,
+        "pivot_low": 163.8,
+        "detection_close": 177.2,
+        "detection_bar_high": 185.0,
+        "wt2_pivot": -79.2552,
+        "wt2_detection": -67.3166,
+        "wt_low_prev": -88.3385,
+        "last_rsi_at_prev_wt_bottom": 27.52,
+        "wt_regular_bull_divergence": true,
+        "rsi_regular_bull_divergence": false,
+        "rsi_divergence_enabled_in_raw_default": false,
+        "trigger_component": "WT_REGULAR_BULL_DIV",
+        "asset": "H2O",
+        "vumanchu_display": "ORANGE BUY",
+        "raw_equivalence": "ORANGE_BUY_EQUALS_EXISTING_VUMANCHU_RAW_GOLD",
+        "first_known_utc": "2026-09-21T15:00:00+00:00",
+        "first_known_basis": "BVB_REGULAR_SESSION_END_18_00_LOCAL",
+        "ticker": "H2O",
+        "signal_status": "ORANGE/GOLD HIT"
+      }
+    ],
+    "display_order": "FIRST_DETECTION_DESC_TICKER_DESC; NO INVESTMENT SCORE",
+    "scoring_impact": "NONE",
+    "action_impact": "NONE",
+    "calibration_impact": "NONE",
+    "scope_limit": "AeRO not included; no inferred coverage"
+  },
+  "formula_changed": false,
+  "live_authorized": false,
+  "calibration_impact": "NONE"
+}
