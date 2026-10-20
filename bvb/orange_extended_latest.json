@@ -1,12 +1,12 @@
 {
   "schema_version": "BVB_ORANGE_EXTENDED_V1",
-  "generated_at_utc": "2026-10-19T14:04:29.268666+00:00",
-  "expected_closed_bvb_session": "2026-10-16",
+  "generated_at_utc": "2026-10-20T13:32:00.771247+00:00",
+  "expected_closed_bvb_session": "2026-10-19",
   "timeframe": "1D_CLOSED_BARS_ONLY",
   "universe_source": {
     "url": "https://www.bvb.ro/FinancialInstruments/Markets/Shares",
-    "retrieved_at": "2026-10-19T14:04:29.268666+00:00",
-    "sha256": "a24b9f8c66f58d5befc62487d5fa7b03ac308b8941261a6f9e870a2be542382b"
+    "retrieved_at": "2026-10-20T13:32:00.771247+00:00",
+    "sha256": "a447bb9f2bf4be8934519ed2dfe248b3008a74908f1388ee2785d0754ce89235"
   },
   "universe": [
     {
@@ -553,34 +553,34 @@
   },
   "radar": {
     "universe": "BVB_REGULATED_SHARES_PLUS_BET",
-    "latest_closed_session": "2026-10-16",
+    "latest_closed_session": "2026-10-19",
     "coverage": {
       "expected": 90,
-      "computed": 51,
+      "computed": 52,
       "missing": [
         {
           "ticker": "ALT",
-          "reason": "ROLLING_WINDOW_MISSING_SESSIONS_OR_SUSPENSION: 2026-09-16,2026-09-22,2026-09-23,2026-09-24"
+          "reason": "ROLLING_WINDOW_MISSING_SESSIONS_OR_SUSPENSION: 2026-09-22,2026-09-23,2026-09-24"
         },
         {
           "ticker": "ARM",
-          "reason": "ROLLING_WINDOW_MISSING_SESSIONS_OR_SUSPENSION: 2026-09-16,2026-09-17,2026-09-18,2026-09-23,2026-09-25,2026-09-30,2026-10-02,2026-10-08,2026-10-12"
+          "reason": "ROLLING_WINDOW_MISSING_SESSIONS_OR_SUSPENSION: 2026-09-23,2026-09-25,2026-09-30,2026-10-02,2026-10-08,2026-10-12"
         },
         {
           "ticker": "ARTE",
-          "reason": "ROLLING_WINDOW_MISSING_SESSIONS_OR_SUSPENSION: 2026-09-22,2026-09-23,2026-09-24,2026-09-30,2026-10-01,2026-10-05,2026-10-06,2026-10-13,2026-10-14,2026-10-15"
+          "reason": "STALE_OR_WRONG_SESSION: latest=2026-10-16; expected=2026-10-19"
         },
         {
           "ticker": "BCM",
-          "reason": "ROLLING_WINDOW_MISSING_SESSIONS_OR_SUSPENSION: 2026-09-17,2026-09-18,2026-09-22,2026-09-23,2026-09-24,2026-09-25,2026-09-30,2026-10-01,2026-10-02,2026-10-05,2026-10-07,2026-10-08,2026-10-09,2026-10-12"
+          "reason": "STALE_OR_WRONG_SESSION: latest=2026-10-16; expected=2026-10-19"
         },
         {
           "ticker": "BIO",
-          "reason": "STALE_OR_WRONG_SESSION: latest=2026-08-24; expected=2026-10-16"
+          "reason": "STALE_OR_WRONG_SESSION: latest=2026-08-24; expected=2026-10-19"
         },
         {
           "ticker": "BRM",
-          "reason": "ROLLING_WINDOW_MISSING_SESSIONS_OR_SUSPENSION: 2026-09-17,2026-09-22"
+          "reason": "ROLLING_WINDOW_MISSING_SESSIONS_OR_SUSPENSION: 2026-09-22"
         },
         {
           "ticker": "BUCV",
@@ -588,19 +588,19 @@
         },
         {
           "ticker": "CAOR",
-          "reason": "ROLLING_WINDOW_MISSING_SESSIONS_OR_SUSPENSION: 2026-09-16,2026-09-17,2026-09-18,2026-09-22,2026-09-23,2026-09-24,2026-09-25,2026-09-28,2026-09-29,2026-09-30,2026-10-01,2026-10-02,2026-10-05,2026-10-06,2026-10-07,2026-10-09,2026-10-12,2026-10-13,2026-10-14,2026-10-15"
+          "reason": "STALE_OR_WRONG_SESSION: latest=2026-10-16; expected=2026-10-19"
         },
         {
           "ticker": "CBC",
-          "reason": "STALE_OR_WRONG_SESSION: latest=2026-10-13; expected=2026-10-16"
+          "reason": "STALE_OR_WRONG_SESSION: latest=2026-10-13; expected=2026-10-19"
         },
         {
           "ticker": "CMCM",
-          "reason": "ROLLING_WINDOW_MISSING_SESSIONS_OR_SUSPENSION: 2026-09-16,2026-09-17,2026-09-18,2026-09-22,2026-09-24,2026-09-28,2026-09-29,2026-09-30,2026-10-02,2026-10-06"
+          "reason": "ROLLING_WINDOW_MISSING_SESSIONS_OR_SUSPENSION: 2026-09-22,2026-09-24,2026-09-28,2026-09-29,2026-09-30,2026-10-02,2026-10-06"
         },
         {
           "ticker": "CMF",
-          "reason": "ROLLING_WINDOW_MISSING_SESSIONS_OR_SUSPENSION: 2026-09-17,2026-09-22,2026-09-23,2026-09-24,2026-09-28,2026-10-01,2026-10-02,2026-10-05,2026-10-07,2026-10-12,2026-10-13,2026-10-14,2026-10-15"
+          "reason": "STALE_OR_WRONG_SESSION: latest=2026-10-16; expected=2026-10-19"
         },
         {
           "ticker": "CMP",
@@ -608,11 +608,11 @@
         },
         {
           "ticker": "CNTE",
-          "reason": "STALE_OR_WRONG_SESSION: latest=2026-10-13; expected=2026-10-16"
+          "reason": "STALE_OR_WRONG_SESSION: latest=2026-10-13; expected=2026-10-19"
         },
         {
           "ticker": "COMI",
-          "reason": "ROLLING_WINDOW_MISSING_SESSIONS_OR_SUSPENSION: 2026-09-16,2026-09-22,2026-10-02"
+          "reason": "STALE_OR_WRONG_SESSION: latest=2026-10-16; expected=2026-10-19"
         },
         {
           "ticker": "CRC",
@@ -620,7 +620,7 @@
         },
         {
           "ticker": "ECT",
-          "reason": "ROLLING_WINDOW_MISSING_SESSIONS_OR_SUSPENSION: 2026-09-16,2026-09-17,2026-09-18,2026-09-22,2026-09-25,2026-09-29,2026-09-30,2026-10-01,2026-10-05,2026-10-06,2026-10-08,2026-10-09,2026-10-12,2026-10-13,2026-10-14"
+          "reason": "STALE_OR_WRONG_SESSION: latest=2026-10-16; expected=2026-10-19"
         },
         {
           "ticker": "ELGS",
@@ -628,7 +628,7 @@
         },
         {
           "ticker": "ELJ",
-          "reason": "STALE_OR_WRONG_SESSION: latest=2026-10-14; expected=2026-10-16"
+          "reason": "STALE_OR_WRONG_SESSION: latest=2026-10-14; expected=2026-10-19"
         },
         {
           "ticker": "ELMA",
@@ -636,27 +636,27 @@
         },
         {
           "ticker": "ENP",
-          "reason": "STALE_OR_WRONG_SESSION: latest=2026-10-15; expected=2026-10-16"
+          "reason": "STALE_OR_WRONG_SESSION: latest=2026-10-15; expected=2026-10-19"
         },
         {
           "ticker": "GREEN",
-          "reason": "STALE_OR_WRONG_SESSION: latest=2026-10-15; expected=2026-10-16"
+          "reason": "ROLLING_WINDOW_MISSING_SESSIONS_OR_SUSPENSION: 2026-09-21,2026-10-07,2026-10-08,2026-10-09,2026-10-14,2026-10-16"
         },
         {
           "ticker": "MCAB",
-          "reason": "STALE_OR_WRONG_SESSION: latest=2026-05-28; expected=2026-10-16"
+          "reason": "STALE_OR_WRONG_SESSION: latest=2026-05-28; expected=2026-10-19"
         },
         {
           "ticker": "MECF",
-          "reason": "STALE_OR_WRONG_SESSION: latest=2026-10-14; expected=2026-10-16"
+          "reason": "ROLLING_WINDOW_MISSING_SESSIONS_OR_SUSPENSION: 2026-09-22,2026-09-24,2026-09-28,2026-09-29,2026-10-02,2026-10-05,2026-10-06,2026-10-09,2026-10-12,2026-10-13,2026-10-15,2026-10-16"
         },
         {
           "ticker": "MFC",
-          "reason": "ROLLING_WINDOW_MISSING_SESSIONS_OR_SUSPENSION: 2026-09-16,2026-09-18,2026-09-21,2026-09-22,2026-09-23,2026-09-24,2026-09-25,2026-09-28,2026-09-29,2026-09-30,2026-10-01,2026-10-02,2026-10-05,2026-10-06,2026-10-07,2026-10-08,2026-10-09,2026-10-12,2026-10-13,2026-10-15"
+          "reason": "STALE_OR_WRONG_SESSION: latest=2026-10-16; expected=2026-10-19"
         },
         {
           "ticker": "NAPO",
-          "reason": "ROLLING_WINDOW_MISSING_SESSIONS_OR_SUSPENSION: 2026-09-16,2026-09-17,2026-09-18,2026-09-22,2026-09-23,2026-09-25,2026-09-28,2026-09-30,2026-10-01,2026-10-02,2026-10-05,2026-10-07,2026-10-08,2026-10-09,2026-10-13,2026-10-15"
+          "reason": "STALE_OR_WRONG_SESSION: latest=2026-10-16; expected=2026-10-19"
         },
         {
           "ticker": "NC",
@@ -664,7 +664,7 @@
         },
         {
           "ticker": "PPL",
-          "reason": "ROLLING_WINDOW_MISSING_SESSIONS_OR_SUSPENSION: 2026-09-16,2026-09-17,2026-09-24,2026-09-25,2026-09-29,2026-10-02,2026-10-06,2026-10-07,2026-10-14"
+          "reason": "STALE_OR_WRONG_SESSION: latest=2026-10-16; expected=2026-10-19"
         },
         {
           "ticker": "PREB",
@@ -672,7 +672,7 @@
         },
         {
           "ticker": "PREH",
-          "reason": "ROLLING_WINDOW_MISSING_SESSIONS_OR_SUSPENSION: 2026-09-16,2026-09-17,2026-09-18,2026-09-23,2026-09-24,2026-09-25,2026-09-28,2026-09-30,2026-10-01,2026-10-02,2026-10-05,2026-10-06,2026-10-08,2026-10-09,2026-10-13,2026-10-15"
+          "reason": "STALE_OR_WRONG_SESSION: latest=2026-10-16; expected=2026-10-19"
         },
         {
           "ticker": "ROC1",
@@ -684,7 +684,7 @@
         },
         {
           "ticker": "RPH",
-          "reason": "ROLLING_WINDOW_MISSING_SESSIONS_OR_SUSPENSION: 2026-09-17,2026-09-28"
+          "reason": "ROLLING_WINDOW_MISSING_SESSIONS_OR_SUSPENSION: 2026-09-28"
         },
         {
           "ticker": "SNO",
@@ -692,23 +692,19 @@
         },
         {
           "ticker": "SOCP",
-          "reason": "ROLLING_WINDOW_MISSING_SESSIONS_OR_SUSPENSION: 2026-09-18,2026-09-22,2026-10-13"
-        },
-        {
-          "ticker": "TBK",
-          "reason": "ROLLING_WINDOW_MISSING_SESSIONS_OR_SUSPENSION: 2026-09-18"
+          "reason": "ROLLING_WINDOW_MISSING_SESSIONS_OR_SUSPENSION: 2026-09-22,2026-10-13"
         },
         {
           "ticker": "UAM",
-          "reason": "STALE_OR_WRONG_SESSION: latest=2026-10-15; expected=2026-10-16"
+          "reason": "ROLLING_WINDOW_MISSING_SESSIONS_OR_SUSPENSION: 2026-09-21,2026-09-22,2026-09-23,2026-09-24,2026-09-25,2026-09-28,2026-09-29,2026-09-30,2026-10-01,2026-10-02,2026-10-05,2026-10-06,2026-10-09,2026-10-12,2026-10-16"
         },
         {
           "ticker": "UZT",
-          "reason": "ROLLING_WINDOW_MISSING_SESSIONS_OR_SUSPENSION: 2026-09-16,2026-09-17,2026-09-18,2026-09-21,2026-09-22,2026-09-23,2026-09-24,2026-09-25,2026-09-28,2026-09-29,2026-09-30,2026-10-01,2026-10-02,2026-10-05,2026-10-06,2026-10-07,2026-10-08,2026-10-09,2026-10-12,2026-10-14"
+          "reason": "ROLLING_WINDOW_MISSING_SESSIONS_OR_SUSPENSION: 2026-09-21,2026-09-22,2026-09-23,2026-09-24,2026-09-25,2026-09-28,2026-09-29,2026-09-30,2026-10-01,2026-10-02,2026-10-05,2026-10-06,2026-10-07,2026-10-08,2026-10-09,2026-10-12,2026-10-14"
         },
         {
           "ticker": "VESY",
-          "reason": "STALE_OR_WRONG_SESSION: latest=2024-01-16; expected=2026-10-16"
+          "reason": "STALE_OR_WRONG_SESSION: latest=2024-01-16; expected=2026-10-19"
         },
         {
           "ticker": "VNC",
