@@ -1,12 +1,12 @@
 {
   "schema_version": "BVB_ORANGE_EXTENDED_V1",
-  "generated_at_utc": "2026-10-20T21:40:48.372952+00:00",
+  "generated_at_utc": "2026-10-21T13:32:09.811474+00:00",
   "expected_closed_bvb_session": "2026-10-20",
   "timeframe": "1D_CLOSED_BARS_ONLY",
   "universe_source": {
     "url": "https://www.bvb.ro/FinancialInstruments/Markets/Shares",
-    "retrieved_at": "2026-10-20T21:40:48.372952+00:00",
-    "sha256": "4224a7a8d6bec093a7f61d271de02202d31c66386c9c40d382851afca710c1b2"
+    "retrieved_at": "2026-10-21T13:32:09.811474+00:00",
+    "sha256": "47c4aaf31c2d622149d82e6cfc2b12a44944e6b02f869d98511e193768fe6280"
   },
   "universe": [
     {
