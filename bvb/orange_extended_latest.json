@@ -1,12 +1,12 @@
 {
   "schema_version": "BVB_ORANGE_EXTENDED_V1",
-  "generated_at_utc": "2026-10-22T13:34:57.480758+00:00",
-  "expected_closed_bvb_session": "2026-10-21",
+  "generated_at_utc": "2026-10-23T13:31:15.738870+00:00",
+  "expected_closed_bvb_session": "2026-10-22",
   "timeframe": "1D_CLOSED_BARS_ONLY",
   "universe_source": {
     "url": "https://www.bvb.ro/FinancialInstruments/Markets/Shares",
-    "retrieved_at": "2026-10-22T13:34:57.480758+00:00",
-    "sha256": "7f672102ec4fea94a0f32b6a62bfb3a6be4e8b98cd9f0b120b567a44afc547e1"
+    "retrieved_at": "2026-10-23T13:31:15.738870+00:00",
+    "sha256": "217793578d54f4409ea0ad0abbf845680fdd42e136af15d2230c312bd59d5d9f"
   },
   "universe": [
     {
@@ -553,7 +553,7 @@
   },
   "radar": {
     "universe": "BVB_REGULATED_SHARES_PLUS_BET",
-    "latest_closed_session": "2026-10-21",
+    "latest_closed_session": "2026-10-22",
     "coverage": {
       "expected": 90,
       "computed": 51,
@@ -572,11 +572,11 @@
         },
         {
           "ticker": "BCM",
-          "reason": "STALE_OR_WRONG_SESSION: latest=2026-10-20; expected=2026-10-21"
+          "reason": "ROLLING_WINDOW_MISSING_SESSIONS_OR_SUSPENSION: 2026-09-22,2026-09-23,2026-09-24,2026-09-25,2026-09-30,2026-10-01,2026-10-02,2026-10-05,2026-10-07,2026-10-08,2026-10-09,2026-10-12,2026-10-19,2026-10-21"
         },
         {
           "ticker": "BIO",
-          "reason": "STALE_OR_WRONG_SESSION: latest=2026-08-24; expected=2026-10-21"
+          "reason": "STALE_OR_WRONG_SESSION: latest=2026-08-24; expected=2026-10-22"
         },
         {
           "ticker": "BRM",
@@ -588,7 +588,7 @@
         },
         {
           "ticker": "CAOR",
-          "reason": "ROLLING_WINDOW_MISSING_SESSIONS_OR_SUSPENSION: 2026-09-22,2026-09-23,2026-09-24,2026-09-25,2026-09-28,2026-09-29,2026-09-30,2026-10-01,2026-10-02,2026-10-05,2026-10-06,2026-10-07,2026-10-09,2026-10-12,2026-10-13,2026-10-14,2026-10-15,2026-10-19,2026-10-20"
+          "reason": "STALE_OR_WRONG_SESSION: latest=2026-10-21; expected=2026-10-22"
         },
         {
           "ticker": "CBC",
@@ -600,7 +600,7 @@
         },
         {
           "ticker": "CMF",
-          "reason": "STALE_OR_WRONG_SESSION: latest=2026-10-16; expected=2026-10-21"
+          "reason": "STALE_OR_WRONG_SESSION: latest=2026-10-16; expected=2026-10-22"
         },
         {
           "ticker": "CMP",
@@ -608,7 +608,7 @@
         },
         {
           "ticker": "CNTE",
-          "reason": "STALE_OR_WRONG_SESSION: latest=2026-10-13; expected=2026-10-21"
+          "reason": "STALE_OR_WRONG_SESSION: latest=2026-10-13; expected=2026-10-22"
         },
         {
           "ticker": "COMI",
@@ -632,7 +632,7 @@
         },
         {
           "ticker": "ELJ",
-          "reason": "STALE_OR_WRONG_SESSION: latest=2026-10-14; expected=2026-10-21"
+          "reason": "ROLLING_WINDOW_MISSING_SESSIONS_OR_SUSPENSION: 2026-09-22,2026-09-24,2026-09-25,2026-09-30,2026-10-01,2026-10-02,2026-10-08,2026-10-12,2026-10-13,2026-10-15,2026-10-16,2026-10-19,2026-10-20,2026-10-21"
         },
         {
           "ticker": "ELMA",
@@ -640,23 +640,23 @@
         },
         {
           "ticker": "ENP",
-          "reason": "STALE_OR_WRONG_SESSION: latest=2026-10-15; expected=2026-10-21"
+          "reason": "ROLLING_WINDOW_MISSING_SESSIONS_OR_SUSPENSION: 2026-09-22,2026-09-23,2026-09-25,2026-09-30,2026-10-02,2026-10-09,2026-10-12,2026-10-13,2026-10-16,2026-10-19,2026-10-20,2026-10-21"
         },
         {
           "ticker": "GREEN",
-          "reason": "ROLLING_WINDOW_MISSING_SESSIONS_OR_SUSPENSION: 2026-09-21,2026-10-07,2026-10-08,2026-10-09,2026-10-14,2026-10-16"
+          "reason": "ROLLING_WINDOW_MISSING_SESSIONS_OR_SUSPENSION: 2026-10-07,2026-10-08,2026-10-09,2026-10-14,2026-10-16"
         },
         {
           "ticker": "MCAB",
-          "reason": "STALE_OR_WRONG_SESSION: latest=2026-05-28; expected=2026-10-21"
+          "reason": "STALE_OR_WRONG_SESSION: latest=2026-05-28; expected=2026-10-22"
         },
         {
           "ticker": "MECF",
-          "reason": "STALE_OR_WRONG_SESSION: latest=2026-10-20; expected=2026-10-21"
+          "reason": "STALE_OR_WRONG_SESSION: latest=2026-10-20; expected=2026-10-22"
         },
         {
           "ticker": "MFC",
-          "reason": "STALE_OR_WRONG_SESSION: latest=2026-10-16; expected=2026-10-21"
+          "reason": "STALE_OR_WRONG_SESSION: latest=2026-10-16; expected=2026-10-22"
         },
         {
           "ticker": "NAPO",
@@ -668,7 +668,7 @@
         },
         {
           "ticker": "PPL",
-          "reason": "ROLLING_WINDOW_MISSING_SESSIONS_OR_SUSPENSION: 2026-09-24,2026-09-25,2026-09-29,2026-10-02,2026-10-06,2026-10-07,2026-10-14,2026-10-19"
+          "reason": "STALE_OR_WRONG_SESSION: latest=2026-10-21; expected=2026-10-22"
         },
         {
           "ticker": "PREB",
@@ -676,7 +676,7 @@
         },
         {
           "ticker": "PREH",
-          "reason": "ROLLING_WINDOW_MISSING_SESSIONS_OR_SUSPENSION: 2026-09-23,2026-09-24,2026-09-25,2026-09-28,2026-09-30,2026-10-01,2026-10-02,2026-10-05,2026-10-06,2026-10-08,2026-10-09,2026-10-13,2026-10-15,2026-10-19"
+          "reason": "STALE_OR_WRONG_SESSION: latest=2026-10-21; expected=2026-10-22"
         },
         {
           "ticker": "ROC1",
@@ -700,15 +700,15 @@
         },
         {
           "ticker": "UAM",
-          "reason": "ROLLING_WINDOW_MISSING_SESSIONS_OR_SUSPENSION: 2026-09-21,2026-09-22,2026-09-23,2026-09-24,2026-09-25,2026-09-28,2026-09-29,2026-09-30,2026-10-01,2026-10-02,2026-10-05,2026-10-06,2026-10-09,2026-10-12,2026-10-16,2026-10-20"
+          "reason": "ROLLING_WINDOW_MISSING_SESSIONS_OR_SUSPENSION: 2026-09-22,2026-09-23,2026-09-24,2026-09-25,2026-09-28,2026-09-29,2026-09-30,2026-10-01,2026-10-02,2026-10-05,2026-10-06,2026-10-09,2026-10-12,2026-10-16,2026-10-20"
         },
         {
           "ticker": "UZT",
-          "reason": "STALE_OR_WRONG_SESSION: latest=2026-10-19; expected=2026-10-21"
+          "reason": "STALE_OR_WRONG_SESSION: latest=2026-10-19; expected=2026-10-22"
         },
         {
           "ticker": "VESY",
-          "reason": "STALE_OR_WRONG_SESSION: latest=2024-01-16; expected=2026-10-21"
+          "reason": "STALE_OR_WRONG_SESSION: latest=2024-01-16; expected=2026-10-22"
         },
         {
           "ticker": "VNC",
@@ -892,36 +892,11 @@
         "first_known_basis": "BVB_REGULAR_SESSION_END_18_00_LOCAL",
         "ticker": "M",
         "signal_status": "ORANGE/GOLD HIT"
-      },
-      {
-        "detection_id": "H2O|1D|2026-09-17|2026-09-21",
-        "timeframe": "1D",
-        "pivot_bar": "2026-09-17",
-        "detection_bar": "2026-09-21",
-        "plot_offset_bars": -2,
-        "pivot_low": 163.8,
-        "detection_close": 177.2,
-        "detection_bar_high": 185.0,
-        "wt2_pivot": -79.2552,
-        "wt2_detection": -67.3166,
-        "wt_low_prev": -88.3385,
-        "last_rsi_at_prev_wt_bottom": 27.52,
-        "wt_regular_bull_divergence": true,
-        "rsi_regular_bull_divergence": false,
-        "rsi_divergence_enabled_in_raw_default": false,
-        "trigger_component": "WT_REGULAR_BULL_DIV",
-        "asset": "H2O",
-        "vumanchu_display": "ORANGE BUY",
-        "raw_equivalence": "ORANGE_BUY_EQUALS_EXISTING_VUMANCHU_RAW_GOLD",
-        "first_known_utc": "2026-09-21T15:00:00+00:00",
-        "first_known_basis": "BVB_REGULAR_SESSION_END_18_00_LOCAL",
-        "ticker": "H2O",
-        "signal_status": "ORANGE/GOLD HIT"
       }
     ],
-    "displayed_assets": 8,
-    "distinct_hit_assets": 8,
-    "event_count": 9,
+    "displayed_assets": 7,
+    "distinct_hit_assets": 7,
+    "event_count": 7,
     "full_events": [
       {
         "detection_id": "BRD|1D|2026-10-01|2026-10-05",
@@ -1096,56 +1071,6 @@
         "first_known_utc": "2026-09-24T15:00:00+00:00",
         "first_known_basis": "BVB_REGULAR_SESSION_END_18_00_LOCAL",
         "ticker": "M",
-        "signal_status": "ORANGE/GOLD HIT"
-      },
-      {
-        "detection_id": "TRP|1D|2026-09-17|2026-09-21",
-        "timeframe": "1D",
-        "pivot_bar": "2026-09-17",
-        "detection_bar": "2026-09-21",
-        "plot_offset_bars": -2,
-        "pivot_low": 0.3775,
-        "detection_close": 0.3845,
-        "detection_bar_high": 0.3975,
-        "wt2_pivot": -77.5486,
-        "wt2_detection": -71.7528,
-        "wt_low_prev": -94.9979,
-        "last_rsi_at_prev_wt_bottom": 29.01,
-        "wt_regular_bull_divergence": true,
-        "rsi_regular_bull_divergence": false,
-        "rsi_divergence_enabled_in_raw_default": false,
-        "trigger_component": "WT_REGULAR_BULL_DIV",
-        "asset": "TRP",
-        "vumanchu_display": "ORANGE BUY",
-        "raw_equivalence": "ORANGE_BUY_EQUALS_EXISTING_VUMANCHU_RAW_GOLD",
-        "first_known_utc": "2026-09-21T15:00:00+00:00",
-        "first_known_basis": "BVB_REGULAR_SESSION_END_18_00_LOCAL",
-        "ticker": "TRP",
-        "signal_status": "ORANGE/GOLD HIT"
-      },
-      {
-        "detection_id": "H2O|1D|2026-09-17|2026-09-21",
-        "timeframe": "1D",
-        "pivot_bar": "2026-09-17",
-        "detection_bar": "2026-09-21",
-        "plot_offset_bars": -2,
-        "pivot_low": 163.8,
-        "detection_close": 177.2,
-        "detection_bar_high": 185.0,
-        "wt2_pivot": -79.2552,
-        "wt2_detection": -67.3166,
-        "wt_low_prev": -88.3385,
-        "last_rsi_at_prev_wt_bottom": 27.52,
-        "wt_regular_bull_divergence": true,
-        "rsi_regular_bull_divergence": false,
-        "rsi_divergence_enabled_in_raw_default": false,
-        "trigger_component": "WT_REGULAR_BULL_DIV",
-        "asset": "H2O",
-        "vumanchu_display": "ORANGE BUY",
-        "raw_equivalence": "ORANGE_BUY_EQUALS_EXISTING_VUMANCHU_RAW_GOLD",
-        "first_known_utc": "2026-09-21T15:00:00+00:00",
-        "first_known_basis": "BVB_REGULAR_SESSION_END_18_00_LOCAL",
-        "ticker": "H2O",
         "signal_status": "ORANGE/GOLD HIT"
       }
     ],
