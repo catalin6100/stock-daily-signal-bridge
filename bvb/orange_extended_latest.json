@@ -1,12 +1,12 @@
 {
   "schema_version": "BVB_ORANGE_EXTENDED_V1",
-  "generated_at_utc": "2026-10-29T19:22:37.260454+00:00",
-  "expected_closed_bvb_session": "2026-10-29",
+  "generated_at_utc": "2026-10-30T18:56:54.019064+00:00",
+  "expected_closed_bvb_session": "2026-10-30",
   "timeframe": "1D_CLOSED_BARS_ONLY",
   "universe_source": {
     "url": "https://www.bvb.ro/FinancialInstruments/Markets/Shares",
-    "retrieved_at": "2026-10-29T19:22:37.260454+00:00",
-    "sha256": "6e3ec8720ddeebe0b8fcd7801faefb7bdf14a2cf913f000513ad213802ddfda0"
+    "retrieved_at": "2026-10-30T18:56:54.019064+00:00",
+    "sha256": "82c9c43ac20efeea22bcb5a60c955f508f8c570a24588059bc86a81114816df5"
   },
   "universe": [
     {
@@ -553,7 +553,7 @@
   },
   "radar": {
     "universe": "BVB_REGULATED_SHARES_PLUS_BET",
-    "latest_closed_session": "2026-10-29",
+    "latest_closed_session": "2026-10-30",
     "coverage": {
       "expected": 90,
       "computed": 53,
@@ -572,11 +572,11 @@
         },
         {
           "ticker": "BCM",
-          "reason": "STALE_OR_WRONG_SESSION: latest=2026-10-22; expected=2026-10-29"
+          "reason": "STALE_OR_WRONG_SESSION: latest=2026-10-22; expected=2026-10-30"
         },
         {
           "ticker": "BIO",
-          "reason": "STALE_OR_WRONG_SESSION: latest=2026-08-24; expected=2026-10-29"
+          "reason": "STALE_OR_WRONG_SESSION: latest=2026-08-24; expected=2026-10-30"
         },
         {
           "ticker": "BRM",
@@ -584,27 +584,27 @@
         },
         {
           "ticker": "BUCV",
-          "reason": "ROLLING_WINDOW_MISSING_SESSIONS_OR_SUSPENSION: 2026-09-30,2026-10-02,2026-10-08,2026-10-12,2026-10-27"
+          "reason": "STALE_OR_WRONG_SESSION: latest=2026-10-29; expected=2026-10-30"
         },
         {
           "ticker": "CAOR",
-          "reason": "ROLLING_WINDOW_MISSING_SESSIONS_OR_SUSPENSION: 2026-09-29,2026-09-30,2026-10-01,2026-10-02,2026-10-05,2026-10-06,2026-10-07,2026-10-09,2026-10-12,2026-10-13,2026-10-14,2026-10-15,2026-10-19,2026-10-20,2026-10-22,2026-10-23,2026-10-26,2026-10-27,2026-10-28"
+          "reason": "ROLLING_WINDOW_MISSING_SESSIONS_OR_SUSPENSION: 2026-09-30,2026-10-01,2026-10-02,2026-10-05,2026-10-06,2026-10-07,2026-10-09,2026-10-12,2026-10-13,2026-10-14,2026-10-15,2026-10-19,2026-10-20,2026-10-22,2026-10-23,2026-10-26,2026-10-27,2026-10-28"
         },
         {
           "ticker": "CBC",
-          "reason": "STALE_OR_WRONG_SESSION: latest=2026-10-28; expected=2026-10-29"
+          "reason": "STALE_OR_WRONG_SESSION: latest=2026-10-28; expected=2026-10-30"
         },
         {
           "ticker": "CMCM",
-          "reason": "ROLLING_WINDOW_MISSING_SESSIONS_OR_SUSPENSION: 2026-09-29,2026-09-30,2026-10-02,2026-10-06,2026-10-26"
+          "reason": "STALE_OR_WRONG_SESSION: latest=2026-10-29; expected=2026-10-30"
         },
         {
           "ticker": "CMF",
-          "reason": "STALE_OR_WRONG_SESSION: latest=2026-10-27; expected=2026-10-29"
+          "reason": "STALE_OR_WRONG_SESSION: latest=2026-10-27; expected=2026-10-30"
         },
         {
           "ticker": "CNTE",
-          "reason": "STALE_OR_WRONG_SESSION: latest=2026-10-13; expected=2026-10-29"
+          "reason": "STALE_OR_WRONG_SESSION: latest=2026-10-13; expected=2026-10-30"
         },
         {
           "ticker": "COMI",
@@ -616,19 +616,19 @@
         },
         {
           "ticker": "ECT",
-          "reason": "ROLLING_WINDOW_MISSING_SESSIONS_OR_SUSPENSION: 2026-09-29,2026-09-30,2026-10-01,2026-10-05,2026-10-06,2026-10-08,2026-10-09,2026-10-12,2026-10-13,2026-10-14,2026-10-19,2026-10-23,2026-10-26,2026-10-27"
+          "reason": "STALE_OR_WRONG_SESSION: latest=2026-10-29; expected=2026-10-30"
         },
         {
           "ticker": "EFO",
-          "reason": "STALE_OR_WRONG_SESSION: latest=2026-10-28; expected=2026-10-29"
+          "reason": "ROLLING_WINDOW_MISSING_SESSIONS_OR_SUSPENSION: 2026-10-20,2026-10-26,2026-10-27,2026-10-29"
         },
         {
           "ticker": "ELGS",
-          "reason": "ROLLING_WINDOW_MISSING_SESSIONS_OR_SUSPENSION: 2026-10-08,2026-10-28"
+          "reason": "STALE_OR_WRONG_SESSION: latest=2026-10-29; expected=2026-10-30"
         },
         {
           "ticker": "ELJ",
-          "reason": "STALE_OR_WRONG_SESSION: latest=2026-10-22; expected=2026-10-29"
+          "reason": "ROLLING_WINDOW_MISSING_SESSIONS_OR_SUSPENSION: 2026-09-30,2026-10-01,2026-10-02,2026-10-08,2026-10-12,2026-10-13,2026-10-15,2026-10-16,2026-10-19,2026-10-20,2026-10-21,2026-10-23,2026-10-26,2026-10-27,2026-10-28,2026-10-29"
         },
         {
           "ticker": "ELMA",
@@ -636,7 +636,7 @@
         },
         {
           "ticker": "ENP",
-          "reason": "ROLLING_WINDOW_MISSING_SESSIONS_OR_SUSPENSION: 2026-09-30,2026-10-02,2026-10-09,2026-10-12,2026-10-13,2026-10-16,2026-10-19,2026-10-20,2026-10-21"
+          "reason": "STALE_OR_WRONG_SESSION: latest=2026-10-29; expected=2026-10-30"
         },
         {
           "ticker": "GREEN",
@@ -644,19 +644,19 @@
         },
         {
           "ticker": "MCAB",
-          "reason": "STALE_OR_WRONG_SESSION: latest=2026-05-28; expected=2026-10-29"
+          "reason": "STALE_OR_WRONG_SESSION: latest=2026-05-28; expected=2026-10-30"
         },
         {
           "ticker": "MECF",
-          "reason": "ROLLING_WINDOW_MISSING_SESSIONS_OR_SUSPENSION: 2026-09-29,2026-10-02,2026-10-05,2026-10-06,2026-10-09,2026-10-12,2026-10-13,2026-10-15,2026-10-16,2026-10-21,2026-10-22,2026-10-23,2026-10-28"
+          "reason": "STALE_OR_WRONG_SESSION: latest=2026-10-29; expected=2026-10-30"
         },
         {
           "ticker": "MFC",
-          "reason": "STALE_OR_WRONG_SESSION: latest=2026-10-16; expected=2026-10-29"
+          "reason": "STALE_OR_WRONG_SESSION: latest=2026-10-16; expected=2026-10-30"
         },
         {
           "ticker": "NAPO",
-          "reason": "ROLLING_WINDOW_MISSING_SESSIONS_OR_SUSPENSION: 2026-09-30,2026-10-01,2026-10-02,2026-10-05,2026-10-07,2026-10-08,2026-10-09,2026-10-13,2026-10-15,2026-10-19,2026-10-26,2026-10-27"
+          "reason": "STALE_OR_WRONG_SESSION: latest=2026-10-29; expected=2026-10-30"
         },
         {
           "ticker": "NC",
@@ -664,19 +664,19 @@
         },
         {
           "ticker": "PPL",
-          "reason": "STALE_OR_WRONG_SESSION: latest=2026-10-23; expected=2026-10-29"
+          "reason": "STALE_OR_WRONG_SESSION: latest=2026-10-23; expected=2026-10-30"
         },
         {
           "ticker": "PREB",
-          "reason": "ROLLING_WINDOW_MISSING_SESSIONS_OR_SUSPENSION: 2026-10-06,2026-10-27"
+          "reason": "STALE_OR_WRONG_SESSION: latest=2026-10-29; expected=2026-10-30"
         },
         {
           "ticker": "PREH",
-          "reason": "STALE_OR_WRONG_SESSION: latest=2026-10-27; expected=2026-10-29"
+          "reason": "STALE_OR_WRONG_SESSION: latest=2026-10-27; expected=2026-10-30"
         },
         {
           "ticker": "ROC1",
-          "reason": "ROLLING_WINDOW_MISSING_SESSIONS_OR_SUSPENSION: 2026-09-29,2026-09-30,2026-10-26,2026-10-27"
+          "reason": "ROLLING_WINDOW_MISSING_SESSIONS_OR_SUSPENSION: 2026-09-30,2026-10-26,2026-10-27"
         },
         {
           "ticker": "ROCE",
@@ -692,15 +692,15 @@
         },
         {
           "ticker": "UAM",
-          "reason": "ROLLING_WINDOW_MISSING_SESSIONS_OR_SUSPENSION: 2026-09-29,2026-09-30,2026-10-01,2026-10-02,2026-10-05,2026-10-06,2026-10-09,2026-10-12,2026-10-16,2026-10-20,2026-10-27"
+          "reason": "STALE_OR_WRONG_SESSION: latest=2026-10-29; expected=2026-10-30"
         },
         {
           "ticker": "UZT",
-          "reason": "STALE_OR_WRONG_SESSION: latest=2026-10-19; expected=2026-10-29"
+          "reason": "STALE_OR_WRONG_SESSION: latest=2026-10-19; expected=2026-10-30"
         },
         {
           "ticker": "VESY",
-          "reason": "STALE_OR_WRONG_SESSION: latest=2024-01-16; expected=2026-10-29"
+          "reason": "STALE_OR_WRONG_SESSION: latest=2024-01-16; expected=2026-10-30"
         }
       ],
       "status": "PARTIAL"
@@ -830,36 +830,11 @@
         "first_known_basis": "BVB_REGULAR_SESSION_END_18_00_LOCAL",
         "ticker": "IARV",
         "signal_status": "ORANGE/GOLD HIT"
-      },
-      {
-        "detection_id": "ATB|1D|2026-09-25|2026-09-29",
-        "timeframe": "1D",
-        "pivot_bar": "2026-09-25",
-        "detection_bar": "2026-09-29",
-        "plot_offset_bars": -2,
-        "pivot_low": 1.834,
-        "detection_close": 1.86,
-        "detection_bar_high": 1.86,
-        "wt2_pivot": -67.8467,
-        "wt2_detection": -64.3122,
-        "wt_low_prev": -101.1708,
-        "last_rsi_at_prev_wt_bottom": 20.44,
-        "wt_regular_bull_divergence": true,
-        "rsi_regular_bull_divergence": false,
-        "rsi_divergence_enabled_in_raw_default": false,
-        "trigger_component": "WT_REGULAR_BULL_DIV",
-        "asset": "ATB",
-        "vumanchu_display": "ORANGE BUY",
-        "raw_equivalence": "ORANGE_BUY_EQUALS_EXISTING_VUMANCHU_RAW_GOLD",
-        "first_known_utc": "2026-09-29T15:00:00+00:00",
-        "first_known_basis": "BVB_REGULAR_SESSION_END_18_00_LOCAL",
-        "ticker": "ATB",
-        "signal_status": "ORANGE/GOLD HIT"
       }
     ],
-    "displayed_assets": 6,
-    "distinct_hit_assets": 6,
-    "event_count": 6,
+    "displayed_assets": 5,
+    "distinct_hit_assets": 5,
+    "event_count": 5,
     "full_events": [
       {
         "detection_id": "CMP|1D|2026-10-02|2026-10-06",
@@ -984,31 +959,6 @@
         "first_known_utc": "2026-10-01T15:00:00+00:00",
         "first_known_basis": "BVB_REGULAR_SESSION_END_18_00_LOCAL",
         "ticker": "IARV",
-        "signal_status": "ORANGE/GOLD HIT"
-      },
-      {
-        "detection_id": "ATB|1D|2026-09-25|2026-09-29",
-        "timeframe": "1D",
-        "pivot_bar": "2026-09-25",
-        "detection_bar": "2026-09-29",
-        "plot_offset_bars": -2,
-        "pivot_low": 1.834,
-        "detection_close": 1.86,
-        "detection_bar_high": 1.86,
-        "wt2_pivot": -67.8467,
-        "wt2_detection": -64.3122,
-        "wt_low_prev": -101.1708,
-        "last_rsi_at_prev_wt_bottom": 20.44,
-        "wt_regular_bull_divergence": true,
-        "rsi_regular_bull_divergence": false,
-        "rsi_divergence_enabled_in_raw_default": false,
-        "trigger_component": "WT_REGULAR_BULL_DIV",
-        "asset": "ATB",
-        "vumanchu_display": "ORANGE BUY",
-        "raw_equivalence": "ORANGE_BUY_EQUALS_EXISTING_VUMANCHU_RAW_GOLD",
-        "first_known_utc": "2026-09-29T15:00:00+00:00",
-        "first_known_basis": "BVB_REGULAR_SESSION_END_18_00_LOCAL",
-        "ticker": "ATB",
         "signal_status": "ORANGE/GOLD HIT"
       }
     ],
