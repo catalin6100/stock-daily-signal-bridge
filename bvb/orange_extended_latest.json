@@ -1,12 +1,12 @@
 {
   "schema_version": "BVB_ORANGE_EXTENDED_V1",
-  "generated_at_utc": "2026-11-03T18:24:37.881060+00:00",
+  "generated_at_utc": "2026-11-03T20:34:01.617668+00:00",
   "expected_closed_bvb_session": "2026-11-03",
   "timeframe": "1D_CLOSED_BARS_ONLY",
   "universe_source": {
     "url": "https://www.bvb.ro/FinancialInstruments/Markets/Shares",
-    "retrieved_at": "2026-11-03T18:24:37.881060+00:00",
-    "sha256": "08fb99e48e71b7f2645e85bc7bec5e22214267d15c5bf99b4c66f760b8a36f79"
+    "retrieved_at": "2026-11-03T20:34:01.617668+00:00",
+    "sha256": "051dce16651e0906f20973274e246aa13655834b09d6981a05f5bd177d8cf6ff"
   },
   "universe": [
     {
@@ -548,7 +548,7 @@
   "raw_engine": {
     "module": "collector.calculate_vumanchu_gold_raw",
     "engine_version": "VMC_CIPHER_B_GOLD_RAW_V4_PINE_CONDITIONAL_HISTORY",
-    "collector_sha256": "79b35be96826f1ebaad978a7f37c6ec2cd7d50b34f47dbd402072511170c2650",
+    "collector_sha256": "805e480a750afbb3fc104404245be47e14d76b6be711263d300cdb1aeb18cba1",
     "formula_changed": false
   },
   "radar": {
