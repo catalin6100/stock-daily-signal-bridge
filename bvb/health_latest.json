@@ -1,14 +1,58 @@
 {
   "schema_version": "BVB_OPERATIONAL_HEALTH_V1",
-  "scanner_version": "1.2.0",
-  "checked_at_utc": "2026-11-03T20:34:01.217170+00:00",
-  "run_id": "41713444859",
+  "scanner_version": "2.0.0",
+  "checked_at_utc": "2026-11-03T21:19:10.834047+00:00",
+  "run_id": "41720238676",
   "run_attempt": "1",
-  "run_url": "https://github.com/catalin6100/stock-daily-signal-engine/actions/runs/41713444859",
-  "producer_commit": "2e0c60d7b6e2fa234ed6ac415a0aaf85602ed914",
-  "status": "OK",
+  "run_url": "https://github.com/catalin6100/stock-daily-signal-engine/actions/runs/41720238676",
+  "producer_commit": "5f9da8d35020ab06f7e5b8a253ae81d67f3f2a20",
+  "status": "PARTIAL",
+  "coverage_status": "PARTIAL",
+  "missing_assets": [
+    {
+      "asset": "SOCP",
+      "status": "FAIL",
+      "error": "ROLLING_WINDOW_MISSING_SESSIONS_OR_SUSPENSION: 2026-10-13"
+    },
+    {
+      "asset": "PREB",
+      "status": "FAIL",
+      "error": "ROLLING_WINDOW_MISSING_SESSIONS_OR_SUSPENSION: 2026-10-06,2026-10-27,2026-10-30"
+    },
+    {
+      "asset": "ELMA",
+      "status": "FAIL",
+      "error": "ROLLING_WINDOW_MISSING_SESSIONS_OR_SUSPENSION: 2026-10-08,2026-10-12"
+    },
+    {
+      "asset": "NC",
+      "status": "FAIL",
+      "error": "ROLLING_WINDOW_MISSING_SESSIONS_OR_SUSPENSION: 2026-10-09"
+    },
+    {
+      "asset": "EFO",
+      "status": "FAIL",
+      "error": "ROLLING_WINDOW_MISSING_SESSIONS_OR_SUSPENSION: 2026-10-20,2026-10-26,2026-10-27,2026-10-29"
+    },
+    {
+      "asset": "ROCE",
+      "status": "FAIL",
+      "error": "ROLLING_WINDOW_MISSING_SESSIONS_OR_SUSPENSION: 2026-10-14"
+    },
+    {
+      "asset": "ROC1",
+      "status": "FAIL",
+      "error": "ROLLING_WINDOW_MISSING_SESSIONS_OR_SUSPENSION: 2026-10-26,2026-10-27"
+    },
+    {
+      "asset": "SNO",
+      "status": "FAIL",
+      "error": "ROLLING_WINDOW_MISSING_SESSIONS_OR_SUSPENSION: 2026-10-08"
+    }
+  ],
+  "benchmark_status": "COMPUTED",
   "signal_publishable": true,
-  "signal_sha256": "206c6123944fcdb434201cb249b2bd842134be62a8b99827aded90b36a9f19c7",
+  "signal_sha256": "985f6b6fb9725f59e5100da1355ebdabd9116707d4e3d97dd84632a9741433db",
   "expected_closed_bvb_session": "2026-11-03",
   "errors": [],
   "automatic_repairs": [],
