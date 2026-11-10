@@ -1,11 +1,11 @@
 {
   "schema_version": "BVB_OPERATIONAL_HEALTH_V1",
   "scanner_version": "2.0.0",
-  "checked_at_utc": "2026-11-09T23:30:15.093089+00:00",
-  "run_id": "42720682899",
+  "checked_at_utc": "2026-11-10T20:56:21.792008+00:00",
+  "run_id": "42899767189",
   "run_attempt": "1",
-  "run_url": "https://github.com/catalin6100/stock-daily-signal-engine/actions/runs/42720682899",
-  "producer_commit": "4e19b3ebd54d1e00326c4d9ba89110298d41616c",
+  "run_url": "https://github.com/catalin6100/stock-daily-signal-engine/actions/runs/42899767189",
+  "producer_commit": "7264e6d511377c2819994478e67d3563714bd444",
   "status": "PARTIAL",
   "coverage_status": "PARTIAL",
   "missing_assets": [
@@ -25,11 +25,6 @@
       "error": "ROLLING_WINDOW_MISSING_SESSIONS_OR_SUSPENSION: 2026-10-12"
     },
     {
-      "asset": "NC",
-      "status": "FAIL",
-      "error": "ROLLING_WINDOW_MISSING_SESSIONS_OR_SUSPENSION: 2026-10-09"
-    },
-    {
       "asset": "EFO",
       "status": "FAIL",
       "error": "ROLLING_WINDOW_MISSING_SESSIONS_OR_SUSPENSION: 2026-10-20,2026-10-26,2026-10-27,2026-10-29,2026-11-06"
@@ -47,8 +42,8 @@
   ],
   "benchmark_status": "COMPUTED",
   "signal_publishable": true,
-  "signal_sha256": "a11dc663d85df4767685bea3ec60a609578119c66440042c1210314f5b839c2c",
-  "expected_closed_bvb_session": "2026-11-09",
+  "signal_sha256": "7750dc43fe63746c05318bbeeb23985831fbebb966821f86c41f431bc3f0c646",
+  "expected_closed_bvb_session": "2026-11-10",
   "errors": [],
   "automatic_repairs": [],
   "diagnostics_storage": "ACTIONS_LOG_AND_STEP_SUMMARY_PLUS_COMPACT_BRIDGE_HEALTH_RECEIPT",
