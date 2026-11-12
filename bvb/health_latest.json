@@ -1,11 +1,11 @@
 {
   "schema_version": "BVB_OPERATIONAL_HEALTH_V1",
   "scanner_version": "2.0.0",
-  "checked_at_utc": "2026-11-11T21:29:31.203098+00:00",
-  "run_id": "43103229015",
+  "checked_at_utc": "2026-11-12T21:31:44.116170+00:00",
+  "run_id": "43310791343",
   "run_attempt": "1",
-  "run_url": "https://github.com/catalin6100/stock-daily-signal-engine/actions/runs/43103229015",
-  "producer_commit": "652a31c26946bc3db90cf3a0c8dfea45cb66f853",
+  "run_url": "https://github.com/catalin6100/stock-daily-signal-engine/actions/runs/43310791343",
+  "producer_commit": "8d27cb655f3f4bc86d4a89a56e8e8c8ff4bcc827",
   "status": "PARTIAL",
   "coverage_status": "PARTIAL",
   "missing_assets": [
@@ -25,9 +25,14 @@
       "error": "ROLLING_WINDOW_MISSING_SESSIONS_OR_SUSPENSION: 2026-10-12"
     },
     {
+      "asset": "NC",
+      "status": "STALE",
+      "error": "STALE_OR_WRONG_SESSION: latest=2026-11-11; expected=2026-11-12"
+    },
+    {
       "asset": "EFO",
       "status": "STALE",
-      "error": "STALE_OR_WRONG_SESSION: latest=2026-11-10; expected=2026-11-11"
+      "error": "STALE_OR_WRONG_SESSION: latest=2026-11-10; expected=2026-11-12"
     },
     {
       "asset": "ROCE",
@@ -42,8 +47,8 @@
   ],
   "benchmark_status": "COMPUTED",
   "signal_publishable": true,
-  "signal_sha256": "d7a02e00c68e19c98a1bcca6d35346e1bcdcd9e71888c605cba06a74d2781982",
-  "expected_closed_bvb_session": "2026-11-11",
+  "signal_sha256": "b6c2abbbd6b6bc097f4bcd119db8de432cb818b512267a6a18a68d0baf3b16a4",
+  "expected_closed_bvb_session": "2026-11-12",
   "errors": [],
   "automatic_repairs": [],
   "diagnostics_storage": "ACTIONS_LOG_AND_STEP_SUMMARY_PLUS_COMPACT_BRIDGE_HEALTH_RECEIPT",
