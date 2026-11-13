@@ -15,3 +15,5 @@ Atlas/Codex coordonează fără să devină dependență de execuție. Păstreaz
 FREE ONLY. Verifică regresiile relevante și compatibilitatea referințelor. Cleanup numai țintit, după validare, conform retenției și excepțiilor; protejează baseline-urile, calibrarea, istoricul unic și recovery-ul.
 
 Raportează separat configurația, publicarea verificată, execuția observată și livrarea; nu pretinde probe neefectuate.
+
+Afișează „Nivel recomandat: [model] · [nivel]”, cu numai numele modelului bold, o singură dată pentru fiecare mesaj al utilizatorului: pe primul rând al primului mesaj al asistentului din acel tur. Nu repeta antetul în actualizările de progres, după apeluri de instrumente, în execuțiile intermediare sau în răspunsul final al aceluiași tur. Dacă nu există mesaj intermediar, afișează-l pe primul rând al răspunsului final. Reevaluează intern recomandarea pe baza întregii sarcini și a contextului, inclusiv pentru BOT; regula de afișare nu schimbă configurația modelului sau runtime-ul BOT.
