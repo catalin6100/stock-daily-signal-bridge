@@ -1,9 +1,17 @@
-# Repository instructions
+# Reguli repository Bridge
 
-This repository is public data-only transport. Do not add computation, custom workflows, private history or secrets; preserve existing RAW paths and formats.
+Acest repository public asigură exclusiv transportul datelor aprobate. Păstrează căile RAW, formatele, identitățile, proveniența și compatibilitatea consumatorilor. Nu introduce calcule, workflow-uri proprii, istorii private sau secrete.
 
-Read [the canonical operating architecture](https://github.com/catalin6100/crypto-trend-engine/blob/main/docs/architecture.md), especially "Session-independent operation", and the report/source contracts relevant to the change. That existing architecture is the canonical operational reference; do not create a competing registry or duplicate policy document.
+Citește arhitectura operațională canonică:
+https://github.com/catalin6100/crypto-trend-engine/blob/main/docs/architecture.md
+Aplică „Session-independent operation” și contractele relevante. Identifică versiunea/commitul și hashurile verificate. Nu crea o autoritate, un registru sau un producător paralel.
 
-Atlas/Codex sessions coordinate work, not runtime execution. Preserve the existing execution owners and durable state so already-authorized canonical flows do not acquire a dependency on an open chat, assistant approval or a new manual step.
+Lucrează numai în mandat, păstrând aprobările existente în scopul lor. Acest fișier nu autorizează push, merge, deploy, schimbarea programărilor, permisiunilor, destinațiilor, metodologiei, costuri noi, LIVE sau ordine.
 
-Preserve producers, history, schedules, contracts, methodology and financial safety gates. This file grants no push, merge, deployment, schedule-change, new-cost, LIVE or order authority. Report configured, observed and interruption-tested continuity separately; never claim a pause test that was not performed.
+Validează schema, conținutul permis pentru publicare și proveniența înaintea scrierilor autorizate. Lipsa ori prospețimea insuficientă nu se ascund prin relabelare, date fabricate sau înlocuirea arbitrară a baseline-urilor. Reconciliază rezultatele incerte înainte de retry.
+
+Atlas/Codex coordonează fără să devină dependență de execuție. Păstrează producătorii, transportul și recuperarea existente. Succesul unui push nu dovedește singur recepția de către consumator sau livrarea raportului.
+
+FREE ONLY. Verifică regresiile relevante și compatibilitatea referințelor. Cleanup numai țintit, după validare, conform retenției și excepțiilor; protejează baseline-urile, calibrarea, istoricul unic și recovery-ul.
+
+Raportează separat configurația, publicarea verificată, execuția observată și livrarea; nu pretinde probe neefectuate.
