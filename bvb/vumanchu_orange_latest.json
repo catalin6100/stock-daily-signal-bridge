@@ -1,8 +1,8 @@
 {
   "schema_version": "BVB_VUMANCHU_ORANGE_V2",
   "scanner_version": "2.0.0",
-  "generated_at_utc": "2026-11-18T22:59:25.894654+00:00",
-  "generated_at_europe_bucharest": "2026-11-19T00:59:25.894654+02:00",
+  "generated_at_utc": "2026-11-19T23:08:03.963811+00:00",
+  "generated_at_europe_bucharest": "2026-11-20T01:08:03.963811+02:00",
   "scope": "ALL_CURRENT_BETPLUS_CONSTITUENTS",
   "chapter_title": "BVB - BETPlus",
   "display_name": "VuManChu Orange Buy — BETPlus (rolling 1 calendar month)",
@@ -13,9 +13,9 @@
   "data_policy": "BVB_OFFICIAL_WAPI_UNADJUSTED_OHLC_AJUST_0",
   "bvb_session_policy": "LATEST_VERIFIED_BVB_SESSION_FULLY_CLOSED_AT_1800_EUROPE_BUCHAREST",
   "history_resolution_parameter": "rs=1D",
-  "expected_closed_bvb_session": "2026-11-18",
-  "latest_closed_bvb_session": "2026-11-18",
-  "rolling_1_calendar_month_start": "2026-10-18",
+  "expected_closed_bvb_session": "2026-11-19",
+  "latest_closed_bvb_session": "2026-11-19",
+  "rolling_1_calendar_month_start": "2026-10-19",
   "rolling_1_calendar_month_basis": "FIRST_DETECTION_DETECTION_BAR",
   "calendar": {
     "source": "https://bvb.ro/TradingAndStatistics/TradingSessionSchedule",
@@ -42,14 +42,14 @@
     "fallback_used": false,
     "count": 51,
     "validated": true,
-    "source_date": "2026-11-18",
-    "response_sha256": "b496bb4c75bb68864dc88e494eece91b4348aeb2afc7f95b113968d881a0104b",
-    "composition_identity_sha256": "e75e7d065fe95eb3269aee2b07aeca3d9be549c5da355f6ec5a9ddb5a8b317a0",
+    "source_date": "2026-11-19",
+    "response_sha256": "0d6a0f9360aa23d0439e0718f8b8bda5d3ef9e5c711d7a6e27bfc293d995c5b7",
+    "composition_identity_sha256": "970a473c447fcca92cc2163750a052324134545ba17b5909596dad44de1f0a78",
     "reviewed_membership_sha256": "2e2cf3b0adf513bdb2a455813042e32cd23dccf5786f3886c1d92dcf3dc7651e",
     "membership_reconciliation": "EXACT_REVIEWED_IDENTITIES",
-    "weight_total_pct": 99.98,
+    "weight_total_pct": 100.02,
     "membership_basis": "CURRENT_OFFICIAL_PROFILE_NOT_HISTORICAL_ASOF_MEMBERSHIP",
-    "retrieved_at_utc": "2026-11-18T22:59:25.894654+00:00",
+    "retrieved_at_utc": "2026-11-19T23:08:03.963811+00:00",
     "components": [
       "TLV",
       "SNP",
@@ -63,15 +63,15 @@
       "SNN",
       "TEL",
       "PE",
-      "RRC",
       "FP",
+      "RRC",
       "ONE",
       "CFH",
       "AQ",
       "TTS",
       "BVB",
-      "EAI",
       "ARS",
+      "EAI",
       "ATB",
       "TRP",
       "SFG",
@@ -97,8 +97,8 @@
       "PTR",
       "BNET",
       "ROCE",
-      "SNO",
       "ROC1",
+      "SNO",
       "ALU",
       "TBK",
       "RMAH"
@@ -110,10 +110,10 @@
   "coverage": {
     "status": "PARTIAL",
     "expected_assets": 51,
-    "computed_assets": 47,
+    "computed_assets": 46,
     "failed_assets": 4,
     "insufficient_history_assets": 0,
-    "stale_assets": 0,
+    "stale_assets": 1,
     "failures": [
       {
         "asset": "PREB",
@@ -133,7 +133,12 @@
       }
     ],
     "insufficient_history": [],
-    "stale": [],
+    "stale": [
+      {
+        "asset": "TBK",
+        "error": "STALE_OR_WRONG_SESSION: latest=2026-11-18; expected=2026-11-19"
+      }
+    ],
     "missing_assets": [
       {
         "asset": "PREB",
@@ -154,6 +159,11 @@
         "asset": "ROC1",
         "status": "FAIL",
         "error": "ROLLING_WINDOW_MISSING_SESSIONS_OR_SUSPENSION: 2026-10-26,2026-10-27,2026-11-05"
+      },
+      {
+        "asset": "TBK",
+        "status": "STALE",
+        "error": "STALE_OR_WRONG_SESSION: latest=2026-11-18; expected=2026-11-19"
       }
     ]
   },
@@ -161,8 +171,8 @@
     "TLV": {
       "status": "COMPUTED",
       "bars": 500,
-      "first_session": "2024-11-12",
-      "latest_session": "2026-11-18",
+      "first_session": "2024-11-13",
+      "latest_session": "2026-11-19",
       "freshness_match": true,
       "required_bars": 40,
       "raw_gold_event_count_loaded_history": 0,
@@ -186,8 +196,8 @@
     "SNP": {
       "status": "COMPUTED",
       "bars": 500,
-      "first_session": "2024-11-12",
-      "latest_session": "2026-11-18",
+      "first_session": "2024-11-13",
+      "latest_session": "2026-11-19",
       "freshness_match": true,
       "required_bars": 40,
       "raw_gold_event_count_loaded_history": 0,
@@ -211,8 +221,8 @@
     "SNG": {
       "status": "COMPUTED",
       "bars": 500,
-      "first_session": "2024-11-12",
-      "latest_session": "2026-11-18",
+      "first_session": "2024-11-13",
+      "latest_session": "2026-11-19",
       "freshness_match": true,
       "required_bars": 40,
       "raw_gold_event_count_loaded_history": 0,
@@ -236,8 +246,8 @@
     "H2O": {
       "status": "COMPUTED",
       "bars": 500,
-      "first_session": "2024-11-12",
-      "latest_session": "2026-11-18",
+      "first_session": "2024-11-13",
+      "latest_session": "2026-11-19",
       "freshness_match": true,
       "required_bars": 40,
       "raw_gold_event_count_loaded_history": 1,
@@ -261,8 +271,8 @@
     "BRD": {
       "status": "COMPUTED",
       "bars": 500,
-      "first_session": "2024-11-12",
-      "latest_session": "2026-11-18",
+      "first_session": "2024-11-13",
+      "latest_session": "2026-11-19",
       "freshness_match": true,
       "required_bars": 40,
       "raw_gold_event_count_loaded_history": 1,
@@ -286,8 +296,8 @@
     "EL": {
       "status": "COMPUTED",
       "bars": 500,
-      "first_session": "2024-11-12",
-      "latest_session": "2026-11-18",
+      "first_session": "2024-11-13",
+      "latest_session": "2026-11-19",
       "freshness_match": true,
       "required_bars": 40,
       "raw_gold_event_count_loaded_history": 0,
@@ -311,8 +321,8 @@
     "TGN": {
       "status": "COMPUTED",
       "bars": 500,
-      "first_session": "2024-11-12",
-      "latest_session": "2026-11-18",
+      "first_session": "2024-11-13",
+      "latest_session": "2026-11-19",
       "freshness_match": true,
       "required_bars": 40,
       "raw_gold_event_count_loaded_history": 0,
@@ -336,8 +346,8 @@
     "DIGI": {
       "status": "COMPUTED",
       "bars": 500,
-      "first_session": "2024-11-12",
-      "latest_session": "2026-11-18",
+      "first_session": "2024-11-13",
+      "latest_session": "2026-11-19",
       "freshness_match": true,
       "required_bars": 40,
       "raw_gold_event_count_loaded_history": 0,
@@ -361,8 +371,8 @@
     "M": {
       "status": "COMPUTED",
       "bars": 500,
-      "first_session": "2024-11-12",
-      "latest_session": "2026-11-18",
+      "first_session": "2024-11-13",
+      "latest_session": "2026-11-19",
       "freshness_match": true,
       "required_bars": 40,
       "raw_gold_event_count_loaded_history": 1,
@@ -386,8 +396,8 @@
     "SNN": {
       "status": "COMPUTED",
       "bars": 500,
-      "first_session": "2024-11-12",
-      "latest_session": "2026-11-18",
+      "first_session": "2024-11-13",
+      "latest_session": "2026-11-19",
       "freshness_match": true,
       "required_bars": 40,
       "raw_gold_event_count_loaded_history": 0,
@@ -411,8 +421,8 @@
     "TEL": {
       "status": "COMPUTED",
       "bars": 500,
-      "first_session": "2024-11-12",
-      "latest_session": "2026-11-18",
+      "first_session": "2024-11-13",
+      "latest_session": "2026-11-19",
       "freshness_match": true,
       "required_bars": 40,
       "raw_gold_event_count_loaded_history": 0,
@@ -436,33 +446,8 @@
     "PE": {
       "status": "COMPUTED",
       "bars": 500,
-      "first_session": "2024-11-12",
-      "latest_session": "2026-11-18",
-      "freshness_match": true,
-      "required_bars": 40,
-      "raw_gold_event_count_loaded_history": 0,
-      "formula_validation": {
-        "status": "PASS",
-        "version": "VMC_SOURCE_REPLAY_V2_CONDITIONAL_HISTORY",
-        "source_sha256": "3f57b118ea978f3b95402ca4849ba2b46c72ff061a64b7cd32b7bbe5d5df67fa",
-        "checked_bars": 500,
-        "scope": "EXECUTABLE_PINE_CONDITION_REPLAY_ON_IDENTICAL_INPUTS",
-        "tradingview_status": "NOT_VERIFIED_AGAINST_TRADINGVIEW",
-        "errors": []
-      },
-      "source_parity_validation": "NOT_VERIFIED_AGAINST_TRADINGVIEW",
-      "history_diagnostics": {
-        "basis": "PARSED_CLOSED_BARS_ONLY",
-        "latest_session_match": true,
-        "rolling_window_missing_sessions": [],
-        "gap_cause": "NO_PARSED_WINDOW_GAP"
-      }
-    },
-    "RRC": {
-      "status": "COMPUTED",
-      "bars": 500,
-      "first_session": "2024-11-05",
-      "latest_session": "2026-11-18",
+      "first_session": "2024-11-13",
+      "latest_session": "2026-11-19",
       "freshness_match": true,
       "required_bars": 40,
       "raw_gold_event_count_loaded_history": 0,
@@ -486,8 +471,8 @@
     "FP": {
       "status": "COMPUTED",
       "bars": 500,
-      "first_session": "2024-11-12",
-      "latest_session": "2026-11-18",
+      "first_session": "2024-11-13",
+      "latest_session": "2026-11-19",
       "freshness_match": true,
       "required_bars": 40,
       "raw_gold_event_count_loaded_history": 1,
@@ -508,11 +493,36 @@
         "gap_cause": "NO_PARSED_WINDOW_GAP"
       }
     },
+    "RRC": {
+      "status": "COMPUTED",
+      "bars": 500,
+      "first_session": "2024-11-06",
+      "latest_session": "2026-11-19",
+      "freshness_match": true,
+      "required_bars": 40,
+      "raw_gold_event_count_loaded_history": 0,
+      "formula_validation": {
+        "status": "PASS",
+        "version": "VMC_SOURCE_REPLAY_V2_CONDITIONAL_HISTORY",
+        "source_sha256": "3f57b118ea978f3b95402ca4849ba2b46c72ff061a64b7cd32b7bbe5d5df67fa",
+        "checked_bars": 500,
+        "scope": "EXECUTABLE_PINE_CONDITION_REPLAY_ON_IDENTICAL_INPUTS",
+        "tradingview_status": "NOT_VERIFIED_AGAINST_TRADINGVIEW",
+        "errors": []
+      },
+      "source_parity_validation": "NOT_VERIFIED_AGAINST_TRADINGVIEW",
+      "history_diagnostics": {
+        "basis": "PARSED_CLOSED_BARS_ONLY",
+        "latest_session_match": true,
+        "rolling_window_missing_sessions": [],
+        "gap_cause": "NO_PARSED_WINDOW_GAP"
+      }
+    },
     "ONE": {
       "status": "COMPUTED",
       "bars": 500,
-      "first_session": "2024-11-08",
-      "latest_session": "2026-11-18",
+      "first_session": "2024-11-11",
+      "latest_session": "2026-11-19",
       "freshness_match": true,
       "required_bars": 40,
       "raw_gold_event_count_loaded_history": 0,
@@ -535,9 +545,9 @@
     },
     "CFH": {
       "status": "COMPUTED",
-      "bars": 243,
+      "bars": 244,
       "first_session": "2025-11-26",
-      "latest_session": "2026-11-18",
+      "latest_session": "2026-11-19",
       "freshness_match": true,
       "required_bars": 40,
       "raw_gold_event_count_loaded_history": 0,
@@ -545,7 +555,7 @@
         "status": "PASS",
         "version": "VMC_SOURCE_REPLAY_V2_CONDITIONAL_HISTORY",
         "source_sha256": "3f57b118ea978f3b95402ca4849ba2b46c72ff061a64b7cd32b7bbe5d5df67fa",
-        "checked_bars": 243,
+        "checked_bars": 244,
         "scope": "EXECUTABLE_PINE_CONDITION_REPLAY_ON_IDENTICAL_INPUTS",
         "tradingview_status": "NOT_VERIFIED_AGAINST_TRADINGVIEW",
         "errors": []
@@ -561,8 +571,8 @@
     "AQ": {
       "status": "COMPUTED",
       "bars": 500,
-      "first_session": "2024-11-12",
-      "latest_session": "2026-11-18",
+      "first_session": "2024-11-13",
+      "latest_session": "2026-11-19",
       "freshness_match": true,
       "required_bars": 40,
       "raw_gold_event_count_loaded_history": 0,
@@ -586,8 +596,8 @@
     "TTS": {
       "status": "COMPUTED",
       "bars": 500,
-      "first_session": "2024-11-12",
-      "latest_session": "2026-11-18",
+      "first_session": "2024-11-13",
+      "latest_session": "2026-11-19",
       "freshness_match": true,
       "required_bars": 40,
       "raw_gold_event_count_loaded_history": 0,
@@ -611,8 +621,33 @@
     "BVB": {
       "status": "COMPUTED",
       "bars": 500,
-      "first_session": "2024-11-12",
-      "latest_session": "2026-11-18",
+      "first_session": "2024-11-13",
+      "latest_session": "2026-11-19",
+      "freshness_match": true,
+      "required_bars": 40,
+      "raw_gold_event_count_loaded_history": 0,
+      "formula_validation": {
+        "status": "PASS",
+        "version": "VMC_SOURCE_REPLAY_V2_CONDITIONAL_HISTORY",
+        "source_sha256": "3f57b118ea978f3b95402ca4849ba2b46c72ff061a64b7cd32b7bbe5d5df67fa",
+        "checked_bars": 500,
+        "scope": "EXECUTABLE_PINE_CONDITION_REPLAY_ON_IDENTICAL_INPUTS",
+        "tradingview_status": "NOT_VERIFIED_AGAINST_TRADINGVIEW",
+        "errors": []
+      },
+      "source_parity_validation": "NOT_VERIFIED_AGAINST_TRADINGVIEW",
+      "history_diagnostics": {
+        "basis": "PARSED_CLOSED_BARS_ONLY",
+        "latest_session_match": true,
+        "rolling_window_missing_sessions": [],
+        "gap_cause": "NO_PARSED_WINDOW_GAP"
+      }
+    },
+    "ARS": {
+      "status": "COMPUTED",
+      "bars": 500,
+      "first_session": "2024-11-13",
+      "latest_session": "2026-11-19",
       "freshness_match": true,
       "required_bars": 40,
       "raw_gold_event_count_loaded_history": 0,
@@ -635,9 +670,9 @@
     },
     "EAI": {
       "status": "COMPUTED",
-      "bars": 183,
+      "bars": 184,
       "first_session": "2026-03-03",
-      "latest_session": "2026-11-18",
+      "latest_session": "2026-11-19",
       "freshness_match": true,
       "required_bars": 40,
       "raw_gold_event_count_loaded_history": 0,
@@ -645,32 +680,7 @@
         "status": "PASS",
         "version": "VMC_SOURCE_REPLAY_V2_CONDITIONAL_HISTORY",
         "source_sha256": "3f57b118ea978f3b95402ca4849ba2b46c72ff061a64b7cd32b7bbe5d5df67fa",
-        "checked_bars": 183,
-        "scope": "EXECUTABLE_PINE_CONDITION_REPLAY_ON_IDENTICAL_INPUTS",
-        "tradingview_status": "NOT_VERIFIED_AGAINST_TRADINGVIEW",
-        "errors": []
-      },
-      "source_parity_validation": "NOT_VERIFIED_AGAINST_TRADINGVIEW",
-      "history_diagnostics": {
-        "basis": "PARSED_CLOSED_BARS_ONLY",
-        "latest_session_match": true,
-        "rolling_window_missing_sessions": [],
-        "gap_cause": "NO_PARSED_WINDOW_GAP"
-      }
-    },
-    "ARS": {
-      "status": "COMPUTED",
-      "bars": 500,
-      "first_session": "2024-11-12",
-      "latest_session": "2026-11-18",
-      "freshness_match": true,
-      "required_bars": 40,
-      "raw_gold_event_count_loaded_history": 0,
-      "formula_validation": {
-        "status": "PASS",
-        "version": "VMC_SOURCE_REPLAY_V2_CONDITIONAL_HISTORY",
-        "source_sha256": "3f57b118ea978f3b95402ca4849ba2b46c72ff061a64b7cd32b7bbe5d5df67fa",
-        "checked_bars": 500,
+        "checked_bars": 184,
         "scope": "EXECUTABLE_PINE_CONDITION_REPLAY_ON_IDENTICAL_INPUTS",
         "tradingview_status": "NOT_VERIFIED_AGAINST_TRADINGVIEW",
         "errors": []
@@ -686,8 +696,8 @@
     "ATB": {
       "status": "COMPUTED",
       "bars": 500,
-      "first_session": "2024-11-12",
-      "latest_session": "2026-11-18",
+      "first_session": "2024-11-13",
+      "latest_session": "2026-11-19",
       "freshness_match": true,
       "required_bars": 40,
       "raw_gold_event_count_loaded_history": 3,
@@ -711,8 +721,8 @@
     "TRP": {
       "status": "COMPUTED",
       "bars": 500,
-      "first_session": "2024-11-12",
-      "latest_session": "2026-11-18",
+      "first_session": "2024-11-13",
+      "latest_session": "2026-11-19",
       "freshness_match": true,
       "required_bars": 40,
       "raw_gold_event_count_loaded_history": 2,
@@ -736,8 +746,8 @@
     "SFG": {
       "status": "COMPUTED",
       "bars": 500,
-      "first_session": "2024-11-12",
-      "latest_session": "2026-11-18",
+      "first_session": "2024-11-13",
+      "latest_session": "2026-11-19",
       "freshness_match": true,
       "required_bars": 40,
       "raw_gold_event_count_loaded_history": 1,
@@ -761,8 +771,8 @@
     "AROBS": {
       "status": "COMPUTED",
       "bars": 500,
-      "first_session": "2024-11-12",
-      "latest_session": "2026-11-18",
+      "first_session": "2024-11-13",
+      "latest_session": "2026-11-19",
       "freshness_match": true,
       "required_bars": 40,
       "raw_gold_event_count_loaded_history": 1,
@@ -786,8 +796,8 @@
     "SOCP": {
       "status": "COMPUTED",
       "bars": 500,
-      "first_session": "2024-10-11",
-      "latest_session": "2026-11-18",
+      "first_session": "2024-10-14",
+      "latest_session": "2026-11-19",
       "freshness_match": true,
       "required_bars": 40,
       "raw_gold_event_count_loaded_history": 0,
@@ -811,8 +821,8 @@
     "COTE": {
       "status": "COMPUTED",
       "bars": 500,
-      "first_session": "2024-11-12",
-      "latest_session": "2026-11-18",
+      "first_session": "2024-11-13",
+      "latest_session": "2026-11-19",
       "freshness_match": true,
       "required_bars": 40,
       "raw_gold_event_count_loaded_history": 0,
@@ -836,8 +846,8 @@
     "ALR": {
       "status": "COMPUTED",
       "bars": 500,
-      "first_session": "2024-11-12",
-      "latest_session": "2026-11-18",
+      "first_session": "2024-11-13",
+      "latest_session": "2026-11-19",
       "freshness_match": true,
       "required_bars": 40,
       "raw_gold_event_count_loaded_history": 1,
@@ -861,8 +871,8 @@
     "IARV": {
       "status": "COMPUTED",
       "bars": 500,
-      "first_session": "2024-11-08",
-      "latest_session": "2026-11-18",
+      "first_session": "2024-11-11",
+      "latest_session": "2026-11-19",
       "freshness_match": true,
       "required_bars": 40,
       "raw_gold_event_count_loaded_history": 1,
@@ -886,8 +896,8 @@
     "WINE": {
       "status": "COMPUTED",
       "bars": 500,
-      "first_session": "2024-11-12",
-      "latest_session": "2026-11-18",
+      "first_session": "2024-11-13",
+      "latest_session": "2026-11-19",
       "freshness_match": true,
       "required_bars": 40,
       "raw_gold_event_count_loaded_history": 0,
@@ -911,8 +921,8 @@
     "IMP": {
       "status": "COMPUTED",
       "bars": 500,
-      "first_session": "2024-10-24",
-      "latest_session": "2026-11-18",
+      "first_session": "2024-10-25",
+      "latest_session": "2026-11-19",
       "freshness_match": true,
       "required_bars": 40,
       "raw_gold_event_count_loaded_history": 0,
@@ -935,9 +945,9 @@
     },
     "TRIP": {
       "status": "COMPUTED",
-      "bars": 108,
+      "bars": 109,
       "first_session": "2026-06-22",
-      "latest_session": "2026-11-18",
+      "latest_session": "2026-11-19",
       "freshness_match": true,
       "required_bars": 40,
       "raw_gold_event_count_loaded_history": 0,
@@ -945,7 +955,7 @@
         "status": "PASS",
         "version": "VMC_SOURCE_REPLAY_V2_CONDITIONAL_HISTORY",
         "source_sha256": "3f57b118ea978f3b95402ca4849ba2b46c72ff061a64b7cd32b7bbe5d5df67fa",
-        "checked_bars": 108,
+        "checked_bars": 109,
         "scope": "EXECUTABLE_PINE_CONDITION_REPLAY_ON_IDENTICAL_INPUTS",
         "tradingview_status": "NOT_VERIFIED_AGAINST_TRADINGVIEW",
         "errors": []
@@ -961,8 +971,8 @@
     "SMTL": {
       "status": "COMPUTED",
       "bars": 500,
-      "first_session": "2024-11-12",
-      "latest_session": "2026-11-18",
+      "first_session": "2024-11-13",
+      "latest_session": "2026-11-19",
       "freshness_match": true,
       "required_bars": 40,
       "raw_gold_event_count_loaded_history": 0,
@@ -986,8 +996,8 @@
     "CMP": {
       "status": "COMPUTED",
       "bars": 500,
-      "first_session": "2024-10-10",
-      "latest_session": "2026-11-18",
+      "first_session": "2024-10-11",
+      "latest_session": "2026-11-19",
       "freshness_match": true,
       "required_bars": 40,
       "raw_gold_event_count_loaded_history": 0,
@@ -1011,8 +1021,8 @@
     "PBK": {
       "status": "COMPUTED",
       "bars": 500,
-      "first_session": "2024-11-06",
-      "latest_session": "2026-11-18",
+      "first_session": "2024-11-07",
+      "latest_session": "2026-11-19",
       "freshness_match": true,
       "required_bars": 40,
       "raw_gold_event_count_loaded_history": 0,
@@ -1036,8 +1046,8 @@
     "OIL": {
       "status": "COMPUTED",
       "bars": 500,
-      "first_session": "2024-11-12",
-      "latest_session": "2026-11-18",
+      "first_session": "2024-11-13",
+      "latest_session": "2026-11-19",
       "freshness_match": true,
       "required_bars": 40,
       "raw_gold_event_count_loaded_history": 0,
@@ -1062,7 +1072,7 @@
       "status": "FAIL",
       "error": "ROLLING_WINDOW_MISSING_SESSIONS_OR_SUSPENSION: 2026-10-27,2026-10-30",
       "bars": 500,
-      "latest_session": "2026-11-18",
+      "latest_session": "2026-11-19",
       "freshness_match": false,
       "history_diagnostics": {
         "basis": "PARSED_CLOSED_BARS_ONLY",
@@ -1077,8 +1087,8 @@
     "SAFE": {
       "status": "COMPUTED",
       "bars": 500,
-      "first_session": "2024-11-12",
-      "latest_session": "2026-11-18",
+      "first_session": "2024-11-13",
+      "latest_session": "2026-11-19",
       "freshness_match": true,
       "required_bars": 40,
       "raw_gold_event_count_loaded_history": 1,
@@ -1102,8 +1112,8 @@
     "ELMA": {
       "status": "COMPUTED",
       "bars": 500,
-      "first_session": "2024-09-25",
-      "latest_session": "2026-11-18",
+      "first_session": "2024-09-26",
+      "latest_session": "2026-11-19",
       "freshness_match": true,
       "required_bars": 40,
       "raw_gold_event_count_loaded_history": 0,
@@ -1128,7 +1138,7 @@
       "status": "FAIL",
       "error": "ROLLING_WINDOW_MISSING_SESSIONS_OR_SUSPENSION: 2026-11-12",
       "bars": 500,
-      "latest_session": "2026-11-18",
+      "latest_session": "2026-11-19",
       "freshness_match": false,
       "history_diagnostics": {
         "basis": "PARSED_CLOSED_BARS_ONLY",
@@ -1142,8 +1152,8 @@
     "TBM": {
       "status": "COMPUTED",
       "bars": 500,
-      "first_session": "2024-11-12",
-      "latest_session": "2026-11-18",
+      "first_session": "2024-11-13",
+      "latest_session": "2026-11-19",
       "freshness_match": true,
       "required_bars": 40,
       "raw_gold_event_count_loaded_history": 0,
@@ -1168,7 +1178,7 @@
       "status": "FAIL",
       "error": "ROLLING_WINDOW_MISSING_SESSIONS_OR_SUSPENSION: 2026-10-20,2026-10-26,2026-10-27,2026-10-29,2026-11-06,2026-11-11,2026-11-12",
       "bars": 500,
-      "latest_session": "2026-11-18",
+      "latest_session": "2026-11-19",
       "freshness_match": false,
       "history_diagnostics": {
         "basis": "PARSED_CLOSED_BARS_ONLY",
@@ -1188,8 +1198,8 @@
     "BRK": {
       "status": "COMPUTED",
       "bars": 500,
-      "first_session": "2024-11-12",
-      "latest_session": "2026-11-18",
+      "first_session": "2024-11-13",
+      "latest_session": "2026-11-19",
       "freshness_match": true,
       "required_bars": 40,
       "raw_gold_event_count_loaded_history": 0,
@@ -1213,8 +1223,8 @@
     "PTR": {
       "status": "COMPUTED",
       "bars": 500,
-      "first_session": "2024-11-08",
-      "latest_session": "2026-11-18",
+      "first_session": "2024-11-11",
+      "latest_session": "2026-11-19",
       "freshness_match": true,
       "required_bars": 40,
       "raw_gold_event_count_loaded_history": 0,
@@ -1238,8 +1248,8 @@
     "BNET": {
       "status": "COMPUTED",
       "bars": 500,
-      "first_session": "2024-11-12",
-      "latest_session": "2026-11-18",
+      "first_session": "2024-11-13",
+      "latest_session": "2026-11-19",
       "freshness_match": true,
       "required_bars": 40,
       "raw_gold_event_count_loaded_history": 1,
@@ -1263,33 +1273,8 @@
     "ROCE": {
       "status": "COMPUTED",
       "bars": 500,
-      "first_session": "2024-10-31",
-      "latest_session": "2026-11-18",
-      "freshness_match": true,
-      "required_bars": 40,
-      "raw_gold_event_count_loaded_history": 0,
-      "formula_validation": {
-        "status": "PASS",
-        "version": "VMC_SOURCE_REPLAY_V2_CONDITIONAL_HISTORY",
-        "source_sha256": "3f57b118ea978f3b95402ca4849ba2b46c72ff061a64b7cd32b7bbe5d5df67fa",
-        "checked_bars": 500,
-        "scope": "EXECUTABLE_PINE_CONDITION_REPLAY_ON_IDENTICAL_INPUTS",
-        "tradingview_status": "NOT_VERIFIED_AGAINST_TRADINGVIEW",
-        "errors": []
-      },
-      "source_parity_validation": "NOT_VERIFIED_AGAINST_TRADINGVIEW",
-      "history_diagnostics": {
-        "basis": "PARSED_CLOSED_BARS_ONLY",
-        "latest_session_match": true,
-        "rolling_window_missing_sessions": [],
-        "gap_cause": "NO_PARSED_WINDOW_GAP"
-      }
-    },
-    "SNO": {
-      "status": "COMPUTED",
-      "bars": 500,
-      "first_session": "2024-09-09",
-      "latest_session": "2026-11-18",
+      "first_session": "2024-11-01",
+      "latest_session": "2026-11-19",
       "freshness_match": true,
       "required_bars": 40,
       "raw_gold_event_count_loaded_history": 0,
@@ -1314,7 +1299,7 @@
       "status": "FAIL",
       "error": "ROLLING_WINDOW_MISSING_SESSIONS_OR_SUSPENSION: 2026-10-26,2026-10-27,2026-11-05",
       "bars": 500,
-      "latest_session": "2026-11-18",
+      "latest_session": "2026-11-19",
       "freshness_match": false,
       "history_diagnostics": {
         "basis": "PARSED_CLOSED_BARS_ONLY",
@@ -1327,11 +1312,36 @@
         "gap_cause": "UNVERIFIED"
       }
     },
+    "SNO": {
+      "status": "COMPUTED",
+      "bars": 500,
+      "first_session": "2024-09-10",
+      "latest_session": "2026-11-19",
+      "freshness_match": true,
+      "required_bars": 40,
+      "raw_gold_event_count_loaded_history": 0,
+      "formula_validation": {
+        "status": "PASS",
+        "version": "VMC_SOURCE_REPLAY_V2_CONDITIONAL_HISTORY",
+        "source_sha256": "3f57b118ea978f3b95402ca4849ba2b46c72ff061a64b7cd32b7bbe5d5df67fa",
+        "checked_bars": 500,
+        "scope": "EXECUTABLE_PINE_CONDITION_REPLAY_ON_IDENTICAL_INPUTS",
+        "tradingview_status": "NOT_VERIFIED_AGAINST_TRADINGVIEW",
+        "errors": []
+      },
+      "source_parity_validation": "NOT_VERIFIED_AGAINST_TRADINGVIEW",
+      "history_diagnostics": {
+        "basis": "PARSED_CLOSED_BARS_ONLY",
+        "latest_session_match": true,
+        "rolling_window_missing_sessions": [],
+        "gap_cause": "NO_PARSED_WINDOW_GAP"
+      }
+    },
     "ALU": {
       "status": "COMPUTED",
       "bars": 500,
-      "first_session": "2024-11-12",
-      "latest_session": "2026-11-18",
+      "first_session": "2024-11-13",
+      "latest_session": "2026-11-19",
       "freshness_match": true,
       "required_bars": 40,
       "raw_gold_event_count_loaded_history": 0,
@@ -1353,35 +1363,25 @@
       }
     },
     "TBK": {
-      "status": "COMPUTED",
+      "status": "STALE",
+      "error": "STALE_OR_WRONG_SESSION: latest=2026-11-18; expected=2026-11-19",
       "bars": 500,
-      "first_session": "2024-11-01",
       "latest_session": "2026-11-18",
-      "freshness_match": true,
-      "required_bars": 40,
-      "raw_gold_event_count_loaded_history": 0,
-      "formula_validation": {
-        "status": "PASS",
-        "version": "VMC_SOURCE_REPLAY_V2_CONDITIONAL_HISTORY",
-        "source_sha256": "3f57b118ea978f3b95402ca4849ba2b46c72ff061a64b7cd32b7bbe5d5df67fa",
-        "checked_bars": 500,
-        "scope": "EXECUTABLE_PINE_CONDITION_REPLAY_ON_IDENTICAL_INPUTS",
-        "tradingview_status": "NOT_VERIFIED_AGAINST_TRADINGVIEW",
-        "errors": []
-      },
-      "source_parity_validation": "NOT_VERIFIED_AGAINST_TRADINGVIEW",
+      "freshness_match": false,
       "history_diagnostics": {
         "basis": "PARSED_CLOSED_BARS_ONLY",
-        "latest_session_match": true,
-        "rolling_window_missing_sessions": [],
-        "gap_cause": "NO_PARSED_WINDOW_GAP"
+        "latest_session_match": false,
+        "rolling_window_missing_sessions": [
+          "2026-11-19"
+        ],
+        "gap_cause": "UNVERIFIED"
       }
     },
     "RMAH": {
       "status": "COMPUTED",
       "bars": 500,
-      "first_session": "2024-11-08",
-      "latest_session": "2026-11-18",
+      "first_session": "2024-11-11",
+      "latest_session": "2026-11-19",
       "freshness_match": true,
       "required_bars": 40,
       "raw_gold_event_count_loaded_history": 0,
@@ -1408,8 +1408,8 @@
     "role": "BENCHMARK_NOT_COMPANY",
     "status": "COMPUTED",
     "bars": 500,
-    "first_session": "2024-11-18",
-    "latest_session": "2026-11-18",
+    "first_session": "2024-11-19",
+    "latest_session": "2026-11-19",
     "freshness_match": true,
     "required_bars": 40,
     "raw_gold_event_count_loaded_history": 0,
