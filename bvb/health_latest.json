@@ -1,11 +1,11 @@
 {
   "schema_version": "BVB_OPERATIONAL_HEALTH_V1",
   "scanner_version": "2.0.0",
-  "checked_at_utc": "2026-11-27T00:43:03.514818+00:00",
-  "run_id": "45918172263",
+  "checked_at_utc": "2026-11-28T00:09:56.154637+00:00",
+  "run_id": "46086229707",
   "run_attempt": "1",
-  "run_url": "https://github.com/catalin6100/stock-daily-signal-engine/actions/runs/45918172263",
-  "producer_commit": "5e4872cfd47996ae8dfbbe3964f40bd6700eb95f",
+  "run_url": "https://github.com/catalin6100/stock-daily-signal-engine/actions/runs/46086229707",
+  "producer_commit": "06dabab87b57f580ae67c4f2edba69ca155de310",
   "status": "PARTIAL",
   "coverage_status": "PARTIAL",
   "missing_assets": [
@@ -16,13 +16,8 @@
     },
     {
       "asset": "PREB",
-      "status": "FAIL",
-      "error": "ROLLING_WINDOW_MISSING_SESSIONS_OR_SUSPENSION: 2026-10-27,2026-10-30,2026-11-23,2026-11-25"
-    },
-    {
-      "asset": "EFO",
-      "status": "FAIL",
-      "error": "ROLLING_WINDOW_MISSING_SESSIONS_OR_SUSPENSION: 2026-10-26,2026-10-27,2026-10-29,2026-11-06,2026-11-11,2026-11-12"
+      "status": "STALE",
+      "error": "STALE_OR_WRONG_SESSION: latest=2026-11-26; expected=2026-11-27"
     },
     {
       "asset": "NC",
@@ -30,9 +25,19 @@
       "error": "ROLLING_WINDOW_MISSING_SESSIONS_OR_SUSPENSION: 2026-11-12"
     },
     {
+      "asset": "EFO",
+      "status": "FAIL",
+      "error": "ROLLING_WINDOW_MISSING_SESSIONS_OR_SUSPENSION: 2026-10-27,2026-10-29,2026-11-06,2026-11-11,2026-11-12"
+    },
+    {
       "asset": "ROC1",
       "status": "FAIL",
-      "error": "ROLLING_WINDOW_MISSING_SESSIONS_OR_SUSPENSION: 2026-10-26,2026-10-27,2026-11-05"
+      "error": "ROLLING_WINDOW_MISSING_SESSIONS_OR_SUSPENSION: 2026-10-27,2026-11-05"
+    },
+    {
+      "asset": "ALU",
+      "status": "STALE",
+      "error": "STALE_OR_WRONG_SESSION: latest=2026-11-26; expected=2026-11-27"
     },
     {
       "asset": "TBK",
@@ -42,8 +47,8 @@
   ],
   "benchmark_status": "COMPUTED",
   "signal_publishable": true,
-  "signal_sha256": "ec375c581c7bfcd69a2ecfe48cfe272b4930f1099bbff1b85e6dbb1499078327",
-  "expected_closed_bvb_session": "2026-11-26",
+  "signal_sha256": "f5e08bc4a5bb6a5bd1891a3fe878f9ed354797685ef7d648750358b7e7471b08",
+  "expected_closed_bvb_session": "2026-11-27",
   "errors": [],
   "automatic_repairs": [],
   "diagnostics_storage": "ACTIONS_LOG_AND_STEP_SUMMARY_PLUS_COMPACT_BRIDGE_HEALTH_RECEIPT",
